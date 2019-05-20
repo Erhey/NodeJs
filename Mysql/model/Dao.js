@@ -1,7 +1,6 @@
 let dbConnection = undefined;
 
 try {
-    case "mysql":
     let mysql = require('mysql');
     dbConnection = mysql.createPool({
         host : "localhost",
@@ -14,21 +13,25 @@ try {
 }
 class Dao {
 	constructor(db) {
-      if 
-
-
-
-      this.db = db
+    if (this.constructor === Dao) {
+      throw new TypeError('Abstract class "Dao" cannot be instantiated directly.'); 
     }
-		dbConnection.getConnection((err, connection) => {
+    console.log("test")
+   	dbConnection.getConnection((err, db) => {
+      console.log(err)
 			if (err) {
-				//return callback(err); //TODO: Proper error-handling
+				// return callback(err); //TODO: Proper error-handling
 				console.log("ERROR: getConnection failed: err = " + err);
 			}
-			uow = new MySqlUnitOfWork(connection);
-			return callback(uow);
+      console.log("je passe")
+      this.db = db
 		});
-		break;
-	}
+  }
+  flag () {
+    throw new Error('You must implement this method');
+  }
+  getAll(){
+    throw new Error('You must implement this method');
+  }
 }
 module.exports = Dao;

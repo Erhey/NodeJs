@@ -1,10 +1,14 @@
-class UsersDao {
-  constructor(db) {
-    this.db = db
-  }
+let Dao = require("./Dao")
+
+class UsersDao extends Dao {
+
   getAll(callback) {
     this.db.query("select * from Users", [], (result) => {
-      return callback(result);
+      console.log(result);
     });
   }
+  flag(){
+    console.log("UsersDao class ～call")
+  }
 }
+module.exports = UsersDao;

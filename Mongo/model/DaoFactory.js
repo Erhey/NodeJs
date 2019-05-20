@@ -6,3 +6,5 @@ class DaoFactory {
 		return new UsersDao()
 	}
 }
+
+module.exports = DaoFactory;
