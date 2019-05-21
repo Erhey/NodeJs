@@ -2,15 +2,26 @@ doctype html
 html
   head
     title My Site
+    script(src='../public/javascripts/connection.js')
   body
     h1 My Site
-    p Welcome to my super lame site.
-    a(href='http://localhost:3000/users/cool') toto
-    input(type='submit', onclick='alert("body");', value='toto') 
+    p Welcome to my super crud site.
+    p You can create read update and delete Users data
     table(border='1px black')
-      tr 
-        td 
-          textarea
+      tr
+        td(class='login_lab', colspan='2')
+          span Sign in
+      tr
         td
-          input(type='button', onclick='public/javascripts/tblToObj.js', value='toto') 
+          span Login
+        td
+          input(type='text', name='login') 
+      tr
+        td
+          span Password
+        td
+          input(type='password', name='login') 
+      tr
+        td(colspan='2')
+          input(type='button', onclick='connection()' value='Login') 
 
