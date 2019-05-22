@@ -1,27 +1,13 @@
-doctype html
-html
-  head
-    title My Site
-    script(src='../public/javascripts/connection.js')
-  body
-    h1 My Site
-    p Welcome to my super crud site.
-    p You can create read update and delete Users data
-    table(border='1px black')
-      tr
-        td(class='login_lab', colspan='2')
-          span Sign in
-      tr
-        td
-          span Login
-        td
-          input(type='text', name='login') 
-      tr
-        td
-          span Password
-        td
-          input(type='password', name='login') 
-      tr
-        td(colspan='2')
-          input(type='button', onclick='connection()' value='Login') 
+block content
+  h1 #{title}
 
+  form(method='POST' action='')
+    div.form-group
+      label(for='name') Genre:
+      input#name.form-control(type='text', placeholder='Fantasy, Poetry etc.' name='name' value=(undefined===genre ? '' : genre.name))
+    button.btn.btn-primary(type='submit') Submit
+
+  if errors 
+   ul
+    for error in errors
+     li!= error.msg
