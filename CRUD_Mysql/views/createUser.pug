@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1= title
+  form(method='POST', action='/userMng/createUser')
+    table(border='1px')
+      tr
+        td(colspan='2') Please Log in
+      tr
+        td Login
+        td #[input(type='text', id='Login', name='Login')]
+      tr
+        td Password
+        td #[input(type='text', id='Password', name='Password')]
+      tr
+        td Name
+        td #[input(type='text', id='Name', name='Name')]
+      tr
+        td FirstName
+        td #[input(type='text', id='FirstName', name='FirstName')]
+      tr
+        td Telephone
+        td #[input(type='text', id='Telephone', name='Telephone')]
+      tr
+        td Mail
+        td #[input(type='text', id='Mail', name='Mail')]
+      tr
+        td(colspan='2') #[input(type='submit', value='Create')]

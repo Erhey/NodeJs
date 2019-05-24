@@ -1,18 +1,6 @@
 extends layout
-
 block content
-  h1= title
   p Welcome to #{title}
   hr
-  form(method='POST', action='/login')
-    table(border='1px')
-      tr
-        td(colspan='2') Please Log in
-      tr
-        td Login
-        td #[input(type='text', id='login', name='login')]
-      tr
-        td password
-        td #[input(type='password', id='password', name='password')]
-      tr
-        td(colspan='2') #[input(type='submit', value='Login')]
+  h1 please Sign-in
+  a(href="/login") Sign-in
