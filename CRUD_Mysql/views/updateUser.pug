@@ -1,0 +1,33 @@
+html(lang="en")
+  head
+    title Search a user
+  body
+    h1 Search a User
+    form(action="/userMng/updateConfirmUser", method="post")
+      input(type="hidden", name="id", value=user.id)
+      table(border='1px')
+        tr
+          td(colspan='2') User to be deleted
+        tr
+          td Login :
+          td #[input(type='text', id='login', name='login', value=user.login)]
+        tr
+          td Name :
+          td #[input(type='text', id='name', name='name', value=user.name)]
+        tr
+          td FirstName :
+          td #[input(type='text', id='firstName', name='firstName', value=user.firstName)]
+        tr
+          td Tel :
+          td #[input(type='text', id='tel', name='tel', value=user.tel)]
+        tr
+          td Mail :
+          td #[input(type='text', id='mail', name='mail', value=user.mail)]
+        tr
+          td Last connection :
+          td #[input(type='text', id='lastConDate', name='lastConDate', value=user.lastConDate)]
+        tr
+          td CreatedDay :
+          td #[input(type='text', id='createdDay', name='createdDay', value=user.createdDay)]
+        tr
+          td(colspan='2') #[input(type='submit', id='UpdateConfirm', name='Update', value='Update')]

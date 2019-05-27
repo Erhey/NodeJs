@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+  head
+    title Search a user
+  body
+    h1 Search a User
+    form(action="/userMng/searchUser", method="post")
+      table
+        tr
+          td(colspan='2') Search a user : by name, by mail or by login
+        tr
+          td Name :
+          td #[input(type='text', id='search_name', name='search_name')]
+        tr
+          td Login :
+          td #[input(type='text', id='search_login', name='search_login')]
+        tr
+          td Mail : 
+          td #[input(type='text', id='search_mail', name='search_mail')]
+        tr
+          td(colspan='2') #[input(type='submit', value='Search')]
+      h3(style='color:red')= err
+      table(border='1px')
+        tr
+          th #[a(href='javascript:sortById()')] ID 
+          th #[a(href='javascript:sortBylogin()')] Login
+          th #[a(href='javascript:sortByName()')] Name
+          th #[a(href='javascript:sortByFirstName()')] FirstName
+          th #[a(href='javascript:sortBytel()')] Tel
+          th #[a(href='javascript:sortBymailmail()')] Mail
+          th #[a(href='javascript:sortBylastConDate()')] Last Connection Date
+          th #[a(href='javascript:sortBycreatedDay()')] Created Day
+          th(colspan='2') Edit
+        if(users)
+          each user in users
+            form(action="/userMng/updateUser", method="post")
+              tr
+                td= user.id
+                td= user.login
+                td= user.name
+                td= user.firstName
+                td= user.tel
+                td= user.mail
+                td= user.lastConDate
+                td= user.createdDay
+                input(type="hidden", name="id", value=user.id)
+                input(type="hidden", name="login", value=user.login)
+                input(type="hidden", name="name", value=user.name)
+                input(type="hidden", name="firstName", value=user.firstName)
+                input(type="hidden", name="tel", value=user.tel)
+                input(type="hidden", name="mail", value=user.mail)
+                input(type="hidden", name="lastConDate", value=user.lastConDate)
+                input(type="hidden", name="createdDay", value=user.createdDay)
+                td #[input(type='submit', id=`Update`, onclick='javascript:form.action=\'/userMng/updateUser\'', name='Update' value='Update')]
+                td #[input(type='submit', id=`Delete`, onclick='javascript:form.action=\'/userMng/deleteUser\'', name='Delete' value='Delete')]
