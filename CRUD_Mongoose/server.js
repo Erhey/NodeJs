@@ -4,6 +4,9 @@ const debug = require('debug')('app:server')
 const http = require('http')
 const path = require('path')
 
+var mongoDb = require("./models/Dao/Dao")
+var db = new mongoDb()
+
 let app = express()
 
 var indexRouter = require('./routes/index');

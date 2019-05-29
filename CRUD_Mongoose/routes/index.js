@@ -1,10 +1,8 @@
-var express = require('express')
-var router = express.Router()
+const express = require('express')
+const router = express.Router()
+const indexController = require("../controllers/IndexController")
+router.get('/', indexController.index)
 
-router.get('/users', function (req, res, next) {
-	res.send('userCool')
-})
-router.get('/', function (req, res, next) {
-	res.send("Hey Bro")
-})
+router.get('/login', indexController.login_get)
+router.post('/login', indexController.login_post)
 module.exports = router; 

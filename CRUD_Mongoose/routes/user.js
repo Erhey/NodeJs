@@ -5,6 +5,9 @@ router.get('/cool/', function (req, res, next) {
 })
 
 
+router.post('/')
+
+
 router.get('/', function (req, res, next) {
 	res.send("Hey Bro")
 })
