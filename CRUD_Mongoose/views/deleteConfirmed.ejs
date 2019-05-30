@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <% if(locals.errorMes === undefined) {%>
+        <h1> Felicitation User a ete supprimer! </h1>
+    <% } else { %>
+        <h1>Une erreur est survenue lors de la suppression de l'utilisateur! </h1>
+        <p><%= locals.errorMes %></p>
+    <% } %>
+    <form action="/userMng" method="get">
+        <button type="submit">Back</button>
+    </form>
+</body>
+</html>

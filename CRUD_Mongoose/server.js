@@ -10,16 +10,16 @@ var db = new mongoDb()
 let app = express()
 
 var indexRouter = require('./routes/index');
-var userRouter = require('./routes/user');
+var userRouter = require('./routes/userMng');
 
 app.set('views', path.join(__dirname, "views"))
 app.set('view engine', 'ejs')
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, 'public')));
 
-
-app.use("/user", userRouter)
+app.use("/userMng", userRouter)
 app.use("/", indexRouter)
 app.use((req, res, next) => {
     console.log("test")
