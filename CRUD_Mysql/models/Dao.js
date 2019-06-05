@@ -13,7 +13,6 @@ g_database = mysql.createConnection({
 g_database.on('error', err => {
     console.log(err)
 })
-
 class Dao {
     constructor(){
         if(this.constructor === Dao){
