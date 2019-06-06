@@ -1,0 +1,35 @@
+{
+	"promo_id": "abc",
+	"moySans": 50000,
+	"moyAvec": 60000,
+	"ecart": 5,
+	"2018-07": {
+		"nbrClick": 1345,
+		"nbrAchat": 12,
+		"nbrAchatUnderPromo": 11,
+		"total": 56199,
+		"commands": [
+			{
+				"customer": {
+					"customer_id": "fgh",
+					"name": "boby",
+					"nbrAchat": 12
+					//, etc :...
+				},
+				"product": {
+					"product_id": "def",
+					"cost": 1234,
+					"timestamp": "2018-07-03",
+					//, etc...
+				}
+			},
+			// etc ...
+		]
+	},
+	"2018-08": {
+		// etc ..
+	}, //...
+	"2019-03": {
+		// etc ..
+	}
+}

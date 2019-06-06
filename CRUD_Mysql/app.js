@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var userMngRouter = require('./routes/userMng');
-const track = require("./track/track")
+const tracker = require("./track/tracker")
 
 
 var app = express();
@@ -21,14 +21,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use("/", (req, res, next) => {
-  track.request(req)
-  console.log(track.link_id)
-  res.on('finish', function(){
-    track.response(res)
-  })
-  next()
-})
+app.use("/", (req, res, next) => tracker.track(req, res, next))
+
 app.use('/', indexRouter);
 app.use('/UserMng', userMngRouter);
 
@@ -41,12 +35,11 @@ app.use(function(req, res, next) {
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
-  console.log(err)
   res.error = {}
   res.error.message = err.message
   res.error.status = res.statusCode
   res.error.level = "Fatal"
-  res.error.detail = "could not find res"
+  res.error.detail = "Une erreur est survenu lors de la recherche de res"
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
   // render the error page

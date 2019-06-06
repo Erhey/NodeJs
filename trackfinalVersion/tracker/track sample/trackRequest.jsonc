@@ -1,0 +1,14 @@
+{
+	"_id": "Ngdpogk40cS1k8fdk",
+	"timestamp": "2019-05-31",
+	"cookies": "ns0KI2j3Fs5a1wEGs",
+	"req": {
+		"body": {
+			"login": "Bunny",
+			"password": "fufuu",
+		},
+		"action": "http://samplejson/tracking/login",
+		"method": "POST",
+	},
+	"link_id": "5wrgDg87WfdGGFDDG45sdgHJ"
+}

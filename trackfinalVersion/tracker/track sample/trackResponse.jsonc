@@ -1,0 +1,16 @@
+{
+	"_id": "Ngdpogk40cS1k8fdk",
+	"timestamp": "2019-05-31",
+	"cookies": "ns0KI2j3Fs5a1wEGs",
+	"error": {
+		"message": "Unauthorized connection",
+		"status": "403",
+		"level": "User_error",
+		"detail": "0x000235 object null exception on line XXX"
+	},
+	"locals": {
+		"login": "Bunny",
+		"password": "fufuu",
+	},
+	"link_id": "5wrgDg87WfdGGFDDG45sdgHJ"
+}
