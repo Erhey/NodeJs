@@ -9,6 +9,8 @@
         },
         "action": "http://samplejson/tracking/login",
         "method": "POST",
+        "remoteAddress": "127.0.0.1"
     },
-    "link_id": "5wrgDg87WfdGGFDDG45sdgHJ"
+    "link_id": "5wrgDg87WfdGGFDDG45sdgHJ",
+    "journey" : false
 }

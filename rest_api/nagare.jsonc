@@ -1,0 +1,28 @@
+{
+    "user_id": "XXX",
+    "journey": [
+        {
+            "timestamp" : "2019-05-03 12:23:12",
+            "path": "/login > /index",
+            "body": {
+                "name": "bobby",
+                "firstname": "lemoche"
+            }
+        },
+        {
+            "timestamp" : "2019-05-03 12:23:12",
+            "path": "/index > /search",
+            "body": {}
+
+        },
+        {
+            "timestamp" : "2019-05-03 12:23:12",
+            "path": "/search > /play",
+            "body": {
+                "game_type": "action",
+                "game_name": "tarzan"
+            }
+        }
+    ],
+    "summary" : "/login > /index > /search > /play"
+}

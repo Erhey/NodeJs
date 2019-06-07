@@ -6,6 +6,7 @@ let userDao = new UserDao()
 
 
 exports.index = function(req, res) {
+  console.log(req.connection.remoteAddress)
   res.render('index')
 };
 
