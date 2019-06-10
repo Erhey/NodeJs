@@ -6,6 +6,7 @@ const colors = require("colors")
 const RequestSchema = require("./Schema/requestSchema")
 const ResponseSchema = require("./Schema/responseSchema")
 const JourneySchema = require("./Schema/journeySchema")
+const async = require("async");
 
 // Creating Mongoose connection
 const mongoose = require('mongoose')
@@ -49,7 +50,7 @@ class Tracker {
      * 
      * @param {*} req Request
      */
-    saveJourney(req) {
+    async saveJourney(req) {
         console.log(1)
         let cpt = 0
         let noMoreTracks = false
@@ -58,40 +59,43 @@ class Tracker {
         // while (!noMoreTracks && (moment().valueOf() - timestamp < 2000)) { // 30s timeout
             // cpt++
             // console.log( moment().valueOf() - timestamp)
-            RequestSchema.findOne({ 'req.remoteAddress': req.connection.remoteAddress, journey: false }, (err, track) => {
+            let track = await RequestSchema.findOne({ 'req.remoteAddress': req.connection.remoteAddress, journey: false }, (err, track) => {
                 console.log("test")
                 if (err) {
                     console.log(err)
                 }
-                if (!track) {
-                    console.log("je passe1")
-                    // noMoreTracks = true
-                } else {
-                    console.log("je passe2")
-                    // if (track.req !== undefined && track.req[0].cookies !== undefined) {
-                    //     try {
-                    //         await this.saveJourneyForUserReq(req, track.cookies['user_id'])
-                    //     } catch (e) {
-                    //         console.log(e)
-                    //     }
-                    // } else {
-                    //     try {
-                    //         await this.saveJourneyForUserReq(req, "")
-                    //     } catch (e) {
-                    //         console.log(e)
-                    //     }
-                    // }
-                    console.log(track)
-                    if (track.req !== undefined && track.cookies !== undefined) {
-                        console.log("je passe3")
-                        this.saveJourneyForUserReq(req, track.cookies['user_id'])
-                    } else {
-                    console.log("je passe4")
-                    this.saveJourneyForUserReq(req, "")
-                    }
+                if (track) {
+                    return track
                 }
             })
         // }
+        if (track) {
+            console.log("je passe2")
+            if (track.req !== undefined && track.cookies !== undefined) {
+                try {
+                    let journeyJson = await this.createJourneyForUserReq(req, track.cookies['user_id'])
+                    await this.insertJourney(journeyJson)
+                } catch (e) {
+                    console.log(e)
+                }
+            } else {
+                try {
+                    let journeyJson = await this.createJourneyForUserReq(req, "")
+                    await this.insertJourney(journeyJson)
+                } catch (e) {
+                    console.log(e)
+                }
+            }
+        }
+        console.log(track)
+        // if (track.req !== undefined && track.cookies !== undefined) {
+        //     console.log("je passe3")
+        //     this.saveJourneyForUserReq(req, track.cookies['user_id'])
+        // } else {
+        // console.log("je passe4")
+        // this.saveJourneyForUserReq(req, "")
+        // }
+
     }
     /** 
      * Create a journey for a defined user using request collection
@@ -99,55 +103,81 @@ class Tracker {
      * @param {*} req Request informations
      * @param {*} user_id user_id
      */
-    saveJourneyForUserReq(req, user_id) {
-
+    async createJourneyForUserReq(req, user_id) {
+        
+        let journeyJson = {}
         let findCond = {}
-
-        RequestSchema.find({'req.remoteAddress': req.connection.remoteAddress, 
-                            journey: false, 
-                            'cookies.user_id' : user_id }, 
-                            [],
-                            {
-                                sort:{
-                                    timestamp: -1 //Sort by Date Added DESC
-                                }
-                            }, (err, tracks) => {
-            if(err) console.log(err)
-            if(!tracks) {
-            } else {
-                let previousTrack
-                let currentTrack
-                let journeyJson = {}
-                if(user_id === '') {
-                    journeyJson.user_id = "unknown"
+        let summary = {}
+        summary.totaltime = 0
+        let previousTrack = ""
+        let previousTimestamp = ""
+        journeyJson.journey = []
+        if(user_id === ""){
+            findCond = { 'req.remoteAddress': req.connection.remoteAddress, journey: false }
+        } else {
+            findCond = { 'req.remoteAddress': req.connection.remoteAddress, journey: false, 'cookies.user_id' : user_id }
+        }
+        try {
+            let tracks = await RequestSchema.find(findCond, 
+                                [],
+                                {
+                                    sort:{
+                                        timestamp: 1 //Sort by Date Added DESC
+                                    }
+                                }, (err, tracks) => {
+                if(err) console.log(err)
+                if(!tracks) {
                 } else {
-                    journeyJson.user_id = user_id
+                    return tracks
                 }
-                tracks.forEach(track => {
-                    journeyJson.journey = []
-                    currentTrack.timestamp = track.timestamp
-                    currentTrack.path = track.req.method
-                    currentTrack.body = track.req.body
-                    if(previousTrack !== undefined) {
-                        currentTrack = previousTrack.concat(" > " + currentTrack)
-                    }
-                    journeyJson.journey.push(currentTrack)
-                    previousTrack = currentTrack
-                    track.journey = true
-                    track.save(err => {
-                        if(err) console.log(err)
-                    })
-                })
-                this.insertJourney(journeyJson)
+            })
+            if(user_id === '') {
+                journeyJson.user_id = "unknown"
+            } else {
+                journeyJson.user_id = user_id
             }
-        })
+            await tracks.forEach(track => {
+                // console.log(track)
+                let currentTrack = {}
+
+                currentTrack.timestamp = track.timestamp
+                console.log(currentTrack.timestamp)
+                currentTrack.body = track.req.body
+                if(previousTrack === "") {
+                    currentTrack.path = track.req.action
+                    previousTrack = track.req.action
+                    summary.action += track.req.action
+                    previousTimestamp = currentTrack.timestamp
+                } else {
+                    currentTrack.accesslength = ((track.timestamp - previousTimestamp) / 1000.0) + "s"
+                    currentTrack.path = previousTrack + " > " + track.req.action
+                    previousTrack = track.req.action
+                    summary.action += " > " + track.req.action
+                    summary.totaltime += (track.timestamp - previousTimestamp)
+                    console.log(summary.totaltime)
+                    previousTimestamp = currentTrack.timestamp
+                }
+                journeyJson.journey.push(currentTrack)
+                track.journey = true
+                track.save(err => {
+                    if(err) console.log(err)
+                })
+            })
+            summary.totaltime = (summary.totaltime / 1000.0) + "s"
+            journeyJson.summary = summary
+            console.log(journeyJson)
+            return journeyJson
+        }catch(e){
+            console.log(e)
+        }
     }
-    insertJourney(journeyJson) {
+    async insertJourney(journeyJson) {
         JourneySchema.insertMany(journeyJson, (err, result) => {
             if (err) {
                 console.log(err)
                 return false
             } else {
+                // console.log(result)
                 console.log("Journey created")
                 return true
             }

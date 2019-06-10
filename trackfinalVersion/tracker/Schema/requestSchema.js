@@ -17,7 +17,8 @@ const requestSchema = new Schema({
     },
     link_id :{
         type : Schema.Types.ObjectId
-    }
+    },
+    journey : Boolean
 }, 
 {
     collection : "request"

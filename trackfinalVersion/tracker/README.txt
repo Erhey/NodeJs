@@ -1,8 +1,7 @@
-Pour faire fonctionner le tracking sous votre application suivre les consignes suivante :
-
-Ajouter en haut de votre server la ligne suivante :
-
-const tracker = require("./tracker/tracker")
-
-ET ajouter juste avant les routers la ligne suivante :
+Pour lancer l'application ajouter un middleware au server :
+const tracker = require("./track/tracker")
 app.use("/", (req, res, next) => tracker.track(req, res, next))
+
+
+
+Attention ! Il faut le placer juste avant les routeurs !
