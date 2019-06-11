@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 //Define a schema
 const Schema = mongoose.Schema;
 
-const requestSchema = new Schema({
+const responseSchema = new Schema({
     timestamp: {
         type: Date,
         required: true
@@ -12,17 +12,18 @@ const requestSchema = new Schema({
     cookies: {
         type: Schema.Types.Mixed,
     },
-    req: {
+    error: {
+        type : Schema.Types.Mixed
+    },
+    locals: {
         type : Schema.Types.Mixed
     },
     link_id :{
         type : Schema.Types.ObjectId
-    },
-    isDangerous : Boolean,
-    journey : Boolean
+    }
 }, 
 {
-    collection : "request"
+    collection : "response"
 })
 
-module.exports = mongoose.model("requestSchema", requestSchema)
+module.exports = mongoose.model("responseSchema", responseSchema)

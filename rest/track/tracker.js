@@ -88,15 +88,6 @@ class Tracker {
                 }
             }
         }
-        console.log(track)
-        // if (track.req !== undefined && track.cookies !== undefined) {
-        //     console.log("je passe3")
-        //     this.saveJourneyForUserReq(req, track.cookies['user_id'])
-        // } else {
-        // console.log("je passe4")
-        // this.saveJourneyForUserReq(req, "")
-        // }
-
     }
     /** 
      * Create a journey for a defined user using request collection

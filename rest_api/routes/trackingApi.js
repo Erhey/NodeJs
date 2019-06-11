@@ -1,7 +1,10 @@
 
 let express = require('express');
 let router = express.Router();
-
+let sanitizeHtml = require('sanitize-html');
+ 
+let dirty = 'some really tacky HTML';
+let clean = sanitizeHtml(dirty);
 
 let trackingApi_controller = require("../controllers/trackingApiController")
 router.get('/userJourney', trackingApi_controller.userJourney_get)

@@ -1,0 +1,19 @@
+// {
+//     "_id": ObjectId("5cff1435b25b1c3bc0c6dcea"),
+//     "timestamp": ISODate("2019-06-11T02:38:45Z"),
+//     "cookies": {
+//         "userData": {
+//             "login": "a",
+//             "password": "s"
+//         }
+//     },
+//     "req": {
+//         "action": "/",
+//         "method": "GET",
+//         "remoteAddress": "::1"
+//     },
+//     "isDangerous": false,
+//     "link_id": ObjectId("5cff1435b25b1c3bc0c6dce9"),
+//     "journey": false,
+//     "__v": 0
+// }

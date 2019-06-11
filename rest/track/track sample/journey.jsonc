@@ -1,0 +1,121 @@
+// {
+//     "_id": ObjectId("5cff146a9e6b2d3b44738aee"),
+//     "journey": [
+//         {
+//             "_id": ObjectId("5cff146a9e6b2d3b44738af9"),
+//             "timestamp": ISODate("2019-06-11T02:38:01Z"),
+//             "isDangerous": false,
+//             "path": "/"
+//         },
+//         {
+//             "_id": ObjectId("5cff146a9e6b2d3b44738af8"),
+//             "timestamp": ISODate("2019-06-11T02:38:03Z"),
+//             "isDangerous": false,
+//             "accesslength": "2s",
+//             "path": "/ > /"
+//         },
+//         {
+//             "_id": ObjectId("5cff146a9e6b2d3b44738af7"),
+//             "timestamp": ISODate("2019-06-11T02:38:04Z"),
+//             "isDangerous": false,
+//             "accesslength": "1s",
+//             "path": "/ > /login"
+//         },
+//         {
+//             "_id": ObjectId("5cff146a9e6b2d3b44738af6"),
+//             "timestamp": ISODate("2019-06-11T02:38:06Z"),
+//             "isDangerous": false,
+//             "body": {
+//                 "login": "a",
+//                 "password": "s"
+//             },
+//             "accesslength": "2s",
+//             "path": "/login > /login"
+//         },
+//         {
+//             "_id": ObjectId("5cff146a9e6b2d3b44738af5"),
+//             "timestamp": ISODate("2019-06-11T02:38:06Z"),
+//             "isDangerous": false,
+//             "accesslength": "0s",
+//             "path": "/login > /userMng"
+//         },
+//         {
+//             "_id": ObjectId("5cff146a9e6b2d3b44738af4"),
+//             "timestamp": ISODate("2019-06-11T02:38:07Z"),
+//             "isDangerous": false,
+//             "accesslength": "1s",
+//             "path": "/userMng > /userMng/searchUser"
+//         },
+//         {
+//             "_id": ObjectId("5cff146a9e6b2d3b44738af3"),
+//             "timestamp": ISODate("2019-06-11T02:38:10Z"),
+//             "isDangerous": false,
+//             "body": {
+//                 "search_name": "a",
+//                 "search_login": "",
+//                 "search_mail": ""
+//             },
+//             "accesslength": "3s",
+//             "path": "/userMng/searchUser > /userMng/searchUser"
+//         },
+//         {
+//             "_id": ObjectId("5cff146a9e6b2d3b44738af2"),
+//             "timestamp": ISODate("2019-06-11T02:38:12Z"),
+//             "isDangerous": false,
+//             "body": {
+//                 "search_name": "",
+//                 "search_login": "",
+//                 "search_mail": "",
+//                 "id": "12",
+//                 "login": "a",
+//                 "name": "a",
+//                 "firstName": "s",
+//                 "tel": "s",
+//                 "mail": "s",
+//                 "lastConDate": "2019-06-03T15:00:00.000Z",
+//                 "createdDay": "2019-06-03T15:00:00.000Z",
+//                 "Update": "Update"
+//             },
+//             "accesslength": "2s",
+//             "path": "/userMng/searchUser > /userMng/updateUser"
+//         },
+//         {
+//             "_id": ObjectId("5cff146a9e6b2d3b44738af1"),
+//             "timestamp": ISODate("2019-06-11T02:38:37Z"),
+//             "isDangerous": true,
+//             "body": {
+//                 "id": "12",
+//                 "login": "<script>alert(\"pirated\")</script>",
+//                 "name": "a",
+//                 "firstName": "s",
+//                 "tel": "s",
+//                 "mail": "s",
+//                 "lastConDate": "2019-06-04",
+//                 "createdDay": "2019-06-04",
+//                 "Update": "Update"
+//             },
+//             "accesslength": "25s",
+//             "path": "/userMng/updateUser > /userMng/updateConfirmUser"
+//         },
+//         {
+//             "_id": ObjectId("5cff146a9e6b2d3b44738af0"),
+//             "timestamp": ISODate("2019-06-11T02:38:39Z"),
+//             "isDangerous": false,
+//             "accesslength": "2s",
+//             "path": "/userMng/updateConfirmUser > /userMng/createUser"
+//         },
+//         {
+//             "_id": ObjectId("5cff146a9e6b2d3b44738aef"),
+//             "timestamp": ISODate("2019-06-11T02:38:45Z"),
+//             "isDangerous": false,
+//             "accesslength": "6s",
+//             "path": "/userMng/createUser > /"
+//         }
+//     ],
+//     "user_id": "unknown",
+//     "summary": {
+//         "totaltime": "44s",
+//         "action": "undefined/ > / > /login > /login > /userMng > /userMng/searchUser > /userMng/searchUser > /userMng/updateUser > /userMng/updateConfirmUser > /userMng/createUser > /"
+//     },
+//     "__v": 0
+// }
