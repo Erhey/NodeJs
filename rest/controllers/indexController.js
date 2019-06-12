@@ -11,7 +11,9 @@ exports.multiconnectionsAt = (req, res) => {
   }
   else {
     trackingApi.getMultiConnectionAtTime(req.body.timestamp, result => {
-      res.send(result)
+      responseObj = {}
+      responseObj.nbrConnection = result
+      res.send(responseObj)
     })
   }
 }
@@ -19,12 +21,19 @@ exports.multiconnectionsRange = (req, res) => {
   if(!req.body.from) {
     res.send("please define from")
   }
-  if(!req.body.to) {
+  else if(!req.body.to) {
     res.send("please define to")
   }
-  else {
+  else if(!req.body.precision) {
     trackingApi.getMultiConnectionRange(req.body.from, req.body.to, 10, result => {
       res.send(result)
+    })
+  }
+  else {
+    trackingApi.getMultiConnectionRange(req.body.from, req.body.to, req.body.precision, result => {
+      responseObj = {}
+      responseObj.nbrConnection = result
+      res.send(responseObj)
     })
   }
 }

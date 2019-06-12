@@ -9,7 +9,21 @@ GET http://localhost:3000/trackingApi/CreateSuccess HTTP/1.1
 
 
 ###
-GET  http://localhost:3000/
+POST http://localhost:3000/multiconnectionsAt
+Content-Type: application/json
+
+{
+    "timestamp" : "2019-06-11T02:38:46Z"
+}
+
 ###
+POST http://localhost:3000/multiconnectionsRange
+Content-Type: application/json
+
+{
+    "from" : "2019-06-11T02:35:46Z",
+    "to" : "2019-06-11T02:45:46Z",
+    "precision" : 300
+}
 
 GET http://localhost:8080/req/?user=4

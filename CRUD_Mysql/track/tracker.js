@@ -88,15 +88,6 @@ class Tracker {
                 }
             }
         }
-        console.log(track)
-        // if (track.req !== undefined && track.cookies !== undefined) {
-        //     console.log("je passe3")
-        //     this.saveJourneyForUserReq(req, track.cookies['user_id'])
-        // } else {
-        // console.log("je passe4")
-        // this.saveJourneyForUserReq(req, "")
-        // }
-
     }
     /** 
      * Create a journey for a defined user using request collection
@@ -137,16 +128,16 @@ class Tracker {
             } else {
                 journeyJson.user_id = user_id
             }
-            journeyJson.from = tracks[0].timestamp
-            journeyJson.to = tracks[0].timestamp
+            summary.from = tracks[0].timestamp
+            summary.to = tracks[0].timestamp
             await tracks.forEach(track => {
                 // console.log(track)
                 let currentTrack = {}
-                if (journeyJson.from > track.timestamp) {
-                    journeyJson.from = track.timestamp
+                if (summary.from > track.timestamp) {
+                    summary.from = track.timestamp
                 }
-                if (journeyJson.to < track.timestamp) {
-                    journeyJson.to = track.timestamp
+                if (summary.to < track.timestamp) {
+                    summary.to = track.timestamp
                 }
                 currentTrack.timestamp = track.timestamp
                 currentTrack.isDangerous = track.isDangerous

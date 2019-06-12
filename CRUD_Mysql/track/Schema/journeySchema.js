@@ -14,6 +14,8 @@ const journeySchema = new Schema({
         body : Schema.Types.Mixed 
     }],
     summary : {
+        from : Date,
+        to : Date,
         action : String,
         totaltime : String
     }

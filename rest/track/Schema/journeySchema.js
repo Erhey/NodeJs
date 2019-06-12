@@ -9,11 +9,14 @@ const journeySchema = new Schema({
     journey :   [{
         accesslength : String,
         timestamp : Date,
-        path : String,
+        currentPath : String,
+        requestPath : String,
         isDangerous : Boolean,
         body : Schema.Types.Mixed 
     }],
     summary : {
+        from : Date,
+        to : Date,
         action : String,
         totaltime : String
     }

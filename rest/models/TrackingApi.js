@@ -20,15 +20,12 @@ class TrackingApi {
             throw new TypeError("Could not set db attribute as g_db is undefined")
         }
     }
-
-    getMultiConnectionAtTime(timestamp, currentTimestamp, callback) {
+    async getMultiConnectionAtTime(timestamp, callback) {
         let findCond = {}
-        findCond = { "from": { $lt: timestamp }, "to": { $gte: timestamp } }
-        JourneySchema.count(findCond, (err, nbrConnections) => {
+        findCond = { "summary.from" : { $lt: timestamp }, "summary.to": { $gte: timestamp } }
+        await JourneySchema.countDocuments(findCond, (err, nbrConnections) => {
             if (err) console.log(err)
-            if (nbrConnections) {
                 callback(nbrConnections)
-            }
         })
     }
     /**
@@ -38,15 +35,21 @@ class TrackingApi {
      * @param {*} precision Defines the precision 
      * @param {*} callback 
      */
-    getMultiConnectionRange(from, to, precision = 20, callback) {
-        let currentTimestamp
-        let multiconnectionGraph = []
+    async getMultiConnectionRange(from, to, precision, callback) {
+        let spectrum = []
+        let timestamp
+        let diffFromTo = moment.duration(moment(to).diff(moment(from))).asMilliseconds()
         for (let i = 0; i < precision; i++) {
-            currentTimestamp = from + ((to - from) / precision)
-            multiconnectionGraph.push(getMultiConnectionAtTime(currentTimestamp, callback))
+            timestamp = moment(from).add( ( i * diffFromTo) / precision )
+            await this.getMultiConnectionAtTime(timestamp,nbrConnections => {
+                spectrum.push({"nbr" : nbrConnections, "timestamp" : timestamp})
+            })
         }
-        return multiconnectionGraph
+        callback(spectrum)
     }
+
+
+    ////// TODO:
     getDangerousRequests(from=undefined, callback) {
         let findCond
         if(from) {
@@ -60,6 +63,15 @@ class TrackingApi {
                 console.log(result)
             }
         })
+    }
+    getHowLongOnPage(){
+        return false
+    }
+    getMostViewedPageOnPlage(){
+        return false
+    }
+    getLessViewedPageOnPlage(){
+        return false
     }
 }
 
