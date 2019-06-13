@@ -1,8 +1,10 @@
 const trackingApi = require("../models/TrackingApi")
+const tracker = require("../track/tracker")
 
 
 exports.index = function (req, res) {
-  res.send('test')
+  tracker.saveJourney(req)
+  res.send("journeySaved")
 };
 
 exports.multiconnectionsAt = (req, res) => {
@@ -38,6 +40,7 @@ exports.multiconnectionsRange = (req, res) => {
   }
 }
 exports.dangerousRequest = (req, res) => {
+  console.log("est")
   trackingApi.getDangerousRequests(req.body.from, result => {
     res.send(result)
   })

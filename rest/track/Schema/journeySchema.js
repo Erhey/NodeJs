@@ -10,7 +10,7 @@ const journeySchema = new Schema({
         accesslength : String,
         timestamp : Date,
         currentPath : String,
-        requestPath : String,
+        requestedPath : String,
         isDangerous : Boolean,
         body : Schema.Types.Mixed 
     }],

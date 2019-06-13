@@ -145,14 +145,14 @@ class Tracker {
                 currentTrack.body = track.req.body
                 if (previousTrack === "") {
                     currentTrack.currentPath = track.req.action
-                    currentTrack.requestPath = track.req.action
+                    currentTrack.requestedPath = track.req.action
                     previousTrack = track.req.action
-                    summary.action += track.req.action
+                    summary.action = track.req.action
                     previousTimestamp = currentTrack.timestamp
                 } else {
                     currentTrack.accesslength = ((track.timestamp - previousTimestamp) / 1000.0) + "s"
                     currentTrack.currentPath = previousTrack
-                    currentTrack.requestPath = track.req.action
+                    currentTrack.requestedPath = track.req.action
                     previousTrack = track.req.action
                     summary.action += " > " + track.req.action
                     summary.totaltime += (track.timestamp - previousTimestamp)

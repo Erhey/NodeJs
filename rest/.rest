@@ -26,4 +26,14 @@ Content-Type: application/json
     "precision" : 300
 }
 
+
+###
+POST http://localhost:3000/dangerousRequest
+Content-Type: application/json
+
+{
+    "from" : "2019-06-11T02:38:38Z"
+}
+
+
 GET http://localhost:8080/req/?user=4
