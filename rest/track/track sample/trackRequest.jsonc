@@ -14,6 +14,6 @@
 //     },
 //     "isDangerous": false,
 //     "link_id": ObjectId("5cff1435b25b1c3bc0c6dce9"),
-//     "journey": false,
+//     "journey": true,
 //     "__v": 0
 // }

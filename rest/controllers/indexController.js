@@ -46,3 +46,30 @@ exports.dangerousRequest = (req, res) => {
   })
 }
 
+exports.visitedPages = (req, res) => {
+  if(!req.body.from) {
+    res.send("please define from")
+  }
+  else if(!req.body.to) {
+    res.send("please define to")
+  }
+  let visitedPagesList
+  trackingApi.getPagesVisitedList(req.body.from, req.body.to, result => {
+      visitedPagesList = result
+      res.send(visitedPagesList)
+  })
+}
+
+exports.pagesInfo = (req, res) => {
+  if(!req.body.from) {
+    res.send("please define from")
+  }
+  else if(!req.body.to) {
+    res.send("please define to")
+  }
+  let pagesInfo
+  trackingApi.getPagesInfo(req.body.from, req.body.to, result => {
+      pagesInfo = result
+      res.send(pagesInfo)
+  })
+}
