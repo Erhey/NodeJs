@@ -7,7 +7,7 @@ const Schema = mongoose.Schema;
 const journeySchema = new Schema({
     user_id : String,
     journey :   [{
-        accesslength : String,
+        accesslength : Number,
         timestamp : Date,
         currentPath : String,
         requestedPath : String,

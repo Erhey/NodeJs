@@ -98,32 +98,42 @@ class TrackingApi {
         })
         callback(pageVisitedList)
     }
-    async getPagesInfo(from, to, callback) {
-        let unique_user = []
+    async getPagesInfo(from, to, page_name, callback) {
+        let uniqueVisitor = []
+        let visitors = 0
         let returnedValue = {}
         returnedValue.pages = {}
         
-        let findJourneyCond = { timestamp: { $gte: from, $lt: to } }
+        let findJourneyCond = { $or: [{"summary.from" : { $lt: to }}, {"summary.to": { $gte: from }} ] }
         await JourneySchema.find(findJourneyCond, async (err, results) => {
             if(err) {
                 console.log(err)
             } else {
-                console.log(results.length)
-                await results.forEach(result => {
-                    for(track in result.journey) {
+                // console.log(results)
+                await results.forEach(async result => {
+                    if(!uniqueVisitor.includes(result.user_id)) {
+                        uniqueVisitor.push(result.user_id)
+                    }
+                    visitors++
+                    await result.journey.forEach(track => {
                         if(moment(track.timestamp) > moment(from) && moment(track.timestamp) < moment(to)){
                             if(returnedValue.pages[track.currentPath] === undefined){
                                 returnedValue.pages[track.currentPath] = {}
                                 returnedValue.pages[track.currentPath].conn_length = {}
+                                returnedValue.pages[track.currentPath].conn_length.moy = 0
+                                returnedValue.pages[track.currentPath].conn_length.total_count = 0
                                 returnedValue.pages[track.currentPath].res = {}
+                                returnedValue.pages[track.currentPath].res.moy = 0
+                                returnedValue.pages[track.currentPath].res.total_count = 0
                                 returnedValue.pages[track.currentPath].req = {}
-                                returnedValue.pages[track.currentPath].req.all_count = 0
+                                returnedValue.pages[track.currentPath].req.danger = {}
+                                returnedValue.pages[track.currentPath].req.danger.total_count = 0
+                                returnedValue.pages[track.currentPath].req.danger.list = []
                             }
-                            if(track.isDangerous === true) {
-                                returnedValue.pages[track.currentPath].req.danger.count++
-                                returnedValue.pages[track.currentPath].req.danger.list.push(track.body)
+                            if(track.currentPath === "/") {
+                                console.log("je passe")
                             }
-                            returnedValue.pages[track.currentPath].req.req_count++
+                            returnedValue.pages[track.currentPath].conn_length.total_count++
                             // conn_length > min
                             if(returnedValue.pages[track.currentPath].conn_length.min === undefined || 
                                 returnedValue.pages[track.currentPath].conn_length.min > track.accesslength) {
@@ -132,30 +142,30 @@ class TrackingApi {
                             
                             // conn_length > moy
                             returnedValue.pages[track.currentPath].conn_length.moy += track.accesslength
-                            
-                            // conn_length > max
                             if(returnedValue.pages[track.currentPath].conn_length.max === undefined || 
-                                returnedValue.pages[track.currentPath].conn_length.max > track.accesslength) {
+                                returnedValue.pages[track.currentPath].conn_length.max < track.accesslength) {
                                     returnedValue.pages[track.currentPath].conn_length.max = track.accesslength
                             }
                         }
-                    }
-                    if(!unique_user.includes(results.cookies["user_id"])) {
-                        unique_user.push(results.cookies["user_id"])
-                    }
-                    returnedValue.pages[track.currentPath].conn_length.moy /= info.req.visite
+                    })
                 })
                 for (let page in returnedValue.pages) {
-                    returnedValue.pages[page].conn_length.moy /= returnedValue.pages[page].req.visite
+                    returnedValue.pages[page].conn_length.moy /= returnedValue.pages[page].conn_length.total_count
+                }
+                console.log(results)
+                returnedValue.summary = {
+                    visit_count : visitors,
+                    unique_visit_count : uniqueVisitor.length,
+                    from : from,
+                    to : to
                 }
             }
         })
-        console.log (returnedValue)
-        let userInfo = {}
+        // console.log (returnedValue)
         let findReqCond = { timestamp: { $gte: from, $lt: to } }
         let reqMapIdTimeStamp = {}
         let link_id_tab = []
-        let uniqueUser = []
+        let reqCount = 0
         await RequestSchema.find(findReqCond, async (err, requests) => {
             if(err) {
                 console.log(err)
@@ -163,6 +173,11 @@ class TrackingApi {
                 
                 // get request timestamps informations :
                 await requests.forEach(request => {
+                    reqCount++
+                    if(request.isDangerous === true) {
+                        returnedValue.pages[request.req.action].req.danger.total_count++
+                        returnedValue.pages[request.req.action].req.danger.list.push(request.req.body)
+                    }
                     link_id_tab.push(request.link_id)
                     reqMapIdTimeStamp[request.link_id] = 
                         {
@@ -170,14 +185,9 @@ class TrackingApi {
                             action : request.req.action 
                         }
                 })
-                // get visite number
-                userInfo.visite = requests.length
-                // get unique visite number
-                userInfo.unique_visite = uniqueUser.length
+                returnedValue.summary.request_count = reqCount
             }
         })
-        console.log(userInfo)
-        console.log(link_id_tab)
         let findResCond =  { link_id : { $in: link_id_tab } }
         let requestedPath
         await ResponseSchema.find(findResCond, async (err, responses) => {
@@ -191,29 +201,49 @@ class TrackingApi {
                             returnedValue.pages[requestedPath] = {}
                             returnedValue.pages[requestedPath].res = {}
                             returnedValue.pages[requestedPath].res.time = {}
+                            returnedValue.pages[requestedPath].res.moy = 0
+                            returnedValue.pages[requestedPath].res.total_count = 0
                         }
+                        returnedValue.pages[requestedPath].res.total_count++
                         // res > time > min 
-                        if(returnedValue.pages[requestedPath].res.time.min === undefined || 
-                            returnedValue.pages[requestedPath].res.time.min > reqMapIdTimeStamp[response.link_id].timestamp) {
-                                returnedValue.pages[requestedPath].res.time.min = reqMapIdTimeStamp[response.link_id].timestamp
+                        if(returnedValue.pages[requestedPath].res.min === undefined || 
+                            returnedValue.pages[requestedPath].res.min > (response.timestamp - reqMapIdTimeStamp[response.link_id].timestamp)) {
+                                returnedValue.pages[requestedPath].res.min = (response.timestamp - reqMapIdTimeStamp[response.link_id].timestamp)
                         }
-                        
                         // res > time > moy 
-                        returnedValue.pages[requestedPath].res.time.moy += reqMapIdTimeStamp[response.link_id].timestamp
-                        
+                        returnedValue.pages[requestedPath].res.moy += (response.timestamp - reqMapIdTimeStamp[response.link_id].timestamp)
                         // res > time > max 
-                        if(returnedValue.pages[requestedPath].res.time.max === undefined || 
-                            returnedValue.pages[requestedPath].res.time.max < reqMapIdTimeStamp[response.link_id].timestamp) {
-                                returnedValue.pages[requestedPath].res.time.max = reqMapIdTimeStamp[response.link_id].timestamp
+                        if(returnedValue.pages[requestedPath].res.max === undefined || 
+                            returnedValue.pages[requestedPath].res.max < (response.timestamp - reqMapIdTimeStamp[response.link_id].timestamp)) {
+                                returnedValue.pages[requestedPath].res.max = (response.timestamp - reqMapIdTimeStamp[response.link_id].timestamp)
                         }
-                        returnedValue.pages[requestedPath].res.time.max
+                        returnedValue.pages[requestedPath].res.max
+                        if(requestedPath === "/") {
+                            console.log(response.timestamp - reqMapIdTimeStamp[response.link_id].timestamp)
+                        }
                     }
                 })
-                // for (let page in returnedValue.pages) {
-                //     returnedValue.pages[page].res.time.moy /= returnedValue.pages[page].req.visite
-                // }
+                for (let page in returnedValue.pages) {
+                    returnedValue.pages[page].res.moy /= returnedValue.pages[page].res.total_count
+                }
             }
         })
+        // multi co
+        await this.getMultiConnectionRange(from, to, 300, results => {
+            returnedValue.summary.max_multiconnection = 0
+            results.forEach(result => {
+                if(returnedValue.summary.max_multiconnection < result.nbr) {
+                    returnedValue.summary.max_multiconnection = result.nbr
+                }
+            })
+        })
+
+        if (returnedValue.pages[page_name] === undefined){
+            callback(returnedValue)
+        } else {
+            returnedValue.pages[page_name].path = page_name
+            callback(returnedValue.pages[page_name])
+        }
     }
 
     getMostViewedPageOnPlage() {

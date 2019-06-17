@@ -1,28 +1,134 @@
-{
-    "user_id": "XXX",
-    "journey": [
-        {
-            "timestamp" : "2019-05-03 12:23:12",
-            "path": "/login > /index",
-            "body": {
-                "name": "bobby",
-                "firstname": "lemoche"
-            }
-        },
-        {
-            "timestamp" : "2019-05-03 12:23:12",
-            "path": "/index > /search",
-            "body": {}
-
-        },
-        {
-            "timestamp" : "2019-05-03 12:23:12",
-            "path": "/search > /play",
-            "body": {
-                "game_type": "action",
-                "game_name": "tarzan"
-            }
-        }
-    ],
-    "summary" : "/login > /index > /search > /play"
-}
+// {
+//     "_id": ObjectId("5d0201dfec41104f3c5ad542"),
+//     "journey": [
+//         {
+//             "_id": ObjectId("5d0201dfec41104f3c5ad54d"),
+//             "timestamp": ISODate("2019-06-11T02:38:01Z"),
+//             "isDangerous": false,
+//             "currentPath": "/",
+//             "requestedPath": "/"
+//         },
+//         {
+//             "_id": ObjectId("5d0201dfec41104f3c5ad54c"),
+//             "timestamp": ISODate("2019-06-11T02:38:03Z"),
+//             "isDangerous": false,
+//             "accesslength": "2s",
+//             "currentPath": "/",
+//             "requestedPath": "/"
+//         },
+//         {
+//             "_id": ObjectId("5d0201dfec41104f3c5ad54b"),
+//             "timestamp": ISODate("2019-06-11T02:38:04Z"),
+//             "isDangerous": false,
+//             "accesslength": "1s",
+//             "currentPath": "/",
+//             "requestedPath": "/login"
+//         },
+//         {
+//             "_id": ObjectId("5d0201dfec41104f3c5ad54a"),
+//             "timestamp": ISODate("2019-06-11T02:38:06Z"),
+//             "isDangerous": false,
+//             "body": {
+//                 "login": "a",
+//                 "password": "s"
+//             },
+//             "accesslength": "2s",
+//             "currentPath": "/login",
+//             "requestedPath": "/login"
+//         },
+//         {
+//             "_id": ObjectId("5d0201dfec41104f3c5ad549"),
+//             "timestamp": ISODate("2019-06-11T02:38:06Z"),
+//             "isDangerous": false,
+//             "accesslength": "0s",
+//             "currentPath": "/login",
+//             "requestedPath": "/userMng"
+//         },
+//         {
+//             "_id": ObjectId("5d0201dfec41104f3c5ad548"),
+//             "timestamp": ISODate("2019-06-11T02:38:07Z"),
+//             "isDangerous": false,
+//             "accesslength": "1s",
+//             "currentPath": "/userMng",
+//             "requestedPath": "/userMng/searchUser"
+//         },
+//         {
+//             "_id": ObjectId("5d0201dfec41104f3c5ad547"),
+//             "timestamp": ISODate("2019-06-11T02:38:10Z"),
+//             "isDangerous": false,
+//             "body": {
+//                 "search_name": "a",
+//                 "search_login": "",
+//                 "search_mail": ""
+//             },
+//             "accesslength": "3s",
+//             "currentPath": "/userMng/searchUser",
+//             "requestedPath": "/userMng/searchUser"
+//         },
+//         {
+//             "_id": ObjectId("5d0201dfec41104f3c5ad546"),
+//             "timestamp": ISODate("2019-06-11T02:38:12Z"),
+//             "isDangerous": false,
+//             "body": {
+//                 "search_name": "",
+//                 "search_login": "",
+//                 "search_mail": "",
+//                 "id": "12",
+//                 "login": "a",
+//                 "name": "a",
+//                 "firstName": "s",
+//                 "tel": "s",
+//                 "mail": "s",
+//                 "lastConDate": "2019-06-03T15:00:00.000Z",
+//                 "createdDay": "2019-06-03T15:00:00.000Z",
+//                 "Update": "Update"
+//             },
+//             "accesslength": "2s",
+//             "currentPath": "/userMng/searchUser",
+//             "requestedPath": "/userMng/updateUser"
+//         },
+//         {
+//             "_id": ObjectId("5d0201dfec41104f3c5ad545"),
+//             "timestamp": ISODate("2019-06-11T02:38:37Z"),
+//             "isDangerous": true,
+//             "body": {
+//                 "id": "12",
+//                 "login": "<script>alert(\"pirated\")</script>",
+//                 "name": "a",
+//                 "firstName": "s",
+//                 "tel": "s",
+//                 "mail": "s",
+//                 "lastConDate": "2019-06-04",
+//                 "createdDay": "2019-06-04",
+//                 "Update": "Update"
+//             },
+//             "accesslength": "25s",
+//             "currentPath": "/userMng/updateUser",
+//             "requestedPath": "/userMng/updateConfirmUser"
+//         },
+//         {
+//             "_id": ObjectId("5d0201dfec41104f3c5ad544"),
+//             "timestamp": ISODate("2019-06-11T02:38:39Z"),
+//             "isDangerous": false,
+//             "accesslength": "2s",
+//             "currentPath": "/userMng/updateConfirmUser",
+//             "requestedPath": "/userMng/createUser"
+//         },
+//         {
+//             "_id": ObjectId("5d0201dfec41104f3c5ad543"),
+//             "timestamp": ISODate("2019-06-11T02:38:45Z"),
+//             "isDangerous": false,
+//             "accesslength": "6s",
+//             "currentPath": "/userMng/createUser",
+//             "requestedPath": "/"
+//         }
+//     ],
+//     "user_id": "unknown",
+//     "summary": {
+//         "totaltime": "44s",
+//         "from": ISODate("2019-06-11T02:38:01Z"),
+//         "to": ISODate("2019-06-11T02:38:45Z"),
+//         "action": "/ > / > /login > /login > /userMng > /userMng/searchUser > /userMng/searchUser > /userMng/updateUser > /userMng/updateConfirmUser > /userMng/createUser > /"
+//     },
+//     "__v": 0
+// }

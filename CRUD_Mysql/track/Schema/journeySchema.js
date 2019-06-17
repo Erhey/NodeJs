@@ -7,9 +7,10 @@ const Schema = mongoose.Schema;
 const journeySchema = new Schema({
     user_id : String,
     journey :   [{
-        accesslength : String,
+        accesslength : Number,
         timestamp : Date,
-        path : String,
+        currentPath : String,
+        requestedPath : String,
         isDangerous : Boolean,
         body : Schema.Types.Mixed 
     }],

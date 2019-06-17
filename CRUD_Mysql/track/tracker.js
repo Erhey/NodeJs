@@ -1,7 +1,7 @@
 // Use moment to get current timestamp
 const moment = require("moment")
 const colors = require("colors")
-
+const uuidv1 = require('uuid/v1');
 // Getting Request and Response Schema
 const RequestSchema = require("./Schema/requestSchema")
 const ResponseSchema = require("./Schema/responseSchema")
@@ -40,7 +40,15 @@ class Tracker {
         if ((moment().valueOf() - this.lifeTime) > 1200000) { // 20 minutes
             // this.saveJourney(req)
         }
-        this.saveJourney(req)
+        // this.saveJourney(req)
+        // console.log(req.cookies)
+        // if(req.cookies.user_id === undefined){
+        //     this.userIdentifier = uuidv1()
+        //     res.cookie('user_id',this.userIdentifier)
+        // } else {
+        //     this.userIdentifier = req.cookies.user_id
+        // }
+	    // console.log(this.userIdentifier)
         // this.request(req)
         // res.on('finish', () => {
         //     this.response(res)
@@ -56,16 +64,17 @@ class Tracker {
         let cpt = 0
         let noMoreTracks = false
         let timestamp = moment().valueOf()
-        console.log(moment().valueOf() - timestamp)
         // while (!noMoreTracks && (moment().valueOf() - timestamp < 2000)) { // 30s timeout
         // cpt++
         // console.log( moment().valueOf() - timestamp)
+        console.log(req.connection.remoteAddress)
         let track = await RequestSchema.findOne({ 'req.remoteAddress': req.connection.remoteAddress, journey: false }, (err, track) => {
             console.log("test")
             if (err) {
                 console.log(err)
             }
             if (track) {
+                console.log(track)
                 return track
             }
         })
@@ -131,39 +140,37 @@ class Tracker {
             summary.from = tracks[0].timestamp
             summary.to = tracks[0].timestamp
             await tracks.forEach(track => {
-                // console.log(track)
                 let currentTrack = {}
+                // console.log(track)
                 if (summary.from > track.timestamp) {
                     summary.from = track.timestamp
                 }
                 if (summary.to < track.timestamp) {
                     summary.to = track.timestamp
                 }
-                currentTrack.timestamp = track.timestamp
                 currentTrack.isDangerous = track.isDangerous
-                console.log(currentTrack.timestamp)
                 currentTrack.body = track.req.body
                 if (previousTrack === "") {
-                    currentTrack.path = track.req.action
                     previousTrack = track.req.action
-                    summary.action += track.req.action
-                    previousTimestamp = currentTrack.timestamp
+                    summary.action = track.req.action
+                    previousTimestamp = track.timestamp
                 } else {
-                    currentTrack.accesslength = ((track.timestamp - previousTimestamp) / 1000.0) + "s"
-                    currentTrack.path = previousTrack + " > " + track.req.action
+                    currentTrack.timestamp = previousTimestamp
+                    currentTrack.accesslength = track.timestamp - previousTimestamp
+                    currentTrack.currentPath = previousTrack
+                    currentTrack.requestedPath = track.req.action
                     previousTrack = track.req.action
                     summary.action += " > " + track.req.action
                     summary.totaltime += (track.timestamp - previousTimestamp)
-                    console.log(summary.totaltime)
-                    previousTimestamp = currentTrack.timestamp
+                    previousTimestamp = track.timestamp
+                    journeyJson.journey.push(currentTrack)
                 }
-                journeyJson.journey.push(currentTrack)
                 track.journey = true
                 track.save(err => {
                     if (err) console.log(err)
                 })
             })
-            summary.totaltime = (summary.totaltime / 1000.0) + "s"
+            summary.totaltime = summary.totaltime
             journeyJson.summary = summary
             console.log(journeyJson)
             return journeyJson
@@ -193,7 +200,7 @@ class Tracker {
     }
     createRequestTrack(req) {
         let jsonRequest = {}
-        jsonRequest.timestamp = moment().format()
+        jsonRequest.timestamp = moment().format("YYYY-MM-DDTHH:mm:ss.SSSZ")
         this.lifeTime = moment().valueOf()
         if (req.cookies !== undefined) {
             this.cookies = req.cookies
@@ -206,7 +213,7 @@ class Tracker {
         jsonRequest.req.action = req.path
         jsonRequest.req.method = req.method
         jsonRequest.req.remoteAddress = req.connection.remoteAddress
-        if(this.isDangerous(req.body)){
+        if (this.isDangerous(req.body)) {
             jsonRequest.isDangerous = true
         } else {
             jsonRequest.isDangerous = false
@@ -226,18 +233,18 @@ class Tracker {
             }
         })
     }
-    
-    isDangerous(object){
+
+    isDangerous(object) {
         for (const prop in object) {
-            if(typeof(object[prop]) === "object"){
-                if(isDangerous(object[prop])){
+            if (typeof (object[prop]) === "object") {
+                if (isDangerous(object[prop])) {
                     return true
                 }
             } else {
-                if(typeof(object[prop]) === "string"){
+                if (typeof (object[prop]) === "string") {
                     var clean = sanitizeHtml(object[prop]);
                     console.log("Clean : " + clean + "   -    origin : " + object[prop])
-                    if(clean !== object[prop]) {
+                    if (clean !== object[prop]) {
                         return true
                     }
                 }
@@ -254,7 +261,7 @@ class Tracker {
     }
     createResponseTrack(res) {
         let jsonResponse = {}
-        jsonResponse.timestamp = moment().format()
+        jsonResponse.timestamp = moment().format("YYYY-MM-DDTHH:mm:ss.SSSZ")
         if (res.cookies !== undefined) {
             this.cookies = res.cookies
             jsonResponse.cookies = res.cookies

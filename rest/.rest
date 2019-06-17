@@ -53,7 +53,10 @@ POST http://localhost:3000/pagesInfo
 Content-Type: application/json
 
 {
-    "from" : "2019-06-11T02:35:46Z",
-    "to" : "2019-06-11T02:45:46Z"
+    "from" : "2019-06-17T06:35:10.103Z",
+    "to" : "2019-06-17T06:40:56.850Z"
 }
 
+
+###
+GET http://localhost:3000

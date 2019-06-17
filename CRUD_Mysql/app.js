@@ -8,7 +8,7 @@ var indexRouter = require('./routes/index');
 var userMngRouter = require('./routes/userMng');
 const tracker = require("./track/tracker")
 
-
+console.log("je psasse")
 var app = express();
 // Gestion du tracking
 // view engine setup
