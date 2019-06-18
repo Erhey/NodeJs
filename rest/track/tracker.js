@@ -59,15 +59,7 @@ class Tracker {
      * @param {*} req Request
      */
     async saveJourney(req) {
-        console.log(1)
-        let cpt = 0
-        let noMoreTracks = false
-        let timestamp = moment().valueOf()
-        // while (!noMoreTracks && (moment().valueOf() - timestamp < 2000)) { // 30s timeout
-        // cpt++
-        // console.log( moment().valueOf() - timestamp)
-        console.log(req.connection.remoteAddress)
-        let track = await RequestSchema.findOne({/* 'req.remoteAddress': req.connection.remoteAddress,*/ journey: false }, (err, track) => {
+        let track = await RequestSchema.findOne({ journey: false }, (err, track) => {
             console.log("test")
             if (err) {
                 console.log(err)
@@ -77,9 +69,7 @@ class Tracker {
                 return track
             }
         })
-        // }
         if (track) {
-            console.log("je passe2")
             if (track.req !== undefined && track.cookies !== undefined) {
                 try {
                     let journeyJson = await this.createJourneyForUserReq(req, track.cookies['user_id'])
@@ -113,59 +103,67 @@ class Tracker {
         let previousTimestamp = ""
         journeyJson.journey = []
         if (user_id === "") {
-            findCond = {/* 'req.remoteAddress': req.connection.remoteAddress,*/ journey: false }
+            findCond = { 'cookies.user_id' : {$exists: false}, journey: false }
         } else {
-            findCond = {/* 'req.remoteAddress': req.connection.remoteAddress,*/ journey: false, 'cookies.user_id': user_id }
+            findCond = { 'cookies.user_id': user_id,  journey: false }
         }
         try {
-            let tracks = await RequestSchema.find(findCond,
-                [],
-                {
-                    sort: {
-                        timestamp: 1 //Sort by Date Added DESC
-                    }
-                }, (err, tracks) => {
-                    if (err) console.log(err)
-                    if (!tracks) {
-                    } else {
-                        return tracks
-                    }
-                })
+            let requests = await RequestSchema.find(findCond,[],{ sort: { timestamp: 1 } }, (err, requests) => {
+                if (err) console.log(err)
+                if (!requests) {
+                } else {
+                    return requests
+                }
+            })
+            let findResCond =  { link_id : { $in: link_id_tab } }
+            let responses = await ResponseSchema.find(findResCond, async (err, responses) => {
+                if(err) {
+                    console.log(err)
+                } else {
+                    return responses
+                }
+            })
             if (user_id === '') {
-                journeyJson.user_id = "unknown"
+                summary.user_id = "unknown"
             } else {
-                journeyJson.user_id = user_id
+                summary.user_id = user_id
             }
-            summary.from = tracks[0].timestamp
-            summary.to = tracks[0].timestamp
-            await tracks.forEach(track => {
+            summary.from = requests[0].timestamp
+            summary.to = requests[0].timestamp
+            await requests.forEach(async request => {
+                let response = await this.getLinkedResponse(responses, request.link_id)
                 let currentTrack = {}
                 // console.log(track)
-                if (summary.from > track.timestamp) {
-                    summary.from = track.timestamp
+                if (summary.from > request.timestamp) {
+                    summary.from = request.timestamp
                 }
-                if (summary.to < track.timestamp) {
-                    summary.to = track.timestamp
+                if (summary.to < request.timestamp) {
+                    summary.to = request.timestamp
                 }
-                currentTrack.isDangerous = track.isDangerous
-                currentTrack.body = track.req.body
+                currentTrack.isDangerous = request.isDangerous
+                currentTrack.body = request.req.body
                 if (previousTrack === "") {
-                    previousTrack = track.req.action
-                    summary.action = track.req.action
-                    previousTimestamp = track.timestamp
+                    previousTrack = request.req.action
+                    summary.action = request.req.action
+                    previousTimestamp = request.timestamp
                 } else {
                     currentTrack.timestamp = previousTimestamp
-                    currentTrack.accesslength = track.timestamp - previousTimestamp
+                    currentTrack.accesslength = request.timestamp - previousTimestamp
                     currentTrack.currentPath = previousTrack
-                    currentTrack.requestedPath = track.req.action
-                    previousTrack = track.req.action
-                    summary.action += " > " + track.req.action
-                    summary.totaltime += (track.timestamp - previousTimestamp)
-                    previousTimestamp = track.timestamp
+                    currentTrack.requestedPath = request.req.action
+                    previousTrack = request.req.action
+                    summary.action += " > " + request.req.action
+                    summary.totaltime += (request.timestamp - previousTimestamp)
+                    previousTimestamp = request.timestamp
                     journeyJson.journey.push(currentTrack)
                 }
-                track.journey = true
-                track.save(err => {
+                currentTrack.reqbody = request.body
+                currentTrack.res.cookies = response.cookies
+                currentTrack.res.error = response.error
+                currentTrack.res.locals = response.locals
+                currentTrack.res.restime = response.timestamp - response.timestamp
+                request.journey = true
+                request.save(err => {
                     if (err) console.log(err)
                 })
             })
@@ -177,6 +175,14 @@ class Tracker {
             console.log(e)
         }
     }
+    async getLinkedResponse(responses, link_id){
+        await responses.forEach(response => {
+            if(response["link_id"]){
+                return response
+            }
+        })
+    }
+
     async insertJourney(journeyJson) {
         JourneySchema.insertMany(journeyJson, (err, result) => {
             if (err) {

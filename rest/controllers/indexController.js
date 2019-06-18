@@ -68,7 +68,7 @@ exports.pagesInfo = (req, res) => {
     res.send("please define to")
   }
   let pagesInfo
-  trackingApi.getPagesInfo(req.body.from, req.body.to, "/userMng", result => {
+  trackingApi.getPagesInfo(req.body.from, req.body.to, "", result => {
       pagesInfo = result
       res.send(pagesInfo)
   })

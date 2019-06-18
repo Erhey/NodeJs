@@ -103,8 +103,7 @@ class TrackingApi {
         let visitors = 0
         let returnedValue = {}
         returnedValue.pages = {}
-        
-        let findJourneyCond = { $or: [{"summary.from" : { $lt: to }}, {"summary.to": { $gte: from }} ] }
+        let findJourneyCond = { $and: [{"summary.to" : { $not: { $lt: from }}}, {"summary.from": {$not :{ $gte: to }}} ] }
         await JourneySchema.find(findJourneyCond, async (err, results) => {
             if(err) {
                 console.log(err)
@@ -170,9 +169,9 @@ class TrackingApi {
             if(err) {
                 console.log(err)
             } else {
-                
                 // get request timestamps informations :
                 await requests.forEach(request => {
+                    console.log(request.timestamp)
                     reqCount++
                     if(request.isDangerous === true) {
                         returnedValue.pages[request.req.action].req.danger.total_count++

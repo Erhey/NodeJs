@@ -5,16 +5,22 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const journeySchema = new Schema({
-    user_id : String,
     journey :   [{
         accesslength : Number,
         timestamp : Date,
         currentPath : String,
         requestedPath : String,
         isDangerous : Boolean,
-        body : Schema.Types.Mixed 
+        reqbody :Schema.Types.Mixed,
+        res : {
+            cookies : Schema.Types.Mixed,
+            error : Schema.Types.Mixed,
+            locals : Schema.Types.Mixed,
+            restime : Number
+        }
     }],
     summary : {
+        user_id : String,
         from : Date,
         to : Date,
         action : String,

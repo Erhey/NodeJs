@@ -42,17 +42,17 @@ class Tracker {
         }
         // this.saveJourney(req)
         // console.log(req.cookies)
-        // if(req.cookies.user_id === undefined){
-        //     this.userIdentifier = uuidv1()
-        //     res.cookie('user_id',this.userIdentifier)
-        // } else {
-        //     this.userIdentifier = req.cookies.user_id
-        // }
+        if(req.cookies.user_id === undefined){
+            this.userIdentifier = uuidv1()
+            res.cookie('user_id',this.userIdentifier)
+        } else {
+            this.userIdentifier = req.cookies.user_id
+        }
 	    // console.log(this.userIdentifier)
-        // this.request(req)
-        // res.on('finish', () => {
-        //     this.response(res)
-        // })
+        this.request(req)
+        res.on('finish', () => {
+            this.response(res)
+        })
         next()
     }
     /**
