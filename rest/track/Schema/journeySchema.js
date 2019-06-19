@@ -20,6 +20,9 @@ const journeySchema = new Schema({
         }
     }],
     summary : {
+        total_req : Number,
+        isDanger_req : Number,
+        isError_req : Number,
         user_id : String,
         from : Date,
         to : Date,

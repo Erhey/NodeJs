@@ -3,7 +3,7 @@ const tracker = require("../track/tracker")
 
 
 exports.index = function (req, res) {
-  tracker.saveJourney(req)
+  tracker.saveUserJourney(req)
   res.send("journeySaved")
 };
 
