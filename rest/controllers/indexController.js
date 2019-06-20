@@ -1,9 +1,12 @@
 const trackingApi = require("../models/TrackingApi")
 const tracker = require("../track/tracker")
+const uuidv1 = require('uuid/v1')
 
 
 exports.index = function (req, res) {
-  tracker.saveUserJourney(req)
+  // Ecrire a la main l'id de l'utilisateur ici :
+  
+  tracker.saveUserJourney("645fbad0-9238-11e9-b1ae-55b312a8c1f8")
   res.send("journeySaved")
 };
 

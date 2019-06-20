@@ -82,10 +82,10 @@ class Tracker {
      * 
      * @param {*} req Request object picked up from server 
      */
-    async saveUserJourney(req) {
-        if (req !== undefined && req.cookies !== undefined && req.cookies.user_id !== undefined) {
+    async saveUserJourney(user_id) {
+        if (user_id !== undefined) {
             try {
-                let journeyJson = await this.createJourneyForUserId(req.cookies.user_id)
+                let journeyJson = await this.createJourneyForUserId(user_id)
                 await this.insertJourney(journeyJson)
             } catch (e) {
                 console.log(e)
@@ -193,63 +193,66 @@ class Tracker {
 
             // loop all tracks and create journeys
             await tracks.forEach(async track => {
-                // Create new currentTrack HAS TO BE NEW !
-                let currentTrack = {}
-                currentTrack.res = {}
-                currentTrack.req = {}
+                if(track.reqTrack.req.action !== "/favicon.ico"){
+                    // Create new currentTrack HAS TO BE NEW !
+                    let currentTrack = {}
+                    currentTrack.res = {}
+                    currentTrack.req = {}
 
-                // update summary.from/to
-                if (summary.from > track.reqTrack.timestamp) {
-                    summary.from = track.reqTrack.timestamp
-                }
-                if (summary.to < track.reqTrack.timestamp) {
-                    summary.to = track.reqTrack.timestamp
-                }
+                    // update summary.from/to
+                    if (summary.from > track.reqTrack.timestamp) {
+                        summary.from = track.reqTrack.timestamp
+                    }
+                    if (summary.to < track.reqTrack.timestamp) {
+                        summary.to = track.reqTrack.timestamp
+                    }
 
-                // count dangerous requests
-                if(track.reqTrack.isDangerous){
-                    summary.isDanger_req ++
-                }
+                    // count dangerous requests
+                    if(track.reqTrack.isDangerous){
+                        summary.isDanger_req ++
+                    }
 
-                // count error responses
-                if(track.resTrack.error){
-                    summary.isError_req ++
-                }
+                    // count error responses
+                    if(track.resTrack.error){
+                        summary.isError_req ++
+                    }
                 
-                if (previousAction === "") {
-                    previousAction = track.reqTrack.req.action
-                    summary.action = track.reqTrack.req.action
-                    previousTimestamp = track.reqTrack.timestamp
-                    currentTrack.isDangerous = track.reqTrack.isDangerous
-                } else {
-                    // get Previous timestamp
-                    currentTrack.timestamp = previousTimestamp
-                    // update previous timeStamp
-                    previousTimestamp = track.reqTrack.timestamp
-                    // get accesslength
-                    currentTrack.accesslength = track.reqTrack.timestamp - previousTimestamp
-                    // get previous action
-                    currentTrack.currentPath = previousAction
-                    // update previous action
-                    previousAction = track.reqTrack.req.action
-                    // get next action
-                    currentTrack.requestedPath = track.reqTrack.req.action
-                    // get request body
-                    currentTrack.reqbody = track.reqTrack.req.body
-                    // get response cookie
-                    currentTrack.res.cookies = track.resTrack.cookies
-                    // get response error if exists
-                    currentTrack.res.error = track.resTrack.error
-                    // get response locals = informations used to show page
-                    currentTrack.res.locals = track.resTrack.locals
-                    // get response time = time between request and response
-                    currentTrack.res.restime = track.resTrack.timestamp - track.reqTrack.timestamp
-                    // add action summary
-                    summary.action += " > " + track.reqTrack.req.action
-                    // add time to get total time
-                    summary.totaltime += (track.reqTrack.timestamp - previousTimestamp)
-                    // add journey to journey json object
-                    journeyJson.journey.push(currentTrack)
+
+                    if (previousAction === "") {
+                        previousAction = track.reqTrack.req.action
+                        summary.action = track.reqTrack.req.action
+                        previousTimestamp = track.reqTrack.timestamp
+                        currentTrack.isDangerous = track.reqTrack.isDangerous
+                    } else {
+                        // get Previous timestamp
+                        currentTrack.timestamp = previousTimestamp
+                        // get accesslength
+                        currentTrack.accesslength = track.reqTrack.timestamp - previousTimestamp
+                        // update previous timeStamp
+                        previousTimestamp = track.reqTrack.timestamp
+                        // get previous action
+                        currentTrack.currentPath = previousAction
+                        // update previous action
+                        previousAction = track.reqTrack.req.action
+                        // get next action
+                        currentTrack.requestedPath = track.reqTrack.req.action
+                        // get request body
+                        currentTrack.req = track.reqTrack.req
+                        // get response cookie
+                        currentTrack.res.cookies = track.resTrack.cookies
+                        // get response error if exists
+                        currentTrack.res.error = track.resTrack.error
+                        // get response locals = informations used to show page
+                        currentTrack.res.locals = track.resTrack.locals
+                        // get response time = time between request and response
+                        currentTrack.res.restime = track.resTrack.timestamp - track.reqTrack.timestamp
+                        // add action summary
+                        summary.action += " > " + track.reqTrack.req.action
+                        // add time to get total time
+                        summary.totaltime += (track.reqTrack.timestamp - previousTimestamp)
+                        // add journey to journey json object
+                        journeyJson.journey.push(currentTrack)
+                    }
                 }
                 // update reqTrack to inform that he got registered
                 track.reqTrack.journey = true

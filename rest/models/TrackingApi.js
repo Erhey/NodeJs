@@ -100,6 +100,7 @@ class TrackingApi {
     }
     async getPagesInfo(from, to, page_name, callback) {
         let uniqueVisitor = []
+        let reqCount = 0
         let visitors = 0
         let returnedValue = {}
         returnedValue.pages = {}
@@ -120,113 +121,127 @@ class TrackingApi {
                                 returnedValue.pages[track.currentPath] = {}
                                 returnedValue.pages[track.currentPath].conn_length = {}
                                 returnedValue.pages[track.currentPath].conn_length.moy = 0
-                                returnedValue.pages[track.currentPath].conn_length.total_count = 0
                                 returnedValue.pages[track.currentPath].res = {}
                                 returnedValue.pages[track.currentPath].res.moy = 0
-                                returnedValue.pages[track.currentPath].res.total_count = 0
                                 returnedValue.pages[track.currentPath].req = {}
+                                returnedValue.pages[track.currentPath].req.total_count = 0
                                 returnedValue.pages[track.currentPath].req.danger = {}
                                 returnedValue.pages[track.currentPath].req.danger.total_count = 0
                                 returnedValue.pages[track.currentPath].req.danger.list = []
                             }
-                            if(track.currentPath === "/") {
-                                console.log("je passe")
-                            }
-                            returnedValue.pages[track.currentPath].conn_length.total_count++
+                            returnedValue.pages[track.currentPath].req.total_count++
+                            reqCount++
                             // conn_length > min
                             if(returnedValue.pages[track.currentPath].conn_length.min === undefined || 
                                 returnedValue.pages[track.currentPath].conn_length.min > track.accesslength) {
                                     returnedValue.pages[track.currentPath].conn_length.min = track.accesslength
                             }
-                            
                             // conn_length > moy
                             returnedValue.pages[track.currentPath].conn_length.moy += track.accesslength
                             if(returnedValue.pages[track.currentPath].conn_length.max === undefined || 
                                 returnedValue.pages[track.currentPath].conn_length.max < track.accesslength) {
                                     returnedValue.pages[track.currentPath].conn_length.max = track.accesslength
                             }
+                            // res > time > min 
+                            if(returnedValue.pages[track.currentPath].res.min === undefined || 
+                                returnedValue.pages[track.currentPath].res.min > track.res.restime) {
+                                    returnedValue.pages[track.currentPath].res.min = track.res.restime
+                            }
+                            // res > time > moy 
+                            returnedValue.pages[track.currentPath].res.moy += track.res.restime
+                            // res > time > max 
+                            if(returnedValue.pages[track.currentPath].res.max === undefined || 
+                                returnedValue.pages[track.currentPath].res.max < track.res.restime) {
+                                    returnedValue.pages[track.currentPath].res.max = track.res.restime
+                            }
+                            returnedValue.pages[track.currentPath].res.max
+                            if(track.isDangerous){
+                                returnedValue.pages[track.currentPath].req.danger.total_count++
+                                returnedValue.pages[track.currentPath].req.danger.list.push(track.req.body)
+                            }
                         }
                     })
                 })
                 for (let page in returnedValue.pages) {
-                    returnedValue.pages[page].conn_length.moy /= returnedValue.pages[page].conn_length.total_count
+                    returnedValue.pages[page].conn_length.moy /= returnedValue.pages[page].req.total_count
                 }
-                console.log(results)
+                for (let page in returnedValue.pages) {
+                    returnedValue.pages[page].res.moy /= returnedValue.pages[page].req.total_count
+                }
                 returnedValue.summary = {
                     visit_count : visitors,
                     unique_visit_count : uniqueVisitor.length,
                     from : from,
-                    to : to
+                    to : to,
+                    request_count: reqCount
                 }
             }
         })
-        // console.log (returnedValue)
-        let findReqCond = { timestamp: { $gte: from, $lt: to } }
-        let reqMapIdTimeStamp = {}
-        let link_id_tab = []
-        let reqCount = 0
-        await RequestSchema.find(findReqCond, async (err, requests) => {
-            if(err) {
-                console.log(err)
-            } else {
-                // get request timestamps informations :
-                await requests.forEach(request => {
-                    console.log(request.timestamp)
-                    reqCount++
-                    if(request.isDangerous === true) {
-                        returnedValue.pages[request.req.action].req.danger.total_count++
-                        returnedValue.pages[request.req.action].req.danger.list.push(request.req.body)
-                    }
-                    link_id_tab.push(request.link_id)
-                    reqMapIdTimeStamp[request.link_id] = 
-                        {
-                            timestamp : request.timestamp, 
-                            action : request.req.action 
-                        }
-                })
-                returnedValue.summary.request_count = reqCount
-            }
-        })
-        let findResCond =  { link_id : { $in: link_id_tab } }
-        let requestedPath
-        await ResponseSchema.find(findResCond, async (err, responses) => {
-            if(err) {
-                console.log(err)
-            } else {
-                await responses.forEach(response => {
-                    if(reqMapIdTimeStamp[response.link_id] !== undefined) {
-                        requestedPath = reqMapIdTimeStamp[response.link_id].action
-                        if(returnedValue.pages[requestedPath] === undefined){
-                            returnedValue.pages[requestedPath] = {}
-                            returnedValue.pages[requestedPath].res = {}
-                            returnedValue.pages[requestedPath].res.time = {}
-                            returnedValue.pages[requestedPath].res.moy = 0
-                            returnedValue.pages[requestedPath].res.total_count = 0
-                        }
-                        returnedValue.pages[requestedPath].res.total_count++
-                        // res > time > min 
-                        if(returnedValue.pages[requestedPath].res.min === undefined || 
-                            returnedValue.pages[requestedPath].res.min > (response.timestamp - reqMapIdTimeStamp[response.link_id].timestamp)) {
-                                returnedValue.pages[requestedPath].res.min = (response.timestamp - reqMapIdTimeStamp[response.link_id].timestamp)
-                        }
-                        // res > time > moy 
-                        returnedValue.pages[requestedPath].res.moy += (response.timestamp - reqMapIdTimeStamp[response.link_id].timestamp)
-                        // res > time > max 
-                        if(returnedValue.pages[requestedPath].res.max === undefined || 
-                            returnedValue.pages[requestedPath].res.max < (response.timestamp - reqMapIdTimeStamp[response.link_id].timestamp)) {
-                                returnedValue.pages[requestedPath].res.max = (response.timestamp - reqMapIdTimeStamp[response.link_id].timestamp)
-                        }
-                        returnedValue.pages[requestedPath].res.max
-                        if(requestedPath === "/") {
-                            console.log(response.timestamp - reqMapIdTimeStamp[response.link_id].timestamp)
-                        }
-                    }
-                })
-                for (let page in returnedValue.pages) {
-                    returnedValue.pages[page].res.moy /= returnedValue.pages[page].res.total_count
-                }
-            }
-        })
+        console.log(returnedValue)
+        // // console.log (returnedValue)
+        // let findReqCond = { timestamp: { $gte: from, $lt: to } }
+        // let reqMapIdTimeStamp = {}
+        // let link_id_tab = []
+        // let reqCount = 0
+        // await RequestSchema.find(findReqCond, async (err, requests) => {
+        //     if(err) {
+        //         console.log(err)
+        //     } else {
+        //         // get request timestamps informations :
+        //         await requests.forEach(request => {
+        //             console.log(request.timestamp)
+        //             reqCount++
+        //             if(request.isDangerous === true) {
+        //                 returnedValue.pages[request.req.action].req.danger.total_count++
+        //                 returnedValue.pages[request.req.action].req.danger.list.push(request.req.body)
+        //             }
+        //             link_id_tab.push(request.link_id)
+        //             reqMapIdTimeStamp[request.link_id] = 
+        //                 {
+        //                     timestamp : request.timestamp, 
+        //                     action : request.req.action 
+        //                 }
+        //         })
+        //         returnedValue.summary.request_count = reqCount
+        //     }
+        // })
+        // let findResCond =  { link_id : { $in: link_id_tab } }
+        // let requestedPath
+        // await ResponseSchema.find(findResCond, async (err, responses) => {
+        //     if(err) {
+        //         console.log(err)
+        //     } else {
+        //         await responses.forEach(response => {
+        //             if(reqMapIdTimeStamp[response.link_id] !== undefined) {
+        //                 requestedPath = reqMapIdTimeStamp[response.link_id].action
+        //                 if(returnedValue.pages[requestedPath] === undefined){
+        //                     returnedValue.pages[requestedPath] = {}
+        //                     returnedValue.pages[requestedPath].res = {}
+        //                     returnedValue.pages[requestedPath].res.time = {}
+        //                     returnedValue.pages[requestedPath].res.moy = 0
+        //                     returnedValue.pages[requestedPath].res.total_count = 0
+        //                 }
+        //                 returnedValue.pages[requestedPath].res.total_count++
+        //                 // res > time > min 
+        //                 if(returnedValue.pages[requestedPath].res.min === undefined || 
+        //                     returnedValue.pages[requestedPath].res.min > (response.timestamp - reqMapIdTimeStamp[response.link_id].timestamp)) {
+        //                         returnedValue.pages[requestedPath].res.min = (response.timestamp - reqMapIdTimeStamp[response.link_id].timestamp)
+        //                 }
+        //                 // res > time > moy 
+        //                 returnedValue.pages[requestedPath].res.moy += (response.timestamp - reqMapIdTimeStamp[response.link_id].timestamp)
+        //                 // res > time > max 
+        //                 if(returnedValue.pages[requestedPath].res.max === undefined || 
+        //                     returnedValue.pages[requestedPath].res.max < (response.timestamp - reqMapIdTimeStamp[response.link_id].timestamp)) {
+        //                         returnedValue.pages[requestedPath].res.max = (response.timestamp - reqMapIdTimeStamp[response.link_id].timestamp)
+        //                 }
+        //                 returnedValue.pages[requestedPath].res.max
+        //             }
+        //         })
+        //         for (let page in returnedValue.pages) {
+        //             returnedValue.pages[page].res.moy /= returnedValue.pages[page].res.total_count
+        //         }
+        //     }
+        // })
         // multi co
         await this.getMultiConnectionRange(from, to, 300, results => {
             returnedValue.summary.max_multiconnection = 0
