@@ -246,8 +246,11 @@ class Tracker {
                         currentTrack.res.locals = track.resTrack.locals
                         // get response time = time between request and response
                         currentTrack.res.restime = track.resTrack.timestamp - track.reqTrack.timestamp
+                        // get request dangerousness
+                        currentTrack.isDangerous = track.reqTrack.isDangerous
                         // add action summary
                         summary.action += " > " + track.reqTrack.req.action
+
                         // add time to get total time
                         summary.totaltime += (track.reqTrack.timestamp - previousTimestamp)
                         // add journey to journey json object
