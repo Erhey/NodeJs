@@ -56,7 +56,8 @@ class Tracker {
      */
     track(req, res, next) {
         // We consider that user is disconected after 20 min of inactivity
-        if ((moment().valueOf() - this.lifeTime) > 1200000) { // 20 minutes
+        
+        if (moment.duration(moment().diff(moment(this.lifeTime))).asMilliseconds() > 1200000) { // 20 minutes
             // Create a journey of disconnected user
             this.saveUserJourney(req)
         }
@@ -77,26 +78,32 @@ class Tracker {
         })
         next()
     }
+    async saveAllJourney(){
+        let track = await RequestSchema.findOne({ journey: false }, (err, track) => {
+            console.log("test")
+            if (err) {
+                console.log(err)
+            }
+            if (track) {
+                if(track.cookies.user_id !== undefined){
+                    this.saveUserJourney(track.cookies.user_id)
+                } else {
+                    this.saveUserJourney("")
+                }
+            }
+        })
+    }
     /**
      * This method creates a journey from tracked user informations
      * 
      * @param {*} req Request object picked up from server 
      */
     async saveUserJourney(user_id) {
-        if (user_id !== undefined) {
-            try {
-                let journeyJson = await this.createJourneyForUserId(user_id)
-                await this.insertJourney(journeyJson)
-            } catch (e) {
-                console.log(e)
-            }
-        } else {
-            try {
-                let journeyJson = await this.createJourneyForUserId("")
-                await this.insertJourney(journeyJson)
-            } catch (e) {
-                console.log(e)
-            }
+        try {
+            let journeyJson = await this.createJourneyForUserId(user_id)
+            await this.insertJourney(journeyJson)
+        } catch (e) {
+            console.log(e)
         }
     }
     // saveAllJourneys(){
@@ -139,6 +146,7 @@ class Tracker {
         // sum up req/res object
         let tracks = []
 
+        console.log(user_id)
         // Check if user_id is well defined
         if (user_id === "") {
             findReqCond = { 'cookies.user_id' : { $exists: false }, journey: false }
@@ -169,7 +177,8 @@ class Tracker {
                     return responses
                 }
             })
-
+            console.log(responses)
+            console.log(requests)
             // associate all requests/response to a track object
             await requests.forEach(async request => {
                 let track =  {}
@@ -245,14 +254,14 @@ class Tracker {
                         // get response locals = informations used to show page
                         currentTrack.res.locals = track.resTrack.locals
                         // get response time = time between request and response
-                        currentTrack.res.restime = track.resTrack.timestamp - track.reqTrack.timestamp
+                        currentTrack.res.restime = moment.duration(moment(track.resTrack.timestamp).diff(moment(track.reqTrack.timestamp))).asMilliseconds()
                         // get request dangerousness
                         currentTrack.isDangerous = track.reqTrack.isDangerous
                         // add action summary
                         summary.action += " > " + track.reqTrack.req.action
 
                         // add time to get total time
-                        summary.totaltime += (track.reqTrack.timestamp - previousTimestamp)
+                        summary.totaltime += moment.duration(moment(track.reqTrack.timestamp).diff(moment(previousTimestamp))).asMilliseconds()
                         // add journey to journey json object
                         journeyJson.journey.push(currentTrack)
                     }

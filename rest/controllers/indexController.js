@@ -1,12 +1,12 @@
 const trackingApi = require("../models/TrackingApi")
+const graphApi = require("../models/GraphApi")
 const tracker = require("../track/tracker")
 const uuidv1 = require('uuid/v1')
 
 
 exports.index = function (req, res) {
   // Ecrire a la main l'id de l'utilisateur ici :
-  
-  tracker.saveUserJourney("645fbad0-9238-11e9-b1ae-55b312a8c1f8")
+  tracker.saveAllJourney()
   res.send("journeySaved")
 };
 
@@ -74,5 +74,11 @@ exports.pagesInfo = (req, res) => {
   trackingApi.getPagesInfo(req.body.from, req.body.to, "", result => {
       pagesInfo = result
       res.send(pagesInfo)
+  })
+}
+
+exports.getGraph = (req, res) => {
+  graphApi.getGraph(result => {
+    res.send(result)
   })
 }
