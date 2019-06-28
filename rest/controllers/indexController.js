@@ -78,7 +78,15 @@ exports.pagesInfo = (req, res) => {
 }
 
 exports.getGraph = (req, res) => {
-  graphApi.getGraph(result => {
+  graphApi.getGraphInfoGrouped(result => {
     res.send(result)
   })
+}
+
+exports.updateExcel = (req, res) => {
+  graphApi.getGraphInfoGrouped(graph => {
+    graphApi.updateExcel(graph, result => {
+      res.send(result)
+    })
+})
 }
