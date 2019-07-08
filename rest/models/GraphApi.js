@@ -217,11 +217,11 @@ class GraphApi {
                             if(this.graph[unite] === "LIVE"){
                                 graphSpectre[unite].multico[action][indice]  = graphSpectre[unite].req_count[action][indice]
                             }
-                            if (indice !== 0) {
-                                graphSpectre[unite].req_count[action][indice] += graphSpectre[unite].req_count[action][indice - 1]
-                                graphSpectre[unite].dangerous_count[action][indice] += graphSpectre[unite].dangerous_count[action][indice - 1]
-                                graphSpectre[unite].error_count[action][indice] += graphSpectre[unite].error_count[action][indice - 1]
-                            }
+                            // if (indice !== 0) {
+                            //     graphSpectre[unite].req_count[action][indice] += graphSpectre[unite].req_count[action][indice - 1]
+                            //     graphSpectre[unite].dangerous_count[action][indice] += graphSpectre[unite].dangerous_count[action][indice - 1]
+                            //     graphSpectre[unite].error_count[action][indice] += graphSpectre[unite].error_count[action][indice - 1]
+                            // }
                         }
                     })
                 }

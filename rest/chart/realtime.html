@@ -10,12 +10,51 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <!-- <script src="chartBuilder.js"></script> -->
     <script>
-        let unite = "LIVE"
+        let unite = ["LIVE"]
+        $(document).ready(() => {
+            $("input[type='checkbox'].unite").on('change', () => {
+                unite = []
+                $("input[type='checkbox'].unite").each(index => {
+                    if ($(this).is(":checked")) {
+                        alert("je passe")
+                        unite.push($(this).val())
+                    }
+                })
+                console.log(unite)
+            })
+        })
         let chart = {}
-        live = async () => {
-            await updateGraphGeneral()
+        showLive = async () => {
+            if(unite.includes("LIVE")) {
+                await updateGraphGeneral()
+            }
         }
-        setInterval(live, 1000)
+        showHour = async () => {
+            if(unite.includes("HOUR")) {
+                await updateGraphGeneral()
+            }
+        }
+        showDay = async () => {
+            if(unite.includes("DAY")) {
+                await updateGraphGeneral()
+            }
+        }
+        showMonth = async () => {
+            if(unite.includes("MONTH")) {
+                await updateGraphGeneral()
+            }
+        }
+        showYear = async () => {
+            if(unite.includes("YEAR")) {
+                await updateGraphGeneral()
+            }
+        }
+        showAll = async () => {
+            if(unite.includes("ALL")) {
+                await updateGraphGeneral()
+            }
+        }
+        setInterval(showLive, 1000)
 
         function getParamValue(paramName) {
             var url = window.location.search.substring(1); //get rid of "?" in querystring
@@ -136,8 +175,13 @@
         createGraphGeneral()  
     </script>
 </head>
-
 <body>
+    LIVE<input id="boby" type="checkbox" value="CANVAS-LIVE" name="LIVE" id="LIVE" class="unite" checked>
+    HOUR<input type="checkbox" value="CANVAS-HOUR" name="HOUR" id="HOUR" class="unite">
+    DAY<input type="checkbox" value="CANVAS-DAY" name="DAY" id="DAY" class="unite">
+    MONTH<input type="checkbox" value="CANVAS-MONTH" name="MONTH" id="MONTH" class="unite">
+    YEAR<input type="checkbox" value="CANVAS-YEAR" name="YEAR" id="YEAR" class="unite">
+    ALL<input type="checkbox" value="CANVAS-ALL" name="ALL" id="ALL" class="unite">
     <input type="button" value="showGraph" onclick="showGraph();" />
     <input type="button" value="test" onclick="createGraphGeneral()" />
     <div id="graph-info">
@@ -153,6 +197,12 @@
         </ul>
     </div>
     <div id="live">
+        <canvas id="graph-live"></canvas>
+        <canvas id="graph-live"></canvas>
+        <canvas id="graph-live"></canvas>
+        <canvas id="graph-live"></canvas>
+        <canvas id="graph-live"></canvas>
+        <canvas id="graph-live"></canvas>
         <canvas id="graph-live"></canvas>
     </div>
 </body>
