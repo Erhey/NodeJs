@@ -15,10 +15,24 @@ const Excel = require('exceljs')
 class GraphApi {
     constructor() {
         this.graph = {
+            LIVE: {
+                from: moment().subtract(1, "minutes").format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+                to: moment().format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+                duration: moment.duration(1, "minutes").asMilliseconds(),
+                precision: 60,
+                time: [ "-59s", "-58s", "-57s", "-56s", "-55s", "-54s", "-53s", "-52s", "-51s", "-50s", 
+                        "-49s", "-48s", "-47s", "-46s", "-45s", "-44s", "-43s", "-42s", "-41s", "-40s", 
+                        "-39s", "-38s", "-37s", "-36s", "-35s", "-34s", "-33s", "-32s", "-31s", "-30s", 
+                        "-29s", "-28s", "-27s", "-26s", "-25s", "-24s", "-23s", "-22s", "-21s", "-20s", 
+                        "-19s", "-18s", "-17s", "-16s", "-15s", "-14s", "-13s", "-12s", "-11s", "-10s", 
+                        "-9s", "-8s", "-7s", "-6s", "-5s", "-4s", "-3s", "-2s", "-1s", "live"
+                ],
+                worksheetNbr : 1
+            },
             HOUR: {
-                from: moment().startOf('hour').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                to: moment().endOf('hour').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                duration: moment.duration(moment().endOf('hour').diff(moment().startOf('hour'))).asMilliseconds(),
+                from: moment().startOf('hours').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+                to: moment().endOf('hours').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+                duration: moment.duration(1, "hours").asMilliseconds(),
                 precision: 60,
                 time: [
                     "0:00", "0:01", "0:02", "0:03", "0:04", "0:05", "0:06", "0:07", "0:08", "0:09", 
@@ -31,9 +45,9 @@ class GraphApi {
                 worksheetNbr : 1
             },
             DAY: {
-                from: moment().startOf('day').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                to: moment().endOf('day').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                duration: moment.duration(moment().endOf('day').diff(moment().startOf('day'))).asMilliseconds(),
+                from: moment().startOf('days').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+                to: moment().endOf('days').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+                duration:moment.duration(1, "days").asMilliseconds(),
                 precision: 48,
                 time: [
                     "0:00", "0:30", "1:00", "1:30", "2:00", "2:30", "3:00", "3:30", 
@@ -46,8 +60,8 @@ class GraphApi {
                 worksheetNbr : 2
             },
             MONTH: {
-                from: moment().startOf('month').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                to: moment().endOf('month').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+                from: moment().startOf('months').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+                to: moment().endOf('months').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
                 duration: moment.duration(moment().endOf('month').diff(moment().startOf('month'))).asMilliseconds(),
                 precision: 60,
                 time: [
@@ -61,9 +75,9 @@ class GraphApi {
                 worksheetNbr : 3
             },
             YEAR: {
-                from: moment().startOf('year').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                to: moment().endOf('year').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                duration: moment.duration(moment().endOf('year').diff(moment().startOf('year'))).asMilliseconds(),
+                from: moment().startOf('years').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+                to: moment().endOf('years').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+                duration: moment.duration(1, "years").asMilliseconds(),
                 precision: 48,
                 time: [
                     "0", "0.25", "0.5", "0.75", "1", "1.25", "1.5", "1.75", 
@@ -100,62 +114,89 @@ class GraphApi {
             return Math.ceil(((moment(timestamp).diff(moment(range.from))) / range.duration) * range.precision)
         }
     }
+    async updateGraphFromTo() {
+        this.graph["LIVE"].from = moment().subtract(1, "minutes").format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.graph["LIVE"].to = moment().format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.graph["HOUR"].from = moment().startOf('hour').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.graph["HOUR"].to = moment().endOf('hour').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.graph["DAY"].from = moment().startOf('days').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.graph["DAY"].to = moment().endOf('days').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.graph["MONTH"].from = moment().startOf('months').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.graph["MONTH"].to = moment().endOf('months').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.graph["YEAR"].from = moment().startOf('years').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.graph["YEAR"].to = moment().endOf('years').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.graph["ALL"].from = moment("2015-01-01T00:00:00.000Z").startOf('year').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.graph["ALL"].to = moment().endOf('year').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+    }
+
 
     async getGraphInfoGrouped(callback) {
+        await this.updateGraphFromTo()
         let test = 0
         let graphSpectre = {}
-        let registeredAction
+        let registeredAction = []
+        console.log(this.graph["DAY"].from)
+        console.log(this.graph["DAY"].to)
+                
         for (let unite in this.graph) {
-            registeredAction = []
-            console.log(unite)
+            
+            graphSpectre[unite] = {}
+            graphSpectre[unite].req_count = {}
+            graphSpectre[unite].error_count = {}
+            graphSpectre[unite].dangerous_count = {}
+            graphSpectre[unite].res_time_moy = {}
+            if(this.graph[unite] === "LIVE"){
+                graphSpectre[unite].multico = {}
+            }
+        }
+        for (let unite in this.graph) {
+            // console.log(unite)
             let range = this.graph[unite]
             let periodCond = { "summary.to": { $not: { $lt: range.from } }, "summary.from": { $not: { $gte: range.to } } }
-            console.log("from : " + range.from)
-            console.log("to : " + range.to)
+            // console.log("from : " + range.from)
+            // console.log("to : " + range.to)
             await JourneySchema.find(periodCond, async (err, results) => {
                 // graphSpectre[unite][journey.req.action].unique_visitor_count = []
                 // console.log(results[0].journey)
+                
                 if (results !== undefined) {
                     await results.forEach(async result => {
                         await result.journey.forEach(track => {
                             let indice = this.getIndiceTS(track.timestamp, range)
                             if (indice !== -1) {
-                                if (graphSpectre[unite] === undefined) {
-                                    graphSpectre[unite] = {}
-                                    graphSpectre[unite].req_count = {}
-                                    graphSpectre[unite].error_count = {}
-                                    graphSpectre[unite].dangerous_count = {}
-                                    graphSpectre[unite].res_time_moy = {}
-                                    if(this.graph[unite] === "HOUR"){
-                                        graphSpectre[unite].multico = {}
-                                    }
-                                }
                                 let i = 0
-                                const iMax = range.precision
+                                let iMax
                                 if(!registeredAction.includes(track.req.action)){
+                                    // console.log(registeredAction)
                                     registeredAction.push(track.req.action)
-                                    graphSpectre[unite].req_count[track.req.action] = []
-                                    graphSpectre[unite].error_count[track.req.action] = []
-                                    graphSpectre[unite].dangerous_count[track.req.action] = []
-                                    graphSpectre[unite].res_time_moy[track.req.action] = []
-                                    if(this.graph[unite] === "HOUR"){
-                                        graphSpectre[unite].multico[track.req.action] = []
-                                        for(; i < iMax; i++){
-                                            graphSpectre[unite].req_count[track.req.action][i] = 0
-                                            graphSpectre[unite].error_count[track.req.action][i] = 0
-                                            graphSpectre[unite].dangerous_count[track.req.action][i] = 0
-                                            graphSpectre[unite].res_time_moy[track.req.action][i] = 0
-                                            graphSpectre[unite].multico[track.req.action][i] = 0
-                                        }
-                                    } else {
-                                        for(; i < iMax; i++){
-                                            graphSpectre[unite].req_count[track.req.action][i] = 0
-                                            graphSpectre[unite].error_count[track.req.action][i] = 0
-                                            graphSpectre[unite].dangerous_count[track.req.action][i] = 0
-                                            graphSpectre[unite].res_time_moy[track.req.action][i] = 0
+                                    for (let l_unite in this.graph) {
+                                        i = 0
+                                        // console.log(l_unite)
+                                        iMax = this.graph[l_unite].precision
+                                        graphSpectre[l_unite].req_count[track.req.action] = []
+                                        graphSpectre[l_unite].error_count[track.req.action] = []
+                                        graphSpectre[l_unite].dangerous_count[track.req.action] = []
+                                        graphSpectre[l_unite].res_time_moy[track.req.action] = []
+                                        if(this.graph[l_unite] === "LIVE"){
+                                            graphSpectre[l_unite].multico[track.req.action] = []
+                                            for(; i < iMax; i++){
+                                                graphSpectre[l_unite].req_count[track.req.action][i] = 0
+                                                graphSpectre[l_unite].error_count[track.req.action][i] = 0
+                                                graphSpectre[l_unite].dangerous_count[track.req.action][i] = 0
+                                                graphSpectre[l_unite].res_time_moy[track.req.action][i] = 0
+                                                graphSpectre[l_unite].multico[track.req.action][i] = 0
+                                            }
+                                        } else {
+                                            for(; i < iMax; i++){
+                                                graphSpectre[l_unite].req_count[track.req.action][i] = 0
+                                                graphSpectre[l_unite].error_count[track.req.action][i] = 0
+                                                graphSpectre[l_unite].dangerous_count[track.req.action][i] = 0
+                                                graphSpectre[l_unite].res_time_moy[track.req.action][i] = 0
+                                            }
                                         }
                                     }
                                 }
+                                // console.log(graphSpectre[unite])
                                 graphSpectre[unite].req_count[track.req.action][indice]++
                                 if (track.res.error !== undefined) {
                                     graphSpectre[unite].error_count[track.req.action][indice]++
@@ -173,7 +214,7 @@ class GraphApi {
                             if(graphSpectre[unite].req_count[action][indice] !== 0){
                                 graphSpectre[unite].res_time_moy[action][indice] /= graphSpectre[unite].req_count[action][indice]
                             }
-                            if(this.graph[unite] === "HOUR"){
+                            if(this.graph[unite] === "LIVE"){
                                 graphSpectre[unite].multico[action][indice]  = graphSpectre[unite].req_count[action][indice]
                             }
                             if (indice !== 0) {
@@ -212,7 +253,7 @@ class GraphApi {
                                     graphSpectre[unite][track.req.action].error_count = []
                                     graphSpectre[unite][track.req.action].dangerous_count = []
                                     graphSpectre[unite][track.req.action].res_time_moy = []
-                                    if(this.graph[unite] === "HOUR"){
+                                    if(this.graph[unite] === "LIVE"){
                                         graphSpectre[unite][track.req.action].multico = []
                                     }
                                     let i = 0
@@ -223,7 +264,7 @@ class GraphApi {
                                         graphSpectre[unite][track.req.action].dangerous_count[i] = 0
                                         graphSpectre[unite][track.req.action].res_time_moy[i] = 0
                                     }
-                                    if(this.graph[unite] === "HOUR"){
+                                    if(this.graph[unite] === "LIVE"){
                                         i = 0
                                         for(; i < iMax; i++){
                                             graphSpectre[unite][track.req.action].multico[i] = 0
@@ -247,7 +288,7 @@ class GraphApi {
                             if(graphSpectre[unite][page].req_count[indice] !== 0){
                                 graphSpectre[unite][page].res_time_moy[indice] /= graphSpectre[unite][page].req_count[indice]
                             }
-                            if(this.graph[unite] === "HOUR"){
+                            if(this.graph[unite] === "LIVE"){
                                 graphSpectre[unite][page].multico[indice]  = graphSpectre[unite][page].req_count[indice]
                             }
                             if (indice !== 0) {
@@ -263,40 +304,40 @@ class GraphApi {
         }
         callback(graphSpectre)
     }
-    updateExcel(graphSpectre, callback) {
-        let workbook = new Excel.Workbook()
-        let rowNbr = 0
-        let row = {}
-        workbook.xlsx.readFile('./excel/analytics.xlsx').then(() => {
-            for (let unite in this.graph) {
-                let worksheet = workbook.getWorksheet(this.graph[unite].worksheetNbr)
-                for (let info in graphSpectre[unite]){
-                    rowNbr++
-                    row = worksheet.getRow(rowNbr)
-                    row.values = ["time"].concat(this.graph[unite].time)
-                    for (let action in graphSpectre[unite][info]) {
-                    rowNbr++
-                    row = worksheet.getRow(rowNbr)
-                    row.values = [action].concat(graphSpectre[unite][info][action])
-                    }
-                    rowNbr++
-                    row = worksheet.getRow(rowNbr)
-                    row.values = [
-                        "--------------------------------------------------------------------------" + 
-                        "--------------------------------------------------------------------------" + 
-                        "--------------------------------------------------------------------------" + 
-                        "--------------------------------------------------------------------------" 
-                    ]
-                }
-                rowNbr = 0
-            }
-            workbook.xlsx.writeFile('./excel/analytics.xlsx').then(function() {
-                console.log("saved")
-            }) 
-        })
+    // updateExcel(graphSpectre, callback) {
+    //     let workbook = new Excel.Workbook()
+    //     let rowNbr = 0
+    //     let row = {}
+    //     workbook.xlsx.readFile('./excel/analytics.xlsx').then(() => {
+    //         for (let unite in this.graph) {
+    //             let worksheet = workbook.getWorksheet(this.graph[unite].worksheetNbr)
+    //             for (let info in graphSpectre[unite]){
+    //                 rowNbr++
+    //                 row = worksheet.getRow(rowNbr)
+    //                 row.values = ["time"].concat(this.graph[unite].time)
+    //                 for (let action in graphSpectre[unite][info]) {
+    //                 rowNbr++
+    //                 row = worksheet.getRow(rowNbr)
+    //                 row.values = [action].concat(graphSpectre[unite][info][action])
+    //                 }
+    //                 rowNbr++
+    //                 row = worksheet.getRow(rowNbr)
+    //                 row.values = [
+    //                     "--------------------------------------------------------------------------" + 
+    //                     "--------------------------------------------------------------------------" + 
+    //                     "--------------------------------------------------------------------------" + 
+    //                     "--------------------------------------------------------------------------" 
+    //                 ]
+    //             }
+    //             rowNbr = 0
+    //         }
+    //         workbook.xlsx.writeFile('./excel/analytics.xlsx').then(function() {
+    //             console.log("saved")
+    //         }) 
+    //     })
         
-        callback("Done")
-    }
+    //     callback("Done")
+    // }
 }
 
 module.exports = new GraphApi()

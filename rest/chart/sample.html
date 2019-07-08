@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="analytics.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script>
+        let setting = {}
+        setting.reload = true
+        $(document).ready(() => {
+            $('#sidebarCollapse').on('click', () => {
+                $('#sidebar').toggleClass('active')
+            })
+            
+        })
+        reloadIFrame = (iFrameID) => {
+            if (setting.reload) {
+                iframe = document.getElementById(iFrameID)
+                iframe.src = iframe.src
+            }
+        }
+        setDatabase = href => {
+            $('#Mediaforma').css({"background-color": "#7386D5", "color": "#fff"});
+            $('#CRUD-MYSQL').css({"background-color": "#7386D5", "color": "#fff"});
+            $("#" + href).css({"background-color": "#fff", "color": "#7386D5"});
+            $("#HOME").attr('src', 'test_chart.html?db=' + href);
+            $("#REAL-TIME").attr('src', 'test_chart.html?db=' + href);
+            $("#DASHBOARD").attr('src', 'test_chart.html?db=' + href);
+            $("#MONEY").attr('src', 'test_chart.html?db=' + href);
+            $("#SETTINGS").attr('src', 'test_chart.html?db=' + href);
+            $("#SEARCH").attr('src', 'test_chart.html?db=' + href);
+        }
+    </script>
+    <div class="wrapper-side">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>My sites</h3>
+            </div>
+                
+                <ul class="list-unstyled components">
+                    <li ><a  class="active" id="CRUD-MYSQL" href="#CRUD-MYSQL" onclick="setDatabase('CRUD-MYSQL')">CRUD-MYSQL</a></li>
+                    <li><a id="Mediaforma" href="#Mediaforma" onclick="setDatabase('Mediaforma')">Mediaforma</a></li>
+                </ul>
+                
+        </nav>
+        <!-- Page Content -->
+        <div id="navigation">
+            <div class="nav nav-dark">
+                <div class="wrapper-top">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <ul class="nav nav-pills" role="tablist">
+                        <li class="nav-item" >
+                            <a class="nav-link active" data-toggle="tab" href="#HOME"
+                                onclick="javacript:reloadIFrame('HOME')"><i class="fas fa-home"></i>
+                                HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#REAL-TIME"
+                                onclick="javacript:reloadIFrame('REAL-TIME')"><i class="fas fa-play"></i>
+                                REAL-TIME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#DASHBOARD"
+                                onclick="javacript:reloadIFrame('DASHBOARD')"><i class="fas fa-chart-line"></i>
+                                DASHBOARD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#MONEY"
+                                onclick="javacript:reloadIFrame('MONEY')"><i class="fas fa-cc-amazon-pay"></i>
+                                MONEY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#SETTINGS"
+                                onclick="javacript:reloadIFrame('SETTINGS')"><i class="fas fa-cog"></i>
+                                SETTINGS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#SEARCH"
+                                onclick="javacript:reloadIFrame('SEARCH')"><i class="fas fa-search"></i>
+                                SEARCH</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content">
+                <iframe id="HOME" class="tab-pane active" src="test_chart.html">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+                <iframe id="REAL-TIME" class="tab-pane fade" src="bootstrap_test.html">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+
+                <iframe id="DASHBOARD" class="tab-pane fade" src="bootstrap_test.html">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+
+                <iframe id="MONEY" class="tab-pane fade" src="bootstrap_test.html">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+                <iframe id="SETTINGS" class="tab-pane fade" src="bootstrap_test.html">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+                <iframe id="SEARCH" class="tab-pane fade" src="bootstrap_test.html">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

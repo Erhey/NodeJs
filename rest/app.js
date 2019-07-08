@@ -49,7 +49,7 @@ let port
 if(!isNaN(process.env.PORT)){
     port = process.env.PORT
 } else {
-    port = 3000
+    port = 3001
 }
 app.set('port', port);
 var server = http.createServer(app);
