@@ -67,5 +67,10 @@ GET http://localhost:3001/getGraph
 
 
 ###
+GET http://localhost:3001/getLiveInfo
+
+
+
+###
 GET http://localhost:3000/updateExcel
 

@@ -129,14 +129,123 @@ class GraphApi {
         this.graph["ALL"].to = moment().endOf('year').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
     }
 
+    async getMaximumMultico(){
+
+    }
+
+    async getLiveInfo(callback) {
+        await this.updateGraphFromTo()
+        let graphSpectre = {}
+        let registeredAction = []
+        for (let unite in this.graph) {
+            graphSpectre[unite] = {}
+            graphSpectre[unite].req_count = {}
+            graphSpectre[unite].error_count = {}
+            graphSpectre[unite].dangerous_count = {}
+            graphSpectre[unite].res_time_moy = {}
+            if(this.graph[unite] === "LIVE"){
+                graphSpectre[unite].multico = {}
+            }
+        }
+        // console.log(graphSpectre)
+        for (let unite in this.graph) {
+            let range = this.graph[unite]
+            let periodCond = { "timestamp": { $gte: range.from, $lt: range.to } }
+            console.log("from : " + range.from)
+            console.log("to : " + range.to)
+            await RequestSchema.find(periodCond, async (err, requests) => {
+                if (requests !== undefined) {
+                    await requests.forEach(request => {
+                        let indice = this.getIndiceTS(request.timestamp, range)
+                        if (indice !== -1) {
+                            let i = 0
+                            let iMax
+                            if(!registeredAction.includes(request.req.action)){
+                                // console.log(registeredAction)
+                                registeredAction.push(request.req.action)
+                                for (let l_unite in this.graph) {
+                                    i = 0
+                                    // console.log(graphSpectre)
+                                    iMax = this.graph[l_unite].precision
+                                    graphSpectre[l_unite].req_count[request.req.action] = []
+                                    graphSpectre[l_unite].error_count[request.req.action] = []
+                                    graphSpectre[l_unite].dangerous_count[request.req.action] = []
+                                    graphSpectre[l_unite].res_time_moy[request.req.action] = []
+                                    if(this.graph[l_unite] === "LIVE"){
+                                        graphSpectre[l_unite].multico[request.req.action] = []
+                                        for(; i < iMax; i++){
+                                            graphSpectre[l_unite].req_count[request.req.action][i] = 0
+                                            graphSpectre[l_unite].error_count[request.req.action][i] = 0
+                                            graphSpectre[l_unite].dangerous_count[request.req.action][i] = 0
+                                            graphSpectre[l_unite].res_time_moy[request.req.action][i] = 0
+                                            graphSpectre[l_unite].multico[request.req.action][i] = 0
+                                        }
+                                    } else {
+                                        for(; i < iMax; i++){
+                                            graphSpectre[l_unite].req_count[request.req.action][i] = 0
+                                            graphSpectre[l_unite].error_count[request.req.action][i] = 0
+                                            graphSpectre[l_unite].dangerous_count[request.req.action][i] = 0
+                                            graphSpectre[l_unite].res_time_moy[request.req.action][i] = 0
+                                        }
+                                    }
+                                }
+                            }
+                            // console.log(graphSpectre[unite])
+                            graphSpectre[unite].req_count[request.req.action][indice]++
+                            // if (request.res.error !== undefined) {
+                            //     graphSpectre[unite].error_count[request.req.action][indice]++
+                            // }
+                            if (request.isDangerous) {
+                                graphSpectre[unite].dangerous_count[request.req.action][indice]++
+                            }
+                            // res time count
+                            // graphSpectre[unite].res_time_moy[request.req.action][indice] += request.res.restime
+                        }
+                    })
+                }
+            })
+            await ResponseSchema.find(periodCond, async (err, responses) => {
+                if (responses !== undefined) {
+                    await responses.forEach(async response => {
+                        let indice = this.getIndiceTS(response.timestamp, range)
+                        if (indice !== -1) {
+                            if (response.error !== undefined) {
+                                graphSpectre[unite].error_count[response.action][indice]++
+                            }
+                            // res time count
+                            graphSpectre[unite].res_time_moy[response.action][indice] += response.restime
+                        }
+                    })
+                }
+            })
+        }
+
+            // registeredAction.forEach(action => {
+            //     for (let indice = 0; indice < range.precision; indice++) {
+            //         if(graphSpectre[unite].req_count[action][indice] !== 0){
+            //             graphSpectre[unite].res_time_moy[action][indice] /= graphSpectre[unite].req_count[action][indice]
+            //         }
+            //         if(this.graph[unite] === "LIVE"){
+            //             graphSpectre[unite].multico[action][indice]  = graphSpectre[unite].req_count[action][indice]
+            //         }
+            //         // if (indice !== 0) {
+            //         //     graphSpectre[unite].req_count[action][indice] += graphSpectre[unite].req_count[action][indice - 1]
+            //         //     graphSpectre[unite].dangerous_count[action][indice] += graphSpectre[unite].dangerous_count[action][indice - 1]
+            //         //     graphSpectre[unite].error_count[action][indice] += graphSpectre[unite].error_count[action][indice - 1]
+            //         // }
+            //     }
+            // })
+        callback(graphSpectre)
+    }
+
+
+
+
 
     async getGraphInfoGrouped(callback) {
         await this.updateGraphFromTo()
-        let test = 0
         let graphSpectre = {}
         let registeredAction = []
-        console.log(this.graph["DAY"].from)
-        console.log(this.graph["DAY"].to)
                 
         for (let unite in this.graph) {
             

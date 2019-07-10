@@ -9,6 +9,12 @@ const responseSchema = new Schema({
         type: Date,
         required: true
     },
+    restime: {
+        type: Number
+    },
+    action: {
+        type: String
+    },
     cookies: {
         type: Schema.Types.Mixed,
     },

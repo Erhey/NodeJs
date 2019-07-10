@@ -1,19 +1,34 @@
 // {
-//     "_id": ObjectId("5cff1435b25b1c3bc0c6dcea"),
-//     "timestamp": ISODate("2019-06-11T02:38:45Z"),
+//     "_id": ObjectId("5d099ba25aa7cc2e48fddcf4"),
+//     "timestamp": ISODate("2019-06-19T02:19:14.281Z"),
 //     "cookies": {
+//         "user_id": "645fbad0-9238-11e9-b1ae-55b312a8c1f8",
 //         "userData": {
 //             "login": "a",
 //             "password": "s"
 //         }
 //     },
 //     "req": {
-//         "action": "/",
-//         "method": "GET",
+//         "body": {
+//             "search_name": "",
+//             "search_login": "",
+//             "search_mail": "",
+//             "id": "12",
+//             "login": "a",
+//             "name": "a",
+//             "firstName": "s",
+//             "tel": "0",
+//             "mail": "c",
+//             "lastConDate": "2019-06-03T15:00:00.000Z",
+//             "createdDay": "2019-06-03T15:00:00.000Z",
+//             "Update": "Update"
+//         },
+//         "action": "/userMng/updateUser",
+//         "method": "POST",
 //         "remoteAddress": "::1"
 //     },
 //     "isDangerous": false,
-//     "link_id": ObjectId("5cff1435b25b1c3bc0c6dce9"),
+//     "link_id": ObjectId("5d099ba25aa7cc2e48fddcf3"),
 //     "journey": true,
 //     "__v": 0
 // }

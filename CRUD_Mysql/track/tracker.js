@@ -1,13 +1,13 @@
 // Use moment to get current timestamp
 const moment = require("moment")
 const colors = require("colors")
-const uuidv1 = require('uuid/v1');
+const uuidv1 = require('uuid/v1')
 // Getting Request and Response Schema
 const RequestSchema = require("./Schema/requestSchema")
 const ResponseSchema = require("./Schema/responseSchema")
 const JourneySchema = require("./Schema/journeySchema")
-const sanitizeHtml = require('sanitize-html');
-const async = require("async");
+const sanitizeHtml = require('sanitize-html')
+const async = require("async")
 
 // Creating Mongoose connection
 const mongoose = require('mongoose')
@@ -33,10 +33,15 @@ class Tracker {
      * Establish connection to mongodb database
      */
     constructor() {
-        // Get current time when user is connected to server
+        console.log("Created")
+        /**
+         * Lifetime define the time when a user connects to a site
+         * It's used to know when a user connects and when a user disconnects to a site
+         */
         this.lifeTime = moment().valueOf()
-
-        // Check if connection was correctly instanciated
+        this.requestedTimestamp = {}
+        this.reqPath = ""
+        this.responseTimestamp = {}        // Check if connection was correctly instanciated
         if (g_db) {
             console.log("Connected to database !".underline.green)
             // Create tracker object by giving it an instance of mongoose
@@ -56,7 +61,8 @@ class Tracker {
      */
     track(req, res, next) {
         // We consider that user is disconected after 20 min of inactivity
-        if ((moment().valueOf() - this.lifeTime) > 1200000) { // 20 minutes
+        
+        if (moment.duration(moment().diff(moment(this.lifeTime))).asMilliseconds() > 1200000) { // 20 minutes
             // Create a journey of disconnected user
             this.saveUserJourney(req)
         }
@@ -77,145 +83,195 @@ class Tracker {
         })
         next()
     }
+    async saveAllJourney(){
+        let track = await RequestSchema.findOne({ journey: false }, (err, track) => {
+            console.log("test")
+            if (err) {
+                console.log(err)
+            }
+            if (track) {
+                if(track.cookies.user_id !== undefined){
+                    this.saveUserJourney(track.cookies.user_id)
+                } else {
+                    this.saveUserJourney("")
+                }
+            }
+        })
+    }
     /**
      * This method creates a journey from tracked user informations
      * 
      * @param {*} req Request object picked up from server 
      */
-    async saveUserJourney(req) {
-        // find if there are any unrecorded requests/responses
-        console.log(req.cookies)
-        let track = await RequestSchema.findOne({ journey: false, user_id : req.cookies.user_id }, (err, track) => {
-            // console.log("test")
-            if (err) {
-                console.log(err)
-            }
-            if (track) {
-                console.log(track)
-                return track
-            }
-        })
-        if (track) {
-            if (track.req !== undefined && track.cookies !== undefined) {
-                try {
-                    let journeyJson = await this.createJourneyForUserReq(req, track.cookies['user_id'])
-                    await this.insertJourney(journeyJson)
-                } catch (e) {
-                    console.log(e)
-                }
-            } else {
-                try {
-                    let journeyJson = await this.createJourneyForUserReq(req, "")
-                    await this.insertJourney(journeyJson)
-                } catch (e) {
-                    console.log(e)
-                }
-            }
+    async saveUserJourney(user_id) {
+        try {
+            let journeyJson = await this.createJourneyForUserId(user_id)
+            await this.insertJourney(journeyJson)
+        } catch (e) {
+            console.log(e)
         }
     }
+    // saveAllJourneys(){
+    //     findCond = { 'cookies.user_id': user_id,  journey: false }
+
+    // }
     /** 
-     * Create a journey for a defined user using request collection
+     * Create a journey for a defined user_id
      * 
-     * @param {*} req Request informations
      * @param {*} user_id user_id
      */
-    async createJourneyForUserReq(req, user_id) {
-
+    async createJourneyForUserId(user_id) {
+        // returned journey Json object (journey + summary)
         let journeyJson = {}
-        let findCond = {}
+        // array of journey
+        journeyJson.journey = []
+        // summarized all founded req/res
         let summary = {}
         summary.totaltime = 0
         summary.total_req = 0
         summary.isDanger_req = 0
         summary.isError_req = 0
-        let previousTrack = ""
+
+        // condition used in request query
+        let findReqCond = {}
+        // condition used in response query
+        let findResCond = {}
+
+        // keep in memory last track informations : Used while creating journey objects
+        let previousAction = ""
+        // keep in memory last timestamp : Used while creating journey objects
         let previousTimestamp = ""
-        journeyJson.journey = []
+
+        // list of unregistered requests found for user_id 
+        let requests = {}
+        // list of request-link-id
         let link_id_tab = []
+        // list of request-linked responses 
+        let responses = {}
+        // sum up req/res object
+        let tracks = []
+
         console.log(user_id)
+        // Check if user_id is well defined
         if (user_id === "") {
-            findCond = { 'cookies.user_id' : {$exists: false}, journey: false }
+            findReqCond = { 'cookies.user_id' : { $exists: false }, journey: false }
         } else {
-            findCond = { 'cookies.user_id': user_id,  journey: false }
+            findReqCond = { 'cookies.user_id': user_id, journey: false }
         }
         try {
-            let requests = await RequestSchema.find(findCond,[],{ sort: { timestamp: 1 } }, (err, requests) => {
+            // get all request for user_id
+            requests = await RequestSchema.find(findReqCond,[],{ sort: { timestamp: 1 } }, (err, result) => {
                 if (err) console.log(err)
-                if (!requests) {
+                if (!result) {
                 } else {
-                    return requests
+                    return result
                 }
             })
+            // get link_id attribute for each request and add it to link_id_tab array
             await requests.forEach(request => {
                 link_id_tab.push(request.link_id)
             })
-            let findResCond =  { link_id : { $in: link_id_tab } }
-            let responses = await ResponseSchema.find(findResCond, async (err, responses) => {
+            // create response query condition based on link_id_tab
+            findResCond =  { link_id : { $in: link_id_tab } }
+
+            // Get all requests-linked responses
+            responses = await ResponseSchema.find(findResCond, async (err, responses) => {
                 if(err) {
                     console.log(err)
                 } else {
                     return responses
                 }
             })
-            let tracks = []
-            
+            console.log(responses)
+            console.log(requests)
+            // associate all requests/response to a track object
             await requests.forEach(async request => {
                 let track =  {}
                 await this.getLinkedResponse(responses, request.link_id, result => {
                     track.reqTrack = request
                     track.resTrack = result
+                    // then add it to track array
                     tracks.push(track)
                 })
             })
+            // Add user_id to summary (journey's attribute)
             if (user_id === '') {
+                // If empty string, set it to unknown
                 summary.user_id = "unknown"
             } else {
                 summary.user_id = user_id
             }
-            
-            // console.log(responses)
+            // update from/to summary attributes
             summary.from = tracks[0].reqTrack.timestamp
             summary.to = tracks[0].reqTrack.timestamp
+
+            // loop all tracks and create journeys
             await tracks.forEach(async track => {
-                let currentTrack = {}
-                currentTrack.res = {}
-                currentTrack.req = {}
-                // console.log(track)
-                if (summary.from > track.reqTrack.timestamp) {
-                    summary.from = track.reqTrack.timestamp
+                if(track.reqTrack.req.action !== "/favicon.ico"){
+                    // Create new currentTrack HAS TO BE NEW !
+                    let currentTrack = {}
+                    currentTrack.res = {}
+                    currentTrack.req = {}
+
+                    // update summary.from/to
+                    if (summary.from > track.reqTrack.timestamp) {
+                        summary.from = track.reqTrack.timestamp
+                    }
+                    if (summary.to < track.reqTrack.timestamp) {
+                        summary.to = track.reqTrack.timestamp
+                    }
+
+                    // count dangerous requests
+                    if(track.reqTrack.isDangerous){
+                        summary.isDanger_req ++
+                    }
+
+                    // count error responses
+                    if(track.resTrack.error){
+                        summary.isError_req ++
+                    }
+                
+
+                    if (previousAction === "") {
+                        previousAction = track.reqTrack.req.action
+                        summary.action = track.reqTrack.req.action
+                        previousTimestamp = track.reqTrack.timestamp
+                        currentTrack.isDangerous = track.reqTrack.isDangerous
+                    } else {
+                        // get Previous timestamp
+                        currentTrack.timestamp = previousTimestamp
+                        // get accesslength
+                        currentTrack.accesslength = track.reqTrack.timestamp - previousTimestamp
+                        // update previous timeStamp
+                        previousTimestamp = track.reqTrack.timestamp
+                        // get previous action
+                        currentTrack.currentPath = previousAction
+                        // update previous action
+                        previousAction = track.reqTrack.req.action
+                        // get next action
+                        currentTrack.requestedPath = track.reqTrack.req.action
+                        // get request body
+                        currentTrack.req = track.reqTrack.req
+                        // get response cookie
+                        currentTrack.res.cookies = track.resTrack.cookies
+                        // get response error if exists
+                        currentTrack.res.error = track.resTrack.error
+                        // get response locals = informations used to show page
+                        currentTrack.res.locals = track.resTrack.locals
+                        // get response time = time between request and response
+                        currentTrack.res.restime = moment.duration(moment(track.resTrack.timestamp).diff(moment(track.reqTrack.timestamp))).asMilliseconds()
+                        // get request dangerousness
+                        currentTrack.isDangerous = track.reqTrack.isDangerous
+                        // add action summary
+                        summary.action += " > " + track.reqTrack.req.action
+
+                        // add time to get total time
+                        summary.totaltime += moment.duration(moment(track.reqTrack.timestamp).diff(moment(previousTimestamp))).asMilliseconds()
+                        // add journey to journey json object
+                        journeyJson.journey.push(currentTrack)
+                    }
                 }
-                if (summary.to < track.reqTrack.timestamp) {
-                    summary.to = track.reqTrack.timestamp
-                }
-                if(track.reqTrack.isDangerous){
-                    summary.isDanger_req ++
-                }
-                if(track.resTrack.error){
-                    summary.isError_req ++
-                }
-                currentTrack.isDangerous = track.reqTrack.isDangerous
-                currentTrack.reqbody = track.reqTrack.req.body
-                if (previousTrack === "") {
-                    previousTrack = track.reqTrack.req.action
-                    summary.action = track.reqTrack.req.action
-                    previousTimestamp = track.reqTrack.timestamp
-                } else {
-                    currentTrack.timestamp = previousTimestamp
-                    currentTrack.accesslength = track.reqTrack.timestamp - previousTimestamp
-                    currentTrack.currentPath = previousTrack
-                    currentTrack.requestedPath = track.reqTrack.req.action
-                    previousTrack = track.reqTrack.req.action
-                    summary.action += " > " + track.reqTrack.req.action
-                    summary.totaltime += (track.reqTrack.timestamp - previousTimestamp)
-                    
-                    previousTimestamp = track.reqTrack.timestamp
-                    currentTrack.reqbody = track.reqTrack.req.body
-                    currentTrack.res.cookies = track.resTrack.cookies
-                    currentTrack.res.error = track.resTrack.error
-                    currentTrack.res.locals = track.resTrack.locals
-                    currentTrack.res.restime = track.resTrack.timestamp - track.reqTrack.timestamp
-                    journeyJson.journey.push(currentTrack)
-                }
+                // update reqTrack to inform that he got registered
                 track.reqTrack.journey = true
                 track.reqTrack.save(err => {
                     if (err) console.log(err)
@@ -223,23 +279,32 @@ class Tracker {
             })
             summary.total_req = tracks.length
             journeyJson.summary = summary
-            // console.log(journeyJson)
             return journeyJson
         } catch (e) {
             console.log(e)
         }
     }
+    /**
+     * get linked response
+     * 
+     * @param {*} responses array of all responses found in link_id_tab array : array of all requests link_id attribute
+     * @param {*} link_id   request link_id used to find linked response
+     * @param {*} callback  function to call after methods ended
+     */
     async getLinkedResponse(responses, link_id, callback){
-        console.log("test")
         await responses.forEach(response => {
             if(response.link_id.toString() === link_id.toString()) {
-                console.log("test3")
                 callback(response)
             }
         })
     }
-
+    /**
+     * Insert created journey Json object to mongodb database
+     * 
+     * @param {*} journeyJson 
+     */
     async insertJourney(journeyJson) {
+        // insert journey to mongodb database
         JourneySchema.insertMany(journeyJson, (err, result) => {
             if (err) {
                 console.log(err)
@@ -250,18 +315,22 @@ class Tracker {
                 return true
             }
         })
-
     }
     /**
-     * Request
+     * Create a Request Track from user request informations
+     * 
+     * @param {*} req 
      */
     request(req) {
+        // create request json request object
         let jsonRequest = this.createRequestTrack(req)
+        // insert json request object
         this.insertRequestTrack(jsonRequest)
     }
     createRequestTrack(req) {
         let jsonRequest = {}
         jsonRequest.timestamp = moment().format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.requestedTimestamp = jsonRequest.timestamp
         this.lifeTime = moment().valueOf()
         if (req.cookies !== undefined) {
             this.cookies = req.cookies
@@ -271,7 +340,8 @@ class Tracker {
         }
         jsonRequest.req = {}
         jsonRequest.req.body = req.body
-        jsonRequest.req.action = req.path
+        this.reqPath = req.path
+        jsonRequest.req.action = this.reqPath
         jsonRequest.req.method = req.method
         jsonRequest.req.remoteAddress = req.connection.remoteAddress
         if (this.isDangerous(req.body)) {
@@ -284,7 +354,7 @@ class Tracker {
         jsonRequest.journey = false
         return jsonRequest
     }
-    insertRequestTrack(jsonTracking, callback) {
+    insertRequestTrack(jsonTracking) {
         RequestSchema.insertMany(jsonTracking, (err, result) => {
             if (err) {
                 console.log(err)
@@ -294,7 +364,6 @@ class Tracker {
             }
         })
     }
-
     isDangerous(object) {
         for (const prop in object) {
             if (typeof (object[prop]) === "object") {
@@ -303,8 +372,8 @@ class Tracker {
                 }
             } else {
                 if (typeof (object[prop]) === "string") {
-                    var clean = sanitizeHtml(object[prop]);
-                    console.log("Clean : " + clean + "   -    origin : " + object[prop])
+                    var clean = sanitizeHtml(object[prop])
+                    // console.log("Clean : " + clean + "   -    origin : " + object[prop])
                     if (clean !== object[prop]) {
                         return true
                     }
@@ -323,6 +392,8 @@ class Tracker {
     createResponseTrack(res) {
         let jsonResponse = {}
         jsonResponse.timestamp = moment().format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.responseTimestamp = jsonResponse.timestamp
+        jsonResponse.restime = moment.duration(moment(this.responseTimestamp).diff(moment(this.requestedTimestamp))).asMilliseconds()
         if (res.cookies !== undefined) {
             this.cookies = res.cookies
             jsonResponse.cookies = res.cookies
@@ -339,6 +410,7 @@ class Tracker {
                 jsonResponse.error.detail = res.error.detail
             }
         }
+        jsonResponse.action = this.reqPath
         jsonResponse.locals = res.locals
         return jsonResponse
     }

@@ -11,7 +11,7 @@ const journeySchema = new Schema({
         currentPath : String,
         requestedPath : String,
         isDangerous : Boolean,
-        reqbody :Schema.Types.Mixed,
+        req : Schema.Types.Mixed,
         res : {
             cookies : Schema.Types.Mixed,
             error : Schema.Types.Mixed,

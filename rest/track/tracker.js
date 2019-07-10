@@ -33,10 +33,15 @@ class Tracker {
      * Establish connection to mongodb database
      */
     constructor() {
-        // Get current time when user is connected to server
+        console.log("Created")
+        /**
+         * Lifetime define the time when a user connects to a site
+         * It's used to know when a user connects and when a user disconnects to a site
+         */
         this.lifeTime = moment().valueOf()
-
-        // Check if connection was correctly instanciated
+        this.requestedTimestamp = {}
+        this.reqPath = ""
+        this.responseTimestamp = {}        // Check if connection was correctly instanciated
         if (g_db) {
             console.log("Connected to database !".underline.green)
             // Create tracker object by giving it an instance of mongoose
@@ -325,6 +330,7 @@ class Tracker {
     createRequestTrack(req) {
         let jsonRequest = {}
         jsonRequest.timestamp = moment().format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.requestedTimestamp = jsonRequest.timestamp
         this.lifeTime = moment().valueOf()
         if (req.cookies !== undefined) {
             this.cookies = req.cookies
@@ -334,7 +340,8 @@ class Tracker {
         }
         jsonRequest.req = {}
         jsonRequest.req.body = req.body
-        jsonRequest.req.action = req.path
+        this.reqPath = req.path
+        jsonRequest.req.action = this.reqPath
         jsonRequest.req.method = req.method
         jsonRequest.req.remoteAddress = req.connection.remoteAddress
         if (this.isDangerous(req.body)) {
@@ -366,7 +373,7 @@ class Tracker {
             } else {
                 if (typeof (object[prop]) === "string") {
                     var clean = sanitizeHtml(object[prop])
-                    console.log("Clean : " + clean + "   -    origin : " + object[prop])
+                    // console.log("Clean : " + clean + "   -    origin : " + object[prop])
                     if (clean !== object[prop]) {
                         return true
                     }
@@ -385,6 +392,8 @@ class Tracker {
     createResponseTrack(res) {
         let jsonResponse = {}
         jsonResponse.timestamp = moment().format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.responseTimestamp = jsonResponse.timestamp
+        jsonResponse.restime = moment.duration(moment(this.responseTimestamp).diff(moment(this.requestedTimestamp))).asMilliseconds()
         if (res.cookies !== undefined) {
             this.cookies = res.cookies
             jsonResponse.cookies = res.cookies
@@ -401,6 +410,7 @@ class Tracker {
                 jsonResponse.error.detail = res.error.detail
             }
         }
+        jsonResponse.action = this.reqPath
         jsonResponse.locals = res.locals
         return jsonResponse
     }
