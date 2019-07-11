@@ -11,6 +11,8 @@
     <!-- <script src="chartBuilder.js"></script> -->
     <script>
         let unite = "HOUR"
+        alert(unite)
+
         function getParamValue(paramName) {
             var url = window.location.search.substring(1); //get rid of "?" in querystring
             var qArray = url.split('&'); //get key-value pairs
@@ -22,7 +24,7 @@
             }
         }
         getGraph = async callback => {
-            await $.get("http://localhost:3001/getGraph", (data, status) => {
+            await $.get("http://localhost:3001/getLiveInfo", (data, status) => {
                 console.log(data)
                 datasets = [{
                     "label" : "Server requests",

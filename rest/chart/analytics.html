@@ -46,7 +46,6 @@
             $('#Mediaforma').css({"background-color": "#7386D5", "color": "#fff"});
             $('#CRUD-MYSQL').css({"background-color": "#7386D5", "color": "#fff"});
             $("#" + href).css({"background-color": "#fff", "color": "#7386D5"});
-            $("#HOME").attr('src', 'test_chart.html?db=' + href);
             $("#REAL-TIME").attr('src', 'test_chart.html?db=' + href);
             $("#DASHBOARD").attr('src', 'test_chart.html?db=' + href);
             $("#MONEY").attr('src', 'test_chart.html?db=' + href);
@@ -75,13 +74,8 @@
                         <i class="fas fa-align-left"></i>
                     </button>
                     <ul class="nav nav-pills table-dark" role="tablist">
-                        <li class="nav-item" >
-                            <a class="nav-link active" data-toggle="tab" href="#HOME"
-                                onclick="javacript:reloadIFrame('HOME')"><i class="fas fa-home"></i>
-                                HOME</a>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#REAL-TIME"
+                            <a class="nav-link active" data-toggle="tab" href="#REAL-TIME"
                                 onclick="javacript:reloadIFrame('REAL-TIME')"><i class="fas fa-play"></i>
                                 REAL-TIME</a>
                         </li>
@@ -109,10 +103,7 @@
                 </div>
             </div>
             <div class="tab-content">
-                <iframe frameBorder="0" id="HOME" name="test_chart.html" class="tab-pane active" src="test_chart.html">
-                    <p>Your browser does not support iframes.</p>
-                </iframe>
-                <iframe frameBorder="0" id="REAL-TIME" name="realtime.html" class="tab-pane fade" src="">
+                <iframe frameBorder="0" id="REAL-TIME" name="realtime.html" class="tab-pane fade active" src="realtime.html">
                     <p>Your browser does not support iframes.</p>
                 </iframe>
 

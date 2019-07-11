@@ -14,10 +14,12 @@ const Excel = require('exceljs')
 
 class GraphApi {
     constructor() {
+        let hour = moment().hour(); 
+        let year = moment().year(); 
         this.graph = {
             LIVE: {
-                from: moment().subtract(1, "minutes").format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                to: moment().format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+                from: moment().startOf('seconds').subtract(1, "minutes").format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+                to: moment().startOf('seconds').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
                 duration: moment.duration(1, "minutes").asMilliseconds(),
                 precision: 60,
                 time: [ "-59s", "-58s", "-57s", "-56s", "-55s", "-54s", "-53s", "-52s", "-51s", "-50s", 
@@ -27,6 +29,12 @@ class GraphApi {
                         "-19s", "-18s", "-17s", "-16s", "-15s", "-14s", "-13s", "-12s", "-11s", "-10s", 
                         "-9s", "-8s", "-7s", "-6s", "-5s", "-4s", "-3s", "-2s", "-1s", "live"
                 ],
+                title : {
+                    display : true,
+                    text : "LIVE",
+                    position : "top",
+                    fontSize : 25
+                },  
                 worksheetNbr : 1
             },
             HOUR: {
@@ -35,13 +43,19 @@ class GraphApi {
                 duration: moment.duration(1, "hours").asMilliseconds(),
                 precision: 60,
                 time: [
-                    "0:00", "0:01", "0:02", "0:03", "0:04", "0:05", "0:06", "0:07", "0:08", "0:09", 
-                    "0:10", "0:11", "0:12", "0:13", "0:14", "0:15", "0:16", "0:17", "0:18", "0:19", 
-                    "0:20", "0:21", "0:22", "0:23", "0:24", "0:25", "0:26", "0:27", "0:28", "0:29", 
-                    "0:30", "0:31", "0:32", "0:33", "0:34", "0:35", "0:36", "0:37", "0:38", "0:39", 
-                    "0:40", "0:41", "0:42", "0:43", "0:44", "0:45", "0:46", "0:47", "0:48", "0:49", 
-                    "0:50", "0:51", "0:52", "0:53", "0:54", "0:55", "0:56", "0:57", "0:58", "0:59"
+                    hour + ":00", hour + ":01", hour + ":02", hour + ":03", hour + ":04", hour + ":05", hour + ":06", hour + ":07", hour + ":08", hour + ":09", 
+                    hour + ":10", hour + ":11", hour + ":12", hour + ":13", hour + ":14", hour + ":15", hour + ":16", hour + ":17", hour + ":18", hour + ":19", 
+                    hour + ":20", hour + ":21", hour + ":22", hour + ":23", hour + ":24", hour + ":25", hour + ":26", hour + ":27", hour + ":28", hour + ":29", 
+                    hour + ":30", hour + ":31", hour + ":32", hour + ":33", hour + ":34", hour + ":35", hour + ":36", hour + ":37", hour + ":38", hour + ":39", 
+                    hour + ":40", hour + ":41", hour + ":42", hour + ":43", hour + ":44", hour + ":45", hour + ":46", hour + ":47", hour + ":48", hour + ":49", 
+                    hour + ":50", hour + ":51", hour + ":52", hour + ":53", hour + ":54", hour + ":55", hour + ":56", hour + ":57", hour + ":58", hour + ":59"
                 ],
+                title : {
+                    display : true,
+                    text : "Last hour",
+                    position : "top",
+                    fontSize : 25
+                },
                 worksheetNbr : 1
             },
             DAY: {
@@ -50,13 +64,19 @@ class GraphApi {
                 duration:moment.duration(1, "days").asMilliseconds(),
                 precision: 48,
                 time: [
-                    "0:00", "0:30", "1:00", "1:30", "2:00", "2:30", "3:00", "3:30", 
-                    "4:00", "4:30", "5:00", "5:30", "6:00", "6:30", "7:00", "7:30", 
-                    "8:00", "8:30", "9:00", "9:30", "10:00", "10:30", "11:00", "11:30", 
-                    "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", 
-                    "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30", 
-                    "20:00", "20:30", "21:00", "21:30", "22:00", "22:30", "23:00", "23:30"
+                    "0:00", "", "1:00", "", "2:00", "", "3:00", "", 
+                    "4:00", "", "5:00", "", "6:00", "", "7:00", "", 
+                    "8:00", "", "9:00", "", "10:00", "", "11:00", "", 
+                    "12:00", "", "13:00", "", "14:00", "", "15:00", "", 
+                    "16:00", "", "17:00", "", "18:00", "", "19:00", "", 
+                    "20:00", "", "21:00", "", "22:00", "", "23:00", ""
                 ],
+                title : {
+                    display : true,
+                    text : moment().format("YYYY MMMM DD"),
+                    position : "top",
+                    fontSize : 25
+                },
                 worksheetNbr : 2
             },
             MONTH: {
@@ -72,6 +92,12 @@ class GraphApi {
                     "20", "20.5", "21", "21.5", "22", "22.5", "23", "23.5", "24", "24.5", 
                     "25", "25.5", "26", "26.5", "27", "27.5", "28", "28.5", "29", "29.5"
                 ],
+                title : {
+                    display : true,
+                    text : moment().format("MMMM"),
+                    position : "top",
+                    fontSize : 25
+                },
                 worksheetNbr : 3
             },
             YEAR: {
@@ -79,14 +105,25 @@ class GraphApi {
                 to: moment().endOf('years').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
                 duration: moment.duration(1, "years").asMilliseconds(),
                 precision: 48,
-                time: [
-                    "0", "0.25", "0.5", "0.75", "1", "1.25", "1.5", "1.75", 
-                    "2", "2.25", "2.5", "2.75", "3", "3.25", "3.5", "3.75", 
-                    "4", "4.25", "4.5", "4.75", "5", "5.25", "5.5", "5.75", 
-                    "6", "6.25", "6.5", "6.75", "7", "7.25", "7.5", "7.75", 
-                    "8", "8.25", "8.5", "8.75", "9", "9.25", "9.5", "9.75", 
-                    "10", "10.25", "10.5", "10.75", "11", "11.25", "11.5", "11.75"
+                time: [ "January (01/01)", "", "", "",
+                        "February (02/01)", "", "", "",
+                        "March (03/01)", "", "", "",
+                        "April (04/01)", "", "", "",
+                        "May (05/01)", "", "", "",
+                        "June (06/01)", "", "", "",
+                        "July (07/01)", "", "", "",
+                        "August (08/01)", "", "", "",
+                        "September (09/01)", "", "", "",
+                        "October (10/01)", "", "", "",
+                        "November (11/01)", "", "", "",
+                        "December (12/01)", "", "", ""
                 ],
+                title : {
+                    display : true,
+                    text : "Information about year " + moment().year(),
+                    position : "top",
+                    fontSize : 25
+                },
                 worksheetNbr : 4
             },
             ALL: {
@@ -95,16 +132,24 @@ class GraphApi {
                 duration: moment.duration(moment().endOf('year').diff(moment("2015-01-01T00:00:00.000Z").startOf('year'))).asMilliseconds(),
                 precision: 48,
                 time:[
-                    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
-                    "10", "11", "12", "13", "14", "15", "16", "17", "18", "19",
-                    "20", "21", "22", "23", "24", "25", "26", "27", "28", "29",
-                    "30", "31", "32", "33", "34", "35", "36", "37", "38", "39",
-                    "40", "41", "42", "43", "44", "45", "46", "47"
+                    "2015", "", "", "", "", "", "", "", "", "",
+                    "", "", "", "", "", "", "", "", "", "",
+                    "", "", "", "", "", "", "", "", "", "",
+                    "", "", "", "", "", "", "", "", "", "",
+                    "", "", "", "", "", "", "", year
                 ],
+                title : {
+                    display : true,
+                    text : "From 2015",
+                    position : "top",
+                    fontSize : 25
+                },
                 worksheetNbr : 5
             }
         }
-
+    }
+    getGraphFormat(callback){
+        callback(this.graph)
     }
     getIndiceTS(timestamp, range) {
         if (timestamp < range.from || timestamp > range.to) {
@@ -115,8 +160,8 @@ class GraphApi {
         }
     }
     async updateGraphFromTo() {
-        this.graph["LIVE"].from = moment().subtract(1, "minutes").format("YYYY-MM-DDTHH:mm:ss.SSSZ")
-        this.graph["LIVE"].to = moment().format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.graph["LIVE"].from = moment().startOf('seconds').subtract(1, "minutes").format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.graph["LIVE"].to = moment().startOf('seconds') .format("YYYY-MM-DDTHH:mm:ss.SSSZ")
         this.graph["HOUR"].from = moment().startOf('hour').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
         this.graph["HOUR"].to = moment().endOf('hour').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
         this.graph["DAY"].from = moment().startOf('days').format("YYYY-MM-DDTHH:mm:ss.SSSZ")

@@ -82,6 +82,11 @@ exports.getGraph = (req, res) => {
     res.send(result)
   })
 }
+exports.getGraphFormat = (req, res) => {
+  graphApi.getGraphFormat(result => {
+    res.send(result)
+  })
+}
 exports.getLiveInfo = (req, res) => {
   graphApi.getLiveInfo(result => {
     res.send(result)
