@@ -21,7 +21,6 @@ exports.login_post = function(req, res) {
   let login = req.body.login
   let password = req.body.password
   userDao.checkLogin(login, password, result => {
-
     if(result === 1){
       res.cookie("userData", { "login" : login, "password" : password })
       res.redirect('/userMng');

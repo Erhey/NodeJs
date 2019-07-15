@@ -8,14 +8,13 @@ const mongoConnectionStr = 'mongodb://127.0.0.1/tracking'
 mongoose.set('useCreateIndex', true)
 mongoose.connect(mongoConnectionStr, { useNewUrlParser: true })
 const g_db = mongoose.connection
-
 const Excel = require('exceljs')
-
-
 class GraphApi {
     constructor() {
-        let hour = moment().hour(); 
-        let year = moment().year(); 
+        let hour = moment().hour()
+        let month = moment().month() + 1    
+        let year = moment().year()
+        
         this.graph = {
             LIVE: {
                 from: moment().startOf('seconds').subtract(1, "minutes").format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
@@ -74,7 +73,7 @@ class GraphApi {
                 title : {
                     display : true,
                     text : moment().format("YYYY MMMM DD"),
-                    position : "top",
+                    position : "top",   
                     fontSize : 25
                 },
                 worksheetNbr : 2
@@ -85,12 +84,12 @@ class GraphApi {
                 duration: moment.duration(moment().endOf('month').diff(moment().startOf('month'))).asMilliseconds(),
                 precision: 60,
                 time: [
-                    "0", "0.5", "1", "1.5", "2", "2.5", "3", "3.5", "4", "4.5", 
-                    "5", "5.5", "6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", 
-                    "10", "10.5", "11", "11.5", "12", "12.5", "13", "13.5", "14", "14.5", 
-                    "15", "15.5", "16", "16.5", "17", "17.5", "18", "18.5", "19", "19.5", 
-                    "20", "20.5", "21", "21.5", "22", "22.5", "23", "23.5", "24", "24.5", 
-                    "25", "25.5", "26", "26.5", "27", "27.5", "28", "28.5", "29", "29.5"
+                    "(0" + month + "/01)", "", "(0" + month + "/02)", "", "(0" + month + "/03)", "", "(0" + month + "/04)", "", "(0" + month + "/05)", "", 
+                    "(0" + month + "/06)", "", "(0" + month + "/07)", "", "(0" + month + "/08)", "", "(0" + month + "/09)", "", "(0" + month + "/10)", "", 
+                    "(0" + month + "/11)", "", "(0" + month + "/12)", "", "(0" + month + "/13)", "", "(0" + month + "/14)", "", "(0" + month + "/15)", "", 
+                    "(0" + month + "/16)", "", "(0" + month + "/17)", "", "(0" + month + "/18)", "", "(0" + month + "/19)", "", "(0" + month + "/20)", "", 
+                    "(0" + month + "/21)", "", "(0" + month + "/22)", "", "(0" + month + "/23)", "", "(0" + month + "/24)", "", "(0" + month + "/25)", "", 
+                    "(0" + month + "/26)", "", "(0" + month + "/27)", "", "(0" + month + "/28)", "", "(0" + month + "/29)", "", "(0" + month + "/30)", ""
                 ],
                 title : {
                     display : true,
@@ -136,7 +135,7 @@ class GraphApi {
                     "", "", "", "", "", "", "", "", "", "",
                     "", "", "", "", "", "", "", "", "", "",
                     "", "", "", "", "", "", "", "", "", "",
-                    "", "", "", "", "", "", "", year
+                    "", "", "", "", "", "", year, ""
                 ],
                 title : {
                     display : true,
@@ -149,6 +148,38 @@ class GraphApi {
         }
     }
     getGraphFormat(callback){
+        let hour = moment().hour()
+        let month = moment().month() + 1    
+        let dayInMonth = moment().daysInMonth()
+        let monthTime = []
+        month = 1
+        for (let i = 1; i <= dayInMonth; i++) {
+            monthTime.push("(" + month + "/" + i + ")")
+            monthTime.push("")
+        }
+            this.graph.MONTH = {
+                from: moment().startOf('months').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+                to: moment().endOf('months').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+                duration: moment.duration(moment().endOf('month').diff(moment().startOf('month'))).asMilliseconds(),
+                precision: dayInMonth * 2,
+                time: monthTime,
+                title : {
+                    display : true,
+                    text : moment().format("MMMM"),
+                    position : "top",
+                    fontSize : 25
+                },
+                worksheetNbr : 3
+            }
+        
+        this.graph.HOUR.time = [
+            hour + ":00", hour + ":01", hour + ":02", hour + ":03", hour + ":04", hour + ":05", hour + ":06", hour + ":07", hour + ":08", hour + ":09", 
+            hour + ":10", hour + ":11", hour + ":12", hour + ":13", hour + ":14", hour + ":15", hour + ":16", hour + ":17", hour + ":18", hour + ":19", 
+            hour + ":20", hour + ":21", hour + ":22", hour + ":23", hour + ":24", hour + ":25", hour + ":26", hour + ":27", hour + ":28", hour + ":29", 
+            hour + ":30", hour + ":31", hour + ":32", hour + ":33", hour + ":34", hour + ":35", hour + ":36", hour + ":37", hour + ":38", hour + ":39", 
+            hour + ":40", hour + ":41", hour + ":42", hour + ":43", hour + ":44", hour + ":45", hour + ":46", hour + ":47", hour + ":48", hour + ":49", 
+            hour + ":50", hour + ":51", hour + ":52", hour + ":53", hour + ":54", hour + ":55", hour + ":56", hour + ":57", hour + ":58", hour + ":59"
+        ]
         callback(this.graph)
     }
     getIndiceTS(timestamp, range) {
@@ -267,8 +298,19 @@ class GraphApi {
                     })
                 }
             })
+            registeredAction.forEach(action => {
+                for (let indice = 0; indice < range.precision; indice++) {
+                    if(graphSpectre[unite].req_count[action][indice] !== 0){
+                        graphSpectre[unite].res_time_moy[action][indice] /= graphSpectre[unite].req_count[action][indice]
+                    }
+                    if(this.graph[unite] === "LIVE"){
+                        graphSpectre[unite].multico[action][indice]  = graphSpectre[unite].req_count[action][indice]
+                    }
+                }
+            })
+    
         }
-
+        
             // registeredAction.forEach(action => {
             //     for (let indice = 0; indice < range.precision; indice++) {
             //         if(graphSpectre[unite].req_count[action][indice] !== 0){
