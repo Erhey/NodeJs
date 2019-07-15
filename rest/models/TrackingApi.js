@@ -61,8 +61,6 @@ class TrackingApi {
         } else {
             findCond = { isDangerous: true }
         }
-        console.log(findCond)
-        console.log("test")
         await RequestSchema.find(findCond, (err, result) => {
             if (err) console.log(err)
             if (result) {
@@ -74,9 +72,7 @@ class TrackingApi {
                     curRequest.user_info = result[i].cookies
                     curRequest.timestamp = result[i].timestamp
                     requests.push(curRequest)
-                    console.log("je passe2")
                 }
-                console.log("je passe")
                 callback(requests)
             }
         })

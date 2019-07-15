@@ -10,44 +10,52 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <style>
         table {
-            margin: auto
+            margin: auto;
         }
+
         canvas {
+            display: flex;
+            flex-direction: column;
             width: 750px;
         }
     </style>
     <script>
         let graphFormat = {}
-        let unite = ["LIVE"]
+        const ALL_UNIT = [ "LIVE", "HOUR", "DAY", "MONTH", "YEAR", "ALL" ]
+
+
+        let unit = [ "LIVE" ]
         $(document).ready(() => {
-            $("input[name=show-unite]").on('change', () => {
-                unite = []
-                $("input:checked").each(function () {
-                    unite.push($(this).attr("id"))
+            $("input[name=show-unit]").on('change', () => {
+                // $("input[name=show-unit]")
+                unit = []
+                $("input[name=show-unit]:checked").each(function () {
+                    unit.push($(this).attr("id"))
+                    $("#graph-" + $(this).attr("id")).css({ visibility: "visible" })
+                })
+                $("input[name=show-unit]:not(:checked)").each(function () {
+                    $("#graph-" + $(this).attr("id")).css({ visibility: "hidden" })
                 })
             })
         })
 
-        let charts = []
+        let charts = {}
         function getParamValue(paramName) {
-            var url = window.location.search.substring(1); //get rid of "?" in querystring
-            var qArray = url.split('&'); //get key-value pairs
-            for (var i = 0; i < qArray.length; i++) 
-            {
-                var pArr = qArray[i].split('='); //split key and value
-                if (pArr[0] == paramName) 
-                    return pArr[1]; //return value
+            var url = window.location.search.substring(1) //get rid of "?" in querystring
+            var qArray = url.split('&') //get key-value pairs
+            for (var i = 0; i < qArray.length; i++) {
+                var pArr = qArray[i].split('=') //split key and value
+                if (pArr[0] == paramName)
+                    return pArr[1] //return value
             }
         }
         getAllGraphs = async callback => {
             await $.get("http://localhost:3001/getLiveInfo", (data, status) => {
                 let datasets_list = []
-                // console.log(unite)
-                // console.log(data)
-                for(let i = 0; i < unite.length; i++){
-                    datasets_list.push([{
-                        "label" : "Server requests",
-                        "data" : data[unite[i]].req_count["/"],
+                ALL_UNIT.forEach(unit => {
+                    datasets_list[unit] = [{
+                        "label": "Server requests for page : ",
+                        "data": data[unit].req_count["/"],
                         "backgroundColor": [
                             'rgba(54, 162, 235, 0.1)'
                         ],
@@ -56,28 +64,28 @@
                         ]
                     },
                     {
-                        "label" : "Error",
-                        "data" : data[unite[i]].error_count["/"],
-                            "backgroundColor": [
-                                'rgba(255, 99, 132, 0.1)'
-                            ],
-                            "borderColor": [
-                                'rgba(255, 99, 132, 1)'
-                            ]
+                        "label": "Error",
+                        "data": data[unit].error_count["/"],
+                        "backgroundColor": [
+                            'rgba(255, 99, 132, 0.1)'
+                        ],
+                        "borderColor": [
+                            'rgba(255, 99, 132, 1)'
+                        ]
                     },
                     {
-                        "label" : "Scripted requests",
-                        "data" : data[unite[i]].dangerous_count["/"],
-                            "backgroundColor": [
-                                'rgba(255, 255, 0, 0.1)'
-                            ],
-                            "borderColor": [
-                                'rgba(255, 255, 0, 1)'
-                            ],
+                        "label": "Scripted requests",
+                        "data": data[unit].dangerous_count["/"],
+                        "backgroundColor": [
+                            'rgba(255, 255, 0, 0.1)'
+                        ],
+                        "borderColor": [
+                            'rgba(255, 255, 0, 1)'
+                        ],
                     },
                     {
-                        "label" : "Response time",
-                        "data" : data[unite[i]].res_time_moy["/"],
+                        "label": "Response time",
+                        "data": data[unit].res_time_moy["/"],
                         "backgroundColor": [
                             'rgba(0, 255, 0, 0.1)'
                         ],
@@ -85,27 +93,27 @@
                             'rgba(0, 255, 0, 1)'
                         ],
                     }
-                    //,
-                    // datasets = [{
-                    //     "label" : "Stay length",
-                    //     "data" : data[unite].req_count,
-                    //     "backgroundColor": [
-                    //         'rgba(0, 255, 0, 0.1)'
-                    //     ],
-                    //     "borderColor": [
-                    //         'rgba(0, 255, 0, 1)'
-                    //     ],
-                    // },
-                    ])
-                }
+                        //,
+                        // datasets = [{
+                        //     "label" : "Stay length",
+                        //     "data" : data[unit].req_count,
+                        //     "backgroundColor": [
+                        //         'rgba(0, 255, 0, 0.1)'
+                        //     ],
+                        //     "borderColor": [
+                        //         'rgba(0, 255, 0, 1)'
+                        //     ],
+                        // },
+                    ]
+                })
                 callback(datasets_list)
             })
         }
-        getGraph = async (unite, callback) => {
+        getGraph = async (unit, callback) => {
             await $.get("http://localhost:3001/getLiveInfo", (data, status) => {
                 callback([{
-                    "label" : "Server requests",
-                    "data" : data[unite].req_count["/"],
+                    "label": "Server requests",
+                    "data": data[unit].req_count["/"],
                     "backgroundColor": [
                         'rgba(54, 162, 235, 0.1)'
                     ],
@@ -114,28 +122,28 @@
                     ]
                 },
                 {
-                    "label" : "Error",
-                    "data" : data[unite].error_count["/"],
-                        "backgroundColor": [
-                            'rgba(255, 99, 132, 0.1)'
-                        ],
-                        "borderColor": [
-                            'rgba(255, 99, 132, 1)'
-                        ]
+                    "label": "Error",
+                    "data": data[unit].error_count["/"],
+                    "backgroundColor": [
+                        'rgba(255, 99, 132, 0.1)'
+                    ],
+                    "borderColor": [
+                        'rgba(255, 99, 132, 1)'
+                    ]
                 },
                 {
-                    "label" : "Scripted requests",
-                    "data" : data[unite].dangerous_count["/"],
-                        "backgroundColor": [
-                            'rgba(255, 255, 0, 0.1)'
-                        ],
-                        "borderColor": [
-                            'rgba(255, 255, 0, 1)'
-                        ],
+                    "label": "Scripted requests",
+                    "data": data[unit].dangerous_count["/"],
+                    "backgroundColor": [
+                        'rgba(255, 255, 0, 0.1)'
+                    ],
+                    "borderColor": [
+                        'rgba(255, 255, 0, 1)'
+                    ],
                 },
                 {
-                    "label" : "Response time",
-                    "data" : data[unite].res_time_moy["/"],
+                    "label": "Response time",
+                    "data": data[unit].res_time_moy["/"],
                     "backgroundColor": [
                         'rgba(0, 255, 0, 0.1)'
                     ],
@@ -143,62 +151,71 @@
                         'rgba(0, 255, 0, 1)'
                     ],
                 }
-                //,
-                // datasets = [{
-                //     "label" : "Stay length",
-                //     "data" : data[unite].req_count,
-                //     "backgroundColor": [
-                //         'rgba(0, 255, 0, 0.1)'
-                //     ],
-                //     "borderColor": [
-                //         'rgba(0, 255, 0, 1)'
-                //     ],
-                // },
+                    //,
+                    // datasets = [{
+                    //     "label" : "Stay length",
+                    //     "data" : data[unit].req_count,
+                    //     "backgroundColor": [
+                    //         'rgba(0, 255, 0, 0.1)'
+                    //     ],
+                    //     "borderColor": [
+                    //         'rgba(0, 255, 0, 1)'
+                    //     ],
+                    // },
                 ])
             })
         }
         test = () => {
             alert(getParamValue("db"))
         }
-        
-        getGlobalDataFromTrackingApi = ( db => {
+
+        getGlobalDataFromTrackingApi = (db => {
             return db
         })
-        createGraph = async unite => {
-            await $.get("http://localhost:3001/getGraphFormat",  (data, status) => {
+        createAllGraph = async () => {
+            await $.get("http://localhost:3001/getGraphFormat", (data, status) => {
                 graphFormat = data
             })
             let datasets_list = []
-            await getGraph(unite, async datasets => {
+            await getAllGraphs(async datasets => {
                 datasets_list = datasets
             })
-            let ctx = document.getElementById('graph-' + unite).getContext('2d');
-            console.log(graphFormat[unite].title)
-
-            charts.push(new Chart(ctx, {
-                type: 'line',
-                data: {
-                    "labels": graphFormat[unite].time,
-                    "datasets": datasets_list
-                },
-                options : {
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero: true
-                            }
-                        }]
+            ALL_UNIT.forEach(unit => {
+                console.log(unit)
+                let ctx = document.getElementById('graph-' + unit).getContext('2d')
+                console.log(graphFormat[unit].title)
+                charts[unit] = new Chart(ctx, {
+                    // charts.push(new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        "labels": graphFormat[unit].time,
+                        "datasets": datasets_list[unit]
                     },
-                    animation: {
-                        duration: 30  ,
-                        easing: 'easeInOutCubic'
-                    },
-                    title : graphFormat[unite].title,
-                    responsive: true
-                }      
-            }))
+                    options: {
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        },
+                        animation: {
+                            duration: 0,
+                            easing: 'easeInOutCubic'
+                        },
+                        tooltips : {
+                            enabled : true,
+                            intersect : false
+                        },
+                        title: graphFormat[unit].title,
+                        responsive: true,
+                        
+                    }
+                })
+            })
+            // }))
             // let ctx = document.getElementById('graph-general').getContext('2d');
-        
+
             // chart = new Chart(ctx, {
             //     type: 'line',
             //     data: {
@@ -216,23 +233,24 @@
             //         }
             //     }
             // })
-            
+
         }
-        updateCreateAllGraphs = async () => {
-            await getAllGraphs( async datasets => {
+        updateGraphs = async () => {
+            console.log(unit)
+            await getAllGraphs(async datasets => {
                 // console.log(datasets)
-                for(let i = 0; i< unite.length; i++) {
+                for (let i = 0; i < unit.length; i++) {
+                    let chart_modified = false
                     let cpt = 0
-                    if(charts[i] === undefined) {
-                        await createGraph(unite[i])
-                    }
-                    await datasets[i].forEach(result => {
-                        // for(let i = 0; i < result.length; i++){
-                        charts[i].data.datasets[cpt].data = result.data
-                        // }
+                    await datasets[unit[i]].forEach(result => {
+                        if(charts[unit[i]].data.datasets[cpt].data.toString() !== result.data.toString()) {
+                            charts[unit[i]].data.datasets[cpt].data = result.data
+                            chart_modified = true
+                        }
                         cpt++
                     })
-                    charts[i].options = {
+                    if(chart_modified) {
+                        charts[unit[i]].options = {
                             scales: {
                                 yAxes: [{
                                     ticks: {
@@ -240,28 +258,45 @@
                                     }
                                 }]
                             },
-                            animation: {
-                                duration: 30  ,
-                                easing: 'easeInOutCubic'
+                            animation: false,
+                            tooltips : {
+                                enabled : true,
+                                intersect : false
                             },
-                            title : graphFormat[unite[i]].title,
+                            title: graphFormat[unit[i]].title,
                             responsive: true
                         }
-                    charts[i].update()  
+                        let activetest =   charts[unit[i]].tooltip._active;
+                        charts[unit[i]].update()
+                        redrawTooltips(charts[unit[i]], activetest)
+                        
+                    }
                 }
             })
         }
-        createGraph("LIVE")  
-        setInterval(updateCreateAllGraphs, 1000)
+        redrawTooltips = (chart, activetest) => {
+            if(chart.tooltip._active == undefined){
+                chart.tooltip._active = []
+            }
+            if(activetest !== undefined){
+                var activeElements = activetest;
+                chart.tooltip._active = activeElements;
+                chart.tooltip.update(true);
+                chart.draw();
+            }
+        }
+        createAllGraph()
+        setInterval(updateGraphs, 1000)
     </script>
 </head>
+
 <body>
-    LIVE<input type="checkbox" value="LIVE" name="show-unite" id="LIVE" checked>
-    HOUR<input type="checkbox" value="HOUR" name="show-unite" id="HOUR">
-    DAY<input type="checkbox" value="DAY" name="show-unite" id="DAY">
-    MONTH<input type="checkbox" value="MONTH" name="show-unite" id="MONTH">
-    YEAR<input type="checkbox" value="YEAR" name="show-unite" id="YEAR">
-    ALL<input type="checkbox" value="ALL" name="show-unite" id="ALL">
+    LIVE<input type="checkbox" value="LIVE" name="show-unit" id="LIVE" checked>
+    HOUR<input type="checkbox" value="HOUR" name="show-unit" id="HOUR">
+    DAY<input type="checkbox" value="DAY" name="show-unit" id="DAY">
+    MONTH<input type="checkbox" value="MONTH" name="show-unit" id="MONTH">
+    YEAR<input type="checkbox" value="YEAR" name="show-unit" id="YEAR">
+    ALL<input type="checkbox" value="ALL" name="show-unit" id="ALL">
     <!-- <div id="graph-info">
         <canvas id="graph-general"></canvas>
     </div> -->
@@ -275,43 +310,24 @@
         </ul> -->
     </div>
     <!-- <div id="canvas" style="display:block; height : 100%; background-color: red;"> -->
-        <table border="collide 1px black">
-            <tr>
-                <td><canvas id="graph-LIVE"></canvas></td>
-                <td><canvas id="graph-HOUR"></canvas></td>
-            </tr>
-            <tr>
-                <td><canvas id="graph-DAY"></canvas></td>
-                <td><canvas id="graph-MONTH"></canvas></td>
-            </tr>
-            <tr>
-                <td><canvas id="graph-YEAR"></canvas></td>
-                <td><canvas id="graph-ALL"></canvas></td>
-            </tr>
-        </table>
-    <!-- </div> -->
-    <!-- <table>
+    <table border="collide 1px black">
         <tr>
-            <td>Most viewed page :</td>
-            <td>"/"</td>
+            <td>
+                <canvas id="graph-LIVE"></canvas>
+                <tooltips id="tooltips-LIVE"></tooltips>
+            
+            </td>
+            <td><canvas id="graph-HOUR" style="visibility: hidden;"></canvas></td>
         </tr>
         <tr>
-            <td>Number Visitor today</td>
-            <td>122</td>
+            <td><canvas id="graph-DAY" style="visibility: hidden;"></canvas></td>
+            <td><canvas id="graph-MONTH" style="visibility: hidden;"></canvas></td>
         </tr>
         <tr>
-            <td>N</td>
-            <td></td>
+            <td><canvas id="graph-YEAR" style="visibility: hidden;"></canvas></td>
+            <td><canvas id="graph-ALL" style="visibility: hidden;"></canvas></td>
         </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-    </table> -->
+    </table>
 </body>
 
 

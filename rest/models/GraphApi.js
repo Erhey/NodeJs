@@ -258,6 +258,10 @@ class GraphApi {
                                 graphSpectre[unite].error_count[response.action][indice]++
                             }
                             // res time count
+                            if(graphSpectre[unite].res_time_moy[response.action] === undefined){
+                                console.log(graphSpectre[unite].res_time_moy)
+                                console.log(response)
+                            }
                             graphSpectre[unite].res_time_moy[response.action][indice] += response.restime
                         }
                     })
