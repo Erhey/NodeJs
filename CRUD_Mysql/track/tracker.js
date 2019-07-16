@@ -33,7 +33,6 @@ class Tracker {
      * Establish connection to mongodb database
      */
     constructor() {
-        console.log("Created")
         /**
          * Lifetime define the time when a user connects to a site
          * It's used to know when a user connects and when a user disconnects to a site
@@ -111,10 +110,6 @@ class Tracker {
             console.log(e)
         }
     }
-    // saveAllJourneys(){
-    //     findCond = { 'cookies.user_id': user_id,  journey: false }
-
-    // }
     /** 
      * Create a journey for a defined user_id
      * 
@@ -123,8 +118,6 @@ class Tracker {
     async createJourneyForUserId(user_id) {
         // returned journey Json object (journey + summary)
         let journeyJson = {}
-        // array of journey
-        journeyJson.journey = []
         // summarized all founded req/res
         let summary = {}
         summary.totaltime = 0
@@ -182,8 +175,6 @@ class Tracker {
                     return responses
                 }
             })
-            console.log(responses)
-            console.log(requests)
             // associate all requests/response to a track object
             await requests.forEach(async request => {
                 let track =  {}
@@ -208,67 +199,36 @@ class Tracker {
             // loop all tracks and create journeys
             await tracks.forEach(async track => {
                 if(track.reqTrack.req.action !== "/favicon.ico"){
-                    // Create new currentTrack HAS TO BE NEW !
-                    let currentTrack = {}
-                    currentTrack.res = {}
-                    currentTrack.req = {}
-
                     // update summary.from/to
                     if (summary.from > track.reqTrack.timestamp) {
                         summary.from = track.reqTrack.timestamp
                     }
                     if (summary.to < track.reqTrack.timestamp) {
                         summary.to = track.reqTrack.timestamp
-                    }
-
+                    }   
                     // count dangerous requests
                     if(track.reqTrack.isDangerous){
                         summary.isDanger_req ++
                     }
-
                     // count error responses
                     if(track.resTrack.error){
                         summary.isError_req ++
                     }
-                
-
                     if (previousAction === "") {
                         previousAction = track.reqTrack.req.action
                         summary.action = track.reqTrack.req.action
                         previousTimestamp = track.reqTrack.timestamp
-                        currentTrack.isDangerous = track.reqTrack.isDangerous
                     } else {
-                        // get Previous timestamp
-                        currentTrack.timestamp = previousTimestamp
-                        // get accesslength
                         currentTrack.accesslength = track.reqTrack.timestamp - previousTimestamp
-                        // update previous timeStamp
-                        previousTimestamp = track.reqTrack.timestamp
-                        // get previous action
-                        currentTrack.currentPath = previousAction
                         // update previous action
                         previousAction = track.reqTrack.req.action
-                        // get next action
-                        currentTrack.requestedPath = track.reqTrack.req.action
-                        // get request body
-                        currentTrack.req = track.reqTrack.req
-                        // get response cookie
-                        currentTrack.res.cookies = track.resTrack.cookies
-                        // get response error if exists
-                        currentTrack.res.error = track.resTrack.error
-                        // get response locals = informations used to show page
-                        currentTrack.res.locals = track.resTrack.locals
-                        // get response time = time between request and response
-                        currentTrack.res.restime = moment.duration(moment(track.resTrack.timestamp).diff(moment(track.reqTrack.timestamp))).asMilliseconds()
-                        // get request dangerousness
-                        currentTrack.isDangerous = track.reqTrack.isDangerous
                         // add action summary
                         summary.action += " > " + track.reqTrack.req.action
-
                         // add time to get total time
+                        console.log(moment.duration(moment(track.reqTrack.timestamp).diff(moment(previousTimestamp))).asMilliseconds())
                         summary.totaltime += moment.duration(moment(track.reqTrack.timestamp).diff(moment(previousTimestamp))).asMilliseconds()
-                        // add journey to journey json object
-                        journeyJson.journey.push(currentTrack)
+                        // update previous timeStamp
+                        previousTimestamp = track.reqTrack.timestamp
                     }
                 }
                 // update reqTrack to inform that he got registered
