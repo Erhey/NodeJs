@@ -1,31 +1,53 @@
-// Use moment to get current timestamp
-const moment = require("moment")
-const colors = require("colors")
+// Get utilities module
+const moment = require('moment')
 const uuidv1 = require('uuid/v1')
-// Getting Request and Response Schema
-const RequestSchema = require("./Schema/requestSchema")
-const ResponseSchema = require("./Schema/responseSchema")
-const JourneySchema = require("./Schema/journeySchema")
+const logger = require('../logs/winston')(__filename)
 const sanitizeHtml = require('sanitize-html')
-const async = require("async")
+const colors = require('colors')
+
+// Getting Request and Response Schema
+const requestSchema = require('./Schema/requestSchema')
+const responseSchema = require('./Schema/responseSchema')
+const journeySchema = require('./Schema/journeySchema')
 
 // Creating Mongoose connection
 const mongoose = require('mongoose')
 const mongoConnectionStr = 'mongodb://127.0.0.1/tracking'
-mongoose.set('useCreateIndex', true)
-mongoose.connect(mongoConnectionStr, { useNewUrlParser: true })
-const g_db = mongoose.connection
-
-/**
+let mongoConnection
+try {
+    mongoose.set('useCreateIndex', true)
+    mongoose.connect(mongoConnectionStr, { useNewUrlParser: true })
+    mongoConnection = mongoose.connection
+} catch (e) {
+    logger.error('Error : '.red + e.red)
+}
+/** 
  * Tracker Class
  * It creates request tracking objects, response tracking objects and user journey after disconnection : 
  * Here are the main methods
+ *      Global
+ *  
  *          constructor : Establish connection to mongodb database
- *          track : This is the "main" function to call when tracking a site
- *          
- *          Request  :: which track the request and insert a track on request collection
- *          Response :: which track the response and insert a track on response collection
- *          Response :: which track the response and insert a track on response collection
+ *          track : This is the main function to call when tracking a site
+ *  
+ *      Journey
+ *  
+ *          journey : Create and save to database user journey which sum up what user did during its visit 
+ *          createJourney : Internal function use in journey process to create journey json to save to database 
+ *          insertJourney : Save to database user journey 
+ *      
+ *      Request 
+ *  
+ *          request : Create and save to database user request and insert a track to database
+ *          createRequest : Internal function use in Request process to create request json to save to database 
+ *          insertRequest : Save to database user Request 
+ *  
+ *      Response 
+ *  
+ *          response : Create and save to database user response and insert a track to database
+ *          createResponse : Internal function use in Response process to create request json to save to database 
+ *          insertResponse : Save to database user Response 
+ *  
  */
 class Tracker {
     /**
@@ -33,97 +55,111 @@ class Tracker {
      * Establish connection to mongodb database
      */
     constructor() {
+        // Check if connection was correctly instanciated
+        if (mongoConnection) {
+            logger.info('Connected to database !')
+            // Create tracker object by giving it an instance of mongoose
+            this.db = mongoConnection
+        } else {
+            logger.error('mongoConnection is undefined'.red)
+            // throw error if instance wasn't correctly instanciated
+            throw new TypeError('Could not set db attribute as mongoConnection is undefined'.red)
+        }
         /**
          * Lifetime define the time when a user connects to a site
          * It's used to know when a user connects and when a user disconnects to a site
          */
         this.lifeTime = moment().valueOf()
+        /**
+         * Save temporary requestedTimeStamp
+         */
         this.requestedTimestamp = {}
-        this.reqPath = ""
-        this.responseTimestamp = {}        // Check if connection was correctly instanciated
-        if (g_db) {
-            console.log("Connected to database !".underline.green)
-            // Create tracker object by giving it an instance of mongoose
-            this.db = g_db
-        } else {
-            console.log("g_db is undefined".underline.red)
-            // throw error if instance wasn't correctly instanciated
-            throw new TypeError("Could not set db attribute as g_db is undefined")
-        }
+        /**
+         * Save temporary responseTimestamp
+         */
+        this.responseTimestamp = {}
+        this.reqPath = ''
     }
     /**
-     * This is the "main" function to call when tracking a site
+     * This is the main function to call when tracking a site
      * 
-     * @param {*} req   Request object picked up from server 
-     * @param {*} res   Request object picked up from server
-     * @param {*} next  ensure that after tracking request/response, it goes next
+     * @param {Mixed} req   Request object picked up from server 
+     * @param {Mixed} res   Request object picked up from server
+     * @param {Callback} next  ensure that after tracking request/response, it goes next
      */
     track(req, res, next) {
         // We consider that user is disconected after 20 min of inactivity
-        
         if (moment.duration(moment().diff(moment(this.lifeTime))).asMilliseconds() > 1200000) { // 20 minutes
             // Create a journey of disconnected user
-            this.saveUserJourney(req)
+            this.journey(req)
         }
         // Add to user an id to identify it and distinguish it from others
-        if(req.cookies.user_id === undefined){
+        if (req.cookies.user_id === undefined) {
             // create unique uuid base on time
             let u_id = uuidv1()
             // add it to res/req cookie
-            res.cookie('user_id',u_id)
+            res.cookie('user_id', u_id)
             req.cookies.user_id = u_id
         }
         // Create request track document
         this.request(req)
         // Wait that response was sended
         res.on('finish', () => {
-        // Then create response track document
+            // Then create response track document
             this.response(res)
         })
         next()
     }
-    async saveAllJourney(){
-        let track = await RequestSchema.findOne({ journey: false }, (err, track) => {
-            console.log("test")
-            if (err) {
-                console.log(err)
-            }
-            if (track) {
-                if(track.cookies.user_id !== undefined){
-                    this.saveUserJourney(track.cookies.user_id)
-                } else {
-                    this.saveUserJourney("")
-                }
-            }
-        })
-    }
     /**
-     * This method creates a journey from tracked user informations
+     * Create and save to database user journey which sum up what user did during its visit 
      * 
-     * @param {*} req Request object picked up from server 
+     * @param {Mixed} req Request object picked up from server 
      */
-    async saveUserJourney(user_id) {
+    async journey(user_id) {
         try {
-            let journeyJson = await this.createJourneyForUserId(user_id)
+            // create journey json journey object
+            let journeyJson = await this.createJourney(user_id)
+            // insert json journey object
             await this.insertJourney(journeyJson)
         } catch (e) {
-            console.log(e)
+            logger.error('Error on journey function : '.red + e.red)
+        }
+    }
+    /**
+     * Save all Journey to database
+     * 
+     */
+    async saveAllJourney() {
+        try {
+            await RequestSchema.findOne({ journey: false }, (err, track) => {
+                if (err) {
+                    throw err
+                }
+                if (track) {
+                    if (track.cookies.user_id !== undefined) {
+                        this.saveUserJourney(track.cookies.user_id)
+                    } else {
+                        this.saveUserJourney('')
+                    }
+                }
+            })
+        } catch (e) {
+            logger.error('Error on saveAllJourney : '.red + e.red)
         }
     }
     /** 
-     * Create a journey for a defined user_id
+     * Internal function use in journey process to create journey json to save to database 
      * 
-     * @param {*} user_id user_id
+     * @param {uuid} user_id user_id
      */
-    async createJourneyForUserId(user_id) {
-        // returned journey Json object (journey + summary)
+    async createJourney(user_id) {
+        logger.info('Creating a journey for user : ' + user_id + ' start')
+        // Initialization of returned Json journey object
         let journeyJson = {}
-        // summarized all founded req/res
-        let summary = {}
-        summary.totaltime = 0
-        summary.total_req = 0
-        summary.isDanger_req = 0
-        summary.isError_req = 0
+        journeyJson.totaltime = 0
+        journeyJson.total_req = 0
+        journeyJson.isDanger_req = 0
+        journeyJson.isError_req = 0
 
         // condition used in request query
         let findReqCond = {}
@@ -131,102 +167,101 @@ class Tracker {
         let findResCond = {}
 
         // keep in memory last track informations : Used while creating journey objects
-        let previousAction = ""
+        let previousAction = ''
         // keep in memory last timestamp : Used while creating journey objects
-        let previousTimestamp = ""
+        let previousTimestamp = ''
 
         // list of unregistered requests found for user_id 
         let requests = {}
         // list of request-link-id
-        let link_id_tab = []
+        let link_idList = []
         // list of request-linked responses 
         let responses = {}
         // sum up req/res object
         let tracks = []
 
-        console.log(user_id)
         // Check if user_id is well defined
-        if (user_id === "") {
-            findReqCond = { 'cookies.user_id' : { $exists: false }, journey: false }
+        if (user_id === '') {
+            findReqCond = { 'cookies.user_id': { $exists: false }, journey: false }
         } else {
             findReqCond = { 'cookies.user_id': user_id, journey: false }
         }
         try {
             // get all request for user_id
-            requests = await RequestSchema.find(findReqCond,[],{ sort: { timestamp: 1 } }, (err, result) => {
-                if (err) console.log(err)
-                if (!result) {
-                } else {
+            requests = await requestSchema.find(findReqCond, [], { sort: { timestamp: 1 } }, (err, result) => {
+                if (err) {
+                    throw err
+                }
+                if (result) {
                     return result
                 }
             })
-            // get link_id attribute for each request and add it to link_id_tab array
+            // get link_id attribute for each request and add it to link_idList array
             await requests.forEach(request => {
-                link_id_tab.push(request.link_id)
+                link_idList.push(request.link_id)
             })
-            // create response query condition based on link_id_tab
-            findResCond =  { link_id : { $in: link_id_tab } }
+            // create response query condition based on link_idList
+            findResCond = { link_id: { $in: link_idList } }
 
             // Get all requests-linked responses
-            responses = await ResponseSchema.find(findResCond, async (err, responses) => {
-                if(err) {
-                    console.log(err)
+            responses = await responseSchema.find(findResCond, async (err, responses) => {
+                if (err) {
+                    throw err
                 } else {
                     return responses
                 }
             })
             // associate all requests/response to a track object
             await requests.forEach(async request => {
-                let track =  {}
-                await this.getLinkedResponse(responses, request.link_id, result => {
-                    track.reqTrack = request
-                    track.resTrack = result
-                    // then add it to track array
-                    tracks.push(track)
+                let track = {}
+                await responses.forEach(response => {
+                    if (response.link_id.toString() === request.link_id.toString()) {
+                        track.reqTrack = request
+                        track.resTrack = response
+                        // then add it to track array
+                        tracks.push(track)
+                    }
                 })
             })
             // Add user_id to summary (journey's attribute)
             if (user_id === '') {
                 // If empty string, set it to unknown
-                summary.user_id = "unknown"
+                journeyJson.user_id = 'unknown'
             } else {
-                summary.user_id = user_id
+                journeyJson.user_id = user_id
             }
             // update from/to summary attributes
-            summary.from = tracks[0].reqTrack.timestamp
-            summary.to = tracks[0].reqTrack.timestamp
-
+            journeyJson.from = tracks[0].reqTrack.timestamp
+            journeyJson.to = tracks[0].reqTrack.timestamp
             // loop all tracks and create journeys
             await tracks.forEach(async track => {
-                if(track.reqTrack.req.action !== "/favicon.ico"){
-                    // update summary.from/to
-                    if (summary.from > track.reqTrack.timestamp) {
-                        summary.from = track.reqTrack.timestamp
+                if (track.reqTrack.req.action !== '/favicon.ico') {
+                    // update journeyJson.from/to
+                    if (journeyJson.from > track.reqTrack.timestamp) {
+                        journeyJson.from = track.reqTrack.timestamp
                     }
-                    if (summary.to < track.reqTrack.timestamp) {
-                        summary.to = track.reqTrack.timestamp
-                    }   
+                    if (journeyJson.to < track.reqTrack.timestamp) {
+                        journeyJson.to = track.reqTrack.timestamp
+                    }
                     // count dangerous requests
-                    if(track.reqTrack.isDangerous){
-                        summary.isDanger_req ++
+                    if (track.reqTrack.isDangerous) {
+                        journeyJson.isDanger_req++
                     }
                     // count error responses
-                    if(track.resTrack.error){
-                        summary.isError_req ++
+                    if (track.resTrack.error) {
+                        journeyJson.isError_req++
                     }
-                    if (previousAction === "") {
+                    if (previousAction === '') {
                         previousAction = track.reqTrack.req.action
-                        summary.action = track.reqTrack.req.action
+                        journeyJson.action = track.reqTrack.req.action
                         previousTimestamp = track.reqTrack.timestamp
                     } else {
-                        currentTrack.accesslength = track.reqTrack.timestamp - previousTimestamp
                         // update previous action
                         previousAction = track.reqTrack.req.action
                         // add action summary
-                        summary.action += " > " + track.reqTrack.req.action
+                        journeyJson.action += ' > ' + track.reqTrack.req.action
                         // add time to get total time
-                        console.log(moment.duration(moment(track.reqTrack.timestamp).diff(moment(previousTimestamp))).asMilliseconds())
-                        summary.totaltime += moment.duration(moment(track.reqTrack.timestamp).diff(moment(previousTimestamp))).asMilliseconds()
+                        journeyJson.totaltime += moment.duration(moment(track.reqTrack.timestamp).diff(moment(previousTimestamp))).asMilliseconds()
                         // update previous timeStamp
                         previousTimestamp = track.reqTrack.timestamp
                     }
@@ -234,106 +269,137 @@ class Tracker {
                 // update reqTrack to inform that he got registered
                 track.reqTrack.journey = true
                 track.reqTrack.save(err => {
-                    if (err) console.log(err)
+                    if (err) {
+                        throw err
+                    }
                 })
             })
-            summary.total_req = tracks.length
-            journeyJson.summary = summary
+            journeyJson.total_req = tracks.length
+            logger.info('Creating a journey for user : ' + user_id + ' end')
             return journeyJson
         } catch (e) {
-            console.log(e)
+            throw e
         }
     }
     /**
-     * get linked response
+     * Save to database user journey 
      * 
-     * @param {*} responses array of all responses found in link_id_tab array : array of all requests link_id attribute
-     * @param {*} link_id   request link_id used to find linked response
-     * @param {*} callback  function to call after methods ended
-     */
-    async getLinkedResponse(responses, link_id, callback){
-        await responses.forEach(response => {
-            if(response.link_id.toString() === link_id.toString()) {
-                callback(response)
-            }
-        })
-    }
-    /**
-     * Insert created journey Json object to mongodb database
-     * 
-     * @param {*} journeyJson 
+     * @param {JSON} journeyJson 
      */
     async insertJourney(journeyJson) {
+        logger.info('Insert journey to database start')
         // insert journey to mongodb database
-        JourneySchema.insertMany(journeyJson, (err, result) => {
-            if (err) {
-                console.log(err)
-                return false
-            } else {
-                // console.log(result)
-                console.log("Journey created")
-                return true
-            }
-        })
+        try {
+            journeySchema.insertMany(journeyJson, (err, result) => {
+                if (err) {
+                    throw err
+                } else {
+                    logger.info('Journey created')
+                    return true
+                }
+            })
+        } catch (e) {
+            throw e
+        }
     }
     /**
-     * Create a Request Track from user request informations
+     * Create and save to database user track the request and insert a track on request collection
      * 
-     * @param {*} req 
+     * @param {Mixed} req 
      */
     request(req) {
-        // create request json request object
-        let jsonRequest = this.createRequestTrack(req)
-        // insert json request object
-        this.insertRequestTrack(jsonRequest)
+        try {
+            logger.info('Request from user received!')
+            // create request json request object
+            let requestJson = this.createRequest(req)
+            // insert json request object
+            this.insertRequest(requestJson)
+        } catch (e) {
+            logger.error('Error on request function : '.red + e.red)
+        }
     }
-    createRequestTrack(req) {
-        let jsonRequest = {}
-        jsonRequest.timestamp = moment().format("YYYY-MM-DDTHH:mm:ss.SSSZ")
-        this.requestedTimestamp = jsonRequest.timestamp
+    /**
+     * Internal function use in Request process to create request json to save to database 
+     * 
+     * @param {Mixed} req 
+     */
+    createRequest(req) {
+        logger.info('Creating request start')
+        let requestJson = {}
+        // Get response timestamp
+        requestJson.timestamp = moment().format('YYYY-MM-DDTHH:mm:ss.SSSZ')
+        this.requestedTimestamp = requestJson.timestamp
+        // The user is still here so we haveto reset lifeTime
         this.lifeTime = moment().valueOf()
-        if (req.cookies !== undefined) {
-            this.cookies = req.cookies
-            jsonRequest.cookies = req.cookies
-        } else if (this.cookies !== undefined) {
-            jsonRequest.cookies = this.cookies
-        }
-        jsonRequest.req = {}
-        jsonRequest.req.body = req.body
-        this.reqPath = req.path
-        jsonRequest.req.action = this.reqPath
-        jsonRequest.req.method = req.method
-        jsonRequest.req.remoteAddress = req.connection.remoteAddress
-        if (this.isDangerous(req.body)) {
-            jsonRequest.isDangerous = true
-        } else {
-            jsonRequest.isDangerous = false
-        }
-        this.link_id = new mongoose.Types.ObjectId
-        jsonRequest.link_id = this.link_id
-        jsonRequest.journey = false
-        return jsonRequest
-    }
-    insertRequestTrack(jsonTracking) {
-        RequestSchema.insertMany(jsonTracking, (err, result) => {
-            if (err) {
-                console.log(err)
-                return false
-            } else {
-                return true
+        // Get cookies 
+        try {
+            if (req.cookies !== undefined) {
+                this.cookies = req.cookies
+                requestJson.cookies = req.cookies
+            } else if (this.cookies !== undefined) {
+                requestJson.cookies = this.cookies
             }
-        })
+            requestJson.req = {}
+            // Get body 
+            requestJson.req.body = req.body
+            this.reqPath = req.path
+            // Get path 
+            requestJson.req.action = this.reqPath
+            // Get method (GET/POST/PUT/DELETE) 
+            requestJson.req.method = req.method
+            // Get ip address
+            requestJson.req.remoteAddress = req.connection.remoteAddress
+            // Check if request is dangerous
+            if (this.isDangerous(req.body)) {
+                requestJson.isDangerous = true
+            } else {
+                requestJson.isDangerous = false
+            }
+            // Create a link_id used further when response is called
+            this.link_id = new mongoose.Types.ObjectId
+            requestJson.link_id = this.link_id
+            requestJson.journey = false
+            logger.info('Creating request end')
+            return requestJson
+        } catch (e) {
+            throw e
+        }
     }
+    /**
+     * Save to database user Request 
+     * 
+     * @param {JSON} journeyJson 
+     */
+    insertRequest(journeyJson) {
+        try {
+            logger.info('Insert request to database start')
+            // Insert to database a request
+            requestSchema.insertMany(journeyJson, (err, result) => {
+                if (err) {
+                    throw err
+                } else {
+                    logger.info('Request created')
+                    return true
+                }
+            })
+        } catch (e) {
+            throw e
+        }
+    }
+    /**
+     * Internal function used in request to check if the request contains javascript injections 
+     * 
+     * @param {Mixed} object Object to be checked
+     */
     isDangerous(object) {
         for (const prop in object) {
-            if (typeof (object[prop]) === "object") {
+            if (typeof (object[prop]) === 'object') {
                 if (isDangerous(object[prop])) {
                     return true
                 }
             } else {
-                if (typeof (object[prop]) === "string") {
-                    var clean = sanitizeHtml(object[prop])
-                    // console.log("Clean : " + clean + "   -    origin : " + object[prop])
+                if (typeof (object[prop]) === 'string') {
+                    let clean = sanitizeHtml(object[prop])
                     if (clean !== object[prop]) {
                         return true
                     }
@@ -343,46 +409,84 @@ class Tracker {
         return false
     }
     /**
-     * Response
+     * Create and save to database user response and insert a track to database
+     * 
+     * @param {Mixed} res 
      */
     response(res) {
-        let jsonResponse = this.createResponseTrack(res)
-        this.insertResponseTrack(jsonResponse)
-    }
-    createResponseTrack(res) {
-        let jsonResponse = {}
-        jsonResponse.timestamp = moment().format("YYYY-MM-DDTHH:mm:ss.SSSZ")
-        this.responseTimestamp = jsonResponse.timestamp
-        jsonResponse.restime = moment.duration(moment(this.responseTimestamp).diff(moment(this.requestedTimestamp))).asMilliseconds()
-        if (res.cookies !== undefined) {
-            this.cookies = res.cookies
-            jsonResponse.cookies = res.cookies
-        } else if (this.cookies !== undefined) {
-            jsonResponse.cookies = this.cookies
+        try {
+            logger.info('Response from server!')
+            // create response json response object
+            let responseJson = this.createResponse(res)
+            // insert json response object
+            this.insertResponse(responseJson)
+        } catch (e) {
+            logger.error('Error on response function : '.red + e.red)
         }
-        jsonResponse.link_id = this.link_id
-        if (res.statusCode !== 200) {
-            jsonResponse.error = {}
-            if (res.error !== undefined) {
-                jsonResponse.error.message = res.error.message
-                jsonResponse.error.status = res.error.status
-                jsonResponse.error.level = res.error.level
-                jsonResponse.error.detail = res.error.detail
-            }
-        }
-        jsonResponse.action = this.reqPath
-        jsonResponse.locals = res.locals
-        return jsonResponse
     }
-    insertResponseTrack(jsonTracking, callback) {
-        ResponseSchema.insertMany(jsonTracking, (err, result) => {
-            if (err) {
-                console.log(err)
-                return false
-            } else {
-                return true
+    /**
+     * Internal function use in Response process to create request json to save to database 
+     * 
+     * @param {Mixed} res 
+     */
+    createResponse(res) {
+        logger.info('Creating response Json start')
+        let responseJson = {}
+        // Get response timestamp
+        responseJson.timestamp = moment().format('YYYY-MM-DDTHH:mm:ss.SSSZ')
+        this.responseTimestamp = responseJson.timestamp
+        // Get response time
+        responseJson.restime = moment.duration(moment(this.responseTimestamp).diff(moment(this.requestedTimestamp))).asMilliseconds()
+        // set link_id
+        responseJson.link_id = this.link_id
+        try {
+            // Get cookies 
+            if (res.cookies !== undefined) {
+                this.cookies = res.cookies
+                responseJson.cookies = res.cookies
+            } else if (this.cookies !== undefined) {
+                responseJson.cookies = this.cookies
             }
-        })
+            // Get error if exist
+            if (res.statusCode !== 200) {
+                responseJson.error = {}
+                if (res.error !== undefined) {
+                    responseJson.error.message = res.error.message
+                    responseJson.error.status = res.error.status
+                    responseJson.error.level = res.error.level
+                    responseJson.error.detail = res.error.detail
+                }
+            }
+            // Get response path
+            responseJson.action = this.reqPath
+            // Get locals
+            responseJson.locals = res.locals
+            logger.info('Creating response Json end')
+            return responseJson
+        } catch (e) {
+            throw e
+        }
+    }
+    /**
+     * Save to database user Response 
+     * 
+     * @param {JSON} responseJson 
+     */
+    insertResponse(responseJson) {
+        try {
+            logger.info('Insert response to database start')
+            // Insert to database a response
+            responseSchema.insertMany(responseJson, (err, result) => {
+                if (err) {
+                    throw err
+                } else {
+                    logger.info('Response created')
+                    return true
+                }
+            })
+        } catch (e) {
+            throw e
+        }
     }
 }
 module.exports = new Tracker()
