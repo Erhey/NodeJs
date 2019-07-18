@@ -1,21 +1,9 @@
-
-const RequestSchema = require("../track/Schema/requestSchema")
-const mongoose = require('mongoose')
+const link_schema = require('link_schema')
 const colors = require("colors")
-const logger = require('../logs/winston')(__filename)
-// Creating Mongoose connection
-const mongoose = require('mongoose')
-const mongoConnectionStr = 'mongodb://127.0.0.1/tracking'
-let mongoConnection
-try {
-    mongoose.set('useCreateIndex', true)
-    mongoose.connect(mongoConnectionStr, { useNewUrlParser: true })
-    mongoConnection = mongoose.connection
-} catch (e) {
-    logger.error('Error : '.red + e.red)
-}
+const logger = require("link_logger")(__filename)
 /**
- * TrackingApi is class to get particular information we want to look at about users.
+ * Tracking API
+ * This class gets particular information we want to look at about a site.
  * 
  * It defines some functions such as :
  * 
@@ -23,21 +11,18 @@ try {
  * getPagesVisitedList : List accessed page for a site as a list of string
  * 
  */
-
 class TrackingApi {
-
     /**
      * Constructor
      * Establish connection to mongodb database
+     * 
+     * @param {String} db 
      */
-    constructor() {
-        if (mongoConnection) {
-            logger.info("Connected to database !".green)
-            this.db = mongoConnection
-        } else {
-            logger.error("mongoConnection is undefined".red)
-            throw new TypeError("Could not set db attribute as mongoConnection is undefined")
-        }
+    constructor(db) {
+        this.mongoConnection = link_schema.tracking[db].getMongoConnection
+        this.responseSchema = link_schema.tracking[db].responseSchema
+        this.requestSchema = link_schema.tracking[db].requestSchema
+        this.journeySchema = link_schema.tracking[db].journeySchema
     }
 
     /**
@@ -58,7 +43,7 @@ class TrackingApi {
         }
         try {
             // Search for Dangerous request
-            await RequestSchema.find(findCond, (err, result) => {
+            await this.requestSchema.find(findCond, (err, result) => {
                 if (err) {
                     throw err
                 }
@@ -79,30 +64,7 @@ class TrackingApi {
             logger.info("Error on getDangerousRequests function :".red + e.red)
         }
     }
-    /**
-     * List accessed page for a site as a list of string
-     * 
-     * @param {Date} from  From when should we look for dangerous request
-     * @param {Date} to 
-     * @param {function} callback 
-     */
-    async getPagesVisitedList(from, to, callback) {
-        let pageVisitedList = []
-        let findCond = { timestamp: { $gte: from }, timestamp: { $lt: to } }
-        await RequestSchema.find(findCond, async (err, requests) => {
-            if (err) {
-                throw err
-            }
-            else if (requests) {
-                await requests.forEach(request => {
-                    if (!pageVisitedList.includes(request.req.action)) {
-                        pageVisitedList.push(request.req.action)
-                    }
-                })
-            }
-        })
-        callback(pageVisitedList)
-    }
+
     // async getUserUUIDList(from, to, callback){
 
     // }
@@ -121,4 +83,4 @@ class TrackingApi {
     // }
 }
 
-module.exports = new TrackingApi()
+module.exports = TrackingApi

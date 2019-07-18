@@ -39,12 +39,12 @@ Content-Type: application/json
 GET http://localhost:8080/req/?user=4
 
 ###
-POST http://localhost:3000/visitedPages
+POST http://localhost:3001/visitedPages
 Content-Type: application/json
 
 {
-    "from" : "2019-06-11T02:35:46Z",
-    "to" : "2019-06-11T02:45:46Z"
+    "from" : "2019-06-17T06:35:10.103Z",
+    "to" : "2019-08-30T06:40:56.850Z"
 }
 
 

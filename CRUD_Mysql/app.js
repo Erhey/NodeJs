@@ -6,7 +6,9 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var userMngRouter = require('./routes/userMng');
-const tracker = require("./track/tracker")
+const Tracker = require("link_tracker")
+const tracker = new Tracker("CRUD-MYSQL")
+
 
 var app = express();
 // Gestion du tracking

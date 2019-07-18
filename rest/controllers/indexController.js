@@ -1,7 +1,10 @@
-const trackingApi = require("../models/TrackingApi")
-const graphApi = require("../models/GraphApi")
-const tracker = require("../track/tracker")
-const uuidv1 = require('uuid/v1')
+const Tracker = require("link_tracker")
+const TrackingApi = require("../models/TrackingApi")
+const GraphApi = require("../models/GraphApi")
+
+const tracker = new Tracker("CRUD-MYSQL")
+const trackingApi =  new TrackingApi("CRUD-MYSQL")
+const graphApi = new GraphApi("CRUD-MYSQL")
 
 
 exports.index = function (req, res) {
@@ -50,14 +53,8 @@ exports.dangerousRequest = (req, res) => {
 }
 
 exports.visitedPages = (req, res) => {
-  if(!req.body.from) {
-    res.send("please define from")
-  }
-  else if(!req.body.to) {
-    res.send("please define to")
-  }
   let visitedPagesList
-  trackingApi.getPagesVisitedList(req.body.from, req.body.to, result => {
+  graphApi.getPagesVisitedList(result => {
       visitedPagesList = result
       res.send(visitedPagesList)
   })

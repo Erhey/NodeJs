@@ -1,26 +1,12 @@
 // Get utilities module
 const moment = require('moment')
 const uuidv1 = require('uuid/v1')
-const logger = require('../logs/winston')(__filename)
 const sanitizeHtml = require('sanitize-html')
 const colors = require('colors')
-
-// Getting Request and Response Schema
-const requestSchema = require('./Schema/requestSchema')
-const responseSchema = require('./Schema/responseSchema')
-const journeySchema = require('./Schema/journeySchema')
-
-// Creating Mongoose connection
 const mongoose = require('mongoose')
-const mongoConnectionStr = 'mongodb://127.0.0.1/tracking'
-let mongoConnection
-try {
-    mongoose.set('useCreateIndex', true)
-    mongoose.connect(mongoConnectionStr, { useNewUrlParser: true })
-    mongoConnection = mongoose.connection
-} catch (e) {
-    logger.error('Error : '.red + e.red)
-}
+const logger = require('link_logger')(__filename)
+const link_schema = require('link_schema')
+
 /** 
  * Tracker Class
  * It creates request tracking objects, response tracking objects and user journey after disconnection : 
@@ -53,17 +39,21 @@ class Tracker {
     /**
      * Constructor
      * Establish connection to mongodb database
+     * 
+     * @param {String} db MongoDB connection string.
      */
-    constructor() {
+    constructor(db) {
+        this.mongoConnection = link_schema.tracking[db].getMongoConnection
+        this.responseSchema = link_schema.tracking[db].responseSchema
+        this.requestSchema = link_schema.tracking[db].requestSchema
+        this.journeySchema = link_schema.tracking[db].journeySchema
         // Check if connection was correctly instanciated
-        if (mongoConnection) {
+        if (this.mongoConnection) {
             logger.info('Connected to database !')
-            // Create tracker object by giving it an instance of mongoose
-            this.db = mongoConnection
         } else {
             logger.error('mongoConnection is undefined'.red)
             // throw error if instance wasn't correctly instanciated
-            throw new TypeError('Could not set db attribute as mongoConnection is undefined'.red)
+            throw new TypeError('Could not mongo connection! Please check the mongodb connection on your entry point : (example : app.js)'.red)
         }
         /**
          * Lifetime define the time when a user connects to a site
@@ -131,7 +121,7 @@ class Tracker {
      */
     async saveAllJourney() {
         try {
-            await RequestSchema.findOne({ journey: false }, (err, track) => {
+            await this.requestSchema.findOne({ journey: false }, (err, track) => {
                 if (err) {
                     throw err
                 }
@@ -188,7 +178,7 @@ class Tracker {
         }
         try {
             // get all request for user_id
-            requests = await requestSchema.find(findReqCond, [], { sort: { timestamp: 1 } }, (err, result) => {
+            requests = await this.requestSchema.find(findReqCond, [], { sort: { timestamp: 1 } }, (err, result) => {
                 if (err) {
                     throw err
                 }
@@ -204,7 +194,7 @@ class Tracker {
             findResCond = { link_id: { $in: link_idList } }
 
             // Get all requests-linked responses
-            responses = await responseSchema.find(findResCond, async (err, responses) => {
+            responses = await this.responseSchema.find(findResCond, async (err, responses) => {
                 if (err) {
                     throw err
                 } else {
@@ -290,7 +280,7 @@ class Tracker {
         logger.info('Insert journey to database start')
         // insert journey to mongodb database
         try {
-            journeySchema.insertMany(journeyJson, (err, result) => {
+            this.journeySchema.insertMany(journeyJson, (err, result) => {
                 if (err) {
                     throw err
                 } else {
@@ -374,7 +364,7 @@ class Tracker {
         try {
             logger.info('Insert request to database start')
             // Insert to database a request
-            requestSchema.insertMany(journeyJson, (err, result) => {
+            this.requestSchema.insertMany(journeyJson, (err, result) => {
                 if (err) {
                     throw err
                 } else {
@@ -476,7 +466,7 @@ class Tracker {
         try {
             logger.info('Insert response to database start')
             // Insert to database a response
-            responseSchema.insertMany(responseJson, (err, result) => {
+            this.responseSchema.insertMany(responseJson, (err, result) => {
                 if (err) {
                     throw err
                 } else {
@@ -489,4 +479,4 @@ class Tracker {
         }
     }
 }
-module.exports = new Tracker()
+module.exports = Tracker
