@@ -46,12 +46,12 @@ class GraphApi {
                 to: moment().startOf('seconds').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
                 duration: moment.duration(1, "minutes").asMilliseconds(),
                 precision: 60,
-                time: ["-59s", "-58s", "-57s", "-56s", "-55s", "-54s", "-53s", "-52s", "-51s", "-50s",
-                    "-49s", "-48s", "-47s", "-46s", "-45s", "-44s", "-43s", "-42s", "-41s", "-40s",
-                    "-39s", "-38s", "-37s", "-36s", "-35s", "-34s", "-33s", "-32s", "-31s", "-30s",
-                    "-29s", "-28s", "-27s", "-26s", "-25s", "-24s", "-23s", "-22s", "-21s", "-20s",
-                    "-19s", "-18s", "-17s", "-16s", "-15s", "-14s", "-13s", "-12s", "-11s", "-10s",
-                    "-9s", "-8s", "-7s", "-6s", "-5s", "-4s", "-3s", "-2s", "-1s", "live"
+                time: [ "-59s", "-58s", "-57s", "-56s", "-55s", "-54s", "-53s", "-52s", "-51s", "-50s",
+                        "-49s", "-48s", "-47s", "-46s", "-45s", "-44s", "-43s", "-42s", "-41s", "-40s",
+                        "-39s", "-38s", "-37s", "-36s", "-35s", "-34s", "-33s", "-32s", "-31s", "-30s",
+                        "-29s", "-28s", "-27s", "-26s", "-25s", "-24s", "-23s", "-22s", "-21s", "-20s",
+                        "-19s", "-18s", "-17s", "-16s", "-15s", "-14s", "-13s", "-12s", "-11s", "-10s",
+                        "-9s", "-8s", "-7s", "-6s", "-5s", "-4s", "-3s", "-2s", "-1s", "live"
                 ],
                 title: {
                     display: true,
@@ -279,6 +279,7 @@ class GraphApi {
             logger.error("Error on getPagesVisitedList function : ".red + e.red)
         }
         logger.info("Found :" + pageVisitedList)
+        pageVisitedList.push("All combined")
         callback(pageVisitedList)
     }
     /**
@@ -309,6 +310,29 @@ class GraphApi {
         for (let unite in this.graph) {
             range = this.graph[unite]
             periodCond = { "timestamp": { $gte: range.from, $lt: range.to } }
+            i = 0
+            iMax = this.graph[unite].precision
+            graphSpectre[unite].req_count["All combined"] = []
+            graphSpectre[unite].error_count["All combined"] = []
+            graphSpectre[unite].dangerous_count["All combined"] = []
+            graphSpectre[unite].res_time_moy["All combined"] = []
+            if (this.graph[unite] === "LIVE") {
+                graphSpectre[unite].multico["All combined"] = []
+                for (; i < iMax; i++) {
+                    graphSpectre[unite].req_count["All combined"][i] = 0
+                    graphSpectre[unite].error_count["All combined"][i] = 0
+                    graphSpectre[unite].dangerous_count["All combined"][i] = 0
+                    graphSpectre[unite].res_time_moy["All combined"][i] = 0
+                    graphSpectre[unite].multico["All combined"][i] = 0
+                }
+            } else {
+                for (; i < iMax; i++) {
+                    graphSpectre[unite].req_count["All combined"][i] = 0
+                    graphSpectre[unite].error_count["All combined"][i] = 0
+                    graphSpectre[unite].dangerous_count["All combined"][i] = 0
+                    graphSpectre[unite].res_time_moy["All combined"][i] = 0
+                }
+            }
             try {
                 await this.requestSchema.find(periodCond, async (err, requests) => {
                     if (requests !== undefined) {
@@ -345,8 +369,11 @@ class GraphApi {
                                     }
                                 }
                                 graphSpectre[unite].req_count[request.req.action][indice]++
+                                graphSpectre[unite].req_count["All combined"][indice]++
+                                graphSpectre[unite].req_count[request.req.action]
                                 if (request.isDangerous) {
                                     graphSpectre[unite].dangerous_count[request.req.action][indice]++
+                                    graphSpectre[unite].dangerous_count["All combined"][indice]++
                                 }
                             }
                         })
@@ -363,8 +390,10 @@ class GraphApi {
                             if (indice !== -1) {
                                 if (response.error !== undefined) {
                                     graphSpectre[unite].error_count[response.action][indice]++
+                                    graphSpectre[unite].error_count["All combined"][indice]++
                                 }
                                 graphSpectre[unite].res_time_moy[response.action][indice] += response.restime
+                                graphSpectre[unite].res_time_moy["All combined"][indice] += response.restime
                             }
                         })
                     }
@@ -378,6 +407,7 @@ class GraphApi {
                     for (let indice = 0; indice < range.precision; indice++) {
                         if (graphSpectre[unite].req_count[action][indice] !== 0) {
                             graphSpectre[unite].res_time_moy[action][indice] /= graphSpectre[unite].req_count[action][indice]
+                            graphSpectre[unite].res_time_moy["All combined"][indice] /= graphSpectre[unite].req_count["All combined"][indice]
                         }
                         if (this.graph[unite] === "LIVE") {
                             graphSpectre[unite].multico[action][indice] = graphSpectre[unite].req_count[action][indice]
@@ -391,5 +421,33 @@ class GraphApi {
         logger.info("Get live info end")
         callback(graphSpectre)
     }
+    initGraphSpectreForAction(action){
+        for (let l_unite in this.graph) {
+            i = 0
+            iMax = this.graph[l_unite].precision
+            graphSpectre[l_unite].req_count[request.req.action] = []
+            graphSpectre[l_unite].error_count[request.req.action] = []
+            graphSpectre[l_unite].dangerous_count[request.req.action] = []
+            graphSpectre[l_unite].res_time_moy[request.req.action] = []
+            if (this.graph[l_unite] === "LIVE") {
+                graphSpectre[l_unite].multico[request.req.action] = []
+                for (; i < iMax; i++) {
+                    graphSpectre[l_unite].req_count[request.req.action][i] = 0
+                    graphSpectre[l_unite].error_count[request.req.action][i] = 0
+                    graphSpectre[l_unite].dangerous_count[request.req.action][i] = 0
+                    graphSpectre[l_unite].res_time_moy[request.req.action][i] = 0
+                    graphSpectre[l_unite].multico[request.req.action][i] = 0
+                }
+            } else {
+                for (; i < iMax; i++) {
+                    graphSpectre[l_unite].req_count[request.req.action][i] = 0
+                    graphSpectre[l_unite].error_count[request.req.action][i] = 0
+                    graphSpectre[l_unite].dangerous_count[request.req.action][i] = 0
+                    graphSpectre[l_unite].res_time_moy[request.req.action][i] = 0
+                }
+            }
+        }
+    }
+
 }
 module.exports = GraphApi

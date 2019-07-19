@@ -64,7 +64,39 @@ class TrackingApi {
             logger.info("Error on getDangerousRequests function :".red + e.red)
         }
     }
-
+    async getDangerousUsers(callback) {
+        logger.info("getDangerousRequests Start")
+        let dangerousRequestArr = []
+        // Find condition object used when querying Request 
+        let findCond
+        if (from) {
+            findCond = { "timestamp": { $gte: from }, isDangerous: true }
+        } else {
+            findCond = { isDangerous: true }
+        }
+        try {
+            // Search for Dangerous request
+            await this.requestSchema.find(findCond, (err, result) => {
+                if (err) {
+                    throw err
+                }
+                if (result) {
+                    let i = 0
+                    for (; i < result.length; i++) {
+                        let curRequest = {}
+                        curRequest.body = result[i].req.body
+                        curRequest.user_info = result[i].cookies
+                        curRequest.timestamp = result[i].timestamp
+                        dangerousRequestArr.push(curRequest)
+                    }
+                    logger.info("getDangerousRequests End")
+                    callback(dangerousRequestArr)
+                }
+            })
+        } catch (e) {
+            logger.info("Error on getDangerousRequests function :".red + e.red)
+        }
+    }
     // async getUserUUIDList(from, to, callback){
 
     // }

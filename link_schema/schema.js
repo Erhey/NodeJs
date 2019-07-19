@@ -2,6 +2,7 @@
 const logger = require('link_logger')
 // Creating Mongoose connection
 const mongoose = require('mongoose')
+
 let getMongoConnection = function (mongoConnectionStr) {
     try {
         // 'mongodb://127.0.0.1/tracking'
@@ -12,7 +13,6 @@ let getMongoConnection = function (mongoConnectionStr) {
         logger.error('Error : '.red + e.red)
     }
 }
-
 
 //Define a schema
 const Schema = mongoose.Schema;
@@ -94,6 +94,19 @@ let responseSchema = new Schema({
     collection : 'response'
 })
 
+
+// tracking = {}
+// tracking.connections = []
+// config.tracking.forEach( connection => {
+//     tracking.connections.push ({
+//         'name' : connection.name,
+//         'getMongoConnection' : getMongoConnection(connection.link),
+//         'responseSchema' : mongoose.model('responseSchema', responseSchema),
+//         'requestSchema' : mongoose.model('requestSchema', requestSchema),
+//         'journeySchema' : mongoose.model('journeySchema', journeySchema)
+//     })
+// })
+// module.exports.tracking = tracking
 module.exports.tracking = {
     'CRUD-MYSQL' : {
         'getMongoConnection' : getMongoConnection('mongodb://127.0.0.1/CRUD-MYSQL'),
