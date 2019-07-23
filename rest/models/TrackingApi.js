@@ -114,5 +114,13 @@ class TrackingApi {
 
     // }
 }
+/**
+ * Function to be exported. Create a TrackingApi object with parameters.
+ * 
+ * @param {String} db 
+ */
+trackingApiBuilder = (db) => {
+    return new TrackingApi(db) 
+} 
 
-module.exports = TrackingApi
+module.exports = trackingApiBuilder

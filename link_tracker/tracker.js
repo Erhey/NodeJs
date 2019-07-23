@@ -2,7 +2,6 @@
 const moment = require('moment')
 const uuidv1 = require('uuid/v1')
 const sanitizeHtml = require('sanitize-html')
-const colors = require('colors')
 const mongoose = require('mongoose')
 const logger = require('link_logger')(__filename)
 const link_schema = require('link_schema')
@@ -42,7 +41,8 @@ class Tracker {
      * 
      * @param {String} db MongoDB connection string.
      */
-    constructor(db) {
+    constructor(db, user_token_name) {
+        this.user_token_name = user_token_name
         this.mongoConnection = link_schema.tracking[db].getMongoConnection
         this.responseSchema = link_schema.tracking[db].responseSchema
         this.requestSchema = link_schema.tracking[db].requestSchema
@@ -51,9 +51,9 @@ class Tracker {
         if (this.mongoConnection) {
             logger.info('Connected to database !')
         } else {
-            logger.error('mongoConnection is undefined'.red)
+            logger.error('mongoConnection is undefined')
             // throw error if instance wasn't correctly instanciated
-            throw new TypeError('Could not mongo connection! Please check the mongodb connection on your entry point : (example : app.js)'.red)
+            throw new TypeError('Could not mongo connection! Please check the mongodb connection on your entry point : (example : app.js)')
         }
         /**
          * Lifetime define the time when a user connects to a site
@@ -78,18 +78,11 @@ class Tracker {
      * @param {Callback} next  ensure that after tracking request/response, it goes next
      */
     track(req, res, next) {
+        logger.debug('track(req, res, next)')
         // We consider that user is disconected after 20 min of inactivity
         if (moment.duration(moment().diff(moment(this.lifeTime))).asMilliseconds() > 1200000) { // 20 minutes
             // Create a journey of disconnected user
             this.journey(req)
-        }
-        // Add to user an id to identify it and distinguish it from others
-        if (req.cookies.user_id === undefined) {
-            // create unique uuid base on time
-            let u_id = uuidv1()
-            // add it to res/req cookie
-            res.cookie('user_id', u_id)
-            req.cookies.user_id = u_id
         }
         // Create request track document
         this.request(req)
@@ -106,13 +99,14 @@ class Tracker {
      * @param {Mixed} req Request object picked up from server 
      */
     async journey(user_id) {
+        logger.debug('journey('  + user_id + ')')
         try {
             // create journey json journey object
             let journeyJson = await this.createJourney(user_id)
             // insert json journey object
             await this.insertJourney(journeyJson)
         } catch (e) {
-            logger.error('Error on journey function : '.red + e.red)
+            logger.error('Error on journey function : ' + e.toString())
         }
     }
     /**
@@ -120,6 +114,7 @@ class Tracker {
      * 
      */
     async saveAllJourney() {
+        logger.debug('saveAllJourney()')
         try {
             await this.requestSchema.findOne({ journey: false }, (err, track) => {
                 if (err) {
@@ -127,14 +122,14 @@ class Tracker {
                 }
                 if (track) {
                     if (track.cookies.user_id !== undefined) {
-                        this.saveUserJourney(track.cookies.user_id)
+                        this.journey(track.cookies.user_id)
                     } else {
-                        this.saveUserJourney('')
+                        this.journey('')
                     }
                 }
             })
         } catch (e) {
-            logger.error('Error on saveAllJourney : '.red + e.red)
+            logger.error('Error on saveAllJourney : ' + e.toString())
         }
     }
     /** 
@@ -143,6 +138,7 @@ class Tracker {
      * @param {uuid} user_id user_id
      */
     async createJourney(user_id) {
+        logger.debug('createJourney('  + user_id + ')')
         logger.info('Creating a journey for user : ' + user_id + ' start')
         // Initialization of returned Json journey object
         let journeyJson = {}
@@ -277,6 +273,7 @@ class Tracker {
      * @param {JSON} journeyJson 
      */
     async insertJourney(journeyJson) {
+        logger.debug('insertJourney(journeyJson)')
         logger.info('Insert journey to database start')
         // insert journey to mongodb database
         try {
@@ -299,13 +296,14 @@ class Tracker {
      */
     request(req) {
         try {
+        logger.debug('request(req)')
             logger.info('Request from user received!')
             // create request json request object
             let requestJson = this.createRequest(req)
             // insert json request object
             this.insertRequest(requestJson)
         } catch (e) {
-            logger.error('Error on request function : '.red + e.red)
+            logger.error('Error on request function : ' + e.toString())
         }
     }
     /**
@@ -314,6 +312,7 @@ class Tracker {
      * @param {Mixed} req 
      */
     createRequest(req) {
+        logger.debug('createRequest(req)')
         logger.info('Creating request start')
         let requestJson = {}
         // Get response timestamp
@@ -323,15 +322,12 @@ class Tracker {
         this.lifeTime = moment().valueOf()
         // Get cookies 
         try {
-            if (req.cookies !== undefined) {
-                this.cookies = req.cookies
-                requestJson.cookies = req.cookies
-            } else if (this.cookies !== undefined) {
-                requestJson.cookies = this.cookies
-            }
             requestJson.req = {}
-            // Get body 
-            requestJson.req.body = req.body
+            if(this.user_token_name !== undefined){
+                // If exist get User token
+                requestJson.user_uuid = req.cookies[this.user_token_name]
+            }
+            // Get path saved to class object
             this.reqPath = req.path
             // Get path 
             requestJson.req.action = this.reqPath
@@ -342,6 +338,7 @@ class Tracker {
             // Check if request is dangerous
             if (this.isDangerous(req.body)) {
                 requestJson.isDangerous = true
+                requestJson.req.body = req.body
             } else {
                 requestJson.isDangerous = false
             }
@@ -362,6 +359,7 @@ class Tracker {
      */
     insertRequest(journeyJson) {
         try {
+            logger.debug('insertRequest(journeyJson)')
             logger.info('Insert request to database start')
             // Insert to database a request
             this.requestSchema.insertMany(journeyJson, (err, result) => {
@@ -411,7 +409,7 @@ class Tracker {
             // insert json response object
             this.insertResponse(responseJson)
         } catch (e) {
-            logger.error('Error on response function : '.red + e.red)
+            logger.error('Error on response function : ' + e.toString())
         }
     }
     /**
@@ -432,11 +430,8 @@ class Tracker {
         try {
             // Get cookies 
             if (res.cookies !== undefined) {
-                this.cookies = res.cookies
-                responseJson.cookies = res.cookies
-            } else if (this.cookies !== undefined) {
-                responseJson.cookies = this.cookies
-            }
+                responseJson.user_uuid = req.cookies[this.user_token_name]
+            } 
             // Get error if exist
             if (res.statusCode !== 200) {
                 responseJson.error = {}
@@ -479,4 +474,14 @@ class Tracker {
         }
     }
 }
-module.exports = Tracker
+/**
+ * Function to be exported. Create a Tracker with parameters.
+ * 
+ * @param {String} db 
+ * @param {uuid} user_token_name 
+ */
+trackerBuilder = (db, user_token_name) => {
+    return new Tracker(db, user_token_name) 
+} 
+
+module.exports = trackerBuilder

@@ -1,6 +1,7 @@
 let Dao = require('./Dao')
 let moment = require("moment")
 let UserBean = require("../models/userBean");
+const logger = require("link_logger")(__filename)
 class UserDao extends Dao {
     constructor() {
         super()
@@ -14,11 +15,11 @@ class UserDao extends Dao {
         }
     }
     checkLogin(login, password, callback) {
-        this.executePrepared("Select count(*) as exist from user where login = ? AND password = ?", [login, password], (result) => {
+        this.executePrepared("Select uuid from user where login = ? AND password = ?", [login, password], (result) => {
             if (!result){
-                callback(result)
+                callback(false)
             } else {
-                callback(result[0].exist)
+                callback(result[0].uuid)
             }
         })
     }

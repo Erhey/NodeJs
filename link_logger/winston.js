@@ -8,12 +8,27 @@ const { combine, label, printf } = format
 const LOG_MODE = 'DEBUG'
 
 const myFormat = printf(({ level, message, label }) => {
-    return  moment().format("YYYY-MM-DD HH:mm:ss.SSS").blue + " - [" + level.toUpperCase().magenta.bold.underline + "] - " + label + message.green
+    switch(level) {
+        case 'error':
+            return moment().format("YYYY-MM-DD HH:mm:ss.SSS").blue + " - " + "[".red + level.toUpperCase().red.bold.underline + "]".red + " - " + label + message.red
+        case 'warn':
+            return moment().format("YYYY-MM-DD HH:mm:ss.SSS").blue + " - " + "[".yellow + level.toUpperCase().yellow.bold.underline + "]".yellow + " - " + label + message.yellow
+        case 'info':
+            return moment().format("YYYY-MM-DD HH:mm:ss.SSS").blue + " - " + "[".green + level.toUpperCase().green.bold.underline + "]".green + " - " + label + message.green
+        case 'verbose':
+            return moment().format("YYYY-MM-DD HH:mm:ss.SSS").blue + " - " + "[".cyan + level.toUpperCase().cyan.bold.underline + "]".cyan + " - " + label + message.cyan
+        case 'debug':
+            return moment().format("YYYY-MM-DD HH:mm:ss.SSS").blue + " - " + "[".blue + level.toUpperCase().blue.bold.underline + "]".blue + " - " + label + message.blue
+        case 'silly':
+            return moment().format("YYYY-MM-DD HH:mm:ss.SSS").blue + " - " + "[".rainbow + level.toUpperCase().rainbow.bold.underline + "]".rainbow + " - " + label + message.rainbow
+        default:
+            return moment().format("YYYY-MM-DD HH:mm:ss.SSS").blue + " - [" + level.toUpperCase().bold.underline + "] - " + label + message
+      }
 })
 
 getFileName = fileName => {
     if(LOG_MODE === 'DEBUG'){
-        return "(" + fileName.replace(appRoot.path, "").substring(1).yellow + ") - "
+        return "(~\\".yellow + fileName.replace(path.dirname(appRoot.path), "").substring(1).yellow + ")".yellow + " - "
     } else {
         return ""
     }

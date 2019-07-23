@@ -1,7 +1,6 @@
 const link_schema = require('link_schema')
 const logger = require('link_logger')(__filename)
 const moment = require("moment")
-const colors = require("colors")
 /** 
  * GraphApi Class
  * It retrieves data from a site and create graph data over time usable on chart.js client
@@ -184,28 +183,33 @@ class GraphApi {
         logger.info("Got 'get graph format' request!")
         logger.info("Update graph format Start")
         let hour = moment().hour()
-        let month = moment().month() + 1
-        let dayInMonth = moment().daysInMonth()
-        let monthTime = []
-        month = 1
-        for (let i = 1; i <= dayInMonth; i++) {
-            monthTime.push("(" + month + "/" + i + ")")
-            monthTime.push("")
+        try {
+            month = 1
+
+        } catch (e){
+            logger.error("Error : " + e.toString())
         }
-        this.graph.MONTH = {
-            from: moment().startOf('months').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-            to: moment().endOf('months').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-            duration: moment.duration(moment().endOf('month').diff(moment().startOf('month'))).asMilliseconds(),
-            precision: dayInMonth * 2,
-            time: monthTime,
-            title: {
-                display: true,
-                text: moment().format("MMMM"),
-                position: "top",
-                fontSize: 25
-            },
-            worksheetNbr: 3
-        }
+        // let month = moment().month() + 1
+        // let dayInMonth = moment().daysInMonth()
+        // let monthTime = []
+        // for (let i = 1; i <= dayInMonth; i++) {
+        //     monthTime.push("(" + month + "/" + i + ")")
+        //     monthTime.push("")
+        // }
+        // this.graph.MONTH = {
+        //     from: moment().startOf('months').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+        //     to: moment().endOf('months').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+        //     duration: moment.duration(moment().endOf('months').diff(moment().startOf('months'))).asMilliseconds(),
+        //     precision: dayInMonth * 2,
+        //     time: monthTime,
+        //     title: {
+        //         display: true,
+        //         text: moment().format("MMMM"),
+        //         position: "top",
+        //         fontSize: 25
+        //     },
+        //     worksheetNbr: 3
+        // }
         this.graph.HOUR.time = [
             hour + ":00", hour + ":01", hour + ":02", hour + ":03", hour + ":04", hour + ":05", hour + ":06", hour + ":07", hour + ":08", hour + ":09",
             hour + ":10", hour + ":11", hour + ":12", hour + ":13", hour + ":14", hour + ":15", hour + ":16", hour + ":17", hour + ":18", hour + ":19",
@@ -238,8 +242,8 @@ class GraphApi {
      */
     async updateGraphRange() {
         logger.info("Updating Graph range...")
-        this.graph["LIVE"].from = moment().startOf('seconds').subtract(1, "minutes").format("YYYY-MM-DDTHH:mm:ss.SSSZ")
-        this.graph["LIVE"].to = moment().startOf('seconds').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.graph["LIVE"].from = moment().startOf('minutes').subtract(1, "minutes").format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.graph["LIVE"].to = moment().startOf('minutes').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
         this.graph["HOUR"].from = moment().startOf('hour').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
         this.graph["HOUR"].to = moment().endOf('hour').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
         this.graph["DAY"].from = moment().startOf('days').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
@@ -276,7 +280,7 @@ class GraphApi {
                 }
             })
         } catch (e) {
-            logger.error("Error on getPagesVisitedList function : ".red + e.red)
+            logger.error("Error on getPagesVisitedList function : " + e.toString())
         }
         logger.info("Found :" + pageVisitedList)
         pageVisitedList.push("All combined")
@@ -380,7 +384,7 @@ class GraphApi {
                     }
                 })
             }catch(e) {
-                logger.error("Error on get Live info while getting requests informations : ".red + e.red)
+                logger.error("Error on get Live info while getting requests informations : " + e.toString())
             }
             try{
                 await this.responseSchema.find(periodCond, async (err, responses) => {
@@ -399,7 +403,7 @@ class GraphApi {
                     }
                 })
             }catch(e) {
-                logger.error("Error on get Live info while getting response informations : ".red + e.red)
+                logger.error("Error on get Live info while getting response informations : " + e.toString())
             }
             try {
                 
@@ -415,7 +419,7 @@ class GraphApi {
                     }
                 })
             } catch (e) {
-                logger.error("Error : ".red + e.red)
+                logger.error("Error : " + e.toString())
             }
         }
         logger.info("Get live info end")
@@ -450,4 +454,12 @@ class GraphApi {
     }
 
 }
-module.exports = GraphApi
+/**
+ * Function to be exported. Create a GraphApi object with parameters.
+ * 
+ * @param {String} db 
+ */
+graphApiBuilder = (db) => {
+    return new GraphApi(db) 
+} 
+module.exports = graphApiBuilder

@@ -46,8 +46,8 @@ let requestSchema = new Schema({
         type: Date,
         required: true
     },
-    cookies: {
-        type: Schema.Types.Mixed,
+    user_uuid: {
+        type: String,
     },
     req: {
         type : Schema.Types.Mixed
@@ -76,9 +76,6 @@ let responseSchema = new Schema({
     },
     action: {
         type: String
-    },
-    cookies: {
-        type: Schema.Types.Mixed,
     },
     error: {
         type : Schema.Types.Mixed

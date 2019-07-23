@@ -6,8 +6,8 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var userMngRouter = require('./routes/userMng');
-const Tracker = require("link_tracker")
-const tracker = new Tracker("CRUD-MYSQL")
+const tracker = require("link_tracker")("CRUD-MYSQL", "user_token")
+const uuidv1 = require('uuid/v1')
 
 
 var app = express();
@@ -23,10 +23,19 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use("/", (req, res, next) => tracker.track(req, res, next))
-
+app.use("/", (req, res, next) => {
+  if(req.cookie === undefined || req.cookie.user_token === undefined){
+      res.cookie('user_token', uuidv1());
+  }
+  next()
+})
 app.use('/', indexRouter);
+app.use('/UserMng', (req, res, next) => {
+  if(req.cookie === undefined || req.cookie.is_connected === undefined){
+    res.redirect("/unauthorized")
+  }
+})
 app.use('/UserMng', userMngRouter);
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   res.statusCode = 404
