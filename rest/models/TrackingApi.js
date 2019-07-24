@@ -61,7 +61,7 @@ class TrackingApi {
                 }
             })
         } catch (e) {
-            logger.info("Error on getDangerousRequests function :".red + e.red)
+            logger.error("Error on getDangerousRequests function :" + e.toString())
         }
     }
     async getDangerousUsers(callback) {
@@ -94,12 +94,23 @@ class TrackingApi {
                 }
             })
         } catch (e) {
-            logger.info("Error on getDangerousRequests function :".red + e.red)
+            logger.error("Error on getDangerousRequests function :" + e.toString())
         }
     }
-    // async getUserUUIDList(from, to, callback){
-
-    // }
+    async getUserUUIDList(condObj, callback){
+        try {
+            await this.requestSchema.find(condObj, {'user_uuid' : 1 }, async (err, result) =>  {
+                if(err) {
+                    throw err
+                }
+                if (result) {
+                    callback([...new Set(result)])
+                }
+            })
+        } catch (e) {
+            logger.error("Error on getDangerousRequests function :" + e.toString())
+        }
+    }
     // async getUserByName(userName, from, to, callback){
     //     let uuidList = []
     //     let userList = []

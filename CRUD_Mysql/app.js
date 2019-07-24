@@ -7,7 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var userMngRouter = require('./routes/userMng');
 const tracker = require("link_tracker")("CRUD-MYSQL", "user_token")
-const uuidv1 = require('uuid/v1')
+const uuidv4 = require('uuid/v4')
 
 
 var app = express();
@@ -24,18 +24,20 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use("/", (req, res, next) => tracker.track(req, res, next))
 app.use("/", (req, res, next) => {
-  if(req.cookie === undefined || req.cookie.user_token === undefined){
-      res.cookie('user_token', uuidv1());
+  if(req.cookies === undefined || req.cookies.user_token === undefined){
+      res.cookie('user_token', uuidv4());
   }
   next()
 })
 app.use('/', indexRouter);
-app.use('/UserMng', (req, res, next) => {
-  if(req.cookie === undefined || req.cookie.is_connected === undefined){
+app.use('/userMng', (req, res, next) => {
+  console.log(req.cookies)
+  if(req.cookies === undefined || req.cookies.is_connected === undefined){
     res.redirect("/unauthorized")
   }
+  next()
 })
-app.use('/UserMng', userMngRouter);
+app.use('/userMng', userMngRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   res.statusCode = 404

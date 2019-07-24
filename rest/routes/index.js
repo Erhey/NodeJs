@@ -18,5 +18,6 @@ router.get('/getGraph', index_controller.getGraph)
 router.get('/getGraphFormat', index_controller.getGraphFormat)
 router.get('/getLiveInfo', index_controller.getLiveInfo)
 router.get('/updateExcel', index_controller.updateExcel)
+router.get('/getUserUUIDList', index_controller.getUserUUIDList)
 
 module.exports = router;

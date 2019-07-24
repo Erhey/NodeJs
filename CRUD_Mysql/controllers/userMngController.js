@@ -5,6 +5,7 @@ let userDao = new UserDao()
 
 // Display list of all books.
 exports.index = function(req, res) {
+    console.log("o2k")
     res.render('userMng')
 }
 exports.createUser_get = function(req, res) {

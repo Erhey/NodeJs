@@ -1,6 +1,5 @@
 // Get utilities module
 const moment = require('moment')
-const uuidv1 = require('uuid/v1')
 const sanitizeHtml = require('sanitize-html')
 const mongoose = require('mongoose')
 const logger = require('link_logger')(__filename)
@@ -325,6 +324,7 @@ class Tracker {
             requestJson.req = {}
             if(this.user_token_name !== undefined){
                 // If exist get User token
+                console.log(req.cookies)
                 requestJson.user_uuid = req.cookies[this.user_token_name]
             }
             // Get path saved to class object
@@ -333,8 +333,6 @@ class Tracker {
             requestJson.req.action = this.reqPath
             // Get method (GET/POST/PUT/DELETE) 
             requestJson.req.method = req.method
-            // Get ip address
-            requestJson.req.remoteAddress = req.connection.remoteAddress
             // Check if request is dangerous
             if (this.isDangerous(req.body)) {
                 requestJson.isDangerous = true

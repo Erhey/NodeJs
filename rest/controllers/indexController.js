@@ -91,5 +91,10 @@ exports.updateExcel = (req, res) => {
     graphApi.updateExcel(graph, result => {
       res.send(result)
     })
-})
+  })
+}
+exports.getUserUUIDList = (req,res) => {
+  trackingApi.getUserUUIDList({}, uuid_list => {
+    res.send(uuid_list)
+  })
 }
