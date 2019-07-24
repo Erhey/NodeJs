@@ -99,12 +99,12 @@ class TrackingApi {
     }
     async getUserUUIDList(condObj, callback){
         try {
-            await this.requestSchema.find(condObj, {'user_uuid' : 1 }, async (err, result) =>  {
+            await this.requestSchema.find(condObj, 'user_uuid', async (err, result) =>  {
                 if(err) {
                     throw err
                 }
                 if (result) {
-                    callback([...new Set(result)])
+                    callback([...new Set(result.map(request => request.user_uuid))])
                 }
             })
         } catch (e) {

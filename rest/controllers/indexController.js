@@ -94,7 +94,8 @@ exports.updateExcel = (req, res) => {
   })
 }
 exports.getUserUUIDList = (req,res) => {
-  trackingApi.getUserUUIDList({}, uuid_list => {
+  console.log(req.body)
+  trackingApi.getUserUUIDList(req.body, uuid_list => {
     res.send(uuid_list)
   })
 }

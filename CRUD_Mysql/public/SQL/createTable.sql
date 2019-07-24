@@ -1,6 +1,5 @@
 create table user(
-`id` int primary key auto_increment,
-`uuid` varchar(36) NOT NULL,
+`uuid` varchar(36) primary key NOT NULL,
 `login` varchar(30) NOT NULL,
 `password` varchar(30) NOT NULL,
 `name` varchar(30),
@@ -9,8 +8,10 @@ create table user(
 `mail` varchar(320) NOT NULL,
 `lastConDate` datetime NOT NULL,
 `createdDay` datetime NOT NULL,
-`isDelete` char(1) NOT NULL DEFAULT "0"
+`isDelete` char(1) NOT NULL DEFAULT '0'
 )Engine=InnoDB;
+
+
 
 INSERT INTO User (uuid, login, password, Name, FirstName, tel, mail, lastConDate, createdDay) VALUES ("f33c1fd8-219e-4a57-a8e0-cd0eeec6d712", "wistala", "Auronlegris1", "Martin", "Kevin ", "123456789", "kevin.martin@lenoob.com", "2019-03-25", "2019-03-25");
 INSERT INTO User (uuid, login, password, Name, FirstName, tel, mail, lastConDate, createdDay) VALUES ("b1ec7ae9-c55e-4694-95ba-b89213784d3d", "auron", "abcedd", "noname", "noob", "12346987625", "kleveser@test.com", "2019-03-25", "2019-03-25");
