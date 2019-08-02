@@ -16124,3 +16124,87 @@ SyntaxError: Unexpected token ,
 [34m2019-07-24 17:36:00.105[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_tracker\tracker.js[39m[33m)[39m - [32mConnected to database ![39m
 [34m2019-07-24 17:36:00.128[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest\models\GraphApi.js[39m[33m)[39m - [32mBuilding GraphApi object Start[39m
 [34m2019-07-24 17:36:00.136[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest\models\GraphApi.js[39m[33m)[39m - [32mBuilding GraphApi object End[39m
+[34m2019-07-24 17:38:13.204[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_tracker\tracker.js[39m[33m)[39m - [32mConnected to database ![39m
+[34m2019-07-24 17:38:13.228[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest\models\GraphApi.js[39m[33m)[39m - [32mBuilding GraphApi object Start[39m
+[34m2019-07-24 17:38:13.236[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest\models\GraphApi.js[39m[33m)[39m - [32mBuilding GraphApi object End[39m
+[34m2019-07-24 17:38:18.491[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_tracker\tracker.js[39m[33m)[39m - [32mConnected to database ![39m
+[34m2019-07-25 11:49:55.325[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_tracker\tracker.js[39m[33m)[39m - [32mConnected to database ![39m
+[34m2019-07-25 11:49:59.478[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_tracker\tracker.js[39m[33m)[39m - [32mConnected to database ![39m
+[34m2019-07-25 11:49:59.612[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest\models\GraphApi.js[39m[33m)[39m - [32mBuilding GraphApi object Start[39m
+[34m2019-07-25 11:49:59.620[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest\models\GraphApi.js[39m[33m)[39m - [32mBuilding GraphApi object End[39m
+[34m2019-07-25 11:50:47.819[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_tracker\tracker.js[39m[33m)[39m - [32mConnected to database ![39m
+[34m2019-07-25 11:50:47.842[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest\models\GraphApi.js[39m[33m)[39m - [32mBuilding GraphApi object Start[39m
+[34m2019-07-25 11:50:47.852[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest\models\GraphApi.js[39m[33m)[39m - [32mBuilding GraphApi object End[39m
+[34m2019-07-25 13:30:30.616[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_tracker\tracker.js[39m[33m)[39m - [32mConnected to database ![39m
+[34m2019-08-02 11:02:27.464[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:03:11.060[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:03:16.131[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:03:18.553[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:03:33.650[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:03:35.718[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:03:38.584[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:03:39.675[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:03:42.214[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:03:52.435[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:04:02.957[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:04:05.477[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:04:08.525[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:04:12.644[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:04:17.038[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:04:21.552[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:04:27.886[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:04:40.739[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:04:48.324[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:05:13.118[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:05:17.952[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:05:21.453[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:05:24.850[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:05:28.382[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:05:47.124[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:05:53.789[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:06:11.790[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:06:21.919[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:06:25.743[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:06:31.166[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:06:33.184[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:06:35.329[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:06:39.376[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:06:44.359[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:06:45.653[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:06:47.182[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:06:48.738[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:06:59.885[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:07:02.087[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:07:03.686[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:07:53.528[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:08:06.547[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:34:48.670[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:34:54.683[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:34:56.820[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:35:38.295[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:35:41.216[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:35:48.636[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:35:51.148[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:35:56.182[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:35:58.613[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:35:59.683[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:35:59.908[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:36:02.799[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:36:06.264[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:36:07.665[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:36:12.795[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:36:40.059[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:36:40.268[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:37:32.624[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:37:39.855[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:37:42.267[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:39:57.819[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:40:01.446[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:40:05.817[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:40:15.844[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:40:17.302[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 11:40:32.124[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\models\MysqlDao.js[39m[33m)[39m - [32mtest[39m
+[34m2019-08-02 13:19:55.685[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\middlewares\jwt_auth.js[39m[33m)[39m - [32mTest[39m
+[34m2019-08-02 13:19:55.688[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\middlewares\jwt_auth.js[39m[33m)[39m - [32meyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IktldmluIE1hcnRpbiIsImlhdCI6MTUxNjIzOTAyMn0[39m
+[34m2019-08-02 13:19:55.689[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\middlewares\jwt_auth.js[39m[33m)[39m - [32mTest[39m
+[34m2019-08-02 13:19:55.689[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\middlewares\jwt_auth.js[39m[33m)[39m - [32meyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IktldmluIE1hcnRpbiIsImlhdCI6MTUxNjIzOTAyMn0[39m

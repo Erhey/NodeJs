@@ -1,0 +1,22 @@
+{
+  "name": "rest_mysql",
+  "version": "1.0.0",
+  "description": "Deals with high speed sql requests",
+  "main": "server.js",
+  "scripts": {
+    "devstart": "nodemon server.js"
+  },
+  "author": " <kevin.martin.eng@outlook.com>",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "mysql": "^2.17.1",
+    "pug": "^2.0.4",
+    "validator": "^11.1.0"
+  }
+}
