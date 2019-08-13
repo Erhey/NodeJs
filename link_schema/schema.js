@@ -90,6 +90,38 @@ let responseSchema = new Schema({
 {
     collection : 'response'
 })
+/**
+ * Site : N/A
+ * DB : authentication
+ * Collection : authentication
+ */
+let authenticationSchema = new Schema({
+    name: {
+        type: String
+        ,required: true
+    },
+    login: {
+        type: String
+        ,required: true
+        ,unique : true
+    },
+    password: {
+        type: String
+        ,required: true
+    },
+    createdAt: {
+        type: Date
+        ,required: true
+    },
+    updatedAt: {
+        type: Date
+        ,required: true
+    }
+}, 
+{
+    collection : 'authentication'
+})
+
 
 
 // tracking = {}
@@ -106,9 +138,15 @@ let responseSchema = new Schema({
 // module.exports.tracking = tracking
 module.exports.tracking = {
     'CRUD-MYSQL' : {
-        'getMongoConnection' : getMongoConnection('mongodb://127.0.0.1/CRUD-MYSQL'),
+        // 'getMongoConnection' : getMongoConnection('mongodb://127.0.0.1/CRUD-MYSQL'),
         'responseSchema' : mongoose.model('responseSchema', responseSchema),
         'requestSchema' : mongoose.model('requestSchema', requestSchema),
         'journeySchema' : mongoose.model('journeySchema', journeySchema)
+    }
+}
+module.exports = {
+    'authentication' : {
+        'getMongoConnection' : getMongoConnection('mongodb://127.0.0.1/authentication'),
+        'authenticationSchema' : mongoose.model('authenticationSchema', authenticationSchema)
     }
 }

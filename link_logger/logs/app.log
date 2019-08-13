@@ -16208,3 +16208,1375 @@ SyntaxError: Unexpected token ,
 [34m2019-08-02 13:19:55.688[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\middlewares\jwt_auth.js[39m[33m)[39m - [32meyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IktldmluIE1hcnRpbiIsImlhdCI6MTUxNjIzOTAyMn0[39m
 [34m2019-08-02 13:19:55.689[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\middlewares\jwt_auth.js[39m[33m)[39m - [32mTest[39m
 [34m2019-08-02 13:19:55.689[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mrest_mysql\middlewares\jwt_auth.js[39m[33m)[39m - [32meyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IktldmluIE1hcnRpbiIsImlhdCI6MTUxNjIzOTAyMn0[39m
+[34m2019-08-13 16:56:06.481[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32mError occured on hashing password : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 16:56:06.499[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: res is not defined
+ReferenceError: res is not defined
+    at authenticationSchema.insertMany.err (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:40:21)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3231:7
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:39:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\once.js:12:16
+    at iterateeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:45:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\onlyOnce.js:12:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:36:13
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3222:18
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:1909:5
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:2102:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\kareem\index.js:135:16
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-13 16:56:10.112[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32mError occured on hashing password : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 16:56:10.127[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: res is not defined
+ReferenceError: res is not defined
+    at authenticationSchema.insertMany.err (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:39:21)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3231:7
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:39:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\once.js:12:16
+    at iterateeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:45:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\onlyOnce.js:12:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:36:13
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3222:18
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:1909:5
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:2102:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\kareem\index.js:135:16
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-13 16:56:25.035[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on hashing password : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 16:56:25.050[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: res is not defined
+ReferenceError: res is not defined
+    at authenticationSchema.insertMany.err (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:39:21)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3231:7
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:39:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\once.js:12:16
+    at iterateeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:45:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\onlyOnce.js:12:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:36:13
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3222:18
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:1909:5
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:2102:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\kareem\index.js:135:16
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-13 16:56:48.641[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on hashing password : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 16:56:48.718[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: moment is not defined
+ReferenceError: moment is not defined
+    at C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:25:21[39m
+[34m2019-08-13 16:56:56.141[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on hashing password : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 16:56:56.217[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: moment is not defined
+ReferenceError: moment is not defined
+    at C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:25:21[39m
+[34m2019-08-13 16:57:01.885[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: result is not defined
+ReferenceError: result is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:41:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:19:27)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 16:57:07.241[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: result is not defined
+ReferenceError: result is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:43:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:19:27)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 16:57:08.877[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: result is not defined
+ReferenceError: result is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:43:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:19:27)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 16:57:11.857[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: result is not defined
+ReferenceError: result is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:42:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:19:27)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 16:57:55.683[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: result is not defined
+ReferenceError: result is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:43:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:19:27)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 16:57:58.519[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Cannot find module 'moment'
+Error: Cannot find module 'moment'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:7:16)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:3:23)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 16:58:15.131[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: result is not defined
+ReferenceError: result is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:43:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:19:27)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 16:58:40.418[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on hashing password : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 16:59:09.475[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on insert : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 16:59:11.501[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 16:59:15.598[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 16:59:25.284[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 16:59:27.830[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'error' of undefined
+TypeError: Cannot read property 'error' of undefined
+    at authenticationSchema.insertMany.err (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:33:32)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3231:7
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:39:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\once.js:12:16
+    at iterateeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:45:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\onlyOnce.js:12:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:36:13
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3222:18
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:1909:5
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:2102:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\kareem\index.js:135:16
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-13 16:59:30.964[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 16:59:34.434[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 16:59:34.439[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 16:59:49.137[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 16:59:49.142[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 16:59:51.941[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 16:59:51.946[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:00:01.028[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:00:01.032[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:00:41.117[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:00:41.122[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:00:43.162[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:00:43.167[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:00:45.204[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:00:45.216[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:00:48.895[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:00:48.902[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:00:51.956[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:00:51.961[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:00:56.565[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:00:56.572[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:01:08.777[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:01:08.781[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:01:29.192[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:01:29.198[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:01:41.274[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:01:41.281[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:01:43.858[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:01:43.862[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:02:12.667[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:02:12.671[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:02:35.149[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:02:35.154[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:02:38.093[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:02:38.097[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:02:55.720[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:02:55.725[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:02:59.316[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:02:59.321[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:03:28.624[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:03:28.628[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:03:33.969[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:03:33.974[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:03:50.063[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:03:50.068[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:03:55.543[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:03:55.554[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:04:14.618[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:04:14.623[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:04:43.951[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:04:43.956[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:05:09.831[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:05:09.840[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:05:13.800[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:05:13.805[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:05:22.417[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:05:22.422[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:05:29.726[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:05:29.729[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:05:42.264[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:05:42.267[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:05:45.302[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:05:45.304[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:05:49.506[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:05:49.518[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:05:49.519[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:06:08.001[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:06:08.016[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:06:08.016[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:06:12.927[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:06:12.940[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:06:12.940[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:06:51.362[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:06:51.378[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:06:51.384[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:07:17.267[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:07:17.279[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:07:17.280[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:07:30.103[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:07:30.119[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:07:30.120[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:07:35.117[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:07:35.130[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:07:35.131[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:07:41.774[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:07:41.797[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:07:41.798[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:07:44.778[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:07:44.791[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:07:44.792[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:07:50.982[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:07:50.995[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:07:50.995[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:07:58.493[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:07:58.506[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:07:58.506[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:08:02.581[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:08:02.593[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:08:02.593[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:08:07.246[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:08:07.258[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:08:07.259[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:08:16.155[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'green' of undefined
+TypeError: Cannot read property 'green' of undefined
+    at Printf.printf [as template] (C:\Workspace\MyEnv\NodeJs\link_logger\winston.js:17:169)
+    at Printf.transform (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\logform\printf.js:11:26)
+    at Format.info [as transform] (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\logform\combine.js:20:24)
+    at DerivedLogger._transform (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:305:29)
+    at DerivedLogger.Transform._read (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\readable-stream\lib\_stream_transform.js:177:10)
+    at DerivedLogger.Transform._write (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\readable-stream\lib\_stream_transform.js:164:83)
+    at doWrite (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\readable-stream\lib\_stream_writable.js:405:139)
+    at writeOrBuffer (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\readable-stream\lib\_stream_writable.js:394:5)
+    at DerivedLogger.Writable.write (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\readable-stream\lib\_stream_writable.js:303:11)
+    at DerivedLogger.(anonymous function) [as info] (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\create-logger.js:81:14)
+    at bcrypt.hash (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:31:32)[39m
+[34m2019-08-13 17:08:17.838[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:08:17.850[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:08:17.851[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:08:33.994[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:08:34.008[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:08:34.010[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:09:02.754[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:09:02.768[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - undefined
+[34m2019-08-13 17:09:02.775[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:09:04.474[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:09:04.486[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:10:53.476[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:10:53.489[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: CRUD-MYSQL.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 17:12:04.096[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:12:10.797[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:12:14.474[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:12:16.522[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:12:55.389[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:13:06.641[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:13:24.415[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:13:33.640[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:13:46.668[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:13:54.960[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:14:10.915[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:14:13.429[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:14:15.378[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:14:21.153[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:14:23.504[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:14:24.823[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:14:34.162[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:14:51.277[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:14:52.628[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:14:59.838[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:15:06.757[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:16:11.255[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:16:13.083[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:16:16.367[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:16:20.877[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:16:31.876[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:16:52.470[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:17:01.604[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:17:13.439[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:17:51.017[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:17:53.495[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:17:56.649[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:18:32.233[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:18:44.551[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:18:50.544[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:19:01.650[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:19:47.881[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:19:49.892[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:19:53.052[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:19:56.335[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:20:10.340[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:20:55.119[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:21:08.524[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:21:11.561[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:21:16.139[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:21:29.711[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:21:36.870[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:21:41.159[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:21:53.526[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:22:04.610[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:22:11.102[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:22:28.647[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:23:05.568[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:23:07.970[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:23:20.062[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:23:29.790[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:26:07.415[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:26:24.777[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:26:34.547[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:26:44.658[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:26:44.728[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:27:18.644[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:27:18.713[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:27:26.318[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:27:26.387[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:27:30.121[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:27:33.291[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: hashed is not defined
+ReferenceError: hashed is not defined
+    at authenticationSchema.insertMany.err (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:30:44)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3231:7
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:39:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\once.js:12:16
+    at iterateeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:45:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\onlyOnce.js:12:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:36:13
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3222:18
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:1909:5
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:2102:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\kareem\index.js:135:16
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-13 17:27:34.951[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: hashed is not defined
+ReferenceError: hashed is not defined
+    at authenticationSchema.insertMany.err (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:30:40)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3231:7
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:39:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\once.js:12:16
+    at iterateeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:45:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\onlyOnce.js:12:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:36:13
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3222:18
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:1909:5
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:2102:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\kareem\index.js:135:16
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-13 17:27:36.290[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: hashed is not defined
+ReferenceError: hashed is not defined
+    at authenticationSchema.insertMany.err (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:40)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3231:7
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:39:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\once.js:12:16
+    at iterateeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:45:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\onlyOnce.js:12:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:36:13
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3222:18
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:1909:5
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:2102:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\kareem\index.js:135:16
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-13 17:27:56.645[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: hashed is not defined
+ReferenceError: hashed is not defined
+    at authenticationSchema.insertMany.err (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:40)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3231:7
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:39:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\once.js:12:16
+    at iterateeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:45:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\onlyOnce.js:12:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:36:13
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3222:18
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:1909:5
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:2102:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\kareem\index.js:135:16
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-13 17:28:04.246[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: hashed is not defined
+ReferenceError: hashed is not defined
+    at authenticationSchema.insertMany.err (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:20:40)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3231:7
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:39:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\once.js:12:16
+    at iterateeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:45:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\onlyOnce.js:12:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:36:13
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3222:18
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:1909:5
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:2102:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\kareem\index.js:135:16
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-13 17:28:09.110[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: hashed is not defined
+ReferenceError: hashed is not defined
+    at authenticationSchema.insertMany.err (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:30:40)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3231:7
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:39:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\once.js:12:16
+    at iterateeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:45:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\onlyOnce.js:12:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:36:13
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3222:18
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:1909:5
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:2102:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\kareem\index.js:135:16
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-13 17:28:27.965[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: hashed is not defined
+ReferenceError: hashed is not defined
+    at authenticationSchema.insertMany.err (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:33:40)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3231:7
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:39:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\once.js:12:16
+    at iterateeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:45:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\onlyOnce.js:12:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:36:13
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3222:18
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:1909:5
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:2102:9
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\kareem\index.js:135:16
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-13 17:28:32.663[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:28:34.025[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:28:34.093[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:28:35.650[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:28:35.718[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:28:47.871[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:28:47.941[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:28:51.873[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:28:51.940[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:28:56.672[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:28:56.755[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:28:58.157[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:28:58.224[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:30:59.309[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:30:59.376[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:31:18.942[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:31:19.010[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:31:20.403[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:31:20.477[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:31:23.829[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:31:23.912[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:31:42.303[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:31:42.372[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:31:46.587[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 17:31:46.655[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:31:58.521[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:32:17.541[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:32:18.967[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [32m[object Object][39m
+[34m2019-08-13 17:33:25.855[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: consolejwtController is not defined
+ReferenceError: consolejwtController is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:1)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:34:42.727[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: awaitjwtController is not defined
+ReferenceError: awaitjwtController is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:12)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:37:35.343[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: callback is not defined
+ReferenceError: callback is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:37:39.652[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: callback is not defined
+ReferenceError: callback is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:37:43.314[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: callback is not defined
+ReferenceError: callback is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:37:50.117[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: callback is not defined
+ReferenceError: callback is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:37:52.379[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: callback is not defined
+ReferenceError: callback is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:37:55.548[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: callback is not defined
+ReferenceError: callback is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:38:01.129[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:38:06.678[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:38:10.724[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:38:12.489[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:38:32.926[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:38:35.350[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:38:39.721[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:38:41.963[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:38:47.327[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:38:48.958[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:38:59.955[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:39:02.074[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:39:11.928[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:39:17.559[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:39:19.151[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:39:27.356[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:39:32.364[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:39:37.196[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:39:39.207[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:39:42.835[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:39:45.004[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:39:51.342[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:39:53.276[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:39:55.760[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:40:14.495[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:40:18.764[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:40:22.594[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:40:51.649[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:41:23.093[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:41:24.472[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:41:59.561[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: insertAccount is not defined
+ReferenceError: insertAccount is not defined
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:30:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:42:10.600[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: callback is not a function
+TypeError: callback is not a function
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:30:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:42:18.726[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: callback is not a function
+TypeError: callback is not a function
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:30:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:42:27.014[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: callback is not a function
+TypeError: callback is not a function
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:42:30.976[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: callback is not a function
+TypeError: callback is not a function
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:42:59.325[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: callback is not a function
+TypeError: callback is not a function
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:43:06.904[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: result is not defined
+ReferenceError: result is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:65)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 17:43:15.204[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: test is not defined
+ReferenceError: test is not defined
+    at jwtController.createAccount.result (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:19:15)
+    at Object.createAccount (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:29:9)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 18:08:17.600[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: connectionString is not defined
+ReferenceError: connectionString is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:8:13)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:3:23)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 18:08:31.401[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: connectionString is not defined
+ReferenceError: connectionString is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:8:13)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:3:23)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 18:08:33.995[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: connectionString is not defined
+ReferenceError: connectionString is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:8:13)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:3:23)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 18:08:59.566[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 18:09:03.464[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 18:14:03.512[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 18:14:13.751[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 18:14:18.423[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 18:14:26.788[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : ValidationError: password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.[39m
+[34m2019-08-13 18:14:45.057[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 18:15:27.314[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test" }[39m
+[34m2019-08-13 18:15:58.772[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test2" }[39m
+[34m2019-08-13 18:16:04.950[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test2" }[39m
+[34m2019-08-13 18:16:17.537[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test3" }[39m
+[34m2019-08-13 18:16:35.748[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test4" }[39m
+[34m2019-08-13 18:16:39.995[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test4" }[39m
+[34m2019-08-13 18:16:45.161[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test4" }[39m
+[34m2019-08-13 18:17:15.697[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test5" }[39m
+[34m2019-08-13 18:18:07.766[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test5" }[39m
+[34m2019-08-13 18:18:16.978[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test5" }[39m
+[34m2019-08-13 18:18:28.774[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: result is not defined
+ReferenceError: result is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:66)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 18:18:28.781[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: result is not defined
+ReferenceError: result is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\test.js:18:66)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 18:18:46.285[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test5" }[39m
+[34m2019-08-13 18:19:13.026[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test6" }[39m
+[34m2019-08-13 18:19:18.597[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test6" }[39m
+[34m2019-08-13 18:19:27.620[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test6" }[39m
+[34m2019-08-13 18:19:30.986[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test6" }[39m
+[34m2019-08-13 18:19:40.650[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test6" }[39m
+[34m2019-08-13 18:19:45.840[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test6" }[39m
+[34m2019-08-13 18:19:51.442[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test6" }[39m
+[34m2019-08-13 18:20:00.465[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test6" }[39m
+[34m2019-08-13 18:20:00.482[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: callback is not a function
+TypeError: callback is not a function
+    at authentication.authenticationSchema.insertMany (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:17:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3255:9
+    at err (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:411:14)
+    at session.endSession (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:397:27)
+    at ClientSession.endSession (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb-core\lib\sessions.js:134:41)
+    at executeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:395:17)
+    at bulkWrite (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\operations\collection_ops.js:926:21)
+    at bulk.execute (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\operations\collection_ops.js:133:14)
+    at err (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:411:14)
+    at executeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:401:25)
+    at handleCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:128:55)
+    at OrderedBulkOperation.handleWriteError (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\bulk\common.js:1110:9)
+    at resultHandler (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\bulk\common.js:501:23)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb-core\lib\connection\pool.js:397:18
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-13 18:20:00.479[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: callback is not a function
+TypeError: callback is not a function
+    at authentication.authenticationSchema.insertMany (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:17:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3255:9
+    at err (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:411:14)
+    at session.endSession (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:397:27)
+    at ClientSession.endSession (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb-core\lib\sessions.js:134:41)
+    at executeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:395:17)
+    at bulkWrite (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\operations\collection_ops.js:926:21)
+    at bulk.execute (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\operations\collection_ops.js:133:14)
+    at err (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:411:14)
+    at executeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:401:25)
+    at handleCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:128:55)
+    at OrderedBulkOperation.handleWriteError (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\bulk\common.js:1110:9)
+    at resultHandler (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\bulk\common.js:501:23)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb-core\lib\connection\pool.js:397:18
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-13 18:20:02.063[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test6" }[39m
+[34m2019-08-13 18:20:02.080[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: callback is not a function
+TypeError: callback is not a function
+    at authentication.authenticationSchema.insertMany (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:17:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3255:9
+    at err (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:411:14)
+    at session.endSession (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:397:27)
+    at ClientSession.endSession (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb-core\lib\sessions.js:134:41)
+    at executeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:395:17)
+    at bulkWrite (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\operations\collection_ops.js:926:21)
+    at bulk.execute (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\operations\collection_ops.js:133:14)
+    at err (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:411:14)
+    at executeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:401:25)
+    at handleCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:128:55)
+    at OrderedBulkOperation.handleWriteError (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\bulk\common.js:1110:9)
+    at resultHandler (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\bulk\common.js:501:23)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb-core\lib\connection\pool.js:397:18
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-13 18:20:02.077[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: callback is not a function
+TypeError: callback is not a function
+    at authentication.authenticationSchema.insertMany (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:17:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\utils.js:256:11
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3255:9
+    at err (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:411:14)
+    at session.endSession (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:397:27)
+    at ClientSession.endSession (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb-core\lib\sessions.js:134:41)
+    at executeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:395:17)
+    at bulkWrite (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\operations\collection_ops.js:926:21)
+    at bulk.execute (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\operations\collection_ops.js:133:14)
+    at err (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:411:14)
+    at executeCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:401:25)
+    at handleCallback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\utils.js:128:55)
+    at OrderedBulkOperation.handleWriteError (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\bulk\common.js:1110:9)
+    at resultHandler (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb\lib\bulk\common.js:501:23)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongodb-core\lib\connection\pool.js:397:18
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-13 18:20:18.598[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test6" }[39m
+[34m2019-08-13 18:20:30.767[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test6" }[39m
+[34m2019-08-13 18:21:09.359[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Parameter "obj" to Document() must be an object, got result2 => {
+                callback(result2)
+            }
+ObjectParameterError: Parameter "obj" to Document() must be an object, got result2 => {
+                callback(result2)
+            }
+    at new ObjectParameterError (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\error\objectParameter.js:25:11)
+    at model.Document (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:74:11)
+    at model.Model (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:92:12)
+    at new model (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4394:15)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3208:15
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:31:39
+    at replenish (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:66:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:71:9
+    at _parallel (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:30:5)
+    at parallelLimit (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\parallelLimit.js:38:26)
+    at Function.Model.$__insertMany (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3229:3)
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\kareem\index.js:369:33)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 18:21:09.365[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Parameter "obj" to Document() must be an object, got result2 => {
+                callback(result2)
+            }
+ObjectParameterError: Parameter "obj" to Document() must be an object, got result2 => {
+                callback(result2)
+            }
+    at new ObjectParameterError (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\error\objectParameter.js:25:11)
+    at model.Document (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:74:11)
+    at model.Model (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:92:12)
+    at new model (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4394:15)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3208:15
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:31:39
+    at replenish (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:66:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:71:9
+    at _parallel (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:30:5)
+    at parallelLimit (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\parallelLimit.js:38:26)
+    at Function.Model.$__insertMany (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3229:3)
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\kareem\index.js:369:33)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 18:21:12.947[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Parameter "obj" to Document() must be an object, got result => {
+                callback(result)
+            }
+ObjectParameterError: Parameter "obj" to Document() must be an object, got result => {
+                callback(result)
+            }
+    at new ObjectParameterError (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\error\objectParameter.js:25:11)
+    at model.Document (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:74:11)
+    at model.Model (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:92:12)
+    at new model (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4394:15)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3208:15
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:31:39
+    at replenish (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:66:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:71:9
+    at _parallel (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:30:5)
+    at parallelLimit (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\parallelLimit.js:38:26)
+    at Function.Model.$__insertMany (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3229:3)
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\kareem\index.js:369:33)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 18:21:12.953[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Parameter "obj" to Document() must be an object, got result => {
+                callback(result)
+            }
+ObjectParameterError: Parameter "obj" to Document() must be an object, got result => {
+                callback(result)
+            }
+    at new ObjectParameterError (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\error\objectParameter.js:25:11)
+    at model.Document (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\document.js:74:11)
+    at model.Model (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:92:12)
+    at new model (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4394:15)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3208:15
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:31:39
+    at replenish (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:66:17)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\eachOfLimit.js:71:9
+    at _parallel (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\internal\parallel.js:30:5)
+    at parallelLimit (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\async\parallelLimit.js:38:26)
+    at Function.Model.$__insertMany (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:3229:3)
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\kareem\index.js:369:33)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-13 18:21:17.826[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test7" }[39m
+[34m2019-08-13 18:27:37.205[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test7" }[39m
+[34m2019-08-13 18:27:51.432[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on inserting account : BulkWriteError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "test7" }[39m
+[34m2019-08-13 18:34:33.634[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on hashing password : Error: data and salt arguments required[39m
+[34m2019-08-13 18:36:07.777[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31mError occured on hashing password : Error: data and salt arguments required[39m
+[34m2019-08-13 18:37:08.232[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:37:11.410[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:37:31.327[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:38:21.790[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:09.035[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:19.056[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:21.616[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:23.632[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:26.687[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:28.718[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:29.918[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:31.725[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:33.021[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:33.788[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:34.491[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:35.451[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:36.092[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:37.453[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:41.743[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:43.214[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:44.477[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:44.620[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:44.767[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:44.908[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-13 18:42:45.019[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
