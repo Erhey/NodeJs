@@ -1,16 +1,12 @@
-const debug = require('debug')('crud-mysql:server')
+const logger = require('link_logger')(__filename)
 const http = require('http')
-
 const createError = require('http-errors')
 const express = require('express')
 const path = require('path')
 const cookieParser = require('cookie-parser')
-
-const indexRouter = require('./routes/index')
-
+const JWTController = require('./controllers/JWTController')
 const app = express()
-// Gestion du tracking
-// view engine setup
+
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
 
@@ -19,13 +15,16 @@ app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use('/', indexRouter)
+app.post('/getAccessToken', function (req, res, next) {
+    JWTController.getAccessToken(req.body.login, req.body.password, result => {
+        res.send(result)
+    })
+})
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
     res.statusCode = 404
     next(createError(404))
 })
-
 // error handler
 app.use(function (err, req, res, next) {
     // set locals, only providing error in development
@@ -40,7 +39,7 @@ app.use(function (err, req, res, next) {
     res.status(err.status || 500)
     res.render('error')
 })
-var port = normalizePort(process.env.PORT || '3000')
+var port = normalizePort(process.env.PORT || '3003')
 app.set('port', port)
 
 /**
@@ -113,7 +112,7 @@ function onListening() {
     var bind = typeof addr === 'string'
         ? 'pipe ' + addr
         : 'port ' + addr.port
-    debug('Listening on ' + bind)
+    logger.debug('Listening on ' + bind)
 }
 
 

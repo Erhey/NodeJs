@@ -17580,3 +17580,1810 @@ ObjectParameterError: Parameter "obj" to Document() must be an object, got resul
 [34m2019-08-13 18:42:44.767[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
 [34m2019-08-13 18:42:44.908[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
 [34m2019-08-13 18:42:45.019[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mUser not found : null[39m
+[34m2019-08-14 08:56:37.519[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: match is not defined
+ReferenceError: match is not defined
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:37:21)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 08:56:37.524[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: match is not defined
+ReferenceError: match is not defined
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:37:21)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 08:57:37.822[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on hashing password : ReferenceError: bcrypt is not defined[39m
+[34m2019-08-14 08:57:37.840[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:158:21)
+    at jwtController.getAccessToken.result (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:10:9)
+    at jwtModel.existAccount.result (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:43:17)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:61:13)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 08:57:37.838[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:158:21)
+    at jwtController.getAccessToken.result (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:10:9)
+    at jwtModel.existAccount.result (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:43:17)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:61:13)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 08:57:58.964[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: The argument 'id' must be a non-empty string. Received ''
+TypeError [ERR_INVALID_ARG_VALUE]: The argument 'id' must be a non-empty string. Received ''
+    at Module.require (internal/modules/cjs/loader.js:634:11)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:4:16)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:5:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)[39m
+[34m2019-08-14 08:58:05.506[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on hashing password : ReferenceError: myPlaintextPassword is not defined[39m
+[34m2019-08-14 08:58:05.528[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:158:21)
+    at jwtController.getAccessToken.result (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:10:9)
+    at jwtModel.existAccount.result (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:43:17)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:62:13)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 08:58:05.525[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:158:21)
+    at jwtController.getAccessToken.result (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:10:9)
+    at jwtModel.existAccount.result (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:43:17)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:62:13)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 08:58:27.032[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on hashing password : ReferenceError: hash is not defined[39m
+[34m2019-08-14 08:58:27.051[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:158:21)
+    at jwtController.getAccessToken.result (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:10:9)
+    at jwtModel.existAccount.result (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:43:17)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:62:13)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 08:58:27.049[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:158:21)
+    at jwtController.getAccessToken.result (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:10:9)
+    at jwtModel.existAccount.result (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:43:17)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:62:13)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 08:58:41.949[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on hashing password : ReferenceError: options is not defined[39m
+[34m2019-08-14 08:58:41.968[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:158:21)
+    at jwtController.getAccessToken.result (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:10:9)
+    at jwtModel.existAccount.result (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:43:17)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:62:13)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 08:58:41.966[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:158:21)
+    at jwtController.getAccessToken.result (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:10:9)
+    at jwtModel.existAccount.result (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:43:17)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:62:13)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 08:59:34.019[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: c is not defined
+ReferenceError: c is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:5:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)[39m
+[34m2019-08-14 08:59:45.461[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Cannot set property 'exports' of undefined
+TypeError: Cannot set property 'exports' of undefined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:5:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)[39m
+[34m2019-08-14 08:59:54.559[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Cannot find module '../'
+Error: Cannot find module '../'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:5:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:5:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)[39m
+[34m2019-08-14 09:00:02.664[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on hashing password : ReferenceError: jwtManager is not defined[39m
+[34m2019-08-14 09:00:02.682[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:158:21)
+    at jwtController.getAccessToken.result (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:10:9)
+    at jwtModel.existAccount.result (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:43:17)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:64:13)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 09:00:02.680[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:158:21)
+    at jwtController.getAccessToken.result (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:10:9)
+    at jwtModel.existAccount.result (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:43:17)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:64:13)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 09:00:30.196[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Cannot find module './jwtManager'
+Error: Cannot find module './jwtManager'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:6:20)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:4:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)[39m
+[34m2019-08-14 09:00:43.822[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Cannot find module '../jwtManager'
+Error: Cannot find module '../jwtManager'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:6:20)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:4:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)[39m
+[34m2019-08-14 09:00:48.734[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31mError occured on hashing password : ReferenceError: user is not defined[39m
+[34m2019-08-14 09:00:48.752[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:158:21)
+    at jwtController.getAccessToken.result (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:10:9)
+    at jwtModel.existAccount.result (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:42:17)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:65:13)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 09:00:48.750[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\response.js:158:21)
+    at jwtController.getAccessToken.result (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:10:9)
+    at jwtModel.existAccount.result (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:42:17)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:65:13)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 09:07:27.920[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: valid is not defined
+ReferenceError: valid is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:68:5)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:4:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)[39m
+[34m2019-08-14 09:07:32.950[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: validToken is not defined
+ReferenceError: validToken is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:68:5)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:4:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)[39m
+[34m2019-08-14 09:08:56.936[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: g is not defined
+ReferenceError: g is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:68:5)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:4:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)[39m
+[34m2019-08-14 09:09:39.604[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: token is not defined
+ReferenceError: token is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:68:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:4:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)[39m
+[34m2019-08-14 09:42:39.488[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'use' of undefined
+TypeError: Cannot read property 'use' of undefined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\server.js:30:5)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 09:42:39.493[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'use' of undefined
+TypeError: Cannot read property 'use' of undefined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\server.js:30:5)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 09:43:34.454[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: app.use() requires a middleware function
+TypeError: app.use() requires a middleware function
+    at Function.use (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\application.js:210:11)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\server.js:28:5)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 09:43:34.460[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: app.use() requires a middleware function
+TypeError: app.use() requires a middleware function
+    at Function.use (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\application.js:210:11)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\server.js:28:5)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 10:14:51.082[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: app.use() requires a middleware function
+TypeError: app.use() requires a middleware function
+    at Function.use (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\application.js:210:11)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\server.js:28:5)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 10:14:51.089[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: app.use() requires a middleware function
+TypeError: app.use() requires a middleware function
+    at Function.use (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\application.js:210:11)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\server.js:28:5)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 10:15:15.540[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: req is not defined
+ReferenceError: req is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\server.js:28:40)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 10:15:15.546[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: req is not defined
+ReferenceError: req is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\server.js:28:40)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 10:18:14.040[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: req is not defined
+ReferenceError: req is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\server.js:28:40)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 10:18:14.046[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: req is not defined
+ReferenceError: req is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\server.js:28:40)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 10:24:35.731[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: options is not defined
+ReferenceError: options is not defined
+    at jwtModel.isAccountExists (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:45:40)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:36:25)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 10:24:35.736[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: options is not defined
+ReferenceError: options is not defined
+    at jwtModel.isAccountExists (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:45:40)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:36:25)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 10:25:02.058[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: jwtManager is not defined
+ReferenceError: jwtManager is not defined
+    at jwtModel.isAccountExists (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:47:35)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:35:25)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 10:25:02.063[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: jwtManager is not defined
+ReferenceError: jwtManager is not defined
+    at jwtModel.isAccountExists (C:\Workspace\MyEnv\NodeJs\link_jwt\jwt\jwtController.js:47:35)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\link_jwt\models\jwtModel.js:35:25)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 11:30:47.686[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: app is not defined
+ReferenceError: app is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:4:1)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\server.js:9:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)[39m
+[34m2019-08-14 11:30:47.679[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: app is not defined
+ReferenceError: app is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:4:1)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\server.js:9:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)[39m
+[34m2019-08-14 11:30:51.924[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: jwtMiddleware is not defined
+ReferenceError: jwtMiddleware is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:4:12)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\server.js:9:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)[39m
+[34m2019-08-14 11:30:51.931[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: jwtMiddleware is not defined
+ReferenceError: jwtMiddleware is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:4:12)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\server.js:9:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)[39m
+[34m2019-08-14 11:31:01.889[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Router.use() requires a middleware function
+TypeError: Router.use() requires a middleware function
+    at Function.use (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\router\index.js:451:11)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:4:8)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\server.js:9:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)[39m
+[34m2019-08-14 11:31:01.896[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mlink_jwt\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Router.use() requires a middleware function
+TypeError: Router.use() requires a middleware function
+    at Function.use (C:\Workspace\MyEnv\NodeJs\link_jwt\node_modules\express\lib\router\index.js:451:11)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\routes\index.js:4:8)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_jwt\server.js:9:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)[39m
+[34m2019-08-14 16:09:59.698[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: path is not defined
+ReferenceError: path is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtGenerator\server.js:12:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 16:09:59.704[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: path is not defined
+ReferenceError: path is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtGenerator\server.js:12:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 16:09:59.706[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: path is not defined
+ReferenceError: path is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtGenerator\server.js:12:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 16:13:45.852[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\jwtModel.js[39m[33m)[39m - [31mAccount doesn't exist[39m
+[34m2019-08-14 16:13:45.873[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'message' of null
+TypeError: Cannot read property 'message' of null
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:17:110)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at model.Query.Query._completeOne (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:1995:12)
+    at Immediate.Query.base.findOne.call (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2057:10)
+    at Immediate.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mquery\lib\utils.js:116:16)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)[39m
+[34m2019-08-14 16:13:45.878[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'message' of null
+TypeError: Cannot read property 'message' of null
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:17:110)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at model.Query.Query._completeOne (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:1995:12)
+    at Immediate.Query.base.findOne.call (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2057:10)
+    at Immediate.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mquery\lib\utils.js:116:16)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)[39m
+[34m2019-08-14 16:13:45.876[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'message' of null
+TypeError: Cannot read property 'message' of null
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:17:110)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at model.Query.Query._completeOne (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:1995:12)
+    at Immediate.Query.base.findOne.call (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2057:10)
+    at Immediate.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mquery\lib\utils.js:116:16)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)[39m
+[34m2019-08-14 16:14:45.636[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\jwtModel.js[39m[33m)[39m - [31mAccount doesn't exist[39m
+[34m2019-08-14 16:14:45.648[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'message' of null
+TypeError: Cannot read property 'message' of null
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:17:110)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at model.Query.Query._completeOne (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:1995:12)
+    at Immediate.Query.base.findOne.call (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2057:10)
+    at Immediate.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mquery\lib\utils.js:116:16)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)[39m
+[34m2019-08-14 16:14:45.652[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'message' of null
+TypeError: Cannot read property 'message' of null
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:17:110)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at model.Query.Query._completeOne (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:1995:12)
+    at Immediate.Query.base.findOne.call (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2057:10)
+    at Immediate.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mquery\lib\utils.js:116:16)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)[39m
+[34m2019-08-14 16:14:45.650[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'message' of null
+TypeError: Cannot read property 'message' of null
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:17:110)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at model.Query.Query._completeOne (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:1995:12)
+    at Immediate.Query.base.findOne.call (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2057:10)
+    at Immediate.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mquery\lib\utils.js:116:16)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)[39m
+[34m2019-08-14 16:14:58.264[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\jwtModel.js[39m[33m)[39m - [31mAccount doesn't exist[39m
+[34m2019-08-14 16:14:58.277[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'message' of null
+TypeError: Cannot read property 'message' of null
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:17:110)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at model.Query.Query._completeOne (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:1995:12)
+    at Immediate.Query.base.findOne.call (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2057:10)
+    at Immediate.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mquery\lib\utils.js:116:16)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)[39m
+[34m2019-08-14 16:14:58.281[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'message' of null
+TypeError: Cannot read property 'message' of null
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:17:110)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at model.Query.Query._completeOne (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:1995:12)
+    at Immediate.Query.base.findOne.call (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2057:10)
+    at Immediate.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mquery\lib\utils.js:116:16)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)[39m
+[34m2019-08-14 16:14:58.279[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'message' of null
+TypeError: Cannot read property 'message' of null
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:17:110)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at model.Query.Query._completeOne (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:1995:12)
+    at Immediate.Query.base.findOne.call (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2057:10)
+    at Immediate.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mquery\lib\utils.js:116:16)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)[39m
+[34m2019-08-14 16:16:38.910[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\jwtModel.js[39m[33m)[39m - [31mAccount doesn't exist[39m
+[34m2019-08-14 16:16:38.922[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'message' of null
+TypeError: Cannot read property 'message' of null
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:17:110)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at model.Query.Query._completeOne (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:1995:12)
+    at Immediate.Query.base.findOne.call (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2057:10)
+    at Immediate.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mquery\lib\utils.js:116:16)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)[39m
+[34m2019-08-14 16:16:38.926[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'message' of null
+TypeError: Cannot read property 'message' of null
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:17:110)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at model.Query.Query._completeOne (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:1995:12)
+    at Immediate.Query.base.findOne.call (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2057:10)
+    at Immediate.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mquery\lib\utils.js:116:16)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)[39m
+[34m2019-08-14 16:16:38.925[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'message' of null
+TypeError: Cannot read property 'message' of null
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:17:110)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at model.Query.Query._completeOne (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:1995:12)
+    at Immediate.Query.base.findOne.call (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2057:10)
+    at Immediate.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mquery\lib\utils.js:116:16)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)[39m
+[34m2019-08-14 16:18:24.745[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mjwtGenerator\jwt\jwtController.js[39m[33m)[39m - [32mAuthentication success![39m
+[34m2019-08-14 16:18:24.758[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: ENOENT: no such file or directory, open '../privkey.pem'
+Error: ENOENT: no such file or directory, open '../privkey.pem'
+    at Object.openSync (fs.js:438:3)
+    at Object.readFileSync (fs.js:343:35)
+    at jwtModel.isAccountExists (C:\Workspace\MyEnv\NodeJs\jwtGenerator\jwt\jwtController.js:17:40)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:13:25)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 16:18:24.760[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: ENOENT: no such file or directory, open '../privkey.pem'
+Error: ENOENT: no such file or directory, open '../privkey.pem'
+    at Object.openSync (fs.js:438:3)
+    at Object.readFileSync (fs.js:343:35)
+    at jwtModel.isAccountExists (C:\Workspace\MyEnv\NodeJs\jwtGenerator\jwt\jwtController.js:17:40)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:13:25)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 16:18:24.762[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: ENOENT: no such file or directory, open '../privkey.pem'
+Error: ENOENT: no such file or directory, open '../privkey.pem'
+    at Object.openSync (fs.js:438:3)
+    at Object.readFileSync (fs.js:343:35)
+    at jwtModel.isAccountExists (C:\Workspace\MyEnv\NodeJs\jwtGenerator\jwt\jwtController.js:17:40)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:13:25)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)[39m
+[34m2019-08-14 16:18:52.475[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mjwtGenerator\jwt\jwtController.js[39m[33m)[39m - [32mAuthentication success![39m
+[34m2019-08-14 16:19:09.963[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mjwtGenerator\jwt\jwtController.js[39m[33m)[39m - [32mAuthentication success![39m
+[34m2019-08-14 16:19:36.510[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mjwtGenerator\jwt\jwtController.js[39m[33m)[39m - [32mAuthentication success![39m
+[34m2019-08-14 16:20:01.550[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\jwtModel.js[39m[33m)[39m - [31mAccount doesn't exist[39m
+[34m2019-08-14 16:20:01.561[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'message' of null
+TypeError: Cannot read property 'message' of null
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:17:110)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at model.Query.Query._completeOne (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:1995:12)
+    at Immediate.Query.base.findOne.call (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2057:10)
+    at Immediate.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mquery\lib\utils.js:116:16)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)[39m
+[34m2019-08-14 16:20:01.566[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'message' of null
+TypeError: Cannot read property 'message' of null
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:17:110)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at model.Query.Query._completeOne (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:1995:12)
+    at Immediate.Query.base.findOne.call (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2057:10)
+    at Immediate.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mquery\lib\utils.js:116:16)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)[39m
+[34m2019-08-14 16:20:01.564[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'message' of null
+TypeError: Cannot read property 'message' of null
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:17:110)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at model.Query.Query._completeOne (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:1995:12)
+    at Immediate.Query.base.findOne.call (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2057:10)
+    at Immediate.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mquery\lib\utils.js:116:16)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)[39m
+[34m2019-08-14 16:20:50.051[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\jwtModel.js[39m[33m)[39m - [31mAccount doesn't exist[39m
+[34m2019-08-14 16:21:27.492[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\jwtModel.js[39m[33m)[39m - [31mAuthentication failed![39m
+[34m2019-08-14 16:21:36.908[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m(~\[39m[33mjwtGenerator\jwt\jwtController.js[39m[33m)[39m - [32mAuthentication success![39m
+[34m2019-08-14 16:24:42.793[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Invalid or unexpected token
+C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:17
+                    callback({ "status" : 401, "message" : "Authentication failed! Check your login and/or password. }, false)
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 16:33:05.944[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Invalid or unexpected token
+C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:32
+            callback("Authentication failed! Unexpected error occured. Call , false)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 16:33:08.056[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Invalid or unexpected token
+C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:32
+            callback("Authentication failed! Unexpected error occured. Call the , false)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 16:33:43.402[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Invalid or unexpected token
+C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:11
+                    callback({ "status" : 500, "message" : "Authentication failed! Error occured on fetching account data Call token's provider if the problem persists. }, false)
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 16:33:45.276[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Invalid or unexpected token
+C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:11
+                    callback({ "status" : 500, "message" : "Authentication failed! Error occured on fetching account data. Call token's provider if the problem persists. }, false)
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 16:35:01.404[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Unexpected token ,
+C:\Workspace\MyEnv\NodeJs\jwtGenerator\jwt\jwtController.js:13
+            await jwtModel.isAccountExists(login, password, (, matchObj) => {
+                                                             ^
+
+SyntaxError: Unexpected token ,
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 16:35:44.778[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:17
+                        callback({ "status" : 201, "message" : "Authentication success!", "name" }, account)
+                                                                                                 ^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 16:37:42.830[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\jwtGenerator\jwt\jwtController.js:20
+                }
+                ^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 16:38:05.864[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\jwtModel.js[39m[33m)[39m - [31mAuthentication failed![39m
+[34m2019-08-14 16:38:05.878[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\jwtGenerator\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\jwtGenerator\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\jwtGenerator\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\jwtGenerator\node_modules\express\lib\response.js:158:21)
+    at jwtController.requestToken.result (C:\Workspace\MyEnv\NodeJs\jwtGenerator\server.js:20:13)
+    at jwtModel.isAccountExists (C:\Workspace\MyEnv\NodeJs\jwtGenerator\jwt\jwtController.js:18:17)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:27:21)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at model.Query.Query._completeOne (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:1995:12)
+    at Immediate.Query.base.findOne.call (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2057:10)
+    at Immediate.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mquery\lib\utils.js:116:16)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)[39m
+[34m2019-08-14 16:38:05.884[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\jwt\jwtController.js[39m[33m)[39m - [31muncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\jwtGenerator\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\jwtGenerator\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\jwtGenerator\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\jwtGenerator\node_modules\express\lib\response.js:158:21)
+    at jwtController.requestToken.result (C:\Workspace\MyEnv\NodeJs\jwtGenerator\server.js:20:13)
+    at jwtModel.isAccountExists (C:\Workspace\MyEnv\NodeJs\jwtGenerator\jwt\jwtController.js:18:17)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:27:21)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at model.Query.Query._completeOne (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:1995:12)
+    at Immediate.Query.base.findOne.call (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2057:10)
+    at Immediate.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mquery\lib\utils.js:116:16)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)[39m
+[34m2019-08-14 16:38:05.881[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\jwtModel.js[39m[33m)[39m - [31muncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\jwtGenerator\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\jwtGenerator\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\jwtGenerator\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\jwtGenerator\node_modules\express\lib\response.js:158:21)
+    at jwtController.requestToken.result (C:\Workspace\MyEnv\NodeJs\jwtGenerator\server.js:20:13)
+    at jwtModel.isAccountExists (C:\Workspace\MyEnv\NodeJs\jwtGenerator\jwt\jwtController.js:18:17)
+    at authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:27:21)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at model.Query.Query._completeOne (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:1995:12)
+    at Immediate.Query.base.findOne.call (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2057:10)
+    at Immediate.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mquery\lib\utils.js:116:16)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)[39m
+[34m2019-08-14 16:38:51.164[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\jwtModel.js[39m[33m)[39m - [31mAuthentication failed![39m
+[34m2019-08-14 16:40:23.609[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Unexpected token )
+C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\jwtModel.js:32
+            callback({ "status" : 500, "message" : "Authentication failed! Unexpected error occured. Call token's provider if the problem persists.")
+                                                                                                                                                    ^
+
+SyntaxError: Unexpected token )
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 16:49:09.465[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Cannot find module '../models/jwtModel'
+Error: Cannot find module '../models/jwtModel'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtGenerator\jwt\jwtController.js:1:80)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)[39m
+[34m2019-08-14 16:49:22.349[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Cannot find module './jwt/jwtController'
+Error: Cannot find module './jwt/jwtController'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtGenerator\server.js:7:23)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)[39m
+[34m2019-08-14 16:51:02.110[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Cannot find module './jwt/authController'
+Error: Cannot find module './jwt/authController'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtGenerator\server.js:7:23)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)[39m
+[34m2019-08-14 16:51:42.660[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Cannot find module './controllers/authController'
+Error: Cannot find module './controllers/authController'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtGenerator\server.js:7:23)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)[39m
+[34m2019-08-14 16:52:40.711[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\server.js[39m[33m)[39m - [31muncaughtException: Cannot find module './controllers/tokenController'
+Error: Cannot find module './controllers/tokenController'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtGenerator\server.js:7:25)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)[39m
+[34m2019-08-14 16:52:58.164[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\authModel.js[39m[33m)[39m - [31mAuthentication failed![39m
+[34m2019-08-14 18:25:36.582[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Cannot find module '../config'
+Error: Cannot find module '../config'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\controllers\authController.js:1:80)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)[39m
+[34m2019-08-14 18:27:08.232[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Invalid shorthand property initializer
+C:\Workspace\MyEnv\NodeJs\jwtManager\models\authModel.js:68
+    find = (login, callback) => {
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 18:27:10.670[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Invalid shorthand property initializer
+C:\Workspace\MyEnv\NodeJs\jwtManager\models\authModel.js:68
+    find = (login, callback) => {
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 18:27:17.068[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Invalid shorthand property initializer
+C:\Workspace\MyEnv\NodeJs\jwtManager\models\authModel.js:68
+    find = (login, callback) => {
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 18:28:27.040[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Cannot find module '../middleware/jwtmiddleware'
+Error: Cannot find module '../middleware/jwtmiddleware'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)[39m
+[34m2019-08-14 18:29:01.490[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Invalid shorthand property initializer
+C:\Workspace\MyEnv\NodeJs\jwtManager\models\authModel.js:68
+    find = (login, callback) => {
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 18:29:30.250[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Invalid shorthand property initializer
+C:\Workspace\MyEnv\NodeJs\jwtManager\models\authModel.js:68
+    findID = (login, callback) => {
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 18:29:31.442[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Invalid shorthand property initializer
+C:\Workspace\MyEnv\NodeJs\jwtManager\models\authModel.js:68
+    findId = (login, callback) => {
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 18:29:36.089[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Invalid shorthand property initializer
+C:\Workspace\MyEnv\NodeJs\jwtManager\models\authModel.js:68
+    find = (login, callback) => {
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 18:29:36.613[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Invalid shorthand property initializer
+C:\Workspace\MyEnv\NodeJs\jwtManager\models\authModel.js:68
+    find = (login, callback) => {
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 18:30:18.165[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: jwtMiddleware is not defined
+ReferenceError: jwtMiddleware is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:5:12)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\server.js:8:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)[39m
+[34m2019-08-14 18:30:18.172[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\models\authModel.js[39m[33m)[39m - [31muncaughtException: jwtMiddleware is not defined
+ReferenceError: jwtMiddleware is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:5:12)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\server.js:8:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)[39m
+[34m2019-08-14 18:30:18.174[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\controllers\authController.js[39m[33m)[39m - [31muncaughtException: jwtMiddleware is not defined
+ReferenceError: jwtMiddleware is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:5:12)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\server.js:8:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)[39m
+[34m2019-08-14 18:30:25.423[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: jwtMiddleware is not defined
+ReferenceError: jwtMiddleware is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:5:12)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\server.js:8:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)[39m
+[34m2019-08-14 18:30:25.429[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\models\authModel.js[39m[33m)[39m - [31muncaughtException: jwtMiddleware is not defined
+ReferenceError: jwtMiddleware is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:5:12)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\server.js:8:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)[39m
+[34m2019-08-14 18:30:25.431[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\controllers\authController.js[39m[33m)[39m - [31muncaughtException: jwtMiddleware is not defined
+ReferenceError: jwtMiddleware is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:5:12)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\server.js:8:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)[39m
+[34m2019-08-14 18:30:37.248[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Cannot find module '../middleware/jwtmiddleware'
+Error: Cannot find module '../middleware/jwtmiddleware'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)[39m
+[34m2019-08-14 18:30:45.062[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: jwtMiddleware is not defined
+ReferenceError: jwtMiddleware is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:6:12)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\server.js:8:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)[39m
+[34m2019-08-14 18:30:45.069[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\models\authModel.js[39m[33m)[39m - [31muncaughtException: jwtMiddleware is not defined
+ReferenceError: jwtMiddleware is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:6:12)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\server.js:8:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)[39m
+[34m2019-08-14 18:30:45.071[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\controllers\authController.js[39m[33m)[39m - [31muncaughtException: jwtMiddleware is not defined
+ReferenceError: jwtMiddleware is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:6:12)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\server.js:8:21)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)[39m
+[34m2019-08-14 18:32:59.169[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\models\authModel.js[39m[33m)[39m - [31mError occured on inserting account : null[39m
+[34m2019-08-14 18:34:12.290[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Unexpected token )
+C:\Workspace\MyEnv\NodeJs\jwtManager\models\authModel.js:8
+                if (err && ) {
+                           ^
+
+SyntaxError: Unexpected token )
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 18:35:48.267[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\models\authModel.js[39m[33m)[39m - [31mError occured on inserting account : E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "Auronlegris" }[39m
+[34m2019-08-14 18:43:53.794[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Unexpected token )
+C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:17
+  if ()
+      ^
+
+SyntaxError: Unexpected token )
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 18:43:57.851[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:27
+  }else {
+  ^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 18:44:35.931[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\controllers\authController.js[39m[33m)[39m - [31mError occured on hashing password : ReferenceError: password is not defined[39m
+[34m2019-08-14 18:44:35.933[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\controllers\authController.js[39m[33m)[39m - [31mUnexpected error occured![39m
+[34m2019-08-14 18:47:51.491[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\controllers\authController.js[39m[33m)[39m - [31mUnexpected error occured![39m
+[34m2019-08-14 19:00:29.033[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: The argument 'id' must be a non-empty string. Received ''
+TypeError [ERR_INVALID_ARG_VALUE]: The argument 'id' must be a non-empty string. Received ''
+    at Module.require (internal/modules/cjs/loader.js:634:11)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\server.js:9:27)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 19:00:29.039[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\models\authModel.js[39m[33m)[39m - [31muncaughtException: The argument 'id' must be a non-empty string. Received ''
+TypeError [ERR_INVALID_ARG_VALUE]: The argument 'id' must be a non-empty string. Received ''
+    at Module.require (internal/modules/cjs/loader.js:634:11)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\server.js:9:27)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 19:00:29.041[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\controllers\authController.js[39m[33m)[39m - [31muncaughtException: The argument 'id' must be a non-empty string. Received ''
+TypeError [ERR_INVALID_ARG_VALUE]: The argument 'id' must be a non-empty string. Received ''
+    at Module.require (internal/modules/cjs/loader.js:634:11)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\server.js:9:27)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 19:00:36.840[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'set' of undefined
+TypeError: Cannot read property 'set' of undefined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\server.js:11:5)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 19:00:36.846[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\models\authModel.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'set' of undefined
+TypeError: Cannot read property 'set' of undefined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\server.js:11:5)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 19:00:36.848[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\controllers\authController.js[39m[33m)[39m - [31muncaughtException: Cannot read property 'set' of undefined
+TypeError: Cannot read property 'set' of undefined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\jwtManager\server.js:11:5)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)[39m
+[34m2019-08-14 19:01:01.466[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:15
+})
+ ^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 19:01:03.211[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:9
+router.use(jwtAuth
+           ^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 19:02:26.968[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\authModel.js[39m[33m)[39m - [31mAuthentication failed![39m
+[34m2019-08-14 19:02:32.065[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\authModel.js[39m[33m)[39m - [31mAuthentication failed![39m
+[34m2019-08-14 19:03:14.301[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Invalid shorthand property initializer
+C:\Workspace\MyEnv\NodeJs\jwtManager\models\authModel.js:71
+    find = (login, callback) => {
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 19:03:18.117[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\jwtManager\models\authModel.js:29
+            authentication.authenticationSchema.updateOne({} _id: doc._id }, account, (err, accountSaved) => {
+                                                           ^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 19:03:22.606[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Invalid shorthand property initializer
+C:\Workspace\MyEnv\NodeJs\jwtManager\models\authModel.js:70
+    find = (login, callback) => {
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 19:03:26.014[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Invalid shorthand property initializer
+C:\Workspace\MyEnv\NodeJs\jwtManager\models\authModel.js:72
+    find = (login, callback) => {
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 19:03:34.527[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Invalid shorthand property initializer
+C:\Workspace\MyEnv\NodeJs\jwtManager\models\authModel.js:67
+    find = (login, callback) => {
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 19:03:38.012[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Invalid shorthand property initializer
+C:\Workspace\MyEnv\NodeJs\jwtManager\models\authModel.js:65
+    find = (login, callback) => {
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 19:04:21.951[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: Missing catch or finally after try
+C:\Workspace\MyEnv\NodeJs\jwtManager\controllers\authController.js:45
+            } else {
+            ^
+
+SyntaxError: Missing catch or finally after try
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
+[34m2019-08-14 19:05:06.803[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtGenerator\models\authModel.js[39m[33m)[39m - [31mAuthentication failed![39m
+[34m2019-08-14 19:05:24.911[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\controllers\authController.js[39m[33m)[39m - [31mError occured on hashing password : ReferenceError: password is not defined[39m
+[34m2019-08-14 19:05:24.913[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\controllers\authController.js[39m[33m)[39m - [31mUnexpected error occured![39m
+[34m2019-08-14 19:06:47.972[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\controllers\authController.js[39m[33m)[39m - [31mError occured on hashing password : ReferenceError: password is not defined[39m
+[34m2019-08-14 19:06:47.973[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\controllers\authController.js[39m[33m)[39m - [31mUnexpected error occured![39m
+[34m2019-08-14 19:07:12.421[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\controllers\authController.js[39m[33m)[39m - [31mError occured on hashing password : ReferenceError: password is not defined[39m
+[34m2019-08-14 19:07:12.422[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\controllers\authController.js[39m[33m)[39m - [31mUnexpected error occured![39m
+[34m2019-08-14 19:07:46.454[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\controllers\authController.js[39m[33m)[39m - [31mError occured on hashing password : ReferenceError: password is not defined[39m
+[34m2019-08-14 19:07:46.472[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\controllers\authController.js[39m[33m)[39m - [31mUnexpected error occured![39m
+[34m2019-08-14 19:08:06.796[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\controllers\authController.js[39m[33m)[39m - [31mError occured on hashing password : ReferenceError: password is not defined[39m
+[34m2019-08-14 19:08:06.797[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\controllers\authController.js[39m[33m)[39m - [31mUnexpected error occured![39m
+[34m2019-08-14 19:08:22.967[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m(~\[39m[33mjwtManager\server.js[39m[33m)[39m - [31muncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\jwtManager\controllers\authController.js:40
+                    console.log(authAccount.password
+                                            ^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)[39m
