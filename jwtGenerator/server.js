@@ -6,6 +6,7 @@ const path = require('path')
 const cookieParser = require('cookie-parser')
 const JWTController = require('./controllers/JWTController')
 const app = express()
+var cors = require('cors')
 
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
@@ -15,6 +16,8 @@ app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
+app.options('*', cors())
+app.use(cors())
 app.post('/getAccessToken', function (req, res, next) {
     JWTController.getAccessToken(req.body.login, req.body.password, result => {
         res.send(result)

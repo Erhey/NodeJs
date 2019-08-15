@@ -7,7 +7,7 @@ let getMongoConnection = function (mongoConnectionStr) {
     try {
         // 'mongodb://127.0.0.1/tracking'
         mongoose.set('useCreateIndex', true)
-        mongoose.connect(mongoConnectionStr, { useNewUrlParser: true })
+        mongoose.connect('mongodb://127.0.0.1/' + mongoConnectionStr, { useNewUrlParser: true })
         return mongoose.connection
     } catch (e) {
         logger.error('Error : '.red + e.red)
@@ -136,17 +136,16 @@ let authenticationSchema = new Schema({
 //     })
 // })
 // module.exports.tracking = tracking
+module.exports.getMongoConnection = getMongoConnection
 module.exports.tracking = {
     'CRUD-MYSQL' : {
-        // 'getMongoConnection' : getMongoConnection('mongodb://127.0.0.1/CRUD-MYSQL'),
         'responseSchema' : mongoose.model('responseSchema', responseSchema),
         'requestSchema' : mongoose.model('requestSchema', requestSchema),
         'journeySchema' : mongoose.model('journeySchema', journeySchema)
     }
 }
-module.exports = {
+module.exports.jwt = {
     'authentication' : {
-        'getMongoConnection' : getMongoConnection('mongodb://127.0.0.1/authentication'),
         'authenticationSchema' : mongoose.model('authenticationSchema', authenticationSchema)
     }
 }

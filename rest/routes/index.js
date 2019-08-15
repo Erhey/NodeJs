@@ -4,6 +4,8 @@ let express = require('express');
 let router = express.Router();
 
 let index_controller = require("../controllers/indexController")
+const jwtAuth = require('link_jwt')
+router.use(jwtAuth.checkAccessToken)
 
 /* GET users listing. */
 

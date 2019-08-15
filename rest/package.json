@@ -2,7 +2,7 @@
   "name": "rest",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "dependencies": {
     "app-root-path": "^2.2.1",
     "async": "^3.0.1",
@@ -26,6 +26,6 @@
   "scripts": {
     "devstart": "nodemon app.js"
   },
-  "author": "",
+  "author": "<kevin.martin.eng@outlook.com>",
   "license": "ISC"
 }

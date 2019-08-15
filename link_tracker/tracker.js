@@ -3,7 +3,8 @@ const moment = require('moment')
 const sanitizeHtml = require('sanitize-html')
 const mongoose = require('mongoose')
 const logger = require('link_logger')(__filename)
-const link_schema = require('link_schema')
+const { tracking : link_schema, getMongoConnection } = require('link_schema');
+
 
 /** 
  * Tracker Class
@@ -42,18 +43,10 @@ class Tracker {
      */
     constructor(db, user_token_name) {
         this.user_token_name = user_token_name
-        this.mongoConnection = link_schema.tracking[db].getMongoConnection
-        this.responseSchema = link_schema.tracking[db].responseSchema
-        this.requestSchema = link_schema.tracking[db].requestSchema
-        this.journeySchema = link_schema.tracking[db].journeySchema
-        // Check if connection was correctly instanciated
-        if (this.mongoConnection) {
-            logger.info('Connected to database !')
-        } else {
-            logger.error('mongoConnection is undefined')
-            // throw error if instance wasn't correctly instanciated
-            throw new TypeError('Could not mongo connection! Please check the mongodb connection on your entry point : (example : app.js)')
-        }
+        this.db = db
+        this.responseSchema = link_schema[db].responseSchema
+        this.requestSchema = link_schema[db].requestSchema
+        this.journeySchema = link_schema[db].journeySchema
         /**
          * Lifetime define the time when a user connects to a site
          * It's used to know when a user connects and when a user disconnects to a site
@@ -99,13 +92,17 @@ class Tracker {
      */
     async journey(user_id) {
         logger.debug('journey('  + user_id + ')')
+        let mongoConnection = {}
         try {
+            mongoConnection = getMongoConnection(this.db)
             // create journey json journey object
             let journeyJson = await this.createJourney(user_id)
             // insert json journey object
             await this.insertJourney(journeyJson)
         } catch (e) {
             logger.error('Error on journey function : ' + e.toString())
+        } finally {
+            mongoConnection.close()
         }
     }
     /**
@@ -114,7 +111,9 @@ class Tracker {
      */
     async saveAllJourney() {
         logger.debug('saveAllJourney()')
+        let mongoConnection = {}
         try {
+            mongoConnection = getMongoConnection(this.db)
             await this.requestSchema.findOne({ journey: false }, (err, track) => {
                 if (err) {
                     throw err
@@ -129,6 +128,8 @@ class Tracker {
             })
         } catch (e) {
             logger.error('Error on saveAllJourney : ' + e.toString())
+        } finally {
+            mongoConnection.close()
         }
     }
     /** 
@@ -276,11 +277,10 @@ class Tracker {
         logger.info('Insert journey to database start')
         // insert journey to mongodb database
         try {
-            this.journeySchema.insertMany(journeyJson, (err, result) => {
+            await this.journeySchema.insertMany(journeyJson, (err, result) => {
                 if (err) {
                     throw err
                 } else {
-                    logger.info('Journey created')
                     return true
                 }
             })
@@ -294,8 +294,10 @@ class Tracker {
      * @param {Mixed} req 
      */
     request(req) {
+        let mongoConnection = {}
         try {
-        logger.debug('request(req)')
+            logger.debug('request(req)')
+            mongoConnection = getMongoConnection(this.db)
             logger.info('Request from user received!')
             // create request json request object
             let requestJson = this.createRequest(req)
@@ -303,6 +305,8 @@ class Tracker {
             this.insertRequest(requestJson)
         } catch (e) {
             logger.error('Error on request function : ' + e.toString())
+        } finally {
+            mongoConnection.close()
         }
     }
     /**
@@ -400,14 +404,18 @@ class Tracker {
      * @param {Mixed} res 
      */
     response(res) {
+        logger.info('Response from server!')
+        let mongoConnection = {}
         try {
-            logger.info('Response from server!')
+            mongoConnection = getMongoConnection(this.db)
             // create response json response object
             let responseJson = this.createResponse(res)
             // insert json response object
             this.insertResponse(responseJson)
         } catch (e) {
             logger.error('Error on response function : ' + e.toString())
+        } finally {
+            mongoConnection.close()
         }
     }
     /**

@@ -1,9 +1,11 @@
-const { authentication } = require('link_schema');
+const { jwt : { authentication }, getMongoConnection } = require('link_schema');
 const logger = require("link_logger")(__filename)
 module.exports = {
     insert: (account, callback) => {
         let result = {}
+        let mongoConnection = {}
         try {
+            mongoConnection = getMongoConnection("authentication")
             authentication.authenticationSchema.insertMany(account, (err, insertedAuthAccount) => {
                 if (err || !insertedAuthAccount) {
                     logger.error("Error occured on inserting account : " + err.message)
@@ -20,11 +22,15 @@ module.exports = {
             })
         } catch (e) {
             throw e
+        } finally {
+            mongoConnection.close()
         }
     },
     update: (_id, account, callback) => {
         let result = {}
+        let mongoConnection = {}
         try {
+            mongoConnection = getMongoConnection("authentication")
             authentication.authenticationSchema.updateOne({ "_id": _id }, { $set: account }, (err, updatedAuthAccount) => {
                 if (err || !updatedAuthAccount) {
                     logger.error("Error occured on updating authentication account : " + err.message)
@@ -39,14 +45,19 @@ module.exports = {
                 }
                 callback(result)
             })
+            mongoConnection.close()
         } catch (e) {
             throw e
+        } finally {
+            mongoConnection.close()
         }
     },
     delete: (_id, callback) => {
         let result = {}
+        let mongoConnection = {}
         result.status = 201
         try {
+            mongoConnection = getMongoConnection("authentication")
             authentication.authenticationSchema.deleteOne({ "_id": _id }, (err, deletedAuthAccount) => {
                 if (err || !deletedAuthAccount) {
                     logger.error("Error occured on deleting authentication account : " + err.message)
@@ -63,15 +74,25 @@ module.exports = {
             })
         } catch (e) {
             throw e
+        } finally {
+            mongoConnection.close()
         }
     },
     find: (login, callback) => {
-        authentication.authenticationSchema.findOne({ login : login }, (err, authAccount) => {
-            if(err || !authAccount) {
-                callback(false)
-            } else {
-                callback(authAccount._id)
-            }
-        })
+        let mongoConnection = {}
+        try {
+            mongoConnection = getMongoConnection("authentication")
+            authentication.authenticationSchema.findOne({ login : login }, (err, authAccount) => {
+                if(err || !authAccount) {
+                    callback(false)
+                } else {
+                    callback(authAccount._id)
+                }
+            })
+        } catch (e) {
+            throw e
+        } finally {
+            mongoConnection.close()
+        }
     }
 }

@@ -3,7 +3,6 @@ const tracker = require("link_tracker")("CRUD-MYSQL", "abc")
 const trackingApi = require("../models/TrackingApi")("CRUD-MYSQL")
 const graphApi = require("../models/GraphApi")("CRUD-MYSQL")
 
-
 exports.index = function (req, res) {
   // Ecrire a la main l'id de l'utilisateur ici :
   tracker.saveAllJourney()

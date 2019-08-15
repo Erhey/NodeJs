@@ -1,4 +1,4 @@
-const link_schema = require('link_schema')
+const { tracking : link_schema, getMongoConnection } = require('link_schema');
 const colors = require("colors")
 const logger = require("link_logger")(__filename)
 /**
@@ -19,10 +19,10 @@ class TrackingApi {
      * @param {String} db 
      */
     constructor(db) {
-        this.mongoConnection = link_schema.tracking[db].getMongoConnection
-        this.responseSchema = link_schema.tracking[db].responseSchema
-        this.requestSchema = link_schema.tracking[db].requestSchema
-        this.journeySchema = link_schema.tracking[db].journeySchema
+        this.db = db
+        this.responseSchema = link_schema[db].responseSchema
+        this.requestSchema = link_schema[db].requestSchema
+        this.journeySchema = link_schema[db].journeySchema
     }
 
     /**
@@ -43,6 +43,7 @@ class TrackingApi {
         }
         try {
             // Search for Dangerous request
+            let mongoConnection = getMongoConnection(this.db)
             await this.requestSchema.find(findCond, (err, result) => {
                 if (err) {
                     throw err
@@ -60,9 +61,11 @@ class TrackingApi {
                     callback(dangerousRequestArr)
                 }
             })
+            mongoConnection.close()
         } catch (e) {
             logger.error("Error on getDangerousRequests function :" + e.toString())
         }
+        
     }
     async getDangerousUsers(callback) {
         logger.info("getDangerousRequests Start")
@@ -76,6 +79,7 @@ class TrackingApi {
         }
         try {
             // Search for Dangerous request
+            let mongoConnection = getMongoConnection(this.db)
             await this.requestSchema.find(findCond, (err, result) => {
                 if (err) {
                     throw err
@@ -93,12 +97,14 @@ class TrackingApi {
                     callback(dangerousRequestArr)
                 }
             })
+            mongoConnection.close()
         } catch (e) {
             logger.error("Error on getDangerousRequests function :" + e.toString())
         }
     }
     async getUserUUIDList(condObj, callback){
         try {
+            let mongoConnection = getMongoConnection(this.db)
             await this.requestSchema.find(condObj, 'user_uuid', async (err, result) =>  {
                 if(err) {
                     throw err
@@ -107,6 +113,7 @@ class TrackingApi {
                     callback([...new Set(result.map(request => request.user_uuid))])
                 }
             })
+            mongoConnection.close()
         } catch (e) {
             logger.error("Error on getDangerousRequests function :" + e.toString())
         }

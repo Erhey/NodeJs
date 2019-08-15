@@ -1,4 +1,4 @@
-const link_schema = require('link_schema')
+const { tracking : link_schema, getMongoConnection } = require('link_schema');
 const logger = require('link_logger')(__filename)
 const moment = require("moment")
 /** 
@@ -32,17 +32,17 @@ class GraphApi {
      */
     constructor(db) {
         logger.info("Building GraphApi object Start")
-        this.mongoConnection = link_schema.tracking[db].getMongoConnection
-        this.responseSchema = link_schema.tracking[db].responseSchema
-        this.requestSchema = link_schema.tracking[db].requestSchema
-        this.journeySchema = link_schema.tracking[db].journeySchema
+        this.db = db
+        this.responseSchema = link_schema[db].responseSchema
+        this.requestSchema = link_schema[db].requestSchema
+        this.journeySchema = link_schema[db].journeySchema
         let hour = moment().hour()
         let month = moment().month() + 1
         let year = moment().year()
         this.graph = {
             LIVE: {
-                from: moment().startOf('seconds').subtract(1, "minutes").format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                to: moment().startOf('seconds').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+                from: moment().subtract(1, "minutes").format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+                to: moment().format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
                 duration: moment.duration(1, "minutes").asMilliseconds(),
                 precision: 60,
                 time: [ "-59s", "-58s", "-57s", "-56s", "-55s", "-54s", "-53s", "-52s", "-51s", "-50s",
@@ -183,12 +183,12 @@ class GraphApi {
         logger.info("Got 'get graph format' request!")
         logger.info("Update graph format Start")
         let hour = moment().hour()
-        try {
-            month = 1
+        // try {
+        //     month = 1
 
-        } catch (e){
-            logger.error("Error : " + e.toString())
-        }
+        // } catch (e){
+        //     logger.error("Error : " + e.toString())
+        // }
         // let month = moment().month() + 1
         // let dayInMonth = moment().daysInMonth()
         // let monthTime = []
@@ -242,8 +242,8 @@ class GraphApi {
      */
     async updateGraphRange() {
         logger.info("Updating Graph range...")
-        this.graph["LIVE"].from = moment().startOf('minutes').subtract(1, "minutes").format("YYYY-MM-DDTHH:mm:ss.SSSZ")
-        this.graph["LIVE"].to = moment().startOf('minutes').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.graph["LIVE"].from = moment().subtract(1, "minutes").format("YYYY-MM-DDTHH:mm:ss.SSSZ")
+        this.graph["LIVE"].to = moment().format("YYYY-MM-DDTHH:mm:ss.SSSZ")
         this.graph["HOUR"].from = moment().startOf('hour').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
         this.graph["HOUR"].to = moment().endOf('hour').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
         this.graph["DAY"].from = moment().startOf('days').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
@@ -267,6 +267,7 @@ class GraphApi {
         logger.info("GET get Pages Visited List!")
         let pageVisitedList = []
         try {
+            let mongoConnection = getMongoConnection(this.db)
             await this.requestSchema.find({}, async (err, requests) => {
                 if (err) {
                     throw err
@@ -279,6 +280,7 @@ class GraphApi {
                     })
                 }
             })
+            mongoConnection.close()
         } catch (e) {
             logger.error("Error on getPagesVisitedList function : " + e.toString())
         }
@@ -311,6 +313,7 @@ class GraphApi {
                 graphSpectre[unite].multico = {}
             }
         }
+        let mongoConnection = getMongoConnection(this.db)
         for (let unite in this.graph) {
             range = this.graph[unite]
             periodCond = { "timestamp": { $gte: range.from, $lt: range.to } }
@@ -422,6 +425,7 @@ class GraphApi {
                 logger.error("Error : " + e.toString())
             }
         }
+        mongoConnection.close()
         logger.info("Get live info end")
         callback(graphSpectre)
     }

@@ -1,10 +1,12 @@
-const { authentication } = require('link_schema');
+const { jwt : { authentication }, getMongoConnection } = require('link_schema');
 const logger = require("link_logger")(__filename)
 const bcrypt = require("bcrypt")
 module.exports = {
-    authenticate: (login, password, callback) => {
+    authenticate: async (login, password, callback) => {
+        let mongoConnection = {}
         try {
-            authentication.authenticationSchema.findOne({ "login" : login }, (err, authentication) => {
+            mongoConnection = getMongoConnection("authentication")
+            await authentication.authenticationSchema.findOne({ "login" : login }, (err, authentication) => {
                 if (err) {
                     // Error occured on mongoose => findOne
                     logger.error("Authentication failed! Error occured on fetching authentication data : " + err.message)
@@ -30,6 +32,8 @@ module.exports = {
             // Unexpected Error
             logger.error("Authentication failed! Unexpected error occured : " + err.message)
             callback({ "status" : 500, "message" : "Authentication failed! Unexpected error occured. Call token's provider if the problem persists." })
+        } finally {
+            mongoConnection.close()
         }
     }
 }
