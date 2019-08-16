@@ -1,7 +1,7 @@
 let Dao = require('./Dao')
 let moment = require("moment")
 let UserBean = require("../models/userBean");
-const logger = require("link_logger")(__filename)
+const logger = require("link_logger")
 class UserDao extends Dao {
     constructor() {
         super()

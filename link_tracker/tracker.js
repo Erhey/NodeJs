@@ -2,8 +2,8 @@
 const moment = require('moment')
 const sanitizeHtml = require('sanitize-html')
 const mongoose = require('mongoose')
-const logger = require('link_logger')(__filename)
-const { tracking : link_schema, getMongoConnection } = require('link_schema');
+const logger = require('link_logger')
+const { tracking : link_schema, getMongoConnection } = require('link_schema')
 
 
 /** 
@@ -44,9 +44,9 @@ class Tracker {
     constructor(db, user_token_name) {
         this.user_token_name = user_token_name
         this.db = db
-        this.responseSchema = link_schema[db].responseSchema
-        this.requestSchema = link_schema[db].requestSchema
-        this.journeySchema = link_schema[db].journeySchema
+        this.responseSchema = link_schema.responseSchema
+        this.requestSchema = link_schema.requestSchema
+        this.journeySchema = link_schema.journeySchema
         /**
          * Lifetime define the time when a user connects to a site
          * It's used to know when a user connects and when a user disconnects to a site

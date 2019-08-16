@@ -2,18 +2,31 @@
 const logger = require('link_logger')
 // Creating Mongoose connection
 const mongoose = require('mongoose')
+const mysql = require('mysql')
 
-let getMongoConnection = function (mongoConnectionStr) {
+let getMongoConnection = function (mongoConnectionStr, host='127.0.0.1') {
     try {
         // 'mongodb://127.0.0.1/tracking'
         mongoose.set('useCreateIndex', true)
-        mongoose.connect('mongodb://127.0.0.1/' + mongoConnectionStr, { useNewUrlParser: true })
+        mongoose.connect('mongodb://' + host + '/' + mongoConnectionStr, { useNewUrlParser: true })
         return mongoose.connection
     } catch (e) {
         logger.error('Error : '.red + e.red)
     }
 }
+let getMysqlConnection = function (database, host='localhost', user='root', password='') {
+    try {
 
+        return mysql.createConnection({
+            host: host
+            , database: database
+            , user: user
+            , password: password
+        })
+    } catch (e) {
+        logger.error('Error : '.red + e.red)
+    }
+}
 //Define a schema
 const Schema = mongoose.Schema;
 
@@ -137,12 +150,11 @@ let authenticationSchema = new Schema({
 // })
 // module.exports.tracking = tracking
 module.exports.getMongoConnection = getMongoConnection
+module.exports.getMysqlConnection = getMysqlConnection
 module.exports.tracking = {
-    'CRUD-MYSQL' : {
-        'responseSchema' : mongoose.model('responseSchema', responseSchema),
-        'requestSchema' : mongoose.model('requestSchema', requestSchema),
-        'journeySchema' : mongoose.model('journeySchema', journeySchema)
-    }
+    'responseSchema' : mongoose.model('responseSchema', responseSchema),
+    'requestSchema' : mongoose.model('requestSchema', requestSchema),
+    'journeySchema' : mongoose.model('journeySchema', journeySchema)
 }
 module.exports.jwt = {
     'authentication' : {

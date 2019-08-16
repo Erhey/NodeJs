@@ -1,6 +1,6 @@
 const { tracking : link_schema, getMongoConnection } = require('link_schema');
 const colors = require("colors")
-const logger = require("link_logger")(__filename)
+const logger = require("link_logger")
 /**
  * Tracking API
  * This class gets particular information we want to look at about a site.
@@ -20,9 +20,9 @@ class TrackingApi {
      */
     constructor(db) {
         this.db = db
-        this.responseSchema = link_schema[db].responseSchema
-        this.requestSchema = link_schema[db].requestSchema
-        this.journeySchema = link_schema[db].journeySchema
+        this.responseSchema = link_schema.responseSchema
+        this.requestSchema = link_schema.requestSchema
+        this.journeySchema = link_schema.journeySchema
     }
 
     /**

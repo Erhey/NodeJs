@@ -1,5 +1,5 @@
 const { jwt : { authentication }, getMongoConnection } = require('link_schema');
-const logger = require("link_logger")(__filename)
+const logger = require("link_logger")
 const bcrypt = require("bcrypt")
 module.exports = {
     authenticate: async (login, password, callback) => {

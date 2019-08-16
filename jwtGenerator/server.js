@@ -1,4 +1,4 @@
-const logger = require('link_logger')(__filename)
+const logger = require('link_logger')
 const http = require('http')
 const createError = require('http-errors')
 const express = require('express')

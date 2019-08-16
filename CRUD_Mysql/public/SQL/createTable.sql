@@ -23,6 +23,9 @@ INSERT INTO User (uuid, login, password, Name, FirstName, tel, mail, lastConDate
 INSERT INTO User (uuid, login, password, Name, FirstName, tel, mail, lastConDate, createdDay) VALUES ("3b6a2071-e631-496e-89a1-c4ca38d63637", "DragonSlayer", "fireDragon", "Red", "DragonFi", "5375375357", "DragonFi@RedPower.com", "2019-01-28", "2019-01-23");
 INSERT INTO User (uuid, login, password, Name, FirstName, tel, mail, lastConDate, createdDay) VALUES ("088f5beb-c877-4ce0-b765-3667a03e8047", "pasgentil", "Mechant", "pasbeau", "moche", "5735738966", "moche.pasbeau@pasgentil.mechant", "2018-12-25", "2018-10-29");
 INSERT INTO User (uuid, login, password, Name, FirstName, tel, mail, lastConDate, createdDay) VALUES ("8794d091-ea48-4df5-a43a-b1f0cd99d4dd", "lepro", "lenoob", "dieu", "le scripteur", "213238989", "scripteurNoob@jesepascript.com", "2018-11-25", "2018-09-14");
+INSERT INTO User (uuid, login, password, Name, FirstName, tel, mail, lastConDate, createdDay) VALUES ("3b770642-bfeb-11e9-9cb5-2a2ae2dbcce4", "test", "P@ssw0rd", "testCrossPlateform", "noob", "978465321", "monmail.amoi@cest.ca", "2019-08-16", "2019-08-16");
 
 
 
+UpDATE User SET login = 'test2', name = 'testcrossPlateform2' WHERE uuid = '3b770642-bfeb-11e9-9cb5-2a2ae2dbcce4'
+UpDATE User SET login = 'test2', name = 'testcrossPlateform2' WHERE uuid = ?
