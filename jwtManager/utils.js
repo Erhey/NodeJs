@@ -12,6 +12,12 @@ module.exports = {
             if(info.password) {
                 authAccount.password = info.password
             }
+            if(info.audience) {
+                authAccount.audience = info.audience
+            }
+            if(info.expiresIn) {
+                authAccount.expiresIn = info.expiresIn
+            }
             if(info.createdAt) {
                 authAccount.createdAt = info.createdAt
             }

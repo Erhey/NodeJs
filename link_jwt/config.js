@@ -1,8 +1,7 @@
 module.exports = {
     options : {
-        issuer: "Authorization/Resource/mysqldb"
-        ,subject: "kevin.martin.eng@outlook.com"
-        ,expiresIn: "1d"
+        issuer: "kevin.martin.eng@outlook.com"
+        ,subject: "Authorization/Resource/mysqldb"
         ,algorithm: "RS256"
     }
 }

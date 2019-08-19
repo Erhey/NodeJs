@@ -8,9 +8,11 @@ module.exports = {
             await authModel.authenticate(login, password, (result) => {
                 if(result.status === 201) {
                     // Authentication success! Creating a token
-                    const payload = { name: result.auth_name }
+                    const payload = { name: result.name}
                     const privkey = fs.readFileSync('privkey.pem', 'utf8')
-                    result.token = jwt.sign(payload, privkey, options)
+                    console.log("test")
+                    console.log(result)
+                    result.token = jwt.sign(payload, privkey, { ...options, audience: result.audience, expiresIn: result.expiresIn })
                 }
                 callback(result)
             })

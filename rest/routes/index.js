@@ -4,11 +4,11 @@ let express = require('express');
 let router = express.Router();
 
 let index_controller = require("../controllers/indexController")
-const jwtAuth = require('link_jwt')
-router.use(jwtAuth.checkAccessToken)
 
+const validateToken = require('link_jwt')
+router.use(validateToken('live_info'))
 /* GET users listing. */
-
+        
 
 router.get('/', index_controller.index) 
 router.post('/multiconnectionsAt', index_controller.multiconnectionsAt) 

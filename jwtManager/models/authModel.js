@@ -1,12 +1,12 @@
 const { jwt : { authentication }, getMongoConnection } = require('link_schema');
-const logger = require("link_logger")(__filename)
+const logger = require("link_logger")
 module.exports = {
-    insert: (account, callback) => {
+    insert: async (account, callback) => {
         let result = {}
         let mongoConnection = {}
         try {
-            mongoConnection = getMongoConnection("authentication")
-            authentication.authenticationSchema.insertMany(account, (err, insertedAuthAccount) => {
+            mongoConnection = await getMongoConnection("authentication")
+            await authentication.authenticationSchema.insertMany(account, (err, insertedAuthAccount) => {
                 if (err || !insertedAuthAccount) {
                     logger.error("Error occured on inserting account : " + err.message)
                     result.status = 500
@@ -19,11 +19,10 @@ module.exports = {
                     result.message = "Insert successful!"
                 }
                 callback(result)
+                mongoConnection.close()
             })
         } catch (e) {
             throw e
-        } finally {
-            mongoConnection.close()
         }
     },
     update: (_id, account, callback) => {
@@ -44,12 +43,10 @@ module.exports = {
                     result.message = "Authentication account was successfully updated!"
                 }
                 callback(result)
+                mongoConnection.close()
             })
-            mongoConnection.close()
         } catch (e) {
             throw e
-        } finally {
-            mongoConnection.close()
         }
     },
     delete: (_id, callback) => {
@@ -71,11 +68,10 @@ module.exports = {
                     result.message = "Authentication account was successfully deleted!"
                 }
                 callback(result)
+                mongoConnection.close()
             })
         } catch (e) {
             throw e
-        } finally {
-            mongoConnection.close()
         }
     },
     find: (login, callback) => {
@@ -88,11 +84,10 @@ module.exports = {
                 } else {
                     callback(authAccount._id)
                 }
+                mongoConnection.close()
             })
         } catch (e) {
             throw e
-        } finally {
-            mongoConnection.close()
         }
     }
 }

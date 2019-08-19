@@ -122,6 +122,14 @@ let authenticationSchema = new Schema({
         type: String
         ,required: true
     },
+    audience: {
+        type: String
+        ,required: true
+    },
+    expiresIn: {
+        type: String
+        ,required: true
+    },
     createdAt: {
         type: Date
         ,required: true

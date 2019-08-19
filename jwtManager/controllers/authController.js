@@ -1,15 +1,15 @@
 const bcrypt = require('bcrypt');
 const authModel = require("../models/authModel")
-const logger = require('link_logger')(__filename)
+const logger = require('link_logger')
 const moment = require("moment")
 
 module.exports = {
-    insertAuthAccount: async (name, login, password, callback) => {
+    insertAuthAccount: async (name, login, password, audience, expiresIn, callback) => {
         let authAccount = {}
         let hashed = ""
         try {
             hashed = bcrypt.hashSync(password, 10)
-        } catch(err) {
+        } catch (err) {
             let result = {}
             logger.error("Error occured on hashing password : " + err.message)
             result.status = 500
@@ -20,22 +20,26 @@ module.exports = {
         authAccount.name = name
         authAccount.login = login
         authAccount.password = hashed
+        authAccount.audience = audience
+        authAccount.expiresIn = expiresIn
         authAccount.createdAt = moment().format('YYYY-MM-DDTHH:mm:ss.SSSZ')
         authAccount.updatedAt = moment().format('YYYY-MM-DDTHH:mm:ss.SSSZ')
-        try{
+        try {
             await authModel.insert(authAccount, result => {
                 callback(result)
             })
-        } catch(err) {
+        } catch (err) {
             throw err
         }
     },
     updateAuthAccount: async (_id, authAccount, callback) => {
         try {
-            if(_id) {
+            if (_id) {
                 try {
-                    authAccount.password = bcrypt.hashSync(authAccount.password, 10)
-                } catch(err) {
+                    if (authAccount.password) {
+                        authAccount.password = bcrypt.hashSync(authAccount.password, 10)
+                    }
+                } catch (err) {
                     logger.error("Error occured on hashing password : " + err)
                     status = 500;
                     result.status = status
@@ -48,14 +52,14 @@ module.exports = {
                     callback(result)
                 })
             } else {
-            let result = {}
-            logger.error("Login does not exist")
+                let result = {}
+                logger.error("Login does not exist")
                 result.status = 404
                 result.error = err
                 result.message = "Login does not exist"
                 callback(result)
             }
-        } catch(err) {
+        } catch (err) {
             let result = {}
             logger.error("Unexpected error occured!")
             result.status = 404
@@ -69,7 +73,7 @@ module.exports = {
             await authModel.delete(_id, result => {
                 callback(result)
             })
-        } catch(err) {
+        } catch (err) {
             let result = {}
             logger.error("Unexpected error occured!")
             result.status = 404
