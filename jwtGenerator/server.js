@@ -25,7 +25,7 @@ app.use(function (req, res, next) {
 // error handler
 app.use(function (err, req, res, next) {
     res.status(err.status || 500)
-    res.render(res.error.message)
+    res.render(res.err.message)
 })
 const port = 3003
 app.set('port', port)

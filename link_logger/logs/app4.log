@@ -2487,3 +2487,604 @@
 [34m2019-08-20 13:23:23.853[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:221:16)[39m - [32mUpdate graph format end[39m
 [34m2019-08-20 13:23:23.854[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:222:16)[39m - [32mSend graph format[39m
 [34m2019-08-20 13:23:23.936[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:428:16)[39m - [32mGet live info end[39m
+[34m2019-08-20 15:15:18.636[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Invalid or unexpected token
+C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:50
+Gf7@SEr7
+   ^
+
+SyntaxError: Invalid or unexpected token
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 15:15:20.951[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Invalid or unexpected token
+C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:50
+Gf7@SEr7
+   ^
+
+SyntaxError: Invalid or unexpected token
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 15:15:22.366[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Invalid or unexpected token
+C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:50
+Gf7@SEr7
+   ^
+
+SyntaxError: Invalid or unexpected token
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 15:15:23.737[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Invalid or unexpected token
+C:\Workspace\MyEnv\NodeJs\jwtManager\routes\index.js:50
+Gf7@SEr7
+   ^
+
+SyntaxError: Invalid or unexpected token
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 15:20:17.905[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:35:16)[39m - [32mBuilding GraphApi object Start[39m
+[34m2019-08-20 15:20:17.917[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:173:16)[39m - [32mBuilding GraphApi object End[39m
+[34m2019-08-20 15:43:15.131[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:35:16)[39m - [32mBuilding GraphApi object Start[39m
+[34m2019-08-20 15:43:15.143[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:173:16)[39m - [32mBuilding GraphApi object End[39m
+[34m2019-08-20 15:53:41.616[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 15:53:41.846[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:28:44)[39m - [31m{
+    "code": "ER_PARSE_ERROR",
+    "errno": 1064,
+    "sqlMessage": "Erreur de syntaxe près de ') AND firstname LIKE '%'' à la ligne 1",
+    "sqlState": "42000",
+    "index": 0,
+    "sql": "Select * from User WHERE uuid IN () AND firstname LIKE '%'"
+}[39m
+[34m2019-08-20 15:53:41.863[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:264:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:158:21)
+    at mysqlUOW.get.result (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mysqlController.js:13:17)
+    at Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:29:37)
+    at Query.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:525:10)
+[34m2019-08-20 15:57:10.497[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 15:57:10.560[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:28:44)[39m - [31m{
+    "code": "ER_PARSE_ERROR",
+    "errno": 1064,
+    "sqlMessage": "Erreur de syntaxe près de ') AND firstname LIKE '%'' à la ligne 1",
+    "sqlState": "42000",
+    "index": 0,
+    "sql": "Select * from User WHERE uuid IN () AND firstname LIKE '%'"
+}[39m
+[34m2019-08-20 15:57:10.573[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:158:21)
+    at mysqlUOW.get.result (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mysqlController.js:13:17)
+    at Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:29:37)
+    at Query.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:91:28)
+[34m2019-08-20 15:57:41.786[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 15:57:41.849[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:28:44)[39m - [31m{
+    "code": "ER_PARSE_ERROR",
+    "errno": 1064,
+    "sqlMessage": "Erreur de syntaxe près de ') AND firstname LIKE '%'' à la ligne 1",
+    "sqlState": "42000",
+    "index": 0,
+    "sql": "Select * from User WHERE uuid IN () AND firstname LIKE '%'"
+}[39m
+[34m2019-08-20 15:58:18.789[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 15:58:18.851[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:28:44)[39m - [31m{
+    "code": "ER_PARSE_ERROR",
+    "errno": 1064,
+    "sqlMessage": "Erreur de syntaxe près de ') AND firstname LIKE '%'' à la ligne 1",
+    "sqlState": "42000",
+    "index": 0,
+    "sql": "Select * from User WHERE uuid IN () AND firstname LIKE '%'"
+}[39m
+[34m2019-08-20 15:58:18.864[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:264:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:158:21)
+    at mysqlUOW.get.result (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mysqlController.js:13:17)
+    at Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:29:37)
+    at Query.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:525:10)
+[34m2019-08-20 15:58:55.514[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: await is only valid in async function
+C:\Workspace\MyEnv\NodeJs\link_jwt\jwtAuthentication.js:19
+            await audiences.forEach(audience => {
+            ^^^^^
+
+SyntaxError: await is only valid in async function
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\mysql.js:6:23)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+[34m2019-08-20 15:59:25.048[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 15:59:25.110[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:28:44)[39m - [31m{
+    "code": "ER_PARSE_ERROR",
+    "errno": 1064,
+    "sqlMessage": "Erreur de syntaxe près de ') AND firstname LIKE '%'' à la ligne 1",
+    "sqlState": "42000",
+    "index": 0,
+    "sql": "Select * from User WHERE uuid IN () AND firstname LIKE '%'"
+}[39m
+[34m2019-08-20 16:00:48.419[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 16:00:48.481[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:28:44)[39m - [31m{
+    "code": "ER_PARSE_ERROR",
+    "errno": 1064,
+    "sqlMessage": "Erreur de syntaxe près de ') AND firstname LIKE '%'' à la ligne 1",
+    "sqlState": "42000",
+    "index": 0,
+    "sql": "Select * from User WHERE uuid IN () AND firstname LIKE '%'"
+}[39m
+[34m2019-08-20 16:01:58.860[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 16:01:58.922[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:28:44)[39m - [31m{
+    "code": "ER_PARSE_ERROR",
+    "errno": 1064,
+    "sqlMessage": "Erreur de syntaxe près de ') AND firstname LIKE '%'' à la ligne 1",
+    "sqlState": "42000",
+    "index": 0,
+    "sql": "Select * from User WHERE uuid IN () AND firstname LIKE '%'"
+}[39m
+[34m2019-08-20 16:03:22.757[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 16:03:22.817[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:28:44)[39m - [31m{
+    "code": "ER_PARSE_ERROR",
+    "errno": 1064,
+    "sqlMessage": "Erreur de syntaxe près de ') AND firstname LIKE '%'' à la ligne 1",
+    "sqlState": "42000",
+    "index": 0,
+    "sql": "Select * from User WHERE uuid IN () AND firstname LIKE '%'"
+}[39m
+[34m2019-08-20 16:03:22.830[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:158:21)
+    at mysqlUOW.get.result (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mysqlController.js:13:17)
+    at Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:29:37)
+    at Query.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:91:28)
+[34m2019-08-20 16:07:42.332[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 16:07:42.394[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:28:44)[39m - [31m{
+    "code": "ER_PARSE_ERROR",
+    "errno": 1064,
+    "sqlMessage": "Erreur de syntaxe près de ') AND firstname LIKE '%'' à la ligne 1",
+    "sqlState": "42000",
+    "index": 0,
+    "sql": "Select * from User WHERE uuid IN () AND firstname LIKE '%'"
+}[39m
+[34m2019-08-20 16:07:42.408[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:264:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:158:21)
+    at mysqlUOW.get.result (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mysqlController.js:13:17)
+    at Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:29:37)
+    at Query.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:525:10)
+[34m2019-08-20 16:09:28.333[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 16:09:28.396[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:28:44)[39m - [31m{
+    "code": "ER_PARSE_ERROR",
+    "errno": 1064,
+    "sqlMessage": "Erreur de syntaxe près de ') AND firstname LIKE '%'' à la ligne 1",
+    "sqlState": "42000",
+    "index": 0,
+    "sql": "Select * from User WHERE uuid IN () AND firstname LIKE '%'"
+}[39m
+[34m2019-08-20 16:09:28.409[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.json (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:264:10)
+    at ServerResponse.send (C:\Workspace\MyEnv\NodeJs\rest_db\node_modules\express\lib\response.js:158:21)
+    at mysqlUOW.get.result (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mysqlController.js:13:17)
+    at Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:29:37)
+    at Query.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mysql\lib\Connection.js:525:10)
+[34m2019-08-20 16:09:55.667[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 16:09:55.730[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:28:44)[39m - [31m{
+    "code": "ER_PARSE_ERROR",
+    "errno": 1064,
+    "sqlMessage": "Erreur de syntaxe près de ') AND firstname LIKE '%'' à la ligne 1",
+    "sqlState": "42000",
+    "index": 0,
+    "sql": "Select * from User WHERE uuid IN () AND firstname LIKE '%'"
+}[39m
+[34m2019-08-20 16:11:22.073[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 16:11:22.132[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:28:44)[39m - [31m{
+    "code": "ER_PARSE_ERROR",
+    "errno": 1064,
+    "sqlMessage": "Erreur de syntaxe près de ') AND firstname LIKE '%'' à la ligne 1",
+    "sqlState": "42000",
+    "index": 0,
+    "sql": "Select * from User WHERE uuid IN () AND firstname LIKE '%'"
+}[39m
+[34m2019-08-20 16:12:47.829[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:35:16)[39m - [32mBuilding GraphApi object Start[39m
+[34m2019-08-20 16:12:47.841[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:173:16)[39m - [32mBuilding GraphApi object End[39m
+[34m2019-08-20 16:12:54.127[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 16:12:54.133[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:28:44)[39m - [31m{
+    "code": "ER_PARSE_ERROR",
+    "errno": 1064,
+    "sqlMessage": "Erreur de syntaxe près de ') AND firstname LIKE '%'' à la ligne 1",
+    "sqlState": "42000",
+    "index": 0,
+    "sql": "Select * from User WHERE uuid IN () AND firstname LIKE '%'"
+}[39m
+[34m2019-08-20 16:13:34.906[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:35:16)[39m - [32mBuilding GraphApi object Start[39m
+[34m2019-08-20 16:13:34.918[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:173:16)[39m - [32mBuilding GraphApi object End[39m
+[34m2019-08-20 16:13:45.606[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 16:13:45.611[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Query.connection.query (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:28:44)[39m - [31m{
+    "code": "ER_PARSE_ERROR",
+    "errno": 1064,
+    "sqlMessage": "Erreur de syntaxe près de ') AND firstname LIKE '%'' à la ligne 1",
+    "sqlState": "42000",
+    "index": 0,
+    "sql": "Select * from User WHERE uuid IN () AND firstname LIKE '%'"
+}[39m
+[34m2019-08-20 16:15:15.789[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:35:16)[39m - [32mBuilding GraphApi object Start[39m
+[34m2019-08-20 16:15:15.802[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:173:16)[39m - [32mBuilding GraphApi object End[39m
+[34m2019-08-20 16:16:51.879[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:35:16)[39m - [32mBuilding GraphApi object Start[39m
+[34m2019-08-20 16:16:51.891[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:173:16)[39m - [32mBuilding GraphApi object End[39m
+[34m2019-08-20 16:16:54.259[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 16:17:51.163[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 16:17:59.664[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:35:16)[39m - [32mBuilding GraphApi object Start[39m
+[34m2019-08-20 16:17:59.675[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:173:16)[39m - [32mBuilding GraphApi object End[39m
+[34m2019-08-20 16:19:17.963[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:35:16)[39m - [32mBuilding GraphApi object Start[39m
+[34m2019-08-20 16:19:17.975[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:173:16)[39m - [32mBuilding GraphApi object End[39m
+[34m2019-08-20 16:19:19.961[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 16:26:17.605[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 16:27:44.841[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 16:27:47.382[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 16:52:45.979[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:35:16)[39m - [32mBuilding GraphApi object Start[39m
+[34m2019-08-20 16:52:45.991[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:173:16)[39m - [32mBuilding GraphApi object End[39m
+[34m2019-08-20 16:53:25.328[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:20:12)[39m - [32mMYSQL[39m
+[34m2019-08-20 17:25:34.009[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: link_schema is not defined
+ReferenceError: link_schema is not defined
+    at new TrackingApi (C:\Workspace\MyEnv\NodeJs\rest\models\TrackingApi.js:22:31)
+    at trackingApiBuilder (C:\Workspace\MyEnv\NodeJs\rest\models\TrackingApi.js:91:12)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest\controllers\indexController.js:2:53)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 17:25:35.980[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:35:16)[39m - [32mBuilding GraphApi object Start[39m
+[34m2019-08-20 17:25:35.992[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:173:16)[39m - [32mBuilding GraphApi object End[39m
+[34m2019-08-20 17:26:23.908[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Identifier 'getConnection' has already been declared
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:32
+let getConnection = (configNum) => {
+    ^
+
+SyntaxError: Identifier 'getConnection' has already been declared
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 17:26:38.609[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token )
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:33
+	if()
+	   ^
+
+SyntaxError: Unexpected token )
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 17:26:43.463[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token )
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:33
+	if()
+	   ^
+
+SyntaxError: Unexpected token )
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 17:26:50.141[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token )
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:33
+	if()
+	   ^
+
+SyntaxError: Unexpected token )
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 17:26:58.464[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token )
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:34
+	if()
+	   ^
+
+SyntaxError: Unexpected token )
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 17:27:01.156[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token )
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:34
+	if(dbConfig.)
+	            ^
+
+SyntaxError: Unexpected token )
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 17:27:08.597[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token )
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:34
+	if(dbConfig.type !== )
+	                     ^
+
+SyntaxError: Unexpected token )
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 17:29:58.628[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:40
+	}
+	^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 17:30:43.783[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:40
+	}
+	^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 17:31:05.692[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unterminated template literal
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:39
+		return link_schema[dbConfig.name][`collection]
+		                                  ^^^^^^^^^^^^
+
+SyntaxError: Unterminated template literal
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 17:31:11.422[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Missing } in template expression
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:39
+		return link_schema[dbConfig.name][`${collection]
+		                                     ^^^^^^^^^^
+
+SyntaxError: Missing } in template expression
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 17:31:14.689[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unterminated template literal
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:39
+		return link_schema[dbConfig.name][`${collection}Schema]
+		                                  ^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Unterminated template literal
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 17:31:21.568[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:40
+	}
+	^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 17:31:26.521[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected identifier
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:44
+module.exports = {
+^^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 17:31:27.432[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected identifier
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:43
+module.exports = {
+^^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-20 17:35:32.054[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:32:32)[39m - [31mAuthentication failed![39m
+[34m2019-08-20 17:36:19.127[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:32:32)[39m - [31mAuthentication failed![39m

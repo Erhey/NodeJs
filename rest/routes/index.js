@@ -7,6 +7,8 @@ let index_controller = require('../controllers/indexController')
 
 const validateToken = require('link_jwt')
 router.use(validateToken('live_info'))
+
+
 router.post('/multiconnectionsAt', index_controller.multiconnectionsAt) 
 router.post('/multiconnectionsRange', index_controller.multiconnectionsRange) 
 router.post('/dangerousRequest', index_controller.dangerousRequest) 

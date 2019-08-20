@@ -29,8 +29,18 @@ let getConnection = (configNum) => {
 		logger.error("Could not create connection. Error : " + e.toString())
 	}
 }
-
+let getMongoDbSchema = (configNum, collection) => {
+	let dbConfig = getDbConfig(configNum)
+	if(dbConfig.type !== "mongodb") {
+		logger.error("getMongoDbSchema could not be used for something else than mongodb !")
+		return false
+	} else {
+		const link_schema = require('link_schema')
+		return link_schema[dbConfig.name][`${collection}Schema`]
+	}
+}
 module.exports = {
-	"getConnection": getConnection,
-	"getDbConfig" : getDbConfig
+	"getConnection": getConnection
+	,"getDbConfig" : getDbConfig
+	,"getMongoDbSchema" : getMongoDbSchema
 }

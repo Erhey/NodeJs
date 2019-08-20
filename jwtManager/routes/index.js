@@ -47,3 +47,6 @@ router.post('/deleteAuthAccount', function (req, res, next) {
 })
 
 module.exports = router
+
+
+
