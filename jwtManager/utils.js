@@ -1,5 +1,10 @@
 
 module.exports = {
+    /**
+     * Cast info to an authentication_account
+     * 
+     * @param info Info to be casted to authentication_account
+     */
     createAuthAccountObj : info => {
         let authAccount = {}
         if(info){

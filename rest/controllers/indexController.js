@@ -1,17 +1,10 @@
 
-const tracker = require("link_tracker")("CRUD-MYSQL", "abc")
-const trackingApi = require("../models/TrackingApi")("CRUD-MYSQL")
-const graphApi = require("../models/GraphApi")("CRUD-MYSQL")
-
-exports.index = function (req, res) {
-  // Ecrire a la main l'id de l'utilisateur ici :
-  tracker.saveAllJourney()
-  res.send("journeySaved")
-};
+const trackingApi = require('../models/TrackingApi')('CRUD-MYSQL')
+const graphApi = require('../models/GraphApi')('CRUD-MYSQL')
 
 exports.multiconnectionsAt = (req, res) => {
   if(!req.body.timestamp) {
-    res.send("please define timestamp")
+    res.send('please define timestamp')
   }
   else {
     trackingApi.getMultiConnectionAtTime(req.body.timestamp, result => {
@@ -23,10 +16,10 @@ exports.multiconnectionsAt = (req, res) => {
 }
 exports.multiconnectionsRange = (req, res) => {
   if(!req.body.from) {
-    res.send("please define from")
+    res.send('please define from')
   }
   else if(!req.body.to) {
-    res.send("please define to")
+    res.send('please define to')
   }
   else if(!req.body.precision) {
     trackingApi.getMultiConnectionRange(req.body.from, req.body.to, 10, result => {
@@ -42,7 +35,6 @@ exports.multiconnectionsRange = (req, res) => {
   }
 }
 exports.dangerousRequest = (req, res) => {
-  console.log("est")
   trackingApi.getDangerousRequests(req.body.from, result => {
     res.send(result)
   })
@@ -58,13 +50,13 @@ exports.visitedPages = (req, res) => {
 
 exports.pagesInfo = (req, res) => {
   if(!req.body.from) {
-    res.send("please define from")
+    res.send('please define from when should we search (parameter : from)')
   }
   else if(!req.body.to) {
-    res.send("please define to")
+    res.send('please define until when shoule we search (parameter : to)')
   }
   let pagesInfo
-  trackingApi.getPagesInfo(req.body.from, req.body.to, "", result => {
+  trackingApi.getPagesInfo(req.body.from, req.body.to, '', result => {
       pagesInfo = result
       res.send(pagesInfo)
   })

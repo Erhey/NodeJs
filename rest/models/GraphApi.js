@@ -1,6 +1,7 @@
-const { tracking : link_schema, getMongoConnection } = require('link_schema');
+const { tracking : link_schema, getMongoConnection } = require('link_schema')
 const logger = require('link_logger')
-const moment = require("moment")
+const moment = require('moment')
+const ALL_COMBINED = 'All combined'
 /** 
  * GraphApi Class
  * It retrieves data from a site and create graph data over time usable on chart.js client
@@ -31,7 +32,7 @@ class GraphApi {
      * @param {String} db MongoDB connection string.
      */
     constructor(db) {
-        logger.info("Building GraphApi object Start")
+        logger.info('Building GraphApi object Start')
         this.db = db
         this.responseSchema = link_schema.responseSchema
         this.requestSchema = link_schema.requestSchema
@@ -41,136 +42,136 @@ class GraphApi {
         let year = moment().year()
         this.graph = {
             LIVE: {
-                from: moment().subtract(1, "minutes").format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                to: moment().format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                duration: moment.duration(1, "minutes").asMilliseconds(),
+                from: moment().subtract(1, 'minutes').format('YYYY-MM-DDTHH:mm:ss.SSSZ'),
+                to: moment().format('YYYY-MM-DDTHH:mm:ss.SSSZ'),
+                duration: moment.duration(1, 'minutes').asMilliseconds(),
                 precision: 60,
-                time: [ "-59s", "-58s", "-57s", "-56s", "-55s", "-54s", "-53s", "-52s", "-51s", "-50s",
-                        "-49s", "-48s", "-47s", "-46s", "-45s", "-44s", "-43s", "-42s", "-41s", "-40s",
-                        "-39s", "-38s", "-37s", "-36s", "-35s", "-34s", "-33s", "-32s", "-31s", "-30s",
-                        "-29s", "-28s", "-27s", "-26s", "-25s", "-24s", "-23s", "-22s", "-21s", "-20s",
-                        "-19s", "-18s", "-17s", "-16s", "-15s", "-14s", "-13s", "-12s", "-11s", "-10s",
-                        "-9s", "-8s", "-7s", "-6s", "-5s", "-4s", "-3s", "-2s", "-1s", "live"
+                time: [ '-59s', '-58s', '-57s', '-56s', '-55s', '-54s', '-53s', '-52s', '-51s', '-50s',
+                        '-49s', '-48s', '-47s', '-46s', '-45s', '-44s', '-43s', '-42s', '-41s', '-40s',
+                        '-39s', '-38s', '-37s', '-36s', '-35s', '-34s', '-33s', '-32s', '-31s', '-30s',
+                        '-29s', '-28s', '-27s', '-26s', '-25s', '-24s', '-23s', '-22s', '-21s', '-20s',
+                        '-19s', '-18s', '-17s', '-16s', '-15s', '-14s', '-13s', '-12s', '-11s', '-10s',
+                        '-9s', '-8s', '-7s', '-6s', '-5s', '-4s', '-3s', '-2s', '-1s', 'live'
                 ],
                 title: {
                     display: true,
-                    text: "LIVE",
-                    position: "top",
+                    text: 'LIVE',
+                    position: 'top',
                     fontSize: 25
                 },
                 worksheetNbr: 1
             },
             HOUR: {
-                from: moment().startOf('hours').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                to: moment().endOf('hours').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                duration: moment.duration(1, "hours").asMilliseconds(),
+                from: moment().startOf('hours').format('YYYY-MM-DDTHH:mm:ss.SSSZ'),
+                to: moment().endOf('hours').format('YYYY-MM-DDTHH:mm:ss.SSSZ'),
+                duration: moment.duration(1, 'hours').asMilliseconds(),
                 precision: 60,
                 time: [
-                    hour + ":00", hour + ":01", hour + ":02", hour + ":03", hour + ":04", hour + ":05", hour + ":06", hour + ":07", hour + ":08", hour + ":09",
-                    hour + ":10", hour + ":11", hour + ":12", hour + ":13", hour + ":14", hour + ":15", hour + ":16", hour + ":17", hour + ":18", hour + ":19",
-                    hour + ":20", hour + ":21", hour + ":22", hour + ":23", hour + ":24", hour + ":25", hour + ":26", hour + ":27", hour + ":28", hour + ":29",
-                    hour + ":30", hour + ":31", hour + ":32", hour + ":33", hour + ":34", hour + ":35", hour + ":36", hour + ":37", hour + ":38", hour + ":39",
-                    hour + ":40", hour + ":41", hour + ":42", hour + ":43", hour + ":44", hour + ":45", hour + ":46", hour + ":47", hour + ":48", hour + ":49",
-                    hour + ":50", hour + ":51", hour + ":52", hour + ":53", hour + ":54", hour + ":55", hour + ":56", hour + ":57", hour + ":58", hour + ":59"
+                    hour + ':00', hour + ':01', hour + ':02', hour + ':03', hour + ':04', hour + ':05', hour + ':06', hour + ':07', hour + ':08', hour + ':09',
+                    hour + ':10', hour + ':11', hour + ':12', hour + ':13', hour + ':14', hour + ':15', hour + ':16', hour + ':17', hour + ':18', hour + ':19',
+                    hour + ':20', hour + ':21', hour + ':22', hour + ':23', hour + ':24', hour + ':25', hour + ':26', hour + ':27', hour + ':28', hour + ':29',
+                    hour + ':30', hour + ':31', hour + ':32', hour + ':33', hour + ':34', hour + ':35', hour + ':36', hour + ':37', hour + ':38', hour + ':39',
+                    hour + ':40', hour + ':41', hour + ':42', hour + ':43', hour + ':44', hour + ':45', hour + ':46', hour + ':47', hour + ':48', hour + ':49',
+                    hour + ':50', hour + ':51', hour + ':52', hour + ':53', hour + ':54', hour + ':55', hour + ':56', hour + ':57', hour + ':58', hour + ':59'
                 ],
                 title: {
                     display: true,
-                    text: "Last hour",
-                    position: "top",
+                    text: 'Last hour',
+                    position: 'top',
                     fontSize: 25
                 },
                 worksheetNbr: 1
             },
             DAY: {
-                from: moment().startOf('days').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                to: moment().endOf('days').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                duration: moment.duration(1, "days").asMilliseconds(),
+                from: moment().startOf('days').format('YYYY-MM-DDTHH:mm:ss.SSSZ'),
+                to: moment().endOf('days').format('YYYY-MM-DDTHH:mm:ss.SSSZ'),
+                duration: moment.duration(1, 'days').asMilliseconds(),
                 precision: 48,
                 time: [
-                    "0:00", "", "1:00", "", "2:00", "", "3:00", "",
-                    "4:00", "", "5:00", "", "6:00", "", "7:00", "",
-                    "8:00", "", "9:00", "", "10:00", "", "11:00", "",
-                    "12:00", "", "13:00", "", "14:00", "", "15:00", "",
-                    "16:00", "", "17:00", "", "18:00", "", "19:00", "",
-                    "20:00", "", "21:00", "", "22:00", "", "23:00", ""
+                    '0:00', '', '1:00', '', '2:00', '', '3:00', '',
+                    '4:00', '', '5:00', '', '6:00', '', '7:00', '',
+                    '8:00', '', '9:00', '', '10:00', '', '11:00', '',
+                    '12:00', '', '13:00', '', '14:00', '', '15:00', '',
+                    '16:00', '', '17:00', '', '18:00', '', '19:00', '',
+                    '20:00', '', '21:00', '', '22:00', '', '23:00', ''
                 ],
                 title: {
                     display: true,
-                    text: moment().format("YYYY MMMM DD"),
-                    position: "top",
+                    text: moment().format('YYYY MMMM DD'),
+                    position: 'top',
                     fontSize: 25
                 },
                 worksheetNbr: 2
             },
             MONTH: {
-                from: moment().startOf('months').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                to: moment().endOf('months').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
+                from: moment().startOf('months').format('YYYY-MM-DDTHH:mm:ss.SSSZ'),
+                to: moment().endOf('months').format('YYYY-MM-DDTHH:mm:ss.SSSZ'),
                 duration: moment.duration(moment().endOf('month').diff(moment().startOf('month'))).asMilliseconds(),
                 precision: 60,
                 time: [
-                    "(0" + month + "/01)", "", "(0" + month + "/02)", "", "(0" + month + "/03)", "", "(0" + month + "/04)", "", "(0" + month + "/05)", "",
-                    "(0" + month + "/06)", "", "(0" + month + "/07)", "", "(0" + month + "/08)", "", "(0" + month + "/09)", "", "(0" + month + "/10)", "",
-                    "(0" + month + "/11)", "", "(0" + month + "/12)", "", "(0" + month + "/13)", "", "(0" + month + "/14)", "", "(0" + month + "/15)", "",
-                    "(0" + month + "/16)", "", "(0" + month + "/17)", "", "(0" + month + "/18)", "", "(0" + month + "/19)", "", "(0" + month + "/20)", "",
-                    "(0" + month + "/21)", "", "(0" + month + "/22)", "", "(0" + month + "/23)", "", "(0" + month + "/24)", "", "(0" + month + "/25)", "",
-                    "(0" + month + "/26)", "", "(0" + month + "/27)", "", "(0" + month + "/28)", "", "(0" + month + "/29)", "", "(0" + month + "/30)", ""
+                    '(0' + month + '/01)', '', '(0' + month + '/02)', '', '(0' + month + '/03)', '', '(0' + month + '/04)', '', '(0' + month + '/05)', '',
+                    '(0' + month + '/06)', '', '(0' + month + '/07)', '', '(0' + month + '/08)', '', '(0' + month + '/09)', '', '(0' + month + '/10)', '',
+                    '(0' + month + '/11)', '', '(0' + month + '/12)', '', '(0' + month + '/13)', '', '(0' + month + '/14)', '', '(0' + month + '/15)', '',
+                    '(0' + month + '/16)', '', '(0' + month + '/17)', '', '(0' + month + '/18)', '', '(0' + month + '/19)', '', '(0' + month + '/20)', '',
+                    '(0' + month + '/21)', '', '(0' + month + '/22)', '', '(0' + month + '/23)', '', '(0' + month + '/24)', '', '(0' + month + '/25)', '',
+                    '(0' + month + '/26)', '', '(0' + month + '/27)', '', '(0' + month + '/28)', '', '(0' + month + '/29)', '', '(0' + month + '/30)', ''
                 ],
                 title: {
                     display: true,
-                    text: moment().format("MMMM"),
-                    position: "top",
+                    text: moment().format('MMMM'),
+                    position: 'top',
                     fontSize: 25
                 },
                 worksheetNbr: 3
             },
             YEAR: {
-                from: moment().startOf('years').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                to: moment().endOf('years').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                duration: moment.duration(1, "years").asMilliseconds(),
+                from: moment().startOf('years').format('YYYY-MM-DDTHH:mm:ss.SSSZ'),
+                to: moment().endOf('years').format('YYYY-MM-DDTHH:mm:ss.SSSZ'),
+                duration: moment.duration(1, 'years').asMilliseconds(),
                 precision: 48,
-                time: ["January (01/01)", "", "", "",
-                    "February (02/01)", "", "", "",
-                    "March (03/01)", "", "", "",
-                    "April (04/01)", "", "", "",
-                    "May (05/01)", "", "", "",
-                    "June (06/01)", "", "", "",
-                    "July (07/01)", "", "", "",
-                    "August (08/01)", "", "", "",
-                    "September (09/01)", "", "", "",
-                    "October (10/01)", "", "", "",
-                    "November (11/01)", "", "", "",
-                    "December (12/01)", "", "", ""
+                time: ['January (01/01)', '', '', '',
+                    'February (02/01)', '', '', '',
+                    'March (03/01)', '', '', '',
+                    'April (04/01)', '', '', '',
+                    'May (05/01)', '', '', '',
+                    'June (06/01)', '', '', '',
+                    'July (07/01)', '', '', '',
+                    'August (08/01)', '', '', '',
+                    'September (09/01)', '', '', '',
+                    'October (10/01)', '', '', '',
+                    'November (11/01)', '', '', '',
+                    'December (12/01)', '', '', ''
                 ],
                 title: {
                     display: true,
-                    text: "Information about year " + moment().year(),
-                    position: "top",
+                    text: 'Information about year ' + moment().year(),
+                    position: 'top',
                     fontSize: 25
                 },
                 worksheetNbr: 4
             },
             ALL: {
-                from: moment("2015-01-01T00:00:00.000Z").startOf('year').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                to: moment().endOf('year').format("YYYY-MM-DDTHH:mm:ss.SSSZ"),
-                duration: moment.duration(moment().endOf('year').diff(moment("2015-01-01T00:00:00.000Z").startOf('year'))).asMilliseconds(),
+                from: moment('2015-01-01T00:00:00.000Z').startOf('year').format('YYYY-MM-DDTHH:mm:ss.SSSZ'),
+                to: moment().endOf('year').format('YYYY-MM-DDTHH:mm:ss.SSSZ'),
+                duration: moment.duration(moment().endOf('year').diff(moment('2015-01-01T00:00:00.000Z').startOf('year'))).asMilliseconds(),
                 precision: 48,
                 time: [
-                    "2015", "", "", "", "", "", "", "", "", "",
-                    "", "", "", "", "", "", "", "", "", "",
-                    "", "", "", "", "", "", "", "", "", "",
-                    "", "", "", "", "", "", "", "", "", "",
-                    "", "", "", "", "", "", year, ""
+                    '2015', '', '', '', '', '', '', '', '', '',
+                    '', '', '', '', '', '', '', '', '', '',
+                    '', '', '', '', '', '', '', '', '', '',
+                    '', '', '', '', '', '', '', '', '', '',
+                    '', '', '', '', '', '', year, ''
                 ],
                 title: {
                     display: true,
-                    text: "From 2015",
-                    position: "top",
+                    text: 'From 2015',
+                    position: 'top',
                     fontSize: 25
                 },
                 worksheetNbr: 5
             }
         }
-        logger.info("Building GraphApi object End")
+        logger.info('Building GraphApi object End')
     }
 
     /**
@@ -180,8 +181,8 @@ class GraphApi {
      * @param {function} callback 
      */
     getGraphFormat(callback) {
-        logger.info("Got 'get graph format' request!")
-        logger.info("Update graph format Start")
+        logger.info('Got \'getGraphFormat\' request!')
+        logger.info('Update graph format Start')
         let hour = moment().hour()
         // try {
         //     month = 1
@@ -211,15 +212,15 @@ class GraphApi {
         //     worksheetNbr: 3
         // }
         this.graph.HOUR.time = [
-            hour + ":00", hour + ":01", hour + ":02", hour + ":03", hour + ":04", hour + ":05", hour + ":06", hour + ":07", hour + ":08", hour + ":09",
-            hour + ":10", hour + ":11", hour + ":12", hour + ":13", hour + ":14", hour + ":15", hour + ":16", hour + ":17", hour + ":18", hour + ":19",
-            hour + ":20", hour + ":21", hour + ":22", hour + ":23", hour + ":24", hour + ":25", hour + ":26", hour + ":27", hour + ":28", hour + ":29",
-            hour + ":30", hour + ":31", hour + ":32", hour + ":33", hour + ":34", hour + ":35", hour + ":36", hour + ":37", hour + ":38", hour + ":39",
-            hour + ":40", hour + ":41", hour + ":42", hour + ":43", hour + ":44", hour + ":45", hour + ":46", hour + ":47", hour + ":48", hour + ":49",
-            hour + ":50", hour + ":51", hour + ":52", hour + ":53", hour + ":54", hour + ":55", hour + ":56", hour + ":57", hour + ":58", hour + ":59"
+            hour + ':00', hour + ':01', hour + ':02', hour + ':03', hour + ':04', hour + ':05', hour + ':06', hour + ':07', hour + ':08', hour + ':09',
+            hour + ':10', hour + ':11', hour + ':12', hour + ':13', hour + ':14', hour + ':15', hour + ':16', hour + ':17', hour + ':18', hour + ':19',
+            hour + ':20', hour + ':21', hour + ':22', hour + ':23', hour + ':24', hour + ':25', hour + ':26', hour + ':27', hour + ':28', hour + ':29',
+            hour + ':30', hour + ':31', hour + ':32', hour + ':33', hour + ':34', hour + ':35', hour + ':36', hour + ':37', hour + ':38', hour + ':39',
+            hour + ':40', hour + ':41', hour + ':42', hour + ':43', hour + ':44', hour + ':45', hour + ':46', hour + ':47', hour + ':48', hour + ':49',
+            hour + ':50', hour + ':51', hour + ':52', hour + ':53', hour + ':54', hour + ':55', hour + ':56', hour + ':57', hour + ':58', hour + ':59'
         ]
-        logger.info("Update graph format end")
-        logger.info("Send graph format")
+        logger.info('Update graph format end')
+        logger.info('Send graph format')
         callback(this.graph)
     }
     /**
@@ -230,7 +231,7 @@ class GraphApi {
      */
     getIndiceTS(timestamp, range) {
         if (timestamp < range.from || timestamp > range.to) {
-            logger.warn("getIndiceTS : Timestamp is out of range".gray)
+            logger.warn(`getIndiceTS : Timestamp is out of range`)
             return -1
         }
         else {
@@ -241,20 +242,20 @@ class GraphApi {
      * Update graph format from/to (from/to are used to define the range conditions to search in database)
      */
     async updateGraphRange() {
-        logger.info("Updating Graph range...")
-        this.graph["LIVE"].from = moment().subtract(1, "minutes").format("YYYY-MM-DDTHH:mm:ss.SSSZ")
-        this.graph["LIVE"].to = moment().format("YYYY-MM-DDTHH:mm:ss.SSSZ")
-        this.graph["HOUR"].from = moment().startOf('hour').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
-        this.graph["HOUR"].to = moment().endOf('hour').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
-        this.graph["DAY"].from = moment().startOf('days').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
-        this.graph["DAY"].to = moment().endOf('days').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
-        this.graph["MONTH"].from = moment().startOf('months').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
-        this.graph["MONTH"].to = moment().endOf('months').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
-        this.graph["YEAR"].from = moment().startOf('years').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
-        this.graph["YEAR"].to = moment().endOf('years').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
-        this.graph["ALL"].from = moment("2015-01-01T00:00:00.000Z").startOf('year').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
-        this.graph["ALL"].to = moment().endOf('year').format("YYYY-MM-DDTHH:mm:ss.SSSZ")
-        logger.info("Graph range updated!")
+        logger.info('Updating Graph range...')
+        this.graph['LIVE'].from = moment().subtract(1, 'minutes').format('YYYY-MM-DDTHH:mm:ss.SSSZ')
+        this.graph['LIVE'].to = moment().format('YYYY-MM-DDTHH:mm:ss.SSSZ')
+        this.graph['HOUR'].from = moment().startOf('hour').format('YYYY-MM-DDTHH:mm:ss.SSSZ')
+        this.graph['HOUR'].to = moment().endOf('hour').format('YYYY-MM-DDTHH:mm:ss.SSSZ')
+        this.graph['DAY'].from = moment().startOf('days').format('YYYY-MM-DDTHH:mm:ss.SSSZ')
+        this.graph['DAY'].to = moment().endOf('days').format('YYYY-MM-DDTHH:mm:ss.SSSZ')
+        this.graph['MONTH'].from = moment().startOf('months').format('YYYY-MM-DDTHH:mm:ss.SSSZ')
+        this.graph['MONTH'].to = moment().endOf('months').format('YYYY-MM-DDTHH:mm:ss.SSSZ')
+        this.graph['YEAR'].from = moment().startOf('years').format('YYYY-MM-DDTHH:mm:ss.SSSZ')
+        this.graph['YEAR'].to = moment().endOf('years').format('YYYY-MM-DDTHH:mm:ss.SSSZ')
+        this.graph['ALL'].from = moment('2015-01-01T00:00:00.000Z').startOf('year').format('YYYY-MM-DDTHH:mm:ss.SSSZ')
+        this.graph['ALL'].to = moment().endOf('year').format('YYYY-MM-DDTHH:mm:ss.SSSZ')
+        logger.info('Graph range updated!')
     }
     /**
      * List accessed page for a site as a list of string
@@ -264,7 +265,7 @@ class GraphApi {
      * @param {function} callback 
      */
     async getPagesVisitedList(callback) {
-        logger.info("GET get Pages Visited List!")
+        logger.info('GET get Pages Visited List!')
         let pageVisitedList = []
         try {
             let mongoConnection = getMongoConnection(this.db)
@@ -281,11 +282,11 @@ class GraphApi {
                 }
             })
             mongoConnection.close()
-        } catch (e) {
-            logger.error("Error on getPagesVisitedList function : " + e.toString())
+        } catch (err) {
+            logger.error(`Error on getPagesVisitedList function : ${err.message}`)
         }
-        logger.info("Found :" + pageVisitedList)
-        pageVisitedList.push("All combined")
+        logger.info(`Found :${pageVisitedList}`)
+        pageVisitedList.push(ALL_COMBINED)
         callback(pageVisitedList)
     }
     /**
@@ -294,7 +295,7 @@ class GraphApi {
      * @param {function} callback 
      */
     async getLiveInfo(callback) {
-        logger.info("Get live info start")
+        logger.info('Get live info start')
         let graphSpectre = {}
         let registeredAction = []
         let range = {}
@@ -309,35 +310,35 @@ class GraphApi {
             graphSpectre[unite].error_count = {}
             graphSpectre[unite].dangerous_count = {}
             graphSpectre[unite].res_time_moy = {}
-            if (this.graph[unite] === "LIVE") {
+            if (this.graph[unite] === 'LIVE') {
                 graphSpectre[unite].multico = {}
             }
         }
         let mongoConnection = getMongoConnection(this.db)
         for (let unite in this.graph) {
             range = this.graph[unite]
-            periodCond = { "timestamp": { $gte: range.from, $lt: range.to } }
+            periodCond = { 'timestamp': { $gte: range.from, $lt: range.to } }
             i = 0
             iMax = this.graph[unite].precision
-            graphSpectre[unite].req_count["All combined"] = []
-            graphSpectre[unite].error_count["All combined"] = []
-            graphSpectre[unite].dangerous_count["All combined"] = []
-            graphSpectre[unite].res_time_moy["All combined"] = []
-            if (this.graph[unite] === "LIVE") {
-                graphSpectre[unite].multico["All combined"] = []
+            graphSpectre[unite].req_count[ALL_COMBINED] = []
+            graphSpectre[unite].error_count[ALL_COMBINED] = []
+            graphSpectre[unite].dangerous_count[ALL_COMBINED] = []
+            graphSpectre[unite].res_time_moy[ALL_COMBINED] = []
+            if (this.graph[unite] === 'LIVE') {
+                graphSpectre[unite].multico[ALL_COMBINED] = []
                 for (; i < iMax; i++) {
-                    graphSpectre[unite].req_count["All combined"][i] = 0
-                    graphSpectre[unite].error_count["All combined"][i] = 0
-                    graphSpectre[unite].dangerous_count["All combined"][i] = 0
-                    graphSpectre[unite].res_time_moy["All combined"][i] = 0
-                    graphSpectre[unite].multico["All combined"][i] = 0
+                    graphSpectre[unite].req_count[ALL_COMBINED][i] = 0
+                    graphSpectre[unite].error_count[ALL_COMBINED][i] = 0
+                    graphSpectre[unite].dangerous_count[ALL_COMBINED][i] = 0
+                    graphSpectre[unite].res_time_moy[ALL_COMBINED][i] = 0
+                    graphSpectre[unite].multico[ALL_COMBINED][i] = 0
                 }
             } else {
                 for (; i < iMax; i++) {
-                    graphSpectre[unite].req_count["All combined"][i] = 0
-                    graphSpectre[unite].error_count["All combined"][i] = 0
-                    graphSpectre[unite].dangerous_count["All combined"][i] = 0
-                    graphSpectre[unite].res_time_moy["All combined"][i] = 0
+                    graphSpectre[unite].req_count[ALL_COMBINED][i] = 0
+                    graphSpectre[unite].error_count[ALL_COMBINED][i] = 0
+                    graphSpectre[unite].dangerous_count[ALL_COMBINED][i] = 0
+                    graphSpectre[unite].res_time_moy[ALL_COMBINED][i] = 0
                 }
             }
             try {
@@ -356,7 +357,7 @@ class GraphApi {
                                         graphSpectre[l_unite].error_count[request.req.action] = []
                                         graphSpectre[l_unite].dangerous_count[request.req.action] = []
                                         graphSpectre[l_unite].res_time_moy[request.req.action] = []
-                                        if (this.graph[l_unite] === "LIVE") {
+                                        if (this.graph[l_unite] === 'LIVE') {
                                             graphSpectre[l_unite].multico[request.req.action] = []
                                             for (; i < iMax; i++) {
                                                 graphSpectre[l_unite].req_count[request.req.action][i] = 0
@@ -376,18 +377,18 @@ class GraphApi {
                                     }
                                 }
                                 graphSpectre[unite].req_count[request.req.action][indice]++
-                                graphSpectre[unite].req_count["All combined"][indice]++
+                                graphSpectre[unite].req_count[ALL_COMBINED][indice]++
                                 graphSpectre[unite].req_count[request.req.action]
                                 if (request.isDangerous) {
                                     graphSpectre[unite].dangerous_count[request.req.action][indice]++
-                                    graphSpectre[unite].dangerous_count["All combined"][indice]++
+                                    graphSpectre[unite].dangerous_count[ALL_COMBINED][indice]++
                                 }
                             }
                         })
                     }
                 })
-            }catch(e) {
-                logger.error("Error on get Live info while getting requests informations : " + e.toString())
+            }catch(err) {
+                logger.error(`Error on get Live info while getting requests informations : ${err.message}`)
             }
             try{
                 await this.responseSchema.find(periodCond, async (err, responses) => {
@@ -397,36 +398,35 @@ class GraphApi {
                             if (indice !== -1) {
                                 if (response.error !== undefined) {
                                     graphSpectre[unite].error_count[response.action][indice]++
-                                    graphSpectre[unite].error_count["All combined"][indice]++
+                                    graphSpectre[unite].error_count[ALL_COMBINED][indice]++
                                 }
                                 graphSpectre[unite].res_time_moy[response.action][indice] += response.restime
-                                graphSpectre[unite].res_time_moy["All combined"][indice] += response.restime
+                                graphSpectre[unite].res_time_moy[ALL_COMBINED][indice] += response.restime
                             }
                         })
                     }
                 })
             }catch(e) {
-                logger.error("Error on get Live info while getting response informations : " + e.toString())
+                logger.error(`Error on get Live info while getting response informations : ${err.message}`)
             }
             try {
-                
                 registeredAction.forEach(action => {
                     for (let indice = 0; indice < range.precision; indice++) {
                         if (graphSpectre[unite].req_count[action][indice] !== 0) {
                             graphSpectre[unite].res_time_moy[action][indice] /= graphSpectre[unite].req_count[action][indice]
-                            graphSpectre[unite].res_time_moy["All combined"][indice] /= graphSpectre[unite].req_count["All combined"][indice]
+                            graphSpectre[unite].res_time_moy[ALL_COMBINED][indice] /= graphSpectre[unite].req_count[ALL_COMBINED][indice]
                         }
-                        if (this.graph[unite] === "LIVE") {
+                        if (this.graph[unite] === 'LIVE') {
                             graphSpectre[unite].multico[action][indice] = graphSpectre[unite].req_count[action][indice]
                         }
                     }
                 })
             } catch (e) {
-                logger.error("Error : " + e.toString())
+                logger.error(`Error : ${err.message}`)
             }
         }
         mongoConnection.close()
-        logger.info("Get live info end")
+        logger.info('Get live info end')
         callback(graphSpectre)
     }
     initGraphSpectreForAction(action){
@@ -437,7 +437,7 @@ class GraphApi {
             graphSpectre[l_unite].error_count[request.req.action] = []
             graphSpectre[l_unite].dangerous_count[request.req.action] = []
             graphSpectre[l_unite].res_time_moy[request.req.action] = []
-            if (this.graph[l_unite] === "LIVE") {
+            if (this.graph[l_unite] === 'LIVE') {
                 graphSpectre[l_unite].multico[request.req.action] = []
                 for (; i < iMax; i++) {
                     graphSpectre[l_unite].req_count[request.req.action][i] = 0

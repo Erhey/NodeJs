@@ -1,16 +1,12 @@
 
 
-let express = require('express');
-let router = express.Router();
+let express = require('express')
+let router = express.Router()
 
-let index_controller = require("../controllers/indexController")
+let index_controller = require('../controllers/indexController')
 
 const validateToken = require('link_jwt')
 router.use(validateToken('live_info'))
-/* GET users listing. */
-        
-
-router.get('/', index_controller.index) 
 router.post('/multiconnectionsAt', index_controller.multiconnectionsAt) 
 router.post('/multiconnectionsRange', index_controller.multiconnectionsRange) 
 router.post('/dangerousRequest', index_controller.dangerousRequest) 
@@ -22,4 +18,4 @@ router.get('/getLiveInfo', index_controller.getLiveInfo)
 router.get('/updateExcel', index_controller.updateExcel)
 router.post('/getUserUUIDList', index_controller.getUserUUIDList)
 
-module.exports = router;
+module.exports = router

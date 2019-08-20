@@ -11,7 +11,7 @@ validateTokenGenerator = (audience) => {
     return (req, res, next) => {
         let authorization = req.headers.authorization
         if (!authorization) {
-            res.send({ status: 403, error: "No credential sent!" })
+            res.send({ "status": 403, "error": 'No credential sent!' })
         } else {
             let token = authorization.split(' ')[1]
             const pubkey = fs.readFileSync(__dirname + '/pubkey.pem', 'utf8')
@@ -19,7 +19,7 @@ validateTokenGenerator = (audience) => {
                 jwt.decode(token)
                 next()
             } else {
-                res.send({ status: 401, error: "Authentication fail!" })
+                res.send({ "status": 401, "error": 'Authentication fail!' })
             }
         }
     }
