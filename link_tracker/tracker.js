@@ -4,23 +4,15 @@ const sanitizeHtml = require('sanitize-html')
 const mongoose = require('mongoose')
 const logger = require('link_logger')
 const { tracking : link_schema, getMongoConnection } = require('link_schema')
-
-
 /** 
  * Tracker Class
- * It creates request tracking objects, response tracking objects and user journey after disconnection : 
+ * It creates request tracking objects, response tracking objects on each connections and save them on mongodb database : 
  * Here are the main methods
  *      Global
  *  
  *          constructor : Establish connection to mongodb database
  *          track : This is the main function to call when tracking a site
  *  
- *      Journey
- *  
- *          journey : Create and save to database user journey which sum up what user did during its visit 
- *          createJourney : Internal function use in journey process to create journey json to save to database 
- *          insertJourney : Save to database user journey 
- *      
  *      Request 
  *  
  *          request : Create and save to database user request and insert a track to database
@@ -46,7 +38,6 @@ class Tracker {
         this.db = db
         this.responseSchema = link_schema.responseSchema
         this.requestSchema = link_schema.requestSchema
-        this.journeySchema = link_schema.journeySchema
         /**
          * Lifetime define the time when a user connects to a site
          * It's used to know when a user connects and when a user disconnects to a site
@@ -70,223 +61,17 @@ class Tracker {
      * @param {Callback} next  ensure that after tracking request/response, it goes next
      */
     track(req, res, next) {
-        logger.debug('track(req, res, next)')
-        // We consider that user is disconected after 20 min of inactivity
-        if (moment.duration(moment().diff(moment(this.lifeTime))).asMilliseconds() > 1200000) { // 20 minutes
-            // Create a journey of disconnected user
-            this.journey(req)
+        if(!req.path.includes("favicon.ico")){
+            logger.debug('track(req, res, next)')
+            // Create request track document
+            this.request(req)
+            // Wait that response was sended
+            res.on('finish', () => {
+                // Then create response track document
+                this.response(res)
+            })
         }
-        // Create request track document
-        this.request(req)
-        // Wait that response was sended
-        res.on('finish', () => {
-            // Then create response track document
-            this.response(res)
-        })
         next()
-    }
-    /**
-     * Create and save to database user journey which sum up what user did during its visit 
-     * 
-     * @param {Mixed} req Request object picked up from server 
-     */
-    async journey(user_id) {
-        logger.debug('journey('  + user_id + ')')
-        let mongoConnection = {}
-        try {
-            mongoConnection = getMongoConnection(this.db)
-            // create journey json journey object
-            let journeyJson = await this.createJourney(user_id)
-            // insert json journey object
-            await this.insertJourney(journeyJson)
-        } catch (e) {
-            logger.error('Error on journey function : ' + e.toString())
-        } finally {
-            mongoConnection.close()
-        }
-    }
-    /**
-     * Save all Journey to database
-     * 
-     */
-    async saveAllJourney() {
-        logger.debug('saveAllJourney()')
-        let mongoConnection = {}
-        try {
-            mongoConnection = getMongoConnection(this.db)
-            await this.requestSchema.findOne({ journey: false }, (err, track) => {
-                if (err) {
-                    throw err
-                }
-                if (track) {
-                    if (track.cookies.user_id !== undefined) {
-                        this.journey(track.cookies.user_id)
-                    } else {
-                        this.journey('')
-                    }
-                }
-            })
-        } catch (e) {
-            logger.error('Error on saveAllJourney : ' + e.toString())
-        } finally {
-            mongoConnection.close()
-        }
-    }
-    /** 
-     * Internal function use in journey process to create journey json to save to database 
-     * 
-     * @param {uuid} user_id user_id
-     */
-    async createJourney(user_id) {
-        logger.debug('createJourney('  + user_id + ')')
-        logger.info('Creating a journey for user : ' + user_id + ' start')
-        // Initialization of returned Json journey object
-        let journeyJson = {}
-        journeyJson.totaltime = 0
-        journeyJson.total_req = 0
-        journeyJson.isDanger_req = 0
-        journeyJson.isError_req = 0
-
-        // condition used in request query
-        let findReqCond = {}
-        // condition used in response query
-        let findResCond = {}
-
-        // keep in memory last track informations : Used while creating journey objects
-        let previousAction = ''
-        // keep in memory last timestamp : Used while creating journey objects
-        let previousTimestamp = ''
-
-        // list of unregistered requests found for user_id 
-        let requests = {}
-        // list of request-link-id
-        let link_idList = []
-        // list of request-linked responses 
-        let responses = {}
-        // sum up req/res object
-        let tracks = []
-
-        // Check if user_id is well defined
-        if (user_id === '') {
-            findReqCond = { 'cookies.user_id': { $exists: false }, journey: false }
-        } else {
-            findReqCond = { 'cookies.user_id': user_id, journey: false }
-        }
-        try {
-            // get all request for user_id
-            requests = await this.requestSchema.find(findReqCond, [], { sort: { timestamp: 1 } }, (err, result) => {
-                if (err) {
-                    throw err
-                }
-                if (result) {
-                    return result
-                }
-            })
-            // get link_id attribute for each request and add it to link_idList array
-            await requests.forEach(request => {
-                link_idList.push(request.link_id)
-            })
-            // create response query condition based on link_idList
-            findResCond = { link_id: { $in: link_idList } }
-
-            // Get all requests-linked responses
-            responses = await this.responseSchema.find(findResCond, async (err, responses) => {
-                if (err) {
-                    throw err
-                } else {
-                    return responses
-                }
-            })
-            // associate all requests/response to a track object
-            await requests.forEach(async request => {
-                let track = {}
-                await responses.forEach(response => {
-                    if (response.link_id.toString() === request.link_id.toString()) {
-                        track.reqTrack = request
-                        track.resTrack = response
-                        // then add it to track array
-                        tracks.push(track)
-                    }
-                })
-            })
-            // Add user_id to summary (journey's attribute)
-            if (user_id === '') {
-                // If empty string, set it to unknown
-                journeyJson.user_id = 'unknown'
-            } else {
-                journeyJson.user_id = user_id
-            }
-            // update from/to summary attributes
-            journeyJson.from = tracks[0].reqTrack.timestamp
-            journeyJson.to = tracks[0].reqTrack.timestamp
-            // loop all tracks and create journeys
-            await tracks.forEach(async track => {
-                if (track.reqTrack.req.action !== '/favicon.ico') {
-                    // update journeyJson.from/to
-                    if (journeyJson.from > track.reqTrack.timestamp) {
-                        journeyJson.from = track.reqTrack.timestamp
-                    }
-                    if (journeyJson.to < track.reqTrack.timestamp) {
-                        journeyJson.to = track.reqTrack.timestamp
-                    }
-                    // count dangerous requests
-                    if (track.reqTrack.isDangerous) {
-                        journeyJson.isDanger_req++
-                    }
-                    // count error responses
-                    if (track.resTrack.error) {
-                        journeyJson.isError_req++
-                    }
-                    if (previousAction === '') {
-                        previousAction = track.reqTrack.req.action
-                        journeyJson.action = track.reqTrack.req.action
-                        previousTimestamp = track.reqTrack.timestamp
-                    } else {
-                        // update previous action
-                        previousAction = track.reqTrack.req.action
-                        // add action summary
-                        journeyJson.action += ' > ' + track.reqTrack.req.action
-                        // add time to get total time
-                        journeyJson.totaltime += moment.duration(moment(track.reqTrack.timestamp).diff(moment(previousTimestamp))).asMilliseconds()
-                        // update previous timeStamp
-                        previousTimestamp = track.reqTrack.timestamp
-                    }
-                }
-                // update reqTrack to inform that he got registered
-                track.reqTrack.journey = true
-                track.reqTrack.save(err => {
-                    if (err) {
-                        throw err
-                    }
-                })
-            })
-            journeyJson.total_req = tracks.length
-            logger.info('Creating a journey for user : ' + user_id + ' end')
-            return journeyJson
-        } catch (e) {
-            throw e
-        }
-    }
-    /**
-     * Save to database user journey 
-     * 
-     * @param {JSON} journeyJson 
-     */
-    async insertJourney(journeyJson) {
-        logger.debug('insertJourney(journeyJson)')
-        logger.info('Insert journey to database start')
-        // insert journey to mongodb database
-        try {
-            await this.journeySchema.insertMany(journeyJson, (err, result) => {
-                if (err) {
-                    throw err
-                } else {
-                    return true
-                }
-            })
-        } catch (e) {
-            throw e
-        }
     }
     /**
      * Create and save to database user track the request and insert a track on request collection
@@ -347,7 +132,6 @@ class Tracker {
             // Create a link_id used further when response is called
             this.link_id = new mongoose.Types.ObjectId
             requestJson.link_id = this.link_id
-            requestJson.journey = false
             logger.info('Creating request end')
             return requestJson
         } catch (e) {
@@ -357,14 +141,14 @@ class Tracker {
     /**
      * Save to database user Request 
      * 
-     * @param {JSON} journeyJson 
+     * @param {JSON} requestJson 
      */
-    insertRequest(journeyJson) {
+    insertRequest(requestJson) {
         try {
-            logger.debug('insertRequest(journeyJson)')
+            logger.debug('insertRequest(requestJson)')
             logger.info('Insert request to database start')
             // Insert to database a request
-            this.requestSchema.insertMany(journeyJson, (err, result) => {
+            this.requestSchema.insertMany(requestJson, (err, result) => {
                 if (err) {
                     throw err
                 } else {

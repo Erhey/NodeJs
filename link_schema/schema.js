@@ -34,25 +34,6 @@ const Schema = mongoose.Schema
 /**
  * Site : CRUD-MYSQL
  * Table : tracking
- * Collection : journey
- */
-let journeySchema = new Schema({
-    total_req : Number
-    ,isDanger_req : Number
-    ,isError_req : Number
-    ,user_id : String
-    ,from : Date
-    ,to : Date
-    ,action : String
-    ,totaltime : String
-}, 
-{
-    collection : 'journey'
-})
-
-/**
- * Site : CRUD-MYSQL
- * Table : tracking
  * Collection : request
  */
 let requestSchema = new Schema(
@@ -71,7 +52,6 @@ let requestSchema = new Schema(
             type : Schema.Types.ObjectId
         }
         ,isDangerous : Boolean
-        ,journey : Boolean
     }
     ,{
         collection : 'request'
@@ -153,7 +133,6 @@ module.exports = {
     ,tracking: {
         responseSchema : mongoose.model('responseSchema', responseSchema)
         ,requestSchema : mongoose.model('requestSchema', requestSchema)
-        ,journeySchema : mongoose.model('journeySchema', journeySchema)
     },
     jwt: {
         authentication : {

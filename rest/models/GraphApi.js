@@ -36,7 +36,6 @@ class GraphApi {
         this.db = db
         this.responseSchema = link_schema.responseSchema
         this.requestSchema = link_schema.requestSchema
-        this.journeySchema = link_schema.journeySchema
         let hour = moment().hour()
         let month = moment().month() + 1
         let year = moment().year()

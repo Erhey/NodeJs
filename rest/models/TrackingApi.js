@@ -22,7 +22,6 @@ class TrackingApi {
         this.db = db
         this.responseSchema = link_schema.responseSchema
         this.requestSchema = link_schema.requestSchema
-        this.journeySchema = link_schema.journeySchema
     }
 
     /**
