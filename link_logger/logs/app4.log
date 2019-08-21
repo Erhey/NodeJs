@@ -3088,3 +3088,1310 @@ SyntaxError: Unexpected identifier
     at require (internal/modules/cjs/helpers.js:22:18)
 [34m2019-08-20 17:35:32.054[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:32:32)[39m - [31mAuthentication failed![39m
 [34m2019-08-20 17:36:19.127[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:32:32)[39m - [31mAuthentication failed![39m
+[34m2019-08-21 17:30:19.525[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:35:16)[39m - [32mBuilding GraphApi object Start[39m
+[34m2019-08-21 17:30:19.537[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:173:16)[39m - [32mBuilding GraphApi object End[39m
+[34m2019-08-21 17:30:55.898[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:32:32)[39m - [31mAuthentication failed![39m
+[34m2019-08-21 17:33:01.021[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:32:32)[39m - [31mAuthentication failed![39m
+[34m2019-08-21 17:33:27.615[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m authentication.authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:34:32)[39m - [31mAuthentication failed![39m
+[34m2019-08-21 17:33:32.879[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Object.get (C:\Workspace\MyEnv\NodeJs\rest_db\models\MySqlUnitOfWork.js:71:20)[39m - [31mUnexpected error occured! Error : TypeError: Cannot read property 'toUpperCase' of undefined[39m
+[34m2019-08-21 17:36:04.885[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: index_controller is not defined
+ReferenceError: index_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:11:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:36:20.708[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:16:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:36:38.095[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:16:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:36:39.648[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:16:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:36:47.614[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:16:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:36:53.191[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:16:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:36:54.276[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:16:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:36:55.890[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:16:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:36:58.588[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:17:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:37:02.112[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:17:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:37:12.011[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:17:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:37:14.030[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:17:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:37:16.499[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:19:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:37:18.330[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:19:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:37:20.098[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:17:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:37:22.288[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:14:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:37:23.708[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:15:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:37:25.155[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:15:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:37:29.527[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:15:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:37:32.500[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:15:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:37:36.052[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:15:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:37:37.491[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:15:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:37:39.899[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:15:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:37:45.286[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:15:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:37:56.654[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:16:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:38:02.230[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../controllers/monogController'
+Error: Cannot find module '../controllers/monogController'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:38:03.592[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../controllers/mongoController'
+Error: Cannot find module '../controllers/mongoController'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:38:14.865[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:16:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:40:06.108[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:16:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:40:16.545[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mognoUnitOfWork'
+Error: Cannot find module '../models/mognoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:40:23.017[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mongoUnitOfWork'
+Error: Cannot find module '../models/mongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:40:35.860[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mongoUnitOfWork'
+Error: Cannot find module '../models/mongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:40:43.298[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mongoUnitOfWork'
+Error: Cannot find module '../models/mongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:41:05.419[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mongoUnitOfWork'
+Error: Cannot find module '../models/mongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:41:33.390[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mongoUnitOfWork'
+Error: Cannot find module '../models/mongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:41:40.444[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mongoUnitOfWork'
+Error: Cannot find module '../models/mongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:41:41.155[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mongoUnitOfWork'
+Error: Cannot find module '../models/mongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:41:48.659[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mongoUnitOfWork'
+Error: Cannot find module '../models/mongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:41:54.040[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mongoUnitOfWork'
+Error: Cannot find module '../models/mongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:41:57.922[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mongoUnitOfWork'
+Error: Cannot find module '../models/mongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:42:21.276[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mongoUnitOfWork'
+Error: Cannot find module '../models/mongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:42:25.130[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mongoUnitOfWork'
+Error: Cannot find module '../models/mongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:42:28.558[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mongoUnitOfWork'
+Error: Cannot find module '../models/mongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:42:30.906[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mongoUnitOfWork'
+Error: Cannot find module '../models/mongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:42:48.742[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mongoUnitOfWork'
+Error: Cannot find module '../models/mongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:42:51.173[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mongoUnitOfWork'
+Error: Cannot find module '../models/mongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:42:59.847[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mongoUnitOfWork'
+Error: Cannot find module '../models/mongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:43:26.168[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/mongoUnitOfWork'
+Error: Cannot find module '../models/mongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:43:33.991[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/MongoUnitOfWork'
+Error: Cannot find module '../models/MongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:43:45.246[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:16:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:43:47.691[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../models/MongoUnitOfWork'
+Error: Cannot find module '../models/MongoUnitOfWork'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\mongoController.js:2:18)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:43:52.146[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:16:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:43:53.296[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:16:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:44:00.267[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:16:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:44:20.393[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../controllers/mongoDbController'
+Error: Cannot find module '../controllers/mongoDbController'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:44:24.399[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Cannot find module '../controllers/MongoDbController'
+Error: Cannot find module '../controllers/MongoDbController'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:6:26)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[34m2019-08-21 17:44:42.117[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:16:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:44:50.610[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:16:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:44:53.257[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: mongodb_controller is not defined
+ReferenceError: mongodb_controller is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\routes\index.js:16:70)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\server.js:8:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[34m2019-08-21 17:45:53.757[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 17:45:53.782[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Object.get (C:\Workspace\MyEnv\NodeJs\rest_db\models\MongoDbUnitOfWork.js:32:28)[39m - [31mUnexpected error occured !TypeError: Cannot read property 'find' of undefined[39m
+[34m2019-08-21 17:45:53.784[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Object.get (C:\Workspace\MyEnv\NodeJs\rest_db\models\MongoDbUnitOfWork.js:42:20)[39m - [31mUnexpected error occured! Error : TypeError: connection.end is not a function[39m
+[34m2019-08-21 17:47:17.728[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token (
+C:\Workspace\MyEnv\NodeJs\rest_db\models\MongoDbUnitOfWork.js:38
+                    connection.()
+                               ^
+
+SyntaxError: Unexpected token (
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\rest_db\controllers\MongoDbController.js:2:20)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+[34m2019-08-21 17:48:19.523[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 17:48:19.546[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Object.get (C:\Workspace\MyEnv\NodeJs\rest_db\models\MongoDbUnitOfWork.js:32:28)[39m - [31mUnexpected error occured !TypeError: Cannot read property 'find' of undefined[39m
+[34m2019-08-21 17:50:10.304[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 17:50:10.327[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Object.get (C:\Workspace\MyEnv\NodeJs\rest_db\models\MongoDbUnitOfWork.js:32:28)[39m - [31mUnexpected error occured !TypeError: Cannot read property 'find' of undefined[39m
+[34m2019-08-21 17:50:22.666[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 17:50:22.695[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Object.get (C:\Workspace\MyEnv\NodeJs\rest_db\models\MongoDbUnitOfWork.js:32:28)[39m - [31mUnexpected error occured !TypeError: Cannot read property 'find' of undefined[39m
+[34m2019-08-21 17:50:41.896[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 17:50:41.925[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Object.get (C:\Workspace\MyEnv\NodeJs\rest_db\models\MongoDbUnitOfWork.js:32:28)[39m - [31mUnexpected error occured !TypeError: Cannot read property 'find' of undefined[39m
+[34m2019-08-21 17:50:50.185[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 17:50:50.211[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Object.get (C:\Workspace\MyEnv\NodeJs\rest_db\models\MongoDbUnitOfWork.js:32:28)[39m - [31mUnexpected error occured !TypeError: Cannot read property 'find' of undefined[39m
+[34m2019-08-21 17:51:18.271[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 17:51:18.295[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Object.get (C:\Workspace\MyEnv\NodeJs\rest_db\models\MongoDbUnitOfWork.js:32:28)[39m - [31mUnexpected error occured !TypeError: Cannot read property 'find' of undefined[39m
+[34m2019-08-21 17:51:29.106[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected template string
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:40
+		return link_schema[dbConfig.name].`${collection}Schema`]
+		                                  ^^^
+
+SyntaxError: Unexpected template string
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-21 17:51:30.464[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected template string
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:40
+		return link_schema[dbConfig.name].`${collection}Schema`
+		                                  ^^^
+
+SyntaxError: Unexpected template string
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-21 17:51:45.620[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token return
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:41
+		return link_schema[dbConfig.name][`${collection}Schema`]
+		^^^^^^
+
+SyntaxError: Unexpected token return
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-21 17:51:47.936[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token return
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:41
+		return link_schema[dbConfig.name][`${collection}Schema`]
+		^^^^^^
+
+SyntaxError: Unexpected token return
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-21 17:51:56.490[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 17:51:56.515[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Object.get (C:\Workspace\MyEnv\NodeJs\rest_db\models\MongoDbUnitOfWork.js:32:28)[39m - [31mUnexpected error occured !TypeError: Cannot read property 'find' of undefined[39m
+[34m2019-08-21 17:52:07.949[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected identifier
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:42
+		return link_schema[dbConfig.name][test]
+		       ^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-21 17:52:10.041[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 17:52:10.066[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Object.get (C:\Workspace\MyEnv\NodeJs\rest_db\models\MongoDbUnitOfWork.js:32:28)[39m - [31mUnexpected error occured !TypeError: Cannot read property 'find' of undefined[39m
+[34m2019-08-21 17:52:28.502[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:41
+		console.log(link_schema[dbConfig.name]test])
+		                                     ^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-21 17:52:52.899[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 17:52:52.929[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Object.get (C:\Workspace\MyEnv\NodeJs\rest_db\models\MongoDbUnitOfWork.js:32:28)[39m - [31mUnexpected error occured !TypeError: Cannot read property 'find' of undefined[39m
+[34m2019-08-21 17:53:25.157[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:41
+		console.log(link_schema[dbConfig.name]authenticationSchema"])
+		                                     ^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-21 17:53:26.551[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Invalid or unexpected token
+C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:41
+		console.log(link_schema[dbConfig.name].authenticationSchema"])
+		                                                           ^^^
+
+SyntaxError: Invalid or unexpected token
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-21 17:53:29.904[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 17:53:29.928[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Object.get (C:\Workspace\MyEnv\NodeJs\rest_db\models\MongoDbUnitOfWork.js:32:28)[39m - [31mUnexpected error occured !TypeError: Cannot read property 'find' of undefined[39m
+[34m2019-08-21 17:53:34.095[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 17:53:34.099[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Object.get (C:\Workspace\MyEnv\NodeJs\rest_db\models\MongoDbUnitOfWork.js:32:28)[39m - [31mUnexpected error occured !TypeError: Cannot read property 'find' of undefined[39m
+[34m2019-08-21 17:58:43.838[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Object.authenticate (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:45:20)[39m - [31mAuthentication failed! Unexpected error occured: Cannot read property 'findOne' of undefined[39m
+[34m2019-08-21 17:58:43.849[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Object.authenticate (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:45:20)[39m - [31mAuthentication failed! Unexpected error occured: Cannot read property 'findOne' of undefined[39m
+[34m2019-08-21 17:58:43.855[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m Object.authenticate (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:45:20)[39m - [31mAuthentication failed! Unexpected error occured: Cannot read property 'findOne' of undefined[39m
+[34m2019-08-21 18:00:18.066[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:00:18.099[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m collectionSchema.find (C:\Workspace\MyEnv\NodeJs\rest_db\models\MongoDbUnitOfWork.js:22:36)[39m - [31mMongoDb error occured! Error : MongoError: Topology was destroyed[39m
+[34m2019-08-21 18:01:58.003[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:02:20.155[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:03:30.871[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:04:14.508[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:05:14.754[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:05:20.050[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:05:25.016[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:05:26.529[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:05:26.976[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:05:27.128[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:05:31.865[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:05:32.736[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:05:34.000[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:05:34.168[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:05:34.408[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:05:34.607[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:05:34.871[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:05:35.031[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:05:35.168[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:00.465[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:01.120[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:01.712[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:01.912[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:02.072[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:02.224[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:02.376[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:02.527[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:02.673[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:02.816[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:02.976[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:03.136[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:03.304[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:03.456[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:03.616[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:03.906[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:11.930[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:12.945[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:15.383[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:17.345[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:06:18.520[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:07:00.755[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:07:39.408[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:08:17.431[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:08:38.552[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:08:41.006[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:08:41.605[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:08:41.941[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:08:42.086[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:08:42.213[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:08:42.357[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:08:42.509[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:08:42.662[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:08:42.798[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:08:46.663[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:11:48.573[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-21 18:12:53.070[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:34:32)[39m - [31mAuthentication failed![39m
+[34m2019-08-21 18:12:59.430[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:34:32)[39m - [31mAuthentication failed![39m
+[34m2019-08-21 18:14:03.404[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:34:32)[39m - [31mAuthentication failed![39m
+[34m2019-08-21 18:15:26.858[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m

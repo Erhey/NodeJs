@@ -1,15 +1,15 @@
 
-const mysqlUOW = require("../models/MySqlUnitOfWork")
+const mongoDbUOW = require("../models/MongoDbUnitOfWork")
 const logger = require("link_logger")
 
 
 exports.get = (req, res) => {
-    if(req.body.configNum !== undefined && req.body.sql !== undefined){
-        mysqlUOW.get(req.body.configNum, req.body.sql, req.body.args, result => {
+    if(req.body.configNum !== undefined && req.body.collection !== undefined){
+        mongoDbUOW.get(req.body.configNum, req.body.collection, req.body.conditions, result => {
             res.send(result)
         })
-    } else if(req.query.configNum !== undefined && req.query.sql !== undefined) {
-        mysqlUOW.get(req.query.configNum, req.query.sql, req.query.args, result => {
+    } else if(req.query.configNum !== undefined && req.query.collection !== undefined) {
+        mongoDbUOW.get(req.query.configNum, req.query.collection, req.query.conditions, result => {
             res.send(result)
         })
     } else {
@@ -18,15 +18,15 @@ exports.get = (req, res) => {
             "message" : "Could not get data from request"
         })
     }
-};
+}
 
 exports.post = (req, res) => {
-    mysqlUOW.post(req.body.configNum, req.body.sql, req.body.args, result => {
+    mongoDbUOW.post(req.body.configNum, req.body.sql, req.body.args, result => {
         res.send(result)
     })
 }
 // exports.put = (req, res) => {
-//     mysqlUOW.put(req.body.configNum, req.body.sql, req.body.args, result => {
+//     mongoDbUOW.put(req.body.configNum, req.body.sql, req.body.args, result => {
 //         res.send(result)
 //     })
 // }

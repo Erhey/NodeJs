@@ -1,4 +1,4 @@
-const { jwt: { authentication }, getMongoConnection } = require('link_schema')
+const { jwt: { authenticationSchema }, getMongoConnection } = require('link_schema')
 const logger = require('link_logger')
 module.exports = {
     /**
@@ -16,7 +16,7 @@ module.exports = {
             // Create mongo connection
             mongoConnection = await getMongoConnection('authentication')
             // Insert passed account in authentication db
-            await authentication.authenticationSchema.insertMany(account, (err, insertedAuthAccount) => {
+            await authenticationSchema.insertMany(account, (err, insertedAuthAccount) => {
                 if (err) {
                     // Unexpected mongo error
                     logger.error(`Unexpected mongo error occured! ${err.message}`)
@@ -65,7 +65,7 @@ module.exports = {
             // Create mongo connection
             mongoConnection = getMongoConnection('authentication')
             // updated passed account in authentication db for id : _id
-            authentication.authenticationSchema.updateOne({ "_id": _id }, { $set: account }, (err, updatedAuthAccount) => {
+            authenticationSchema.updateOne({ "_id": _id }, { $set: account }, (err, updatedAuthAccount) => {
                 if (err) {
                     // Unexpected mongo error
                     logger.error(`Unexpected mongo error occured! ${err.message}`)
@@ -113,7 +113,7 @@ module.exports = {
             // Create mongo connection
             mongoConnection = getMongoConnection('authentication')
             // Delete account in authentication db for id : _id
-            authentication.authenticationSchema.deleteOne({ "_id": _id }, (err, deletedAuthAccount) => {
+            authenticationSchema.deleteOne({ "_id": _id }, (err, deletedAuthAccount) => {
                 if (err) {
                     // Unexpected mongo error
                     logger.error(`Unexpected mongo error occured! ${err.message}`)
@@ -158,7 +158,7 @@ module.exports = {
             // Create mongo connection
             mongoConnection = getMongoConnection('authentication')
             // Look in authentication database if any authentication_account exist for login = passed_login
-            authentication.authenticationSchema.findOne({ login: login }, (err, authAccount) => {
+            authenticationSchema.findOne({ login: login }, (err, authAccount) => {
                 if (err || !authAccount) {
                     logger.debug('authentication_account not found')
                     callback(false)

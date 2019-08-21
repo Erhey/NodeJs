@@ -135,8 +135,6 @@ module.exports = {
         ,requestSchema : mongoose.model('requestSchema', requestSchema)
     },
     jwt: {
-        authentication : {
-            authenticationSchema : mongoose.model('authenticationSchema', authenticationSchema)
-        }
+        authenticationSchema : mongoose.model('authenticationSchema', authenticationSchema)
     }
 }

@@ -27,6 +27,7 @@ module.exports = {
                         } else {
                             callback(result)
                         }
+                        connection.close()
                     })
                 } catch (err) {
                     logger.error("Unexpected error occured !" + err)
@@ -34,8 +35,7 @@ module.exports = {
                         status: "500",
                         message: "Unexpected error occured !"
                     })
-                } finally {
-                    connection.end()
+                    connection.close()
                 }
             }
         } catch (e) {
