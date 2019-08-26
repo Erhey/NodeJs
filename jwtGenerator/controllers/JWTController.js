@@ -12,23 +12,28 @@ module.exports = {
      * @param callback
      */
     getAccessToken: async (login, password, callback) => {
-        try{
-            // Get access_account information using login/password 
-            await authModel.authenticate(login, password, (result) => {
-                // status 201 => Authentication success!
-                if(result.status === 201) {
-                    // Creating token's informations
-                    const payload = { name: result.name}
-                    // Get RSA private key
-                    const privkey = fs.readFileSync('privkey.pem', 'utf8')
-                    // Creating a token
-                    result.token = jwt.sign(payload, privkey, { ...options, audience: result.audience, expiresIn: result.expiresIn })
-                }
-                callback(result)
-            })
-        } catch(err) {
-            logger.error(err)
-            callback({ "status": 500, "message": "Authentication failed! Unexpected error occured. Call token's provider if the problem persists." })
-        }
+        // Get access_account information using login/password 
+        await authModel.authenticate(login, password, (result) => {
+            // status 201 => Authentication success!
+            if(result.status === 201) {
+                // Creating token's informations
+                const payload = { name: result.name}
+                // Get RSA private key
+                const privkey = fs.readFileSync('privkey.pem', 'utf8')
+                // Creating a token
+                jwt.sign(payload, privkey,  { ...options, audience: result.audience, expiresIn: result.expiresIn }, function(err, token) {
+                    if(err) {
+                        logger.error(`Error on signing jwt ! Error : ${err.message}`)
+                        result.status = 500
+                        result.message = 'Could not sign jwt!'
+                        callback(result)
+                    } else {
+                        logger.info(`Token created : ${token}`)
+                        result.token = token
+                        callback(result)
+                    }
+                });
+            }
+        })
     }
 }

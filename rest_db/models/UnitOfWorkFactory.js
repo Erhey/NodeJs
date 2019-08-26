@@ -29,6 +29,9 @@ let getConnection = (configNum) => {
 		logger.error("Could not create connection. Error : " + e.toString())
 	}
 }
+let checkConfig = (configNum, type) => {
+	return getDbConfig(configNum).type === type
+}
 let getMongoDbSchema = (configNum, collection) => {
 	let dbConfig = getDbConfig(configNum)
 	if(dbConfig.type !== "mongodb") {
@@ -42,5 +45,6 @@ let getMongoDbSchema = (configNum, collection) => {
 module.exports = {
 	"getConnection": getConnection
 	,"getDbConfig" : getDbConfig
+	,"checkConfig" : checkConfig
 	,"getMongoDbSchema" : getMongoDbSchema
 }

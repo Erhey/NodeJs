@@ -14,37 +14,52 @@ module.exports = {
      */
     authenticate: async (login, password, callback) => {
         let mongoConnection = {}
-        console.log(login)
-        console.log(password)
+        let result = {}
         try {
             mongoConnection = getMongoConnection('authentication')
             await authenticationSchema.findOne({ "login": login }, (err, authentication) => {
                 if (err) {
                     // Error occured on mongoose => findOne
-                    logger.error(`Authentication failed! Error occured on fetching authentication data: ${err.message}`)
-                    callback({ "status": 500, "message": "Authentication failed! Call token's provider if the problem persists." })
+                    logger.error(`Authentication failed! Mongo error - Could not retrieve data: ${err.message}`)
+                    result.status = 500
+                    result.message = 'Unexpected Error occured! Authentication fail!'
+                    callback(result)
                 } else if (authentication) {
                     // An authentication was found
-                    if (bcrypt.compareSync(password, authentication.password)) {
-                        // Founded authentication password corresponds
-                        logger.debug('Authentication success!')
-                        callback({ "status": 201, "message": "Authentication success!", "name": authentication.name, "audience": authentication.audience, "expiresIn": authentication.expiresIn })
-                    } else {
-                        // Password does not correspond to the found login
-                        logger.error('Authentication failed!')
-                        callback({ "status": 401, "message": "Authentication failed! Check your login and/or password." })
-                    }
+                    bcrypt.compare(password, authentication.hash, function(err, res) {
+                        if(err){
+                            logger.error(`Authentication failed! bcrypt error - Could not compare hash: ${err.message}`)
+                            result.status = 500
+                            result.message = 'Unexpected Error occured! Authentication fail!'
+                        } else if (!res) {
+                            logger.error('Authentication failed! Error 401! Password does not correspond.')
+                            result.status = 401
+                            result.message = 'Authentication failed! Check your login and/or password.'
+                        } else {
+                            // Founded authentication password corresponds
+                            logger.info('Authentication success!')
+                            result.status = 401
+                            result.message = 'Authentication failed! Check your login and/or password.'
+                            result.name = authentication.name
+                            result.audience = authentication.audience
+                            result.expiresIn = authentication.expiresIn 
+                        }
+                        callback(result)
+                    });
                 } else {
-                    // Login does not exist
-                    logger.error('Authentication failed!')
-                    callback({ "status": 401, "message": "Authentication failed! Check your login and/or password." })
+                    logger.error('Authentication failed! Error 401! Login does not exist')
+                    result.status = 401
+                    result.message = 'Authentication failed! Check your login and/or password.'
+                    callback(result)
                 }
+                mongoConnection.close()
             })
         } catch (err) {
             // Unexpected Error
             logger.error(`Authentication failed! Unexpected error occured: ${err.message}`)
-            callback({ "status": 500, "message": "Authentication failed! Unexpected error occured. Call token's provider if the problem persists." })
-        } finally {
+            result.status = 500
+            result.message = 'Unexpected Error occured! Authentication fail!'
+            callback(result)
             mongoConnection.close()
         }
     }

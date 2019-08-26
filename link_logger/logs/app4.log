@@ -4395,3 +4395,31 @@ SyntaxError: Invalid or unexpected token
 [34m2019-08-21 18:12:59.430[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:34:32)[39m - [31mAuthentication failed![39m
 [34m2019-08-21 18:14:03.404[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:34:32)[39m - [31mAuthentication failed![39m
 [34m2019-08-21 18:15:26.858[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m getConnection (C:\Workspace\MyEnv\NodeJs\rest_db\models\UnitOfWorkFactory.js:23:12)[39m - [32mMONGODB[39m
+[34m2019-08-23 13:57:32.196[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: myPlaintextPassword is not defined
+ReferenceError: myPlaintextPassword is not defined
+    at authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:29:36)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+[34m2019-08-23 13:57:32.200[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: myPlaintextPassword is not defined
+ReferenceError: myPlaintextPassword is not defined
+    at authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:29:36)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+[34m2019-08-23 13:58:12.993[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: hash is not defined
+ReferenceError: hash is not defined
+    at authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:29:46)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+[34m2019-08-23 13:58:25.446[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: hash is not defined
+ReferenceError: hash is not defined
+    at authenticationSchema.findOne (C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:29:46)
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_schema\node_modules\mongoose\lib\query.js:2776:28)
+    at process._tickCallback (internal/process/next_tick.js:61:11)

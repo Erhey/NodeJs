@@ -4,55 +4,27 @@ const logger = require("link_logger")
 
 
 exports.get = (req, res) => {
-    if(req.body.configNum !== undefined && req.body.collection !== undefined){
-        mongoDbUOW.get(req.body.configNum, req.body.collection, req.body.conditions, result => {
-            res.send(result)
-        })
-    } else if(req.query.configNum !== undefined && req.query.collection !== undefined) {
-        mongoDbUOW.get(req.query.configNum, req.query.collection, req.query.conditions, result => {
+    if(checkinput(req.query)) {
+        mongoDbUOW.exec(req.query.configNum, req.query.queryType, req.query.collection, req.query.queryContent, result => {
             res.send(result)
         })
     } else {
+        logger.error(`Bad request! Could not get all informations required to execute request! : 
+                        'configNum'= ${req.param.configNum}, 
+                        'queryType'= ${req.param.queryType}, 
+                        'collection'= ${req.param.collection}, 
+                        'queryContent'= ${req.param.queryContent}`)
         res.send({
-            "status" : 500,
-            "message" : "Could not get data from request"
+            "status" : 400,
+            "message" : "Bad request!"
         })
     }
 }
 
-exports.post = (req, res) => {
-    mongoDbUOW.post(req.body.configNum, req.body.sql, req.body.args, result => {
-        res.send(result)
-    })
+
+checkinput = input => {
+    return (input.configNum !== undefined &&
+            input.queryType !== undefined && 
+            input.collection !== undefined &&
+            input.queryContent !== undefined)
 }
-// exports.put = (req, res) => {
-//     mongoDbUOW.put(req.body.configNum, req.body.sql, req.body.args, result => {
-//         res.send(result)
-//     })
-// }
-// exports.put = (req, res) => {
-//     if (!req.body.from) {
-//         res.send("please define from")
-//     }
-//     else if (!req.body.to) {
-//         res.send("please define to")
-//     }
-//     else if (!req.body.precision) {
-//         trackingApi.getMultiConnectionRange(req.body.from, req.body.to, 10, result => {
-//             res.send(result)
-//         })
-//     }
-//     else {
-//         trackingApi.getMultiConnectionRange(req.body.from, req.body.to, req.body.precision, result => {
-//             responseObj = {}
-//             responseObj.nbrConnection = result
-//             res.send(responseObj)
-//         })
-//     }
-// }
-// exports.delete = (req, res) => {
-//     console.log("est")
-//     trackingApi.getDangerousRequests(req.body.from, result => {
-//         res.send(result)
-//     })
-// }

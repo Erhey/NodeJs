@@ -4,7 +4,11 @@ const logger = require("link_logger")
 
 
 exports.get = (req, res) => {
+
+
+
     if(req.body.configNum !== undefined && req.body.sql !== undefined){
+        
         mysqlUOW.get(req.body.configNum, req.body.sql, req.body.args, result => {
             res.send(result)
         })
@@ -15,7 +19,7 @@ exports.get = (req, res) => {
     } else {
         res.send({
             "status" : 500,
-            "message" : "Could not get data from request"
+            "message" : "Could not get posted parameters from request"
         })
     }
 };

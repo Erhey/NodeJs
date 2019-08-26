@@ -9,9 +9,9 @@ const cors = require('cors')
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
-
 app.options('*', cors())
 app.use(cors())
+
 app.post('/getAccessToken', function (req, res, next) {
     JWTController.getAccessToken(req.body.login, req.body.password, result => {
         res.send(result)

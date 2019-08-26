@@ -251,7 +251,7 @@ class Tracker {
         try {
             logger.info('Insert response to database start')
             // Insert to database a response
-            this.responseSchema.insertMany(responseJson, (err, result) => {
+            this.responseSchema.updateMany(responseJson, (err, result) => {
                 if (err) {
                     throw err
                 } else {

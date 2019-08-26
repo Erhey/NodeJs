@@ -2,6 +2,39 @@ const logger = require('link_logger')
 const { getDbConfig, getConnection } = require('../models/UnitOfWorkFactory')
 
 module.exports = {
+    exec: async (configNum, sql, args, callback) => {
+        let connection = {}
+        let result = {}
+        if(!checkConfig(configNum, 'mysql')){
+            logger.error('Error ! Expected a mysql configuration')
+            result.status = 408
+            result.message = 'Error ! Expected a mysql configuration'
+            callback(result)
+        } else {
+            try {
+                connection = await getConnection(configNum)
+                await connection.query(sql, args, (err, result) => {
+                    if (err) {
+                        logger.error("Mysql error occured!" + err)
+                        result.status = 409
+                        result.message = "Mysql error occured!"
+                    } else {
+                        logger.debug(result)
+                        result.status = 201
+                        result.result = result
+                    }
+                    callback(result)
+                    connection.end()
+                })
+            } catch (e) {
+                logger.error("Unexpected Mysql error occured! Error : " + e)
+                result.status = 410
+                result.message = "Unexpected Mysql error occured!"
+                callback(result)
+                connection.end()
+            }
+        }
+    },
     get: async (configNum, sql, args, callback) => {
         try {
             if (!sql.toUpperCase().includes("SELECT")) {
@@ -103,7 +136,7 @@ module.exports = {
                                         status: "404",
                                         message: "Mysql error occured!"
                                     })
-                                } else if(result.affectedRows === 0) {
+                                } else if (result.affectedRows === 0) {
                                     callback({
                                         status: "404",
                                         message: "Could not find(update/delete) or add(insert) the data in database."
@@ -124,7 +157,7 @@ module.exports = {
                                         status: "404",
                                         message: "Mysql error occured!"
                                     })
-                                } else if(result.affectedRows === 0) {
+                                } else if (result.affectedRows === 0) {
                                     callback({
                                         status: "404",
                                         message: "Could not find(update/delete) or add(insert) the data in database."
