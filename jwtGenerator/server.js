@@ -12,8 +12,9 @@ app.use(express.urlencoded({ extended: false }))
 app.options('*', cors())
 app.use(cors())
 
-app.post('/getAccessToken', function (req, res, next) {
-    JWTController.getAccessToken(req.body.login, req.body.password, result => {
+app.post('/getAccessToken', async function (req, res, next) {
+    await JWTController.getAccessToken(req.body.login, req.body.password, result => {
+        console.log("test")
         res.send(result)
     })
 })
@@ -76,5 +77,5 @@ function onListening() {
     let bind = typeof addr === 'string'
         ? 'pipe ' + addr
         : 'port ' + addr.port
-    logger.debug('Listening on ' + bind)
+    console.log('Listening on ' + bind)
 }

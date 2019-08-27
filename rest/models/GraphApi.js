@@ -1,4 +1,4 @@
-const { tracking : link_schema, getMongoConnection } = require('link_schema')
+const connector = require('link_connection')
 const logger = require('link_logger')
 const moment = require('moment')
 const ALL_COMBINED = 'All combined'
@@ -31,11 +31,9 @@ class GraphApi {
      * 
      * @param {String} db MongoDB connection string.
      */
-    constructor(db) {
+    constructor(configName) {
         logger.info('Building GraphApi object Start')
-        this.db = db
-        this.responseSchema = link_schema.responseSchema
-        this.requestSchema = link_schema.requestSchema
+        this.configName = configName
         let hour = moment().hour()
         let month = moment().month() + 1
         let year = moment().year()
@@ -45,12 +43,12 @@ class GraphApi {
                 to: moment().format('YYYY-MM-DDTHH:mm:ss.SSSZ'),
                 duration: moment.duration(1, 'minutes').asMilliseconds(),
                 precision: 60,
-                time: [ '-59s', '-58s', '-57s', '-56s', '-55s', '-54s', '-53s', '-52s', '-51s', '-50s',
-                        '-49s', '-48s', '-47s', '-46s', '-45s', '-44s', '-43s', '-42s', '-41s', '-40s',
-                        '-39s', '-38s', '-37s', '-36s', '-35s', '-34s', '-33s', '-32s', '-31s', '-30s',
-                        '-29s', '-28s', '-27s', '-26s', '-25s', '-24s', '-23s', '-22s', '-21s', '-20s',
-                        '-19s', '-18s', '-17s', '-16s', '-15s', '-14s', '-13s', '-12s', '-11s', '-10s',
-                        '-9s', '-8s', '-7s', '-6s', '-5s', '-4s', '-3s', '-2s', '-1s', 'live'
+                time: ['-59s', '-58s', '-57s', '-56s', '-55s', '-54s', '-53s', '-52s', '-51s', '-50s',
+                    '-49s', '-48s', '-47s', '-46s', '-45s', '-44s', '-43s', '-42s', '-41s', '-40s',
+                    '-39s', '-38s', '-37s', '-36s', '-35s', '-34s', '-33s', '-32s', '-31s', '-30s',
+                    '-29s', '-28s', '-27s', '-26s', '-25s', '-24s', '-23s', '-22s', '-21s', '-20s',
+                    '-19s', '-18s', '-17s', '-16s', '-15s', '-14s', '-13s', '-12s', '-11s', '-10s',
+                    '-9s', '-8s', '-7s', '-6s', '-5s', '-4s', '-3s', '-2s', '-1s', 'live'
                 ],
                 title: {
                     display: true,
@@ -267,20 +265,22 @@ class GraphApi {
         logger.info('GET get Pages Visited List!')
         let pageVisitedList = []
         try {
-            let mongoConnection = getMongoConnection(this.db)
-            await this.requestSchema.find({}, async (err, requests) => {
-                if (err) {
-                    throw err
-                }
-                else if (requests) {
-                    await requests.forEach(request => {
-                        if (!pageVisitedList.includes(request.req.action)) {
-                            pageVisitedList.push(request.req.action)
-                        }
-                    })
-                }
+            connector(this.configName, async ({ connection, requestSchema }) => {
+                await requestSchema.find({}, async (err, requests) => {
+                    if (err) {
+                        throw err
+                    }
+                    else if (requests) {
+                        await requests.forEach(request => {
+                            if (!pageVisitedList.includes(request.req.action)) {
+                                pageVisitedList.push(request.req.action)
+                            }
+                        })
+                    }
+                    connection.close()
+                })
             })
-            mongoConnection.close()
+
         } catch (err) {
             logger.error(`Error on getPagesVisitedList function : ${err.message}`)
         }
@@ -313,122 +313,123 @@ class GraphApi {
                 graphSpectre[unite].multico = {}
             }
         }
-        let mongoConnection = getMongoConnection(this.db)
-        for (let unite in this.graph) {
-            range = this.graph[unite]
-            periodCond = { 'timestamp': { $gte: range.from, $lt: range.to } }
-            i = 0
-            iMax = this.graph[unite].precision
-            graphSpectre[unite].req_count[ALL_COMBINED] = []
-            graphSpectre[unite].error_count[ALL_COMBINED] = []
-            graphSpectre[unite].dangerous_count[ALL_COMBINED] = []
-            graphSpectre[unite].res_time_moy[ALL_COMBINED] = []
-            if (this.graph[unite] === 'LIVE') {
-                graphSpectre[unite].multico[ALL_COMBINED] = []
-                for (; i < iMax; i++) {
-                    graphSpectre[unite].req_count[ALL_COMBINED][i] = 0
-                    graphSpectre[unite].error_count[ALL_COMBINED][i] = 0
-                    graphSpectre[unite].dangerous_count[ALL_COMBINED][i] = 0
-                    graphSpectre[unite].res_time_moy[ALL_COMBINED][i] = 0
-                    graphSpectre[unite].multico[ALL_COMBINED][i] = 0
+        connector(this.configName, async ({ connection, responseSchema, requestSchema }) => {
+            for (let unite in this.graph) {
+                range = this.graph[unite]
+                periodCond = { 'timestamp': { $gte: range.from, $lt: range.to } }
+                i = 0
+                iMax = this.graph[unite].precision
+                graphSpectre[unite].req_count[ALL_COMBINED] = []
+                graphSpectre[unite].error_count[ALL_COMBINED] = []
+                graphSpectre[unite].dangerous_count[ALL_COMBINED] = []
+                graphSpectre[unite].res_time_moy[ALL_COMBINED] = []
+                if (this.graph[unite] === 'LIVE') {
+                    graphSpectre[unite].multico[ALL_COMBINED] = []
+                    for (; i < iMax; i++) {
+                        graphSpectre[unite].req_count[ALL_COMBINED][i] = 0
+                        graphSpectre[unite].error_count[ALL_COMBINED][i] = 0
+                        graphSpectre[unite].dangerous_count[ALL_COMBINED][i] = 0
+                        graphSpectre[unite].res_time_moy[ALL_COMBINED][i] = 0
+                        graphSpectre[unite].multico[ALL_COMBINED][i] = 0
+                    }
+                } else {
+                    for (; i < iMax; i++) {
+                        graphSpectre[unite].req_count[ALL_COMBINED][i] = 0
+                        graphSpectre[unite].error_count[ALL_COMBINED][i] = 0
+                        graphSpectre[unite].dangerous_count[ALL_COMBINED][i] = 0
+                        graphSpectre[unite].res_time_moy[ALL_COMBINED][i] = 0
+                    }
                 }
-            } else {
-                for (; i < iMax; i++) {
-                    graphSpectre[unite].req_count[ALL_COMBINED][i] = 0
-                    graphSpectre[unite].error_count[ALL_COMBINED][i] = 0
-                    graphSpectre[unite].dangerous_count[ALL_COMBINED][i] = 0
-                    graphSpectre[unite].res_time_moy[ALL_COMBINED][i] = 0
-                }
-            }
-            try {
-                await this.requestSchema.find(periodCond, async (err, requests) => {
-                    if (requests !== undefined) {
-                        await requests.forEach(request => {
-                            indice = this.getIndiceTS(request.timestamp, range)
-                            if (indice !== -1) {
-                                i = 0
-                                if (!registeredAction.includes(request.req.action)) {
-                                    registeredAction.push(request.req.action)
-                                    for (let l_unite in this.graph) {
-                                        i = 0
-                                        iMax = this.graph[l_unite].precision
-                                        graphSpectre[l_unite].req_count[request.req.action] = []
-                                        graphSpectre[l_unite].error_count[request.req.action] = []
-                                        graphSpectre[l_unite].dangerous_count[request.req.action] = []
-                                        graphSpectre[l_unite].res_time_moy[request.req.action] = []
-                                        if (this.graph[l_unite] === 'LIVE') {
-                                            graphSpectre[l_unite].multico[request.req.action] = []
-                                            for (; i < iMax; i++) {
-                                                graphSpectre[l_unite].req_count[request.req.action][i] = 0
-                                                graphSpectre[l_unite].error_count[request.req.action][i] = 0
-                                                graphSpectre[l_unite].dangerous_count[request.req.action][i] = 0
-                                                graphSpectre[l_unite].res_time_moy[request.req.action][i] = 0
-                                                graphSpectre[l_unite].multico[request.req.action][i] = 0
-                                            }
-                                        } else {
-                                            for (; i < iMax; i++) {
-                                                graphSpectre[l_unite].req_count[request.req.action][i] = 0
-                                                graphSpectre[l_unite].error_count[request.req.action][i] = 0
-                                                graphSpectre[l_unite].dangerous_count[request.req.action][i] = 0
-                                                graphSpectre[l_unite].res_time_moy[request.req.action][i] = 0
+                try {
+                    await requestSchema.find(periodCond, async (err, requests) => {
+                        if (requests !== undefined) {
+                            await requests.forEach(request => {
+                                indice = this.getIndiceTS(request.timestamp, range)
+                                if (indice !== -1) {
+                                    i = 0
+                                    if (!registeredAction.includes(request.req.action)) {
+                                        registeredAction.push(request.req.action)
+                                        for (let l_unite in this.graph) {
+                                            i = 0
+                                            iMax = this.graph[l_unite].precision
+                                            graphSpectre[l_unite].req_count[request.req.action] = []
+                                            graphSpectre[l_unite].error_count[request.req.action] = []
+                                            graphSpectre[l_unite].dangerous_count[request.req.action] = []
+                                            graphSpectre[l_unite].res_time_moy[request.req.action] = []
+                                            if (this.graph[l_unite] === 'LIVE') {
+                                                graphSpectre[l_unite].multico[request.req.action] = []
+                                                for (; i < iMax; i++) {
+                                                    graphSpectre[l_unite].req_count[request.req.action][i] = 0
+                                                    graphSpectre[l_unite].error_count[request.req.action][i] = 0
+                                                    graphSpectre[l_unite].dangerous_count[request.req.action][i] = 0
+                                                    graphSpectre[l_unite].res_time_moy[request.req.action][i] = 0
+                                                    graphSpectre[l_unite].multico[request.req.action][i] = 0
+                                                }
+                                            } else {
+                                                for (; i < iMax; i++) {
+                                                    graphSpectre[l_unite].req_count[request.req.action][i] = 0
+                                                    graphSpectre[l_unite].error_count[request.req.action][i] = 0
+                                                    graphSpectre[l_unite].dangerous_count[request.req.action][i] = 0
+                                                    graphSpectre[l_unite].res_time_moy[request.req.action][i] = 0
+                                                }
                                             }
                                         }
                                     }
+                                    graphSpectre[unite].req_count[request.req.action][indice]++
+                                    graphSpectre[unite].req_count[ALL_COMBINED][indice]++
+                                    graphSpectre[unite].req_count[request.req.action]
+                                    if (request.isDangerous) {
+                                        graphSpectre[unite].dangerous_count[request.req.action][indice]++
+                                        graphSpectre[unite].dangerous_count[ALL_COMBINED][indice]++
+                                    }
                                 }
-                                graphSpectre[unite].req_count[request.req.action][indice]++
-                                graphSpectre[unite].req_count[ALL_COMBINED][indice]++
-                                graphSpectre[unite].req_count[request.req.action]
-                                if (request.isDangerous) {
-                                    graphSpectre[unite].dangerous_count[request.req.action][indice]++
-                                    graphSpectre[unite].dangerous_count[ALL_COMBINED][indice]++
-                                }
-                            }
-                        })
-                    }
-                })
-            }catch(err) {
-                logger.error(`Error on get Live info while getting requests informations : ${err.message}`)
-            }
-            try{
-                await this.responseSchema.find(periodCond, async (err, responses) => {
-                    if (responses !== undefined) {
-                        await responses.forEach(async response => {
-                            let indice = this.getIndiceTS(response.timestamp, range)
-                            if (indice !== -1) {
-                                if (response.error !== undefined) {
-                                    graphSpectre[unite].error_count[response.action][indice]++
-                                    graphSpectre[unite].error_count[ALL_COMBINED][indice]++
-                                }
-                                graphSpectre[unite].res_time_moy[response.action][indice] += response.restime
-                                graphSpectre[unite].res_time_moy[ALL_COMBINED][indice] += response.restime
-                            }
-                        })
-                    }
-                })
-            }catch(e) {
-                logger.error(`Error on get Live info while getting response informations : ${err.message}`)
-            }
-            try {
-                registeredAction.forEach(action => {
-                    for (let indice = 0; indice < range.precision; indice++) {
-                        if (graphSpectre[unite].req_count[action][indice] !== 0) {
-                            graphSpectre[unite].res_time_moy[action][indice] /= graphSpectre[unite].req_count[action][indice]
-                            graphSpectre[unite].res_time_moy[ALL_COMBINED][indice] /= graphSpectre[unite].req_count[ALL_COMBINED][indice]
+                            })
                         }
-                        if (this.graph[unite] === 'LIVE') {
-                            graphSpectre[unite].multico[action][indice] = graphSpectre[unite].req_count[action][indice]
+                    })
+                } catch (err) {
+                    logger.error(`Error on get Live info while getting requests informations : ${err.message}`)
+                }
+                try {
+                    await responseSchema.find(periodCond, async (err, responses) => {
+                        if (responses !== undefined) {
+                            await responses.forEach(async response => {
+                                let indice = this.getIndiceTS(response.timestamp, range)
+                                if (indice !== -1) {
+                                    if (response.error !== undefined) {
+                                        graphSpectre[unite].error_count[response.action][indice]++
+                                        graphSpectre[unite].error_count[ALL_COMBINED][indice]++
+                                    }
+                                    graphSpectre[unite].res_time_moy[response.action][indice] += response.restime
+                                    graphSpectre[unite].res_time_moy[ALL_COMBINED][indice] += response.restime
+                                }
+                            })
                         }
-                    }
-                })
-            } catch (e) {
-                logger.error(`Error : ${err.message}`)
+                    })
+                } catch (e) {
+                    logger.error(`Error on get Live info while getting response informations : ${err.message}`)
+                }
+                try {
+                    registeredAction.forEach(action => {
+                        for (let indice = 0; indice < range.precision; indice++) {
+                            if (graphSpectre[unite].req_count[action][indice] !== 0) {
+                                graphSpectre[unite].res_time_moy[action][indice] /= graphSpectre[unite].req_count[action][indice]
+                                graphSpectre[unite].res_time_moy[ALL_COMBINED][indice] /= graphSpectre[unite].req_count[ALL_COMBINED][indice]
+                            }
+                            if (this.graph[unite] === 'LIVE') {
+                                graphSpectre[unite].multico[action][indice] = graphSpectre[unite].req_count[action][indice]
+                            }
+                        }
+                    })
+                } catch (e) {
+                    logger.error(`Error : ${err.message}`)
+                }
             }
-        }
-        mongoConnection.close()
-        logger.info('Get live info end')
-        callback(graphSpectre)
+            connection.close()
+            logger.info('Get live info end')
+            callback(graphSpectre)
+        })
     }
-    initGraphSpectreForAction(action){
+    initGraphSpectreForAction(action) {
         for (let l_unite in this.graph) {
             i = 0
             iMax = this.graph[l_unite].precision
@@ -460,9 +461,9 @@ class GraphApi {
 /**
  * Function to be exported. Create a GraphApi object with parameters.
  * 
- * @param {String} db 
+ * @param {String} configName 
  */
-graphApiBuilder = (db) => {
-    return new GraphApi(db) 
-} 
+graphApiBuilder = (configName) => {
+    return new GraphApi(configName)
+}
 module.exports = graphApiBuilder

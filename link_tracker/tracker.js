@@ -3,7 +3,7 @@ const moment = require('moment')
 const sanitizeHtml = require('sanitize-html')
 const mongoose = require('mongoose')
 const logger = require('link_logger')
-const { tracking : link_schema, getMongoConnection } = require('link_schema')
+const connector = require('link_connection')
 /** 
  * Tracker Class
  * It creates request tracking objects, response tracking objects on each connections and save them on mongodb database : 
@@ -31,13 +31,11 @@ class Tracker {
      * Constructor
      * Establish connection to mongodb database
      * 
-     * @param {String} db MongoDB connection string.
+     * @param {String} configuration name MongoDB connection string.
      */
-    constructor(db, user_token_name) {
+    constructor(configName, user_token_name) {
         this.user_token_name = user_token_name
-        this.db = db
-        this.responseSchema = link_schema.responseSchema
-        this.requestSchema = link_schema.requestSchema
+        this.configName = configName
         /**
          * Lifetime define the time when a user connects to a site
          * It's used to know when a user connects and when a user disconnects to a site
@@ -61,7 +59,7 @@ class Tracker {
      * @param {Callback} next  ensure that after tracking request/response, it goes next
      */
     track(req, res, next) {
-        if(!req.path.includes("favicon.ico")){
+        if (!req.path.includes("favicon.ico")) {
             logger.debug('track(req, res, next)')
             // Create request track document
             this.request(req)
@@ -79,10 +77,8 @@ class Tracker {
      * @param {Mixed} req 
      */
     request(req) {
-        let mongoConnection = {}
         try {
             logger.debug('request(req)')
-            mongoConnection = getMongoConnection(this.db)
             logger.info('Request from user received!')
             // create request json request object
             let requestJson = this.createRequest(req)
@@ -90,8 +86,6 @@ class Tracker {
             this.insertRequest(requestJson)
         } catch (e) {
             logger.error('Error on request function : ' + e.toString())
-        } finally {
-            mongoConnection.close()
         }
     }
     /**
@@ -111,9 +105,9 @@ class Tracker {
         // Get cookies 
         try {
             requestJson.req = {}
-            if(this.user_token_name !== undefined){
+            if (this.user_token_name !== undefined) {
                 // If exist get User token
-                console.log(req.cookies)
+                logger.info(req.cookies)
                 requestJson.user_uuid = req.cookies[this.user_token_name]
             }
             // Get path saved to class object
@@ -148,13 +142,19 @@ class Tracker {
             logger.debug('insertRequest(requestJson)')
             logger.info('Insert request to database start')
             // Insert to database a request
-            this.requestSchema.insertMany(requestJson, (err, result) => {
-                if (err) {
-                    throw err
-                } else {
-                    logger.info('Request created')
-                    return true
-                }
+
+            connector(this.configName, ({ connection, requestSchema }) => {
+
+                requestSchema.insertMany(requestJson, (err, result) => {
+                    if (err) {
+                        connection.close()
+                        throw err
+                    } else {
+                        logger.info('Request created')
+                        connection.close()
+                        return true
+                    }
+                })
             })
         } catch (e) {
             throw e
@@ -189,17 +189,13 @@ class Tracker {
      */
     response(res) {
         logger.info('Response from server!')
-        let mongoConnection = {}
         try {
-            mongoConnection = getMongoConnection(this.db)
             // create response json response object
             let responseJson = this.createResponse(res)
             // insert json response object
             this.insertResponse(responseJson)
         } catch (e) {
             logger.error('Error on response function : ' + e.toString())
-        } finally {
-            mongoConnection.close()
         }
     }
     /**
@@ -221,7 +217,7 @@ class Tracker {
             // Get cookies 
             if (res.cookies !== undefined) {
                 responseJson.user_uuid = req.cookies[this.user_token_name]
-            } 
+            }
             // Get error if exist
             if (res.statusCode !== 200) {
                 responseJson.error = {}
@@ -251,13 +247,17 @@ class Tracker {
         try {
             logger.info('Insert response to database start')
             // Insert to database a response
-            this.responseSchema.updateMany(responseJson, (err, result) => {
-                if (err) {
-                    throw err
-                } else {
-                    logger.info('Response created')
-                    return true
-                }
+            connector(this.configName, ({ connection, responseSchema }) => {
+                responseSchema.updateMany(responseJson, (err, result) => {
+                    if (err) {
+                        connection.close()
+                        throw err
+                    } else {
+                        logger.info('Request created')
+                        connection.close()
+                        return true
+                    }
+                })
             })
         } catch (e) {
             throw e
@@ -267,11 +267,11 @@ class Tracker {
 /**
  * Function to be exported. Create a Tracker with parameters.
  * 
- * @param {String} db 
+ * @param {String} configName 
  * @param {uuid} user_token_name 
  */
-trackerBuilder = (db, user_token_name) => {
-    return new Tracker(db, user_token_name) 
-} 
+trackerBuilder = (configName, user_token_name) => {
+    return new Tracker(configName, user_token_name)
+}
 
 module.exports = trackerBuilder

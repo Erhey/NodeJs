@@ -1,4 +1,4 @@
-const { tracking : link_schema, getMongoConnection } = require('link_schema')
+const connector = require('link_connection')
 const colors = require('colors')
 const logger = require('link_logger')
 /**
@@ -14,14 +14,12 @@ const logger = require('link_logger')
 class TrackingApi {
     /**
      * Constructor
-     * Establish connection to mongodb database
+     * Establish connection to mongoDb database
      * 
-     * @param {String} db 
+     * @param {String} configName 
      */
-    constructor(db) {
-        this.db = db
-        this.responseSchema = link_schema.responseSchema
-        this.requestSchema = link_schema.requestSchema
+    constructor(configName) {
+        this.configName = configName
     }
 
     /**
@@ -42,25 +40,26 @@ class TrackingApi {
         }
         try {
             // Search for Dangerous request
-            let mongoConnection = getMongoConnection(this.db)
-            await this.requestSchema.find(findCond, (err, result) => {
-                if (err) {
-                    throw err
-                }
-                if (result) {
-                    let i = 0
-                    for (; i < result.length; i++) {
-                        let curRequest = {}
-                        curRequest.body = result[i].req.body
-                        curRequest.user_info = result[i].cookies
-                        curRequest.timestamp = result[i].timestamp
-                        dangerousRequestArr.push(curRequest)
+            connector(this.configName, async ({ connection, requestSchema }) => {
+                await requestSchema.find(findCond, (err, result) => {
+                    if (err) {
+                        throw err
                     }
-                    logger.info('getDangerousRequests End')
-                    callback(dangerousRequestArr)
-                }
+                    if (result) {
+                        let i = 0
+                        for (; i < result.length; i++) {
+                            let curRequest = {}
+                            curRequest.body = result[i].req.body
+                            curRequest.user_info = result[i].cookies
+                            curRequest.timestamp = result[i].timestamp
+                            dangerousRequestArr.push(curRequest)
+                        }
+                        logger.info('getDangerousRequests End')
+                        callback(dangerousRequestArr)
+                    }
+                    connection.close()
+                })
             })
-            mongoConnection.close()
         } catch (err) {
             logger.error(`Error on getDangerousRequests function : ${error.message}`)
         }
@@ -68,16 +67,17 @@ class TrackingApi {
     }
     async getUserUUIDList(condObj, callback){
         try {
-            let mongoConnection = getMongoConnection(this.db)
-            await this.requestSchema.find(condObj, 'user_uuid', async (err, result) =>  {
-                if(err) {
-                    throw err
-                }
-                if (result) {
-                    callback([...new Set(result.map(request => request.user_uuid))])
-                }
+            connector(this.configName, async ({ connection, requestSchema }) => {
+                await requestSchema.find(condObj, 'user_uuid', async (err, result) =>  {
+                    if(err) {
+                        throw err
+                    }
+                    if (result) {
+                        callback([...new Set(result.map(request => request.user_uuid))])
+                    }
+                    connection.close()
+                })
             })
-            mongoConnection.close()
         } catch (e) {
             logger.error(`Error on getDangerousRequests function : ${error.message}`)
         }
@@ -86,10 +86,10 @@ class TrackingApi {
 /**
  * Function to be exported. Create a TrackingApi object with parameters.
  * 
- * @param {String} db 
+ * @param {String} configName 
  */
-trackingApiBuilder = (db) => {
-    return new TrackingApi(db) 
+trackingApiBuilder = (configName) => {
+    return new TrackingApi(configName) 
 } 
 
 module.exports = trackingApiBuilder

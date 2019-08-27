@@ -5,8 +5,8 @@ const authModel = require('../models/authModel')
 const utils = require('../utils')
 
 // Protect access using JWT
-const validateToken = require('link_jwt')
-router.use(validateToken('jwt_mng'))
+// const validateToken = require('link_jwt')
+// router.use(validateToken('jwt_mng'))
 
 // Insert handler
 router.post('/insertAuthAccount', function (req, res, next) {

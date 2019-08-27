@@ -25,7 +25,7 @@ module.exports = {
                             callback(updateMany(configNum, collection, queryContent))
                             break
                         default:
-                            logger.info("Please define queryType !")
+                            logger.info(`Please define a valuable queryType! queryType : ${queryType}`)
                             callback({
                                 status: "400",
                                 message: "Bad request ! Please define a valuable queryType!"
@@ -48,11 +48,11 @@ module.exports = {
                 })
             }
         },
-        find: (configNum, collection, queryContent) => {
+        find: async (configNum, collection, queryContent) => {
+            let result = {}
             let connection = await getConnection(configNum)
             let collectionSchema = getMongoDbSchema(configNum, collection)
-            collectionSchema.find(conditions, (err, result) => {
-                let result = {}
+            collectionSchema.find(queryContent, (err, result) => {
                 if (err) {
                     logger.error("MongoDb error occured! Error : " + err)
                     result.status = 408
@@ -65,7 +65,7 @@ module.exports = {
                 return result 
             })
         },
-        insertMany: (configNum, collection, queryContent) => {
+        insertMany: async (configNum, collection, queryContent) => {
 
             let connection = await getConnection(configNum)
             let collectionSchema = getMongoDbSchema(configNum, collection)
@@ -82,7 +82,7 @@ module.exports = {
                 return result 
             })
         },
-        updateMany: (configNum, collection, queryContent) => {
+        updateMany: async (configNum, collection, queryContent) => {
             if(queryContent.conditions !== undefined && queryContent.$set !== undefined){
                 let connection = await getConnection(configNum)
                 let collectionSchema = getMongoDbSchema(configNum, collection)

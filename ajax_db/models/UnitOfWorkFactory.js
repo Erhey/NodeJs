@@ -1,7 +1,7 @@
 const config = require("../config.json")
 const dotenv = require('dotenv')
 const logger = require('link_logger')
-const { getMongoConnection, getMysqlConnection } = require('link_schema')
+const connector = require('link_connection')
 dotenv.config()
 let getDbConfig = (configNum) => {
 	return config[process.env.db_env][configNum]

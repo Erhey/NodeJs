@@ -73,6 +73,7 @@ exports.getGraphFormat = (req, res) => {
   })
 }
 exports.getLiveInfo = (req, res) => {
+  console.log("test")
   graphApi.getLiveInfo(result => {
     res.send(result)
   })

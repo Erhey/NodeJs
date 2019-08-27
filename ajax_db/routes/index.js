@@ -20,9 +20,9 @@ const validateToken = require('link_jwt')
 // router.get('/c2r', validateToken('access_db_c2rw', 'access_db_c2r'), mongoDb_controller.get) 
 // router.post('/c2w', validateToken('access_db_c2rw', 'access_db_c2w'), mongoDb_controller.post) 
 
-router.post('/c0', validateToken('access_db_c0rw'), mysql_controller.exec)
-router.post('/c1', validateToken('access_db_c1rw'), mysql_controller.exec)
-router.post('/c2', validateToken('access_db_c2rw'), mysql_controller.exec)
+router.post('/wamp_crud_mysql', validateToken('Audience: mysql_crud'), mysql_controller.exec)
+router.post('/CRUD-MYSQL', validateToken('Audience: mongo_crud'), mongoDb_controller.exec)
+router.post('/jwt', validateToken('Audience: mongo_jwt'), mongoDb_controller.exec)
 
 
 // // Get => select data

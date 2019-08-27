@@ -1,4 +1,4 @@
-const { jwt: { authenticationSchema }, getMongoConnection } = require('link_schema')
+const connector = require('link_connection')
 const logger = require('link_logger')
 module.exports = {
     /**
@@ -10,35 +10,34 @@ module.exports = {
     insert: async (account, callback) => {
         // Initialization
         let result = {}
-        let mongoConnection = {}
-
         try {
             // Create mongo connection
-            mongoConnection = await getMongoConnection('authentication')
             // Insert passed account in authentication db
-            await authenticationSchema.insertMany(account, (err, insertedAuthAccount) => {
-                if (err) {
-                    // Unexpected mongo error
-                    logger.error(`Unexpected mongo error occured! ${err.message}`)
-                    result.status = 500
-                    result.error = err
-                    result.message = `Unexpected mongo error occured! ${err.message}`
-                } else if (!insertedAuthAccount) {
-                    // Insertion Failed
-                    logger.error('Error occured on inserting account!')
-                    result.status = 404
-                    result.error = err
-                    result.message = 'Error occured on inserting account!'
-                } else {
-                    // Insertion success 
-                    logger.debug('Insert successful!')
-                    result.status = 201
-                    result.inserted_auth_account = insertedAuthAccount
-                    result.message = 'Insert successful!'
-                }
-                callback(result)
-                // Mongo connection close
-                mongoConnection.close()
+            connector('jwt', async ({ connection, authenticationSchema }) => {
+                await authenticationSchema.insertMany(account, (err, insertedAuthAccount) => {
+                    if (err) {
+                        // Unexpected mongo error
+                        logger.error(`Unexpected mongo error occured! ${err.message}`)
+                        result.status = 500
+                        result.error = err
+                        result.message = `Unexpected mongo error occured! ${err.message}`
+                    } else if (!insertedAuthAccount) {
+                        // Insertion Failed
+                        logger.error('Error occured on inserting account!')
+                        result.status = 404
+                        result.error = err
+                        result.message = 'Error occured on inserting account!'
+                    } else {
+                        // Insertion success 
+                        logger.debug('Insert successful!')
+                        result.status = 201
+                        result.inserted_auth_account = insertedAuthAccount
+                        result.message = 'Insert successful!'
+                    }
+                    callback(result)
+                    // Mongo connection close
+                    connection.close()
+                })
             })
         } catch (err) {
             // Unexpected error
@@ -59,35 +58,34 @@ module.exports = {
     update: (_id, account, callback) => {
         // Initialization
         let result = {}
-        let mongoConnection = {}
-
         try {
             // Create mongo connection
-            mongoConnection = getMongoConnection('authentication')
-            // updated passed account in authentication db for id : _id
-            authenticationSchema.updateOne({ "_id": _id }, { $set: account }, (err, updatedAuthAccount) => {
-                if (err) {
-                    // Unexpected mongo error
-                    logger.error(`Unexpected mongo error occured! ${err.message}`)
-                    result.status = 500
-                    result.error = err
-                    result.message = `Unexpected mongo error occured! ${err.message}`
-                } else if (!updatedAuthAccount) {
-                    // Update Failed
-                    logger.error('Error occured on updating authentication account!')
-                    result.status = 404
-                    result.error = err
-                    result.message = 'Error occured on updating authentication account!'
-                } else {
-                    // Update success 
-                    logger.debug('Authentication account was successfully updated!')
-                    result.status = 201
-                    result.updated_auth_account = updatedAuthAccount
-                    result.message = 'Authentication account was successfully updated!'
-                }
-                callback(result)
-                // Mongo connection close
-                mongoConnection.close()
+            connector('jwt', async ({ connection, authenticationSchema }) => {
+                // updated passed account in authentication db for id : _id
+                authenticationSchema.updateOne({ "_id": _id }, { $set: account }, (err, updatedAuthAccount) => {
+                    if (err) {
+                        // Unexpected mongo error
+                        logger.error(`Unexpected mongo error occured! ${err.message}`)
+                        result.status = 500
+                        result.error = err
+                        result.message = `Unexpected mongo error occured! ${err.message}`
+                    } else if (!updatedAuthAccount) {
+                        // Update Failed
+                        logger.error('Error occured on updating authentication account!')
+                        result.status = 404
+                        result.error = err
+                        result.message = 'Error occured on updating authentication account!'
+                    } else {
+                        // Update success 
+                        logger.debug('Authentication account was successfully updated!')
+                        result.status = 201
+                        result.updated_auth_account = updatedAuthAccount
+                        result.message = 'Authentication account was successfully updated!'
+                    }
+                    callback(result)
+                    // Mongo connection close
+                    connection.close()
+                })
             })
         } catch (err) {
             // Unexpected error
@@ -107,35 +105,34 @@ module.exports = {
     delete: (_id, callback) => {
         // Initialization
         let result = {}
-        let mongoConnection = {}
-
         try {
             // Create mongo connection
-            mongoConnection = getMongoConnection('authentication')
-            // Delete account in authentication db for id : _id
-            authenticationSchema.deleteOne({ "_id": _id }, (err, deletedAuthAccount) => {
-                if (err) {
-                    // Unexpected mongo error
-                    logger.error(`Unexpected mongo error occured! ${err.message}`)
-                    result.status = 500
-                    result.error = err
-                    result.message = `Unexpected mongo error occured! ${err.message}`
-                } else if (!deletedAuthAccount) {
-                    // Update Failed
-                    logger.error(`Error occured on deleting authentication account!`)
-                    result.status = 404
-                    result.error = err
-                    result.message = `Error occured on deleting authentication account!`
-                } else {
-                    // Delete success 
-                    logger.debug('Authentication account was successfully deleted!')
-                    result.status = 201
-                    result.deleted_auth_account = deletedAuthAccount
-                    result.message = 'Authentication account was successfully deleted!'
-                }
-                callback(result)
-                // Mongo connection close
-                mongoConnection.close()
+            connector('jwt', async ({ connection, authenticationSchema }) => {
+                // Delete account in authentication db for id : _id
+                authenticationSchema.deleteOne({ "_id": _id }, (err, deletedAuthAccount) => {
+                    if (err) {
+                        // Unexpected mongo error
+                        logger.error(`Unexpected mongo error occured! ${err.message}`)
+                        result.status = 500
+                        result.error = err
+                        result.message = `Unexpected mongo error occured! ${err.message}`
+                    } else if (!deletedAuthAccount) {
+                        // Update Failed
+                        logger.error(`Error occured on deleting authentication account!`)
+                        result.status = 404
+                        result.error = err
+                        result.message = `Error occured on deleting authentication account!`
+                    } else {
+                        // Delete success 
+                        logger.debug('Authentication account was successfully deleted!')
+                        result.status = 201
+                        result.deleted_auth_account = deletedAuthAccount
+                        result.message = 'Authentication account was successfully deleted!'
+                    }
+                    callback(result)
+                    // Mongo connection close
+                    connection.close()
+                })
             })
         } catch (err) {
             // Unexpected error
@@ -153,20 +150,20 @@ module.exports = {
      * @param {function} callback
      */
     getIdFromLogin: (login, callback) => {
-        let mongoConnection = {}
         try {
             // Create mongo connection
-            mongoConnection = getMongoConnection('authentication')
-            // Look in authentication database if any authentication_account exist for login = passed_login
-            authenticationSchema.findOne({ login: login }, (err, authAccount) => {
-                if (err || !authAccount) {
-                    logger.debug('authentication_account not found')
-                    callback(false)
-                } else {
-                    callback(authAccount._id)
-                }
-                // Mongo connection close
-                mongoConnection.close()
+            connector('jwt', async ({ connection, authenticationSchema }) => {
+                // Look in authentication database if any authentication_account exist for login = passed_login
+                authenticationSchema.findOne({ login: login }, (err, authAccount) => {
+                    if (err || !authAccount) {
+                        logger.debug('authentication_account not found')
+                        callback(false)
+                    } else {
+                        callback(authAccount._id)
+                    }
+                    // Mongo connection close
+                    connection.close()
+                })
             })
         } catch (err) {
             // Unexpected error

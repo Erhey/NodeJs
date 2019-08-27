@@ -22,11 +22,12 @@ validateTokenGenerator = (...audiences) => {
             let token = authorization.split(' ')[1]
             const pubkey = fs.readFileSync(__dirname + '/pubkey.pem', 'utf8')
             await audiences.forEach(audience => {
-                logger.Debug('Checking options')
+                logger.debug('Checking options')
                 jwt.verify(token, pubkey, { ...options, audience: audience }, (err, decoded) => {
                     if (err) {
                         if(err.name === 'JsonWebTokenError') {
                             logger.error('No right to access current server !')
+                            logger.error(jwt.decode(token))
                             res.status(405).send({
                                 "status" : 405
                                 ,"error": "Current user don't have the right to access to this server."
