@@ -1,8 +1,8 @@
 {
-  "name": "link_connection",
+  "name": "link_models",
   "version": "1.0.0",
   "description": "Define all schemas and mongoose connections",
-  "main": "connection.js",
+  "main": "server.js",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

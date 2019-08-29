@@ -1,13 +1,11 @@
 const logger = require('link_logger')
-const connector = require('../models/UnitOfWorkFactory')
 
+const link_models = require('link_models')
 module.exports = exec = async (configName, sql, args, callback) => {
-    let connection = {}
+    const mysqlConnection = link_models.getMysqlConnection(configName)
     let result = {}
     try {
-        connection = await getConnection(configName)
-        connector(configName, async ({ connection }) => {
-            await connection.query(sql, args, (err, result) => {
+            await mysqlConnection.query(sql, args, (err, result) => {
                 if (err) {
                     logger.error("Mysql error occured!" + err)
                     result.status = 409
@@ -18,14 +16,11 @@ module.exports = exec = async (configName, sql, args, callback) => {
                     result.result = result
                 }
                 callback(result)
-                connection.end()
-            })
         })
     } catch (e) {
         logger.error("Unexpected Mysql error occured! Error : " + e)
         result.status = 410
         result.message = "Unexpected Mysql error occured!"
         callback(result)
-        connection.end()
     }
 }

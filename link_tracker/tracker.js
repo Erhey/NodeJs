@@ -3,7 +3,8 @@ const moment = require('moment')
 const sanitizeHtml = require('sanitize-html')
 const mongoose = require('mongoose')
 const logger = require('link_logger')
-const connector = require('link_connection')
+const link_models = require('link_models')
+const { requestSchema, responseSchema } = link_models.getMongoConnection('tracking')
 /** 
  * Tracker Class
  * It creates request tracking objects, response tracking objects on each connections and save them on mongodb database : 
@@ -142,19 +143,13 @@ class Tracker {
             logger.debug('insertRequest(requestJson)')
             logger.info('Insert request to database start')
             // Insert to database a request
-
-            connector(this.configName, ({ connection, requestSchema }) => {
-
                 requestSchema.insertMany(requestJson, (err, result) => {
                     if (err) {
-                        connection.close()
                         throw err
                     } else {
                         logger.info('Request created')
-                        connection.close()
                         return true
                     }
-                })
             })
         } catch (e) {
             throw e
@@ -247,17 +242,13 @@ class Tracker {
         try {
             logger.info('Insert response to database start')
             // Insert to database a response
-            connector(this.configName, ({ connection, responseSchema }) => {
                 responseSchema.updateMany(responseJson, (err, result) => {
                     if (err) {
-                        connection.close()
                         throw err
                     } else {
                         logger.info('Request created')
-                        connection.close()
                         return true
                     }
-                })
             })
         } catch (e) {
             throw e

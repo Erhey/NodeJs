@@ -7,6 +7,7 @@ const app = express()
 const cors = require('cors')
 
 
+
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.options('*', cors())
@@ -14,8 +15,7 @@ app.use(cors())
 
 app.post('/getAccessToken', async function (req, res, next) {
     await JWTController.getAccessToken(req.body.login, req.body.password, result => {
-        console.log("test")
-        res.send(result)
+        res.status(result.status || 500).send(result)
     })
 })
 // catch 404 and forward to error handler

@@ -1,6 +1,8 @@
-const connector = require('link_connection')
 const colors = require('colors')
 const logger = require('link_logger')
+const link_models = require('link_models')
+const { requestSchema, responseSchema } = link_models.getMongoConnection('tracking')
+
 /**
  * Tracking API
  * This class gets particular information we want to look at about a site.
@@ -40,7 +42,6 @@ class TrackingApi {
         }
         try {
             // Search for Dangerous request
-            connector(this.configName, async ({ connection, requestSchema }) => {
                 await requestSchema.find(findCond, (err, result) => {
                     if (err) {
                         throw err
@@ -57,9 +58,7 @@ class TrackingApi {
                         logger.info('getDangerousRequests End')
                         callback(dangerousRequestArr)
                     }
-                    connection.close()
                 })
-            })
         } catch (err) {
             logger.error(`Error on getDangerousRequests function : ${error.message}`)
         }
@@ -67,19 +66,16 @@ class TrackingApi {
     }
     async getUserUUIDList(condObj, callback){
         try {
-            connector(this.configName, async ({ connection, requestSchema }) => {
                 await requestSchema.find(condObj, 'user_uuid', async (err, result) =>  {
                     if(err) {
-                        throw err
+                        logger.error(`Error on getDangerousRequests function : ${error.message}`)
+                        return callback({ status: 500, "error": "Error while getting informations for getUserUUIDList" })
                     }
-                    if (result) {
-                        callback([...new Set(result.map(request => request.user_uuid))])
-                    }
-                    connection.close()
-                })
+                    return callback({ status: 201, uuids_list: [...new Set(result.map(request => request.user_uuid))] })
             })
         } catch (e) {
             logger.error(`Error on getDangerousRequests function : ${error.message}`)
+            return callback({ status: 500, "error": "Error while getting informations for getUserUUIDList" })
         }
     }
 }

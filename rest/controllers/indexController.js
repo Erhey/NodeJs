@@ -88,6 +88,6 @@ exports.updateExcel = (req, res) => {
 exports.getUserUUIDList = (req,res) => {
   console.log(req.body)
   trackingApi.getUserUUIDList(req.body, uuid_list => {
-    res.send(uuid_list)
+    res.status(uuid_list.status || 500).send(uuid_list)
   })
 }

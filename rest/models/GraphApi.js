@@ -1,7 +1,10 @@
-const connector = require('link_connection')
 const logger = require('link_logger')
 const moment = require('moment')
 const ALL_COMBINED = 'All combined'
+
+const link_models = require('link_models')
+const { requestSchema, responseSchema } = link_models.getMongoConnection('tracking')
+
 /** 
  * GraphApi Class
  * It retrieves data from a site and create graph data over time usable on chart.js client
@@ -265,7 +268,6 @@ class GraphApi {
         logger.info('GET get Pages Visited List!')
         let pageVisitedList = []
         try {
-            connector(this.configName, async ({ connection, requestSchema }) => {
                 await requestSchema.find({}, async (err, requests) => {
                     if (err) {
                         throw err
@@ -277,9 +279,7 @@ class GraphApi {
                             }
                         })
                     }
-                    connection.close()
                 })
-            })
 
         } catch (err) {
             logger.error(`Error on getPagesVisitedList function : ${err.message}`)
@@ -313,7 +313,6 @@ class GraphApi {
                 graphSpectre[unite].multico = {}
             }
         }
-        connector(this.configName, async ({ connection, responseSchema, requestSchema }) => {
             for (let unite in this.graph) {
                 range = this.graph[unite]
                 periodCond = { 'timestamp': { $gte: range.from, $lt: range.to } }
@@ -424,10 +423,8 @@ class GraphApi {
                     logger.error(`Error : ${err.message}`)
                 }
             }
-            connection.close()
             logger.info('Get live info end')
             callback(graphSpectre)
-        })
     }
     initGraphSpectreForAction(action) {
         for (let l_unite in this.graph) {

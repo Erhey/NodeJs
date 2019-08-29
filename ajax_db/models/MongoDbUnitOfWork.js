@@ -1,188 +1,115 @@
 const logger = require('link_logger')
-const { getDbConfig, getConnection, getMongoDbSchema } = require('../models/UnitOfWorkFactory')
 
+const link_models = require('link_models')
 module.exports = {
-    exec: async (configNum, queryType, collection, queryContent, callback) => {
+    exec: async (configName, queryType, collection, queryContent, callback) => {
         try {
-            let dbConfig = getDbConfig(configNum)
-            if (dbConfig.type !== 'mongodb') {
-                logger.error('Passed configuration is not a mongo db connection!')
-                callback({
-                    status: '403',
-                    message: 'Passed configuration is not a mongo db connection!'
-                })
-            } else {
-                try {
-                    switch (queryType) {
-                        case "find":
-                            callback(find(configNum, collection, queryContent))
-                            break
-                        case "insertMany":
-                            callback(insertMany(configNum, collection, queryContent))
-                            break
-
-                        case "updateMany":
-                            callback(updateMany(configNum, collection, queryContent))
-                            break
-                        default:
-                            logger.info(`Please define a valuable queryType! queryType : ${queryType}`)
-                            callback({
-                                status: "400",
-                                message: "Bad request ! Please define a valuable queryType!"
-                            })
-                            break
-                    }
-                } catch (err) {
-                    logger.error("Unexpected error occured !" + err)
-                    callback({
-                        status: "500",
-                        message: "Unexpected error occured !"
+            switch (queryType) {
+                case "find":
+                    await find(configName, collection, queryContent, result => {
+                        callback(result)
                     })
-                }
-                }
-        } catch (e) {
-                logger.error("Unexpected error occured! Error : " + e)
-                callback({
-                    status: "500",
-                    message: "Unexpected error occured!"
-                })
+                    break
+                case "findOne":
+                    await findOne(configName, collection, queryContent, result => {
+                        callback(result)
+                    })
+                    break
+                case "insertMany":
+                    callback(insertMany(configName, collection, queryContent))
+                    break
+                case "updateMany":
+                    callback(updateMany(configName, collection, queryContent))
+                    break
+                default:
+                    logger.info(`Please define a valuable queryType! queryType : ${queryType}`)
+                    callback({
+                        status: "400",
+                        message: "Bad request ! Please define a valuable queryType!"
+                    })
+                    break
             }
-        },
-        find: async (configNum, collection, queryContent) => {
-            let result = {}
-            let connection = await getConnection(configNum)
-            let collectionSchema = getMongoDbSchema(configNum, collection)
-            collectionSchema.find(queryContent, (err, result) => {
-                if (err) {
-                    logger.error("MongoDb error occured! Error : " + err)
-                    result.status = 408
-                    result.message = "MongoDb error occured!"
-                } else {
-                    result.status = 201
-                    result.result = result
-                }
-                connection.close()
-                return result 
+        } catch (err) {
+            logger.error("Unexpected error occured !" + err)
+            callback({
+                status: "500",
+                message: "Unexpected error occured !"
             })
-        },
-        insertMany: async (configNum, collection, queryContent) => {
+        }
+    }
+}
+find = async (configName, collection, queryContent, callback) => {
+    let mongoConnection = link_models.getMongoConnection(configName)
+    mongoConnection[`${collection}Schema`].find(queryContent, (err, documents) => {
+        let result = {}
+        if (err) {
+            logger.error(`MongoDb error occured! Parameters : 
+                                'collection' : ${collection} 
+                                'configName' : ${configName} 
+                                'queryContent' : ${queryContent} 
+                                'Error' : ${err}`)
+            result.status = 408
+            result.message = "MongoDb error occured!"
+        } else {
+            result.status = 201
+            result.documents = documents
+        }
+        callback(result)
+    })
+}
+findOne = async (configName, collection, queryContent, callback) => {
 
-            let connection = await getConnection(configNum)
-            let collectionSchema = getMongoDbSchema(configNum, collection)
-            collectionSchema.insertMany(queryContent, (err, result) => {
-                if (err) {
-                    logger.error("MongoDb error occured! Error : " + err)
-                    result.status = 408
-                    result.message = "MongoDb error occured!"
-                } else {
-                    result.status = 201
-                    result.result = result
-                }
-                connection.close()
-                return result 
-            })
-        },
-        updateMany: async (configNum, collection, queryContent) => {
-            if(queryContent.conditions !== undefined && queryContent.$set !== undefined){
-                let connection = await getConnection(configNum)
-                let collectionSchema = getMongoDbSchema(configNum, collection)
-                collectionSchema.updateMany(queryContent.conditions,{ $set : queryContent.$set }, (err, result) => {
-                    if (err) {
-                        logger.error("MongoDb error occured! Error : " + err)
-                        result.status = 408
-                        result.message = "MongoDb error occured!"
-                    } else {
-                        result.status = 201
-                        result.result = result
-                    }
-                    connection.close()
-                    return result 
-                })
+    let mongoConnection = link_models.getMongoConnection(configName)
+    mongoConnection[`${collection}Schema`].findOne(queryContent, (err, document) => {
+        let result = {}
+        if (err) {
+            logger.error(`MongoDb error occured! Parameters : 
+                                'collection' : ${collection} 
+                                'configName' : ${configName} 
+                                'queryContent' : ${queryContent} 
+                                'Error' : ${err}`)
+            result.status = 408
+            result.message = "MongoDb error occured!"
+        } else {
+            result.status = 201
+            result.document = document
+        }
+        callback(result)
+    })
+}
+insertMany = async (configName, collection, queryContent) => {
+
+    let mongoConnection = link_models.getMongoConnection(configName)
+    mongoConnection[`${collection}Schema`].insertMany(queryContent, (err, result) => {
+        if (err) {
+            logger.error("MongoDb error occured! Error : " + err)
+            result.status = 408
+            result.message = "MongoDb error occured!"
+        } else {
+            result.status = 201
+            result.result = result
+        }
+        return result
+    })
+}
+updateMany = async (configName, collection, queryContent) => {
+    if (queryContent.conditions !== undefined && queryContent.$set !== undefined) {
+        let mongoConnection = link_models.getMongoConnection(configName)
+        mongoConnection[`${collection}Schema`].updateMany(queryContent.conditions, { $set: queryContent.$set }, (err, result) => {
+            if (err) {
+                logger.error("MongoDb error occured! Error : " + err)
+                result.status = 408
+                result.message = "MongoDb error occured!"
             } else {
-                logger.error("Please define 'conditions' and '$set' object in queryContent to update")
-                result.status = 400
-                result.message = "Bad request for update!"
-                return result
+                result.status = 201
+                result.result = result
             }
-        },
-        // post: (configNum, sql, args, callback) => {
-        //     try {
-        //         if (!sql.toUpperCase().includes("INSERT") && !sql.toUpperCase().includes("UPDATE") && !sql.toUpperCase().includes("UPDATE")) {
-        //             logger.error('Passed sql should not be executed with post request!')
-        //             callback({
-        //                 status: '403',
-        //                 message: 'Passed sql should not be executed with post request!'
-        //             })
-        //         } else {
-        //             let dbConfig = getDbConfig(configNum)
-        //             if (dbConfig.type !== "mysql") {
-        //                 logger.error("Passed configuration should be a mysql connection!")
-        //                 callback({
-        //                     status: "403",
-        //                     message: "Passed configuration should be a mysql connection!"
-        //                 })
-        //             } else {
-        //                 try {
-        //                     let connection = getConnection(configNum)
-        //                     if (args !== null) {
-        //                         connection.query(sql, args, (err, result) => {
-        //                             if (err) {
-        //                                 logger.error(err)
-        //                                 callback({
-        //                                     status: "404",
-        //                                     message: "Mysql error occured!"
-        //                                 })
-        //                             } else if (result.affectedRows === 0) {
-        //                                 callback({
-        //                                     status: "404",
-        //                                     message: "Could not find(update/delete) or add(insert) the data in database."
-        //                                 })
-        //                             } else {
-        //                                 logger.debug("Data was succesfully posted! ")
-        //                                 callback({
-        //                                     status: "201",
-        //                                     result: result
-        //                                 })
-        //                             }
-        //                         })
-        //                     } else {
-        //                         connection.query(sql, (err, result) => {
-        //                             if (err) {
-        //                                 logger.error(err)
-        //                                 callback({
-        //                                     status: "404",
-        //                                     message: "Mysql error occured!"
-        //                                 })
-        //                             } else if (result.affectedRows === 0) {
-        //                                 callback({
-        //                                     status: "404",
-        //                                     message: "Could not find(update/delete) or add(insert) the data in database."
-        //                                 })
-        //                             } else {
-        //                                 logger.debug("Data was succesfully posted! ")
-        //                                 callback({
-        //                                     status: "201",
-        //                                     result: result
-        //                                 })
-        //                             }
-        //                         })
-        //                     }
-        //                 } catch (e) {
-        //                     logger.error("Mysql error occured! Error : " + e)
-        //                     callback({
-        //                         status: "404",
-        //                         message: "Mysql error occured!"
-        //                     })
-        //                 }
-        //             }
-
-        //         }
-        //     } catch (e) {
-        //         logger.error("Unexpected error occured! Error : " + e)
-        //         callback({
-        //             status: "500",
-        //             message: "Unexpected error occured!"
-        //         })
-        //     }
-        // },
+            return result
+        })
+    } else {
+        logger.error("Please define 'conditions' and '$set' object in queryContent to update")
+        result.status = 400
+        result.message = "Bad request for update!"
+        return result
+    }
 }
