@@ -49,6 +49,7 @@ validateTokenGenerator = (...audiences) => {
                         }
                     } else {
                         if (decoded) {
+                            logger.error('Token got validated! Accessing to the ressource!')
                             return next()
                         } else {
                             logger.error('Unexpected Error! JWT could not be decoded!')

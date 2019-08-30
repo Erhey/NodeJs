@@ -1,10 +1,10 @@
 
 const logger = require("link_logger")
-const { exec } = require("../models/MySqlUnitOfWork")
+const mysqlDbUOW = require("../models/MySqlUnitOfWork")
 
-exports.exec = (req, res) => {
-    if(checkBody(req.body)) {
-        exec(req.body.configName, req.body.sql, req.body.args, result => {
+module.exports.exec = (req, res) => {
+    if (checkBodyMysql(req.body)) {
+        mysqlDbUOW.exec(req.body.configName, req.body.sql, req.body.args, result => {
             res.status(result.status || 500).send(result)
         })
     } else {
@@ -12,8 +12,8 @@ exports.exec = (req, res) => {
                         'configName'= ${req.body.configName}, 
                         'sql'= ${req.body.sql}`)
         res.status(400).send({
-            "status" : 400,
-            "message" : "Bad request!"
+            "status": 400,
+            "message": "Bad request!"
         })
     }
 }

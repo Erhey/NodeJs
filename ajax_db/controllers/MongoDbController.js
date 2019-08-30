@@ -3,7 +3,7 @@ const mongoDbUOW = require("../models/MongoDbUnitOfWork")
 const logger = require("link_logger")
 
 
-exports.exec = (req, res) => {
+module.exports.exec = (req, res) => {
     if(checkBodyMongo(req.body)) {
         mongoDbUOW.exec(req.body.configName, req.body.queryType, req.body.collection, req.body.queryContent, result => {
             res.status(result.status || 500).send(result)

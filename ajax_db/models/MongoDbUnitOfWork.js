@@ -4,6 +4,11 @@ const link_models = require('link_models')
 module.exports = {
     exec: async (configName, queryType, collection, queryContent, callback) => {
         try {
+            logger.info(`received mongo query for
+                'configuration' : ${configName},
+                'sql' : ${queryType},
+                'collection' : ${collection},
+                'queryContent' : ${queryContent}`)
             switch (queryType) {
                 case "find":
                     await find(configName, collection, queryContent, result => {
@@ -51,6 +56,7 @@ find = async (configName, collection, queryContent, callback) => {
             result.status = 408
             result.message = "MongoDb error occured!"
         } else {
+            logger.debug(`documents found! : ${documents}`)
             result.status = 201
             result.documents = documents
         }
@@ -71,6 +77,7 @@ findOne = async (configName, collection, queryContent, callback) => {
             result.status = 408
             result.message = "MongoDb error occured!"
         } else {
+            logger.debug(`document found! : ${document}`)
             result.status = 201
             result.document = document
         }
@@ -86,8 +93,9 @@ insertMany = async (configName, collection, queryContent) => {
             result.status = 408
             result.message = "MongoDb error occured!"
         } else {
+            logger.debug(`Documents get successfully inserted!`)
             result.status = 201
-            result.result = result
+            result.message = 'Documents get successfully inserted!'
         }
         return result
     })
@@ -101,8 +109,9 @@ updateMany = async (configName, collection, queryContent) => {
                 result.status = 408
                 result.message = "MongoDb error occured!"
             } else {
+                logger.debug(`Documents get successfully updated!`)
                 result.status = 201
-                result.result = result
+                result.message = 'Documents get successfully updated!'
             }
             return result
         })

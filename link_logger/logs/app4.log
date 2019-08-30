@@ -13352,3 +13352,971 @@ Error: Cannot find module 'link_connection'
 [34m2019-08-29 19:14:25.875[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcwNzM2NjUsImV4cCI6MTU2NzA3MzcyNSwiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.Ant1cDos680ueoITWOUXN2x5I46pCpMjPA-tYZ9kT7dSV-GHjWIEW3CcX9LDhk6E3onpa-tkTxf62MQl9iKukQJm7WSIymD95azxRgxKH8KbaN65-2qRADIjnvn2sHyl9hDiaLkDkUn3kfNwZjL-qsKsqFTMFOfTsdtnaJmNlrpLxmMgCYu_BxFNUTYMNZhoWKQ2SU8DlrnnOoaJoa2yUxDWJ9p9vXoe5008NpxnCVkh658nJooj6UBLp3U5rJfkiOVMq_eg9QIDyHhAGJ18snbc2A5IorWg-RPgkPCAS4K2rXygXobXCS7yEuQZY9pGqmCOqUD2M-R6m1Rsfqpr9DFNDuyjlIFspNpCgdsePdeVRoNPn7PI1_Os3rI8DUE1n0uJVfBI3y-jZ3IHzzuWJf42Sijyj7WivuMp4wDyB3TW6hOrFNe5PA-wROutVbUyoZo_jzvIvZN_jNkEUY669ufgk00PoaWwCOfXVGYHhY5kNkT1j6hDyi8Z5ZJvo4m4JhlOaftrGmxIaNen0KX6mCf6C-wLMInzhWxUg2UBzVMiJg-2aj4BhnmynQY09ZiJIXCHuwqL_o5shockGYnL4a8UaTH8FWhho9oSVExikeslIv-3I_c3YBWMCbTp3yHRLU2mPptakRGUBpV3wNG0iSuVlEkOG2oeZ5jRzNde9OA[39m
 [34m2019-08-29 19:14:25.876[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
 [34m2019-08-29 19:14:25.884[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MDczNjY1LCJleHAiOjE1NjcxNjAwNjUsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.FVXJQUGI_vpwxQQZLmbojK8a_7uaxu-hTc5PzAfXVgt5DkKyHVjLLOIKd0Hah7DODmrsp6gEr47rN_0F4MEykWBfNM-EQWKhfi41DOOQOTOsUb48_L7GVxz2RIDA9uXCBsOISIJqMA1rPx3-mk1R0xO4gGXh-d1mpD36eRuqCaZONefI40WZ9XOhx1eQcSgoHxpHNi0YMEYxXa1aZfb5obD85PRCW_XXUDmVvMCoPegyPn3K23FzvsXowRO2nlcZLaroc9ZsNZc7vkeMtneojGpA6EneIUoDfuJ7bwERebsE32zWdQOtgaqY6tsC6BdyvpoQxsGP-2wa-FWOjuGCgLs84rid_cFNRwHP-lhxa81mEnl7rgyVcImHTN4KTc5YeqlVPo4PgkgE15KgJWjJHB5-4W6JJuQXKCPWcd8EH8e1Edfi8z1JPG3Jpn6NDfY3qAdMOgboThRBAYfDWObmtFwCPu1Pjg9w9gwtxP_DwNvbhV4gQgvYJvFJanmm4bHURs4cEHVZ1OKCerdYmU40TXXMYlOlTDuHOabB33FpGwJepM2Ws-zYp3WFQnD9VJpZrLS7a_nbNUQIcvU30skFCZUr2ngreJv4rqxGEZpiTQPA--J7P3YM33cqAmGHOTvM3vgxSErEywW5ZQu9DFsXtJyXOIb9WJoWfhW4mRm4GeQ[39m
+[34m2019-08-29 19:17:19.557[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:38:16)[39m - [32mBuilding GraphApi object Start[39m
+[34m2019-08-29 19:17:19.569[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\rest\models\GraphApi.js:174:16)[39m - [32mBuilding GraphApi object End[39m
+[34m2019-08-30 13:21:05.869[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:38:16)[39m - [32mBuilding GraphApi object Start[39m
+[34m2019-08-30 13:21:05.881[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m new GraphApi (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:174:16)[39m - [32mBuilding GraphApi object End[39m
+[34m2019-08-30 13:21:09.809[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:21:09.832[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM4ODY5LCJleHAiOjE1NjcyMjUyNjksImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.XKQtXunP-iNvMOo5gtZ4Qb5-zFH4AiQcVN2kCA5JT8YarGvUKodK7pmfdOan2DcHM9oU8yq6YRqHFcqyUgIjgFPpSRU2LAV6KyjZnbxB5HuphFfOQWyAqlDnJQWmJzrYEAjVI_nYedsKCw34l8cX7ex2GS3R3M7Cnpy84c0Su3FYhwhHJUMuhW_aB-CeTNMn6NDam7NX5Q0lAk-ZGjkxacznC-yPz4Qr2lce_yreCrhvW6tu_Q7kJwP9ZFoPS79B6ToCwMDEEPVPWN1t2sO38kUhwnwJW5WzVOm-YDMxFUXq5wlujK0ITVHaDCPbWpHYNHEJml2c9CHuHlwD3BzY47SWHs4IlQ8oRxG9eB1gC2DnoBInx_DvJOph7squKrhd18yESwL3cqhd-kI1mvh95QDdYT_pNc9YAAPUBdaryshSQIiXw9WcUAkala3ON5JWpTyy8lZufT-YNCvrCHp3Bt47c3G-2Hv2io2DwlID-vm9zEnX-wrQDgpY8uNa9yglfBTkJm6do496M_Gf9v6Fr0njCAg8m3Ey2ebAOoX80w7Xa_7-m2EsfobXqeWB09uHMWyUOt1aFPdFn4GaK6M83lO4Lq5fwsiFuApSyEC_x0MHZYUsNzdSb4lV_Tnp1Ku4EPMYo4fYli8hoKUATKQrr6W-NDDW29fM-HlmSUMs2GI[39m
+[34m2019-08-30 13:21:09.857[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getPagesVisitedList (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:268:16)[39m - [32mGET get Pages Visited List![39m
+[34m2019-08-30 13:21:09.909[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getPagesVisitedList (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:287:16)[39m - [32mFound :/,/favicon.ico,/login,/userMng,/userMng/createUser,/userMng/searchUser,/userMng/deleteUser,/userMng/updateUser,/userMng/updateConfirmUser[39m
+[34m2019-08-30 13:21:10.867[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:10.867[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:10.868[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:10.868[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:10.876[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:10.876[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:10.877[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:11.036[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:11.861[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:11.862[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:11.862[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:11.863[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:11.870[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:11.870[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:11.871[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:11.969[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:12.863[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:12.864[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:12.865[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:12.866[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:12.874[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:12.874[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:12.875[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:12.967[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:13.867[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:13.867[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:13.868[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:13.870[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:13.876[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:13.876[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:13.877[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:13.959[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:14.868[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:14.869[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:14.871[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:14.873[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:14.890[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:14.891[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:14.891[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:14.973[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:16.643[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:16.643[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:16.645[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:16.646[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:17.645[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:17.646[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:17.647[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:17.647[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:17.651[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:17.652[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:17.653[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:17.732[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:18.639[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:18.640[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:18.643[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:18.671[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:18.672[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:18.673[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:18.673[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:18.722[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:19.642[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:19.644[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:19.645[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:19.670[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:19.671[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:19.672[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:19.672[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:19.730[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:20.638[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:20.639[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:20.640[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:20.668[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:20.670[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:20.670[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:20.670[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:20.722[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:21.554[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m Tracker.request (C:\Workspace\MyEnv\NodeJs\link_tracker\tracker.js:83:20)[39m - [32mRequest from user received![39m
+[34m2019-08-30 13:21:21.637[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:21.638[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:21.638[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:21.673[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:21.673[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:21.674[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:21.674[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:21.716[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:22.637[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:22.638[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:22.638[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:22.663[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:22.664[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:22.665[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:22.665[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:22.714[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:23.637[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:23.637[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:23.638[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:23.663[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:23.663[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:23.664[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:23.664[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:23.712[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:24.638[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:24.639[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:24.639[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:24.663[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:24.664[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:24.665[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:24.665[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:24.713[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:21.556[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m Tracker.createRequest (C:\Workspace\MyEnv\NodeJs\link_tracker\tracker.js:99:16)[39m - [32mCreating request start[39m
+[34m2019-08-30 13:21:21.558[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m Tracker.createRequest (C:\Workspace\MyEnv\NodeJs\link_tracker\tracker.js:111:24)[39m - [32m{}[39m
+[34m2019-08-30 13:21:21.558[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m Tracker.createRequest (C:\Workspace\MyEnv\NodeJs\link_tracker\tracker.js:130:20)[39m - [32mCreating request end[39m
+[34m2019-08-30 13:21:21.559[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m Tracker.insertRequest (C:\Workspace\MyEnv\NodeJs\link_tracker\tracker.js:144:20)[39m - [32mInsert request to database start[39m
+[34m2019-08-30 13:21:25.047[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m Tracker.response (C:\Workspace\MyEnv\NodeJs\link_tracker\tracker.js:186:16)[39m - [32mResponse from server![39m
+[34m2019-08-30 13:21:25.048[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m Tracker.createResponse (C:\Workspace\MyEnv\NodeJs\link_tracker\tracker.js:202:16)[39m - [32mCreating response Json start[39m
+[34m2019-08-30 13:21:25.056[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m Tracker.createResponse (C:\Workspace\MyEnv\NodeJs\link_tracker\tracker.js:230:20)[39m - [32mCreating response Json end[39m
+[34m2019-08-30 13:21:25.062[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m Tracker.insertResponse (C:\Workspace\MyEnv\NodeJs\link_tracker\tracker.js:243:20)[39m - [32mInsert response to database start[39m
+[34m2019-08-30 13:21:25.081[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m responseSchema.updateMany (C:\Workspace\MyEnv\NodeJs\link_tracker\tracker.js:249:32)[39m - [32mRequest created[39m
+[34m2019-08-30 13:21:25.155[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m requestSchema.insertMany (C:\Workspace\MyEnv\NodeJs\link_tracker\tracker.js:150:32)[39m - [32mRequest created[39m
+[34m2019-08-30 13:21:25.647[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:25.648[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:25.650[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:25.682[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:25.683[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:25.684[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:25.684[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:25.759[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:26.637[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:26.638[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:26.640[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:26.666[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:26.667[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:26.668[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:26.669[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:26.746[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:27.204[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:27.205[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:27.206[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:27.238[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:27.239[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:27.240[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:27.240[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:27.315[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:27.319[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:27.321[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:27.321[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:27.414[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:27.863[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:27.866[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:27.866[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:27.867[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:27.873[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:27.874[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:27.874[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:27.963[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:28.870[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:28.871[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:28.877[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:28.877[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:28.886[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:28.886[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:28.887[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:28.980[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:29.862[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:29.862[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:29.863[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:29.863[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:29.870[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:29.871[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:29.871[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:29.960[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:30.863[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:30.864[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:30.864[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:30.864[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:30.872[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:30.873[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:30.874[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:31.005[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:31.864[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:31.865[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:31.865[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:31.866[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:31.876[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:31.876[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:31.877[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:31.981[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:32.873[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:32.875[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:32.877[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:32.888[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:32.896[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:32.897[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:32.898[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:32.993[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:33.861[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:33.862[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:33.862[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:33.863[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:33.872[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:33.872[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:33.873[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:33.972[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:34.863[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:34.864[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:34.864[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:34.865[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:34.872[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:34.872[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:34.873[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:34.964[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:35.861[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:35.862[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:35.862[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:35.863[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:35.871[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:35.871[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:35.872[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:35.970[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:36.869[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:36.872[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:36.874[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:36.877[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:36.892[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:36.893[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:36.895[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:36.989[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:37.863[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:37.863[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:37.864[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:37.864[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:37.870[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:37.871[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:37.872[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:37.959[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:38.875[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:38.877[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:38.878[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:38.878[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:38.885[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:38.886[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:38.886[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:38.978[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:39.865[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:39.866[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:39.867[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:39.868[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:39.875[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:39.876[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:39.877[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:39.965[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:40.868[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:40.869[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:40.871[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:40.873[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:40.881[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:40.882[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:40.883[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:40.972[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:41.865[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:41.866[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:41.867[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:41.868[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:41.876[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:41.876[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:41.877[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:41.980[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:42.865[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:42.868[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:42.868[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:42.869[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:42.876[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:42.876[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:42.877[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:42.972[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:43.869[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:43.874[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:43.883[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:43.885[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:43.896[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:43.897[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:43.899[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:43.990[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:44.864[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:184:16)[39m - [32mGot 'getGraphFormat' request![39m
+[34m2019-08-30 13:21:44.865[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:185:16)[39m - [32mUpdate graph format Start[39m
+[34m2019-08-30 13:21:44.866[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:222:16)[39m - [32mUpdate graph format end[39m
+[34m2019-08-30 13:21:44.866[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getGraphFormat (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:223:16)[39m - [32mSend graph format[39m
+[34m2019-08-30 13:21:44.875[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:297:16)[39m - [32mGet live info start[39m
+[34m2019-08-30 13:21:44.875[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:245:16)[39m - [32mUpdating Graph range...[39m
+[34m2019-08-30 13:21:44.876[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.updateGraphRange (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:258:16)[39m - [32mGraph range updated![39m
+[34m2019-08-30 13:21:44.964[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m GraphApi.getLiveInfo (C:\Workspace\MyEnv\NodeJs\graphApi\models\GraphApi.js:426:20)[39m - [32mGet live info end[39m
+[34m2019-08-30 13:21:47.674[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:21:47.684[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxMzg5MDcsImV4cCI6MTU2NzEzODk2NywiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.FllJqwuJme8OwWNq8Axwe6ouusFPHNiDWn8QzCOVEZqGaiSzGTaunTL1R5NVdaGJcdXJrOxnGWFER4oNN6rFCi6GJU0cdEBaRMRHHsaumaomUr8pp_xgmX-wmZPRmPkg8Bj3KinKryNiCiH1-RqkMYKqOdc72nPVSk-i9U0gUXCnKMd_UkwLKzSIBQr23JME-JHVU8gRZJuk83FeYaSdtBEreJ85Oz30ENazwVAG_q_hFId0BAeBD6H4EBk6ENF4Mcp77VeMuNDfNpER2ygslT1L3FWNVz9Bd8axefHZzicbQqwmloD-8JjmSjIAcVICL2k0mcnjZlt_nMy4pbzu6fTgrRItuG3KPZpP3qx4jwP0ty2v0LYm5u8sGmJ0MnXCt-CrjOGHgf_UY4w_w7WwQ_USLGpOturW4XTIZ1Q0_Nf05JQN2qGi3-x-r35pl2YDkoLgV28J5M_LrnRWG3NFMRHmR_aC6IxAXQibLbfS2Fow6XNlRCNZigrGjOmfOHL-pBejmXFZ-7wFdck4IGv7ZfN-NNWDZCI5eOLifaTecrkKD2vPGP4VQRUSh_hVTH2sKDdALyDW9y515pfLuresb3Ija0mYVGs-4u3OBsEHciR7tpBiRDXrSxe6GsbrmN_Fb_GLa8Ml6SErPv74XkHDB-a2C7HFlZui_WJFj_4k_PE[39m
+[34m2019-08-30 13:21:47.686[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:21:47.694[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxMzg5MDcsImV4cCI6MTU2NzEzODk2NywiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.T4O2pLwDA-nwA5dbRDp2FABsS1qturY15o2F6LXyx-WMTZcZZP3puVWfW4jk9lzyoAoQmfP68Ey0iQuUxJjwS-VelHlo_U4zewThog_BY7Fz0bfkNrX3_R82fQ39_xrh3GQQvWv43jUBNTzhppMEaqgequPjZq4yptXEri3LVulHO8eV2sdZSTQrEh3AqfEV7AXV-inaj5Vh34gn5fyllCEYULpSxai7eTvndTCGJxb2ZHv1676j4xv-sfyIWKbXYuVbLzb2FjR-Ehi0rlP9FvW-rmYaLlSZt-ToIEITztfk9A_xLKrHx8NLymxT_u0QWGWs4Ovxvx3TAt9c2iINcY_fBOGlLeD40zzzDWO7KURd2HpcU78JNr-I4AKI7uu2UKjg0OPKBiAQlDnt4_xCp_q8MVIyoA3B_k_hCb4UKkwZ5hiEHNZeBlD3H88kwTrFmDEO4NYgxNo-wJuJYQ64Y0bYNBoZ30iFBgPqN5snRXbfMJPA2Dl6XpWnNPqi-bZWHoXrnc0ebOrggPT5RLnWzQfXJ5M-IbQzPevQ79et4X8hu0Tq3C1i_qKzXkbFTaWjIi5-HhWey7hFfR9oOsdx5I40k7RQhJxnO19ueLn0AYgkAyT3oM5YsPMegMUo8UTPgu0EhL9diXI7N7Fjvd2PMEKCzQ833oCS5__CrSjTWc4[39m
+[34m2019-08-30 13:21:47.695[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:21:47.702[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM4OTA3LCJleHAiOjE1NjcyMjUzMDcsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.H6NCQlmM1a2PvLZ1Ru60TCz1dzmtv-5S5e14bMFXCgCwQ_faHXYQ3vc114npJfxO6MR6owSAEkLIC3coJUQ8MSgEEgZb31BU8uBfm85XA39M7vkZd9-RVhA9rpiWxmuOZLUQard_PiXpsDjIjPcv5SJ6vqFZNZwdZeJZCjIAYWti8_jnhCc7HUsMBvdz_jTqKrzJkNp5aiMCUPTxFj8qc-9eUilVb5804AReiH7UYPkcn4IeAoiLreIxKTNV5Oh4yRHinS7Uu6dWOOrvjv3dcFrxFNy1rmBndqe01gk9PfAm0jYhGO42eeJXOAijPzPwk1T_rxHGUfiR9hKPYQ8drxZNz0NALDg7jZD1PHSC9bN8yEu2K1ICStSvPplA413XK_IRK1sAUgi1UKarafDHp1T_Gu9TBGODuh53xZ7KZPSgxcpapMYv9QajOiczijLCd9h91UTC-R92LKsUJsNLz6-3ipPMtjMs_UtKN2Sqv6CixPk6bRwVuFFDKK_gnf1iObjb8r2jT40aDU3a7OyIyNHJ6HvFze3xtIqgl5l-B4yFgjqJG1md8_bjPLesDMfkhkdS68vYr4zoNGB13jWwVU6ujN9foBrwfmtpCShO2QsH5kuKhELnXupQu5yA8Tc4NvgzzIE4GNVROr448BlQ-onX61o4xSuyH8iQPUs7QGk[39m
+[34m2019-08-30 13:24:12.339[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:24:12.346[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxMzkwNTIsImV4cCI6MTU2NzEzOTExMiwiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.F-f5QqP8amqOqvrH6pGYrnWu8CofXNW7qCl-dcjKMvtnz1vSybnjjsuU3gcQ-bF5403iP34lkUAiw5WSdomv0NO8Q_I-8cSn5VYQc4LWI1AZXklxn7e6eE19bxh43tN7_bxHA8iqO_0FuFtbZh3fL_LFwm2fITgPZqrPR21CtfL8vJ58FYnYIU2Srv5i7NBX37UElT_UBwjfR1qlBl455pDIU3KUHOYNaKqPTflQ-8Ta0cXplLD6V3-HSaIe0dCAI-a2RIgumLEywvz8RKkpMUkIeJa4HsHKv8SlGbXBXcueXb8j10AxxP_neL2Zx-eDzQsYG0jsXx3Jp7hR7af9mcfz50FJ8YAFdAG5-vpIIG1baAGIOgoKR-_PSuBDzUD7dnVHqBACpCFKH-c9RgeTd6aBW_HSwinAJ6ZEZeyVa114f1t0oa5OjC3hG53JcjwnGOLQybgebZVlnMh-lhdLaSkKPjf9fMpQtpEjpSHMDsLPOUrRLC5VaH_E05gTjl9nzCm8iMc_k_Rw7GNIdHRoDG02zzF2bIJNpLHjhHQZ_aC4tAcIGGGs-lTZJ72uTBJwouyCnpLQP0LMpW7z2Sc8joDJ6_qktQARkA-gmNWCwZU12GstCX3CMysa7VRjDzo7yiv9dGlpfSaCFcvlVtukCO1baVhbTe5YOW3zvXa07uI[39m
+[34m2019-08-30 13:24:12.347[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:24:12.355[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxMzkwNTIsImV4cCI6MTU2NzEzOTExMiwiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.wcVDRt6dwKGyQQbhB0LwFqoekKRGBfofohib2yfhG89z-adVzrJBhLmNwC4k0gNJP25H4ZKJdOZl_rBxs6WNG-rwZ2Yiob_T25Tnlc_1lpRRvWVFIT8N1hSpruLnZMPz_Y7oSfnhBVh5hHHaWFSoCd_y8AY1rs4z9sQwBkqB7l-WAY9wWqGgfYj2Lt0Cxcb9N-GWwVVibB2-NWv-EgTKLxJp1v6UiRbI2aszSwPkQGR_ang-XwruvPVZvYuwDlzZc5_bQASqvaj7ZhL_rW2LzjulCX9vBYcnYdYrBVVagFLJpUCYffRlT3g9_Ji7nQ4XmrFi9iSwbzHih6iob7UegwGjjT9wrhlQsfVzfVV1T-SYKLTv0MNInMG13zsmoALEgGGSW-kIP6v8n9hDpYWXS9pPLEKJbzui4Ag3o4UDTAMnEDAyZGBKiSf-GU5GKxLdxxeSP3MIhhvZdYwLx6nQ9klr8-Bm1Mkfd6hiMcqekBzo_uW3fcSdWaJDTxkOfOK8_hTk1zbc66sSzcK-zs-RYYSEXhSiruvfpx9AibP6K0hAafMUHVKj2Hlrvn-ScR_nGdSZoE4LrF0O-r7pAHZtfg3slSICFA60XMhOuAodXsDVoC4bVuj9YaXax1cbw9Y-QwFsCcHTWT7zRMCRadOoZpRyfiy7TiXjnXJwFA_Kjrg[39m
+[34m2019-08-30 13:24:12.356[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:24:12.364[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM5MDUyLCJleHAiOjE1NjcyMjU0NTIsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.jOk8ReucpIkHRG7PIOF9Ej7dZcmlG6wNWppSAwN1UIVTzl-4Fm6rJr-OA0AlPNbLh2XGYME9UN5MQ3tognW0FILpqxFE2cbBbUPEMCH8oMADs9BStjZPt1kV04lWSh0jYKCi5X2kxbqsw4TsJwKlkvqSh04E0QmwWMHD9eZqYp3LKe7R315-gnHXY4iJ2lLY79o5v9Ho4tWW-oZEr8qd24nc0O4A7qReLDyO4ALF8D5RIoHRkRBgxxFex8YVbhVUgIeB-zxdvmSlrGqGZLgP8sTnZ7-QJzyxgzuk55zadSApkSWOxSef0kpUJV_XiEz85e_-3o0ZG5jCwt12uMYoCNISArnJUQGRx2qMN9rimEMdIRkVcR5kpiQ5ahfCIrx-gF-O-7zzSTU_qJSV80fVvp3yUujoQIMNWr_0aE8IIxP3_aCYgQcC4hyeojNNh0YfbYz87Tj9m-QPh9mDfuvr8o5whChK2uWZgwYS7I6cFZU8-uY1TNh7t_QBK5VNwVrKFX5DbWAytsdRP0DnLhU-vQawk5F4IyF7y9N-ymi55ykdW5b-hnpXFktZ8DrY244AQJmNX44fAijaG0GmMlNfs_H4dDITSDm3ePWWjENmFTwKAjr6-m9v8ju1P23rQc6B6Yhi__1Fsx7992VySa8UNZaDxHFMm8M8lQY5NJfxS0E[39m
+[34m2019-08-30 13:24:19.852[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:24:19.859[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxMzkwNTksImV4cCI6MTU2NzEzOTExOSwiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.xULZMnQT-azlOGJ6byRiYqOO7QQPmkW_96h8fsPXYzRTyrgNdLK6eFNGCEzIShHxeZ1J3uR7y4JUlLVXwr8sMUUF9Qvto5DqVVY7iF5CsYfj-etssBZx8w8azfOPxeL-ijIbnZ9yvvH43HTaCjIkV6op0jLZJWqnXQBwYLYMgGCMjHhEsG9ClEx-KmjcV75lxHb0tBMgOBkC_Cecrsqq5tnXxYtlIA2A88noZG9Tr2o-Xrzmn2KnYt2QizjnHL-RO6tKxn7urWKQEkDUerCxSCNhYvX_yVdtXTnbZ5QtRKeJB3eXdQpxph4Dv3XLkc221bOGrPepQ6GOmHapLujQQL9x9Kezhxd3ih6jcAE7sXzR_O4toQ7Ijpg5Zr57XPBB4sIH5IMaDR3co56jm9gJyeE1wflMcCzEanZhFhDnzIgEzITt3F8OacLH7ckUh05ezuwvTtZEqbGWfaNa95n6uXyAotaA_nF0aX4RazfPB-Iv2g_OD0eNVwPa7PA0L_aaJ00lT96fHpvnyxqOrDBSNbla6wFoAXEWOyD1WQIXWROLHeRTYbMmPK-xYwn3F-RThFo-OgyTj47Or86jEwPtlih_hVNMe1f0MCbSn5rx_4NLrDVgPyQ1BLFSY-RjHBuZAY1xYmhPyLyvT36I0m2cT_H_N8T8oyKJxB8PirgF328[39m
+[34m2019-08-30 13:24:19.860[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:24:19.867[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxMzkwNTksImV4cCI6MTU2NzEzOTExOSwiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.jKxc7cVEJtZXYYzC9elrEL3i0v9C7DeqkW1PjXKwefOuaVjdWAxegFCONpiyEKCh0SyHeiEMTLFbrfFPtn77T39w3AuujXLpi6VCpdFfQhX6fsjIMB7wOqevVRqRFnXN_w9dRbyl1ch4IQJj7ylBlzVzsUYiguwpP__cc0TOSKQg9ehaB0AjhP9h92xw72CYDu_zE4waqDbEF_49gpOSrx_I3GAlhFUC7N6elZxwyBmI0JUXa1Wwzo00V5Z59flCNutJLzTCIBHRd3voHKZrA1eiqr02EJpOXTiEvPYY871nylnxgp9gn9au8In21EPP6oe8vQ-MeeDZWAOh1q-kHtSXD_-kDtwcfgfi8bLhqJFfJyYFgi8Up5n6e77coQYyVsv3DCfwH0j6o2JtTS4umAZobCOmUbdWvCBYwZMe24b6HbxmIeyk152y4vn6BSY90ZceZBx4xzRRGre-UhsSqRLMQj_KeUyDVWmsvRk86ataGBGA3ktT_9tb5TQ88FAL1ghkUaQ0nz2YiYitGHcvENADaMntap1hC4O-SVQP37gx1XVvSc1HcoCpm4ek9hk8wLXLK4tyknWeokrgJW2xtBWUDQhgikh9LaDWAI3FjCxyhi5cjR4hkqYhn5BZ3lmDR9yhjs82Ul-o-CTUKoQ7O8M4WtdPaA3dagnylM4nNIs[39m
+[34m2019-08-30 13:24:19.868[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:24:19.875[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM5MDU5LCJleHAiOjE1NjcyMjU0NTksImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.YGGnrIq7tqm1sgjPQC-p0G9JO4AUiogwBC7OXWDLdLk2EadmuM6ACbdTC8RVpcHRArN-OnR1esCI2TpGkAAc3loPtOUhc2yPBd0qI_i5-Zz2aWB_I2SPpB2_bTw_utOJr9q_XNElDlWb-ZPHnUuXNGywXUcMzgGfmaxcRWaUK0qCR-ok008hTlk5-Rchko6EWoqL_OtEZwa9q2bzpgLHozgP9ks6lmlYCri8CfRUzPtXIEFWcAI2gLiLmiWkgMpLeDd2Tm5NkRFdDcc_9qBQSzmxRrdP4jmV5-y_et2-VXn1pRxZIw9tCnBad-tSCXJuswO7q_YJhq-uG6wruW28yWol7b8X-VbjQU0TITDDTqNKhhnUfO9rGkTzLFkTJpO3rthkWgun_3o234koCxOc-aC5FACp2mq5B9M3H4VnG31t6n0i_AXTxV3Hr6dVrF-5UY8dmbSTPFpdbpG8-dRSMQUIgFn2LhquFrIQHArv00SPlQKYViHvVIC0-uujjaeg8IMJpF9MHlo7wbL9exadNQBdc5czshFvFgKtHKWnBuGQA5qVBx3WowRzEQQxmHTjFBw0AjxqBxMxWj8PUaLFGcPdygGs77-E7cwbzhE3qQyUM__0WBHQk-I1ATbrUS9cZDpjj-bsFVoe_WPs7EbxEW5q8-VClgKb90vX6w5cPrk[39m
+[34m2019-08-30 13:25:27.121[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:25:27.128[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxMzkxMjcsImV4cCI6MTU2NzEzOTE4NywiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.oyN35n11SmHCp7a0so2nl7KJcE9ojr6JHtEDragSRiIbzcEX8NHsZga115T5UHTS7qM5rIisp3yzu6ZsMvXGFIegZ2MtU6aZYStQJLuQOyGjOWY-ChVOmFJdvoFZgwrbXKRRpv2FBsbSZ4FxrPpSbg94HW3eUTOIXQaah6mCFF7k1OiFLvX_E9l9uM7l-4dN8cFZYmLkw1zHxb9eKFG3WqpiuSAeuu3MUHLB99k6ocf7Axcr0EBOC6eyA8p7GYLpQoRX4Rgpmukq8oa4vDuYsKOrPBgKsyoLI7XYpWd2DLv5UuZCv2ls6qLXHj-AQz9KWXmGxLYSloSM_ew0MzeiujbtZtR_YpWsuYEiEDr5eqFRNkw5fOVuW1y9C_3TDnsKgFrVGULiq6VDR3vvjGMFlXxK3ur3OfjWugTP8OIbfkziXQ9Cz_5imaTzX-Dga7l37OxqqIMxrY6dtfbI8tIpOV-wSgnY3flcrj9lvVamlx7elhA791ng3SZ0AUd59NxBncS8P4I2rF1EuyHnVtVOpbI7Gw2TYn-QXT82AOP_u0-LHtrAzI9Eki_mEGsvaEYWxVj_EV5lt05cBlZGeKbnTE3zza_fN1YBc4XK32e0jVNzULQ1D-aaO-b3al9ThjjpYqQZA5qZ3lPf0u-ke6hZv661faYa2dfoqaKqPUeCAYc[39m
+[34m2019-08-30 13:25:27.129[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:25:27.136[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxMzkxMjcsImV4cCI6MTU2NzEzOTE4NywiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.dr6lKe9lzJ8BWkN_IAKiR7aGjwIvVMvuZu9vBRVvX2Tcs_hfZvCk4NMrWEBOhwmrp1qMATxoi9tPY2XXMwsIg1zqkgCOic6u5nRKDdmN10eWO4N3wsN84ZLUPxjXnJb6e0FLARLSTTlii9GY5qMGbB29YIVmwwV1Q43mKl6UKTekDLDXk4hGUZZ4J0cO3tnvCEPIdaqywkSpq-cIzO7UxsZtj1nXNGomQAXSuxRcf9MSBZ9V7FOcp-Bu1UR5pHpQkYdH_WXI2PH-wFEddQ87y8_K0hBRTZK13dGk9_htZki3rrqPFnCbdw2SttOtqe1ZhzjO7lPY3OIYlhEfzlrCcTv9FI_D-0cmcZ8agaGknZ2w20Qon8sBIyyv4NYcwdTLftQY7jMlUsjnLylZ_y5Lmoyr0C7R9GQGLJ6ipVLrhYB-9Y0h7zxCSneuj5Ap4S5B1D4rHweg_l3VZVdSJjJWQbq3Lu8_nvwU5rGh39GPLboXLeVb92136U3Dzz14i8YmNovBJkCm72GAxM3e8cS2RV8p3m2gfXczrh2bpvPe0BerkB8hNvCoEThqofK_8Bm2g_T1eC8GyWwrRjbQ6Uiw-emuWv6EZ71ejyJp0XhMBZFHXxQEjku3D-PYddWr7aB9mlOxL23859UTRvUEQFdAszY072Oag7XyX4fAlCg2xOU[39m
+[34m2019-08-30 13:25:27.137[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:25:27.144[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM5MTI3LCJleHAiOjE1NjcyMjU1MjcsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.ltb3IUKC1YgLjnwAZoqWZXaY9TjYX_RveijNPeoX2MoN-_oy0x0aWNo-VtN8bnkMKqnQBegzCuKJNWT2i87-ucz88_ngcGy1QBXIMfuQJoUYUT0-SrBn7l4lPxO_g7fzxGWwcQyzVdAhAEDHgeBPlk2Pt9hZyjao8V4DY-jvrdkuyDiRWMUu5aCHZVSDuPoyGv7FofzBzBUUWze8P4MNkh1JkNroO9U8SphVtpANNnkguxLGVkEcu8U1TSeyJ-Mf4TYymYy5ybTMIkillbteOffv0vezCjhXbVRmP0y0rxsVlqqL0eMr4zcl3NyVfHtGenrH0B_qZ-FjzAi4M7I3yhJpJ9K5ZTn9WjJWIMMWsQaVFXIjiu7b4TLldajqcg83wRZs-HtjgVmh9owmr-M0jgP0fbyfkE8kiGslNwn8h8GR3TEiSJv5GdyLs8i39xf3pGonQRw82C1xSN6aXrGvoXRVBF2GBrzGUjntTbgCkBsS2CIrkVaYz6CGBRFdKF7mmt6FE4DrdefYeY6aU-RyVFGTtF6BlqkJa9PliURkRRo8N1T8PkFc-D9DXTZghYWMMxl8sG7lxFEGD-qgMzl451B2MomnMDT4S1SiuQqrDYovFJ14tjP9V_dhyPTv6IgcN7vDicjKAMoHm6Yhr2FRUrdpTC2B902o2kiqa5019o4[39m
+[34m2019-08-30 13:26:21.120[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:26:21.127[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxMzkxODEsImV4cCI6MTU2NzEzOTI0MSwiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.dIg3YbEnBM2gEopEG3uqzQQKIzd1_2Oh7AcP7cBf5L5sjNBKX_KhtgsbXjTS824fmU2upSCvepUl15DerQ7veiqUVfLMLfUWIDBHI_SblIb3i76jpkYY3PX0P_r_H9qBDTHUBVTchTBEU-JESJYq0EbHivAlkJKPN-YVXRFhtvzdNA1EHZ93DjhdaRZdO0FY9_fAS477VKPWnTkxahp_2OA5XaGlhM8TDU2NajE7ivK4LJqdV4wnWCaXP5_a7XCeh-yANQq9X1DGFQnGO1c7XiqUmhco6yZWXw5G7iby8k0L92clPxwX9Uy_6DDUG01wvsQFML9zwNY7sKyAMz7T_RDujiTudmsYVNQKBPnp7wRiLtRUrLq4oRsN6CM2wnrD-OGh846_xrCOHm7I-vbyX1C_BwXW0peURinM_sNRYy3i42ymR03m5fIeWpZVkEVC75XpCl7is6E4zdxegE3RCwu2HmIr3lpaFF9riN1eyubkiGX6h4U8marj7VszEs4rkGRbEX-hCrHkwm8dh09uQrLfg8Y5doZ_6T6NSH1o9KPG0x1bpnUTzImPFMk5-yMyVMcIcgDzHfEaCWKAM89Oovr3l3oq8Uprj1p8rlkrlEqBWydhOrKxZFsEmusilqz5R7NPIymJBNbruSqOqwIJOg326ERcJrXHW1KgkTCyNJ8[39m
+[34m2019-08-30 13:26:21.128[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:26:21.135[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxMzkxODEsImV4cCI6MTU2NzEzOTI0MSwiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.IggXqwsIqkVMhQWAiCY2awq4wtVLwohWiQIMSsu2YEZ9M0uZOtZfGezYrhGdysUfQQrzTqvlNJoD7Bh1yM1BsQ7V4kr47NQmliGTWpY_hUUrUSIIU6QvhaEJ3Ymf4tLmFzie0ibcr4FAsZ-TublRbxTCrdA2IJTXCcs-A2bLuP6Fi3e_OySxTD3JvJjgECKCKt2gJPj1yNeZCAK2tf-UGXZdQPnHDNJ687q77X_uyoPLTCL4RFXmoHh3lmTwGT8KmaoCPD2WpsqvYDB0acNb5NDCYUwAvkE15ooaFU5RW0TPIQmORszNaQBBXkTJnc51aXjG3m66VYJOv6NxHlhUj2Q7jwtMvOHw3Guw7bQ-g4b8IH4_JE0puT7O6ijlwy2WghsNMhejucUyIi9AFr0i33VbjC7ztmIqCWc-BdJ-u57c2tolEtwvHUDQb7V-KM4ORsQrueasqdgWc1ip2Pz2obhyft9FT229piuuNwyieZgBxSuEnl-jiWfhMKQU_cFZi_R74H7DWV62_i9_n--0yE9Bt-t3zYjoSSATWsgNX_0cPopgpI4WrG4F21RzjV-zKF37QWHmcpd8W7rzpceP8_4eaNxh3PtemgvY9Bjk9rGhp5fraXTubTtxvz-Evnky829Ik9t8GGyZSH_5B402UNwLWMEOJToJsP9zrIQNOMQ[39m
+[34m2019-08-30 13:26:21.135[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:26:21.142[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM5MTgxLCJleHAiOjE1NjcyMjU1ODEsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.w8V2eKe3MFSR9W4bjx5sKY-as0TkGhErRp4mk-MlnD9aabiyyEs743_ffa777YRAR34T0hMrziGsBiUqb56Xs2tIzqeZNVZtqJCg4fLGwskw9xra6DwZSsJDfwdNrYCyvAjOocBTlihWsBmlxLkAQs75UwKWMDHjuukKzQHaOqvKIxx7WR2qUmhNvT6ROvKY17cQZPyDjUiQkOODVFo9k5HyiARhenNJ9V5c98lD5hCtFCPRsC7W4SFLLRL1oaLN-I8HLURlEIao8Mlv052YZcsRq6IDxmCDiGXncnw_AlLnTf35L3B2_PO3TJa3mCBTVXjbPmb-d9Io_lrHT0sRCeKxSRUb5GADQhiFifamuDhWr03dQbRMeLmDAWl0xtG2SZLT9yXKmHO9tXSYQSz-V35oi5QCt5nh9Rp3ZkXUyVBj-QqKTd4-h95HWJPxCjYjPguifIT6-3sSzMfaVUX9bDyBGwjIFl6bvtUq6oWBqFnnQYmLXCIPLEvihSjqjQR3pByHn547scbNVThYM0_Wp8jrNQ5w4nCQZrEAHYUxzPFU0FirkzQnOQ3refad7YDg_uNUFIc_rOT6BLPIL9g_WG17vn6EEKchbOkWkG07XOYoeCtUFBvnS_2Fpy5kJyqR5L5XDKSXAfBZFH27ChFpdieOpHNrJvL8lfJNRX7eXK8[39m
+[34m2019-08-30 13:26:28.372[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:26:28.379[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxMzkxODgsImV4cCI6MTU2NzEzOTI0OCwiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.ciVnZGHNh-yZOozDPuoKCGqoTyV-eaIV7q5-Gma3kapZPVw_gUeEFtRfoWX9yKr-xTX81M4krAqn6i45zQVaTcyoVTs1FhAi0_msq1g5JD5DN5HT5Qdj27vs3NoP4j69fHFIruSduzvDPqtkwlQpfggCQBvvFW-iBN5Uxj7EEq23mRY-z1NNZSopqUHkVRO-wsLWnuxHQY78cjGF3iM61I0VTZ6FoQMhqBfPIJ_J_8phFJuT5UB0-Kfsx4_CTo1wDqi0DUGFjlPkLPx4LwLYfcql5hfSmV232N4qSupsyM98hvKcIq1qRyjDWnTDzhQcrwvjGUA8HFlgNbengAPW6G0XA8zFGdo4GJgGToefG9hYZwvsPZ4-JPDGAppGcuJ_RtCardXvJY-Usmgk4w19l5f-yOqYlPEMV54tBFPMG4VR7DjHgbvQBfg5o7ytNPUhiJpISAHXPDQStZtITI_lJu-wiStalXYqBQ_nwrmr4uAtN6m5zsnyEp-cyanKmCFgxCO6hKLtF-UecBVVzqboszR2u24PBnVLjyuL4DvzTQwNXH2_ttEgHdZ-aoYtHy3YBbhZ1DGcd15qyUvsIeO4v7Tl97nUxIyrVMkpDNSNPXZQszrmsoP93Ll1S425feCbYEwiUmkcKPYax8kUxMf43RpABOd0urQeA93fEO5LsvI[39m
+[34m2019-08-30 13:26:28.380[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:26:28.388[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxMzkxODgsImV4cCI6MTU2NzEzOTI0OCwiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.iqTaEROXTgBqtkXnOyDEf04JrYIu4VwqqrkrSuNkBvtajIK7BXxM2Z03kCPBN9ZndxUJ_yTgGbGpY4LSOTos_qW0tWOqzv4Z3FVMgM3QHWVHVfwmUvCJUPS4BHmMVk8Hg_Jty47WRG9mUWTlGUdeQN0W4ZUKAhu3zln_bjlv3aYGm0gWhDdpZyoxe93DC4f9MdiO8lK0298q6bEKE3v7mJio3Ov7nj0gFLNKrlEJXeBoc-nvl6zU-lD6g3nuSajA12ygt-0kJ5he2S1sUANBD5r85oNiKkNHCSB2c6Nvdht_6QGV2lFx-QVclsKb6FlI5IH2Q5Yy-Dtky8FuXVz3fc0E2qujaRDy0isHudMk9zSVroC7mySmT37F4Ke2vA0vJ4oFnL6rRBcVDBsKTls6OAuyBhp5COlrBFKEYqoE5Ys9a9NeAj3fUWFBdH2v5wr_RvA977ng1P3Gj8D_slB4JEAFMTrt6h2mX8blFwLxTs0_3NaomcVZT72_TxL8hCJtX8Cd5UEKCC7g3yWxODUb3ZMCOM1vYH05WNeZiEqvwnRweUA5oimJGrNlEris9732VNPw7-tOghX4fnI3oVBcxhxzNxD3S-7_R9MhzslirYd9u0vzFTMFoBw-fwJvcGHeJC9BLu-ELoBvQ1rnJ1BP0DVnXcHrPwWKGkvZZ0ziBIA[39m
+[34m2019-08-30 13:26:28.389[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:26:28.397[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM5MTg4LCJleHAiOjE1NjcyMjU1ODgsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.SEXQ_A09QWSwRyXhN5cNv8mf96TggQi7KNrq-CFnC66CBE90BPQzM9YmmwRDGNp6yOQ-NWiQ08vU6YnZjmT5GDnJ4rNo0I0lmFki2v4G_Q6qaG3J7jtuTB5-07tLVgrcThVi4WYzz_f-2MjOTdR7EO3AS2AWZAT-yHWYC0bqkRuzehBmZQN6vI9W04sqZRcu63tk_8gtZJWsn-56xxHtZwsR1HycnSLISpOJ8PrxC_lR6HCCAU2igofFqDb1lJ7EBT9CrklQKpNa-0DhJ4QofX7DI-kEHQ5yIfrEP9UbX_-8ZRD_10EBjPyC82qFCUoF7aIl9XH-4R9O54LFSMQZ1Yp-cNAkqvf1vZOH641GURn491qzzF-xYOoe9onXX4wyeSme12iJTA1XTSmJUSjHVg_Xdgi6s_dmhjgg3vhAsZbPISscLsil1xTL4TnCkPVOM4gtLsitRSXsmCwq4oWPakh3U9RIFOyJ5jvYMz8swCuwi8qnIwFmhi9Awt7xViLwc-v1bmCx97kxEddEbfqMlOtTYIOAe2TyTaK68DkGaLoL9-iUu5DH6QMMns5AFnF57H55efHNxzFywQnu4bSV-z7qehE87T_E0Z_oqumEjnP9uwYdExA-ARPzP6zWjnsTAtn9tpCw2mbGFjIBdTGp8Ok77XYn5vQhV5qoN3EUYC8[39m
+[34m2019-08-30 13:28:59.011[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m jwt.verify (C:\Workspace\MyEnv\NodeJs\link_jwt\jwtAuthentication.js:37:36)[39m - [31mJWT expired![39m
+[34m2019-08-30 13:29:03.092[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:29:03.099[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxMzkzNDMsImV4cCI6MTU2NzEzOTQwMywiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.ouSTeO98CD40qZL4HvXDK4Vgg7YmWjw6nx2oscGylYqRnhgNN8BRb82_SsXcj_VAq1iJKeRJjjb_98abxB6D6wvJpUN4AxMlVuJMzZZ4Y0_990oQRHuIQ7WzRWO54iQmy0OqtutZ0SEVZfpB_OBsAHJxoixuI7PdTm2MERfMNRsgpWzKubEF72KfRR1tB5Rp56LohV9vUipzvQHLyTWMmPH-jZGfx_tTwX-YGmIxKlE8MWyYllpGGqBqSG0fa4PXVhGw8nZt-aFzfAjnLt5JbBJqLUBm1bbF4DNcaY_OeJa9-_JeQcOj6O1tFVaEyyJEMb3YzUCE0J3sKiSWEihQmxayHJYZVG5Tn4ssJJhlesGys8T3pFuZv97Xveu6TybTkdPDCakOpP_ZmQkTlo-HkCNfkyJj5gkOSCe5IU6V4E_D4sU_Mp3lP-6gsxntXoBavnN3sajl1aVl7eLCZdwXtYGA16uQGXPnvAqOKc-QQbBcZ-B2ZIrwQ9Sr6jNhg6k8LjcygzyZp9taZ4mE91Cf1I995Ww3Z22iAa4HcRyCRgXz85g3pF4cpTR17os7PLQ2yq8z25FKbz-lKVAdQJuBLI60FTx64HA6y9ie3pCA1ehY9SV0y3m4FW8XbMbzyY1oaWOrDCv0i11iMPxAJ8XK3wcVJ4RLJq6thUnbCNDkjEw[39m
+[34m2019-08-30 13:29:03.100[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:29:03.108[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxMzkzNDMsImV4cCI6MTU2NzEzOTQwMywiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.c-r-2ljKvIpnBM37ZU2I3X6UCClv9VA1s68eXfM73GrG490IotNyIu9tr71wjht2Aym6ExV6bJtzYWxW4FdeQot1lBbV9x2d--dm8xkoXQb2qmSMgkHejO8d1FLMjw3UUGaJEuZK5gC3AFTYZjxDPnasGYSTVK8v-yqd_Gb0AVAR-OVn3tS44vN9LxFE7Sy1NrSRZUcQVUNoM7SFw-Qq0gRx3ANSXLzo2hwy8DgQJKo0GbO7MRB4o87cYH41OnKrD-lwHaUVz5cGwqmYgY8yx49ze6AxlEt7BX55E3AGXAL5DA27y-zfQdf2wTc1faaUjBdwc_AEc3pXKVUS9nxR8-sPbGOveLtDiSDdogY-meczCYp6PedrvFjCpGVDjaUSYwIx_o53FxS6EFnaremKl5yy9oAgh3mMzWsoZiMB-qPHfXXML0WnotKUFpenAxu8VI7vNtvPeBswR-bhfd-HzqB0o8I0iKKRGf-02LAEfyoxRJ9LPaKlojX5dw8fXkb2bOq_vFu5W13zNYfyh5h1hWsCUiKXPquFjnkQkT5tSlDAvSjxMDsZeyxKBw4c_2g_95bx9YhYyAazQDYppTSESDrlyha3fRIrX5PUY1dwhjBNqLdDrGED9Yt43lTJ4qN7jOFWdesO7dVv6rH0oGG2KMGljAKwHQvf-x7h8geM2UE[39m
+[34m2019-08-30 13:29:03.110[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:29:03.118[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM5MzQzLCJleHAiOjE1NjcyMjU3NDMsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.rnloUgxnyabWVuM8SbDyLLX6hZ97oyB9dP8Ti_teNyI2nY7jJ6QQqFUrQlqciQjWZB4tW-lRQSnH0dzabCINGvTo2V0HxR2cj1pyvVCm8SsPGqyOEyumDoYx0E19Pmy5I-_9JYqnkzXhcNC8ezDpzGsVlI5h3qQxw2uEfj_jhOOPw4DTMHJ_cZq888z6FcL8rKLU-3jhvGKB5FxjWOdL54Jv5qbNK15db8flMrzY05TpQcldJPM1ByrkG2Oym9YepuYesSGa5Bl5QPByCTuzQk0ffjbqvIG1mDCoAFsSPg6yGeP4gF0YYdRe8eaj8jH0cjBrmbKiYSGxTviwDQQz8s3Y98iDB-mhtdHeHCCEVwf09ifk3TtGEQIVk5dl3lKIiTkqb9XB4Id9wzFeISlMwVIc8SIn3PTh1iCyywwcYADjC21KeeIM-WJVNz6e3AM72tyOZNka2R2Nhj8AxKeIjF4hQFfy_KSlc4VJZlvHE2QOJv2lrHFn2stYhVmmh3YiQrUK-qkiXtfqQzKZ6AzOiac5MaGc9rkZwqGv9FjkS3Nw3TZHKHwLCpi1nIazVhF1eFqhxGjCcER-0ru3huPYTXefzz1hLQ9yUUuYieTnqy8M3Yyl-zH_yr_7_P-ohT0r8nZ7e7cX1h05QKvQMRcDa3wOtPhkEXZv6wOG6iC3ECg[39m
+[34m2019-08-30 13:29:35.201[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:29:35.208[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxMzkzNzUsImV4cCI6MTU2NzEzOTQzNSwiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.MlPKVQfe80Za-u9OrFb09iFpSmpnGDP0v3-Lc4PRGyc7Oqxby5OgcWRMnucy-cof5Ku3Kt2XvR5WzrJSCem88ZRPe-fftt_kAYHq9oHIiEa3uM0WehW7J82nAE7yHd_ZfKmNvLElWfcshlv0VA99iFafAEoRbp9nEM4JZmtJ_2-FfV1sZKb79-fkmIYV4M8AJwGxJxt-pzbQPAHsGigKMvYzzoKGdq7bu1wzLZ24idkEfxOx9ebk00Q8Nexn3sr12RFXMmJNSAGx6g8t4oEGBwZ1t82pJU4t5UJLbWNuR-gLyZg1gyKAJuEMRMphAg64qy2tRR7zga0tlcmnwWYVR2XpCfiTYr2t2KASDyRwQ3Scnsi8CD7tRMNVdEQhrQC5wyxG0SYBLNDV9ARid0hDLWnZmDXPPBcZJy4oRS3i8brfAaTyJ-5V_uLIzfltR1OHRGnePMXOMsSkK6oONwvYlWOkJsEe0lMrAHGQd-aFiZjonBzeoMRLvZKAPgTuilJ5cap-CvKSVnVukKTZSIgljXSN24UW4wwwuZZweVpurG_qr1mW91mmoZsalLiF9ZZ64gaPAnsxp5Dl7PPk1XgxNkNI3czcb9S0mWfptS8iS7t3u-uVy3O6KBS16X-Jg1cSuEm9MJCtuci4mXr5avWN-Xwh-fqJJ6gWe1KY_iLqUTg[39m
+[34m2019-08-30 13:29:35.209[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:29:35.215[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxMzkzNzUsImV4cCI6MTU2NzEzOTQzNSwiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.IiYmPk15794LjuilGArNhf71R5OfRhrX5Qh1sKn05Okl-iGtYdoP2QNtp9I5dqafdMeHyYtBpj6qWn6nj1spU-HMsbfwkD4UMjTvHIGWv7f6lP5fz2nH6F0-c5rZZD6emT7ZAOINI3DsmY17xBIYSUzXnJBJb-0AoslOrKlooXr5pxS-E-f9IiQVQcxv8rJUVOsyuGdrgfhwwauMgoskpZWgXCihXeZUcbwQpi0ygzzfWPqxWSELJfL6l2HsRcsP0w8ISaCFxLMiLQabgWwU9GY05nSayWEXKteJXdUdCEup0ztA0r3-Iq9SasPMkkS9x5DhLGdx9Bg83VnVjfJn_HSYzmT2w7uM7ODEc8e5MHjCZPtFKvQMqTSeO3hx2Ojes7-4Y5loeNkTQ8DEYMsE6ytynfi933A-iY-gwz6xoN7b6oMCQ0lV6XSOB23wfaoGTMxRJY204CE6geeaflFwl_vxk9GNXbc9VGXO0u7UXy_6IsrSBhk2R6Jm6ZXPhh3-9g1GQf9MzERVaxkSCYsZjY5yjgiOivVz4o5TQJyPdF39Lj1joiXmCrd47JULZJK6O105MgYivwXVpET-KGT9FV1_Lzx9Gic0i-7fGh9FylQbZsLeT5Mgy-lcM81k8733BGa-O0Vu-tDeExKT_jt8L_0yYmV1dLG4H4FqcTxz6HE[39m
+[34m2019-08-30 13:29:35.216[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:29:35.225[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM5Mzc1LCJleHAiOjE1NjcyMjU3NzUsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.wEIbS9ob_FrPr4QKverKAcEsCxeyUh5Hr1GUs1lfsn33CTqdgxIQLIirbz08nUHMD3h9u9pONHaSQBOwq7B0za1Ju21xPzKZTLmgbOBRVkaxYIIEzl3D7tEpjKTSn1_9wNYEBlQVQfhm9kLmV3J7gmM6-1HMbgK5nJFU7bmV6nc8Tye9TqPR8eHuZw3Iof1u3juVvrqMHDzBozjc5CkRg5Srge27kz2hagOm2eepxe57ZAU6al8dfMnU0cBWiiXhIKwJi6Ozs3GiMNq8no4aUXgtuzyp6UBrPE3AMweQBQESSwiCCeBCahWXoqrdp3Aiwde4GzLaNWpVMjcOxUjL-YfrxUqtZQqvN8CCXbqB-cRHULy0TmI0-GU3Cw0oUVZBatgri6j25YNBlsLRL91PUI9ElUMs6qP_qoAukFUgw2XTd8k4UD8POIVM6t_iaU_MAWIUYUYhRTUjL2fOPss_8R4sFy8Wm_MDsJNhKjPQFoDgce3muEDqnJQ70J3EJoSL1C0OJUncD28r9s20RETl-N7IAP2VqRupk8doJkwrcWz1aXHfrAnVvd3YFabN0yphlB3T4q0F5ScUzeYu25ngIJCMFLObV-xe7AVCZabpiWBhzAPO8fSH275VMcOtvcOB6hSFjYIYvDzKMEWCIeMopTZghEQYT1lIMPP5gYuIe0U[39m
+[34m2019-08-30 13:30:13.943[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:30:13.950[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxMzk0MTMsImV4cCI6MTU2NzEzOTQ3MywiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.Q9ekZpMMuq57VULAJBv-zakkaS6pxu9t-aSq6jagCQn3m5p0ddI5p_QyJCyVo0oOR0hz1ZT3P23N4KZJ5XV7E5TzijsGfRcjB6SZllpQwmVT-RiQagfxDmIS3lmLx5VXPR8gWBSrtrZZurJsspTPqMp3OA6Nf8buh0esWuNS0p15X7MAoqdCPL6FSrXrF7n-zCHjtwn9Lxn2NaDuKonn-rugKoSiwrdj6L1ZkG30gk6K_Cv53WlLvTMhbh7AGTMGTRz502yery2o_CmIyeY4vVQvZyqE5k3RBcopABCY9P7qDHCEW3XjFSEeb4f2F_xFgrXpEmxBZHt_v0Fuf1TTnl2TyQXUU3fdNIX6lvLSGKUSXJEBOPXXyQb6QDo79RnDh1bFBPqBWN2KA9KneQX6iukka5mkK4-d6S2VpSPcfW16xKG0cNL1Wob3XtyiDV-UMa64-RQ2Fj2M1WBHnWSbnAts1hdh5dijIdbrzOzlRV6zCw_6SK4I1rg-hPSwSyGEqt_wUw00ZmYTY1vLJ6BsBBfqkNGeSb10inWl_hHPO2SG1VZJIs4fF4PJ8eWDG7Y6fZrNgeo-46n-Bj79SDbyrs0PvxblArZMyUtEu5_gBX8psniKuKWRgFPCYqpWMjue0V6D47Pbu6cB-5kUEXEsA_767GhKq4ztJ3riFgvk8ss[39m
+[34m2019-08-30 13:30:13.951[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:30:13.957[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxMzk0MTMsImV4cCI6MTU2NzEzOTQ3MywiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.FSBlEtTn15mcy6YkGm4DwX6D-JXk77ZUHZBs7NpuC9Y3olT4jwZcweACYuMrONq3wxTn9xcK5DVKNff4UBAQjvq9PDe7E8u-9VWejWC4eyYk9_ye3Itkjm2UmwDOzlWjquPunCF_5QI_35LJbAwSJq9ncnwO21yxbKVza9RhPcoti2ro-ujYw_3F1exzvMeY0eXcFFq1-FOVmklXMAJoLtsU9Esj5mGm07hmvL-iwlgzZZD0I09k0k-ejp9flFwtAXvEgD05CmaTJxGTJam6w4y2HQUbAkb_DK0Xupy_dYtzut_XH8idm5mlqm_lAufqp0kxrWXWIIn1ePmbCU3UnK0zF7m2xyC7lt9uTjVrJvkXBRVWZht_tLbrqIyoTrsYzZvXC3gDcic7HOUv7JHxL6KNPvyFaz7RHbXQpKSKt1vct632QawPRw9Pi0A0di3fEMJGjHdvGSRN18hooIDfgF0UXfp7bbKuXSjVRyCzqjGwnP4aZUNbOmY4jT8A4m9HHGW0TcRXpInFRsOn9dEXFXF2ZW9WJFUtHNYNxSPJYLft_SobP4jt6u5cAmxAJPLWiDiRQORzrCwdEWqQsG1WYh5hl7hhzCm5Y25TIgDUMGK4TaxAqwKLV_D9j8xVC-fujJW9Z2tIhHSEm7LSMIjFfvTDOn4_o_bCr9zh5oZe7IY[39m
+[34m2019-08-30 13:30:13.958[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:30:13.965[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM5NDEzLCJleHAiOjE1NjcyMjU4MTMsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.PCTaIik4Kq96EgZsuT8nau3R6vYYOSzMNzwJqXBab7dxdEg5kXx3jPIypNPfpUMxW7PiPpx01CL6oWjlcOy_wxRVJNUKH7dlYOEFe4vGRatwre0d0WWNoiYQCJAf2IblTRQBwOs7vKsUDxaNU-zhHAlYXJNDR-3ASltdb1NtC2fzo4xhxHAYYanE3QCIE4DfMfp317kYrtl8VWPcVteEIvgGb0SAKTrsgtvSEBelLYfk64tpOFI647JqFd_NXK8HnNm5M32Q6UxkN4e9HSlu9-tArXH-dTdIwJx4wbK6P0dBLGU_yb9LbA2qSCfxswtbrv-c7FR1Hkzt9ADwSalN8I2zhE2kCyQ--6sr-BiBPxBWqIYd8zHDuy9gltG-3zVTwufQQQVcrAvx3YMFHCqxHXZWz6AJ5PeczeIeJ-mwPlHcZ1_Pd7ymlN25Kh9aDJLDHNbdk7pRqjEjt16fMBRpGPhcg8aX9ATc4Nr3odifOPf8DgZRGOYtzQVqJ0rzQetnrRxfFRPnnwuWnW8M6oyAS-aQY4Qjt6PhKkgnuXCbz1K7F6lz_5vcW_hy85tqMIUYewXyWzc_3X3qfA7GNlrDHz4fx5g3CTi4stf-tY-O2P0LJgiYP1fp5dQNygR0MwMVJrl5OM_vZDXQ8Pxy0AEP2BghC2NqdQmSrAQw8Rb_C-U[39m
+[34m2019-08-30 13:31:07.492[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:31:07.500[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxMzk0NjcsImV4cCI6MTU2NzEzOTUyNywiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.vGS28o4bz4ZagI8IlhXeyVtl3g-nmHe_ZUYI8g-wBRz7ETQR2YIBn5i-w6lJmFlLBC6WkzEzm58X-vQ1tc2r5X7NF5MnacpKG9oedD-5h1xzZn5SMqhnvSUSVM8ODH14YpaFJlgJIGXpUIM0g6YiWHEP5Rvnv9wbYx78FRBgItL02GPC_OyNAjbvwiN4nnSKDVRBdYVGNBWrQsJB9hduojqpNHEru8CTz0iH5nr0LcwKpwY8AUHGMuYiyKOazS-n4PCs1KS6ESBIJG2EhpCjdq6iw1KuJm_3x_U8XOA9OUAtEXG2dbi-afGwkSM6Sgm6sq3pzS0GjEzeOQ9Jfq1rB55zIDIE4uzNfXxZYWSagh5TTi04m45ceLJbWnx5ZxXXZ_eEBE3Es6xVqQrUvPY7-T3d8uIuggRY3-kO1HhrfXkWk486GztZIKyqPd1snGgzOVYW-S1yA7gKL5hja8of3RDcOk3DDeTocFRxokiAgNXxCZDcAAWxxzuQcEWLgxI0FmMVNSz7RwbSOVbvJh8_mr0NMWNfg7VVs8LL3wZ7xCuAmQAS-Rcj4-KsfxmrpORIuIs3xuHT7xjT5Co7f57c93PHIxBv8ohSkiTD0AW2sVrxQ8zilg6R_kSJJGUICSEvvDQef-tM9BBKuGZrYCQV3Dm4yiDEQyxor0UQANHDtCc[39m
+[34m2019-08-30 13:31:07.501[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:31:07.507[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxMzk0NjcsImV4cCI6MTU2NzEzOTUyNywiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.W9czl2rc-PQNxD5zJMWJUxJUJ799a18yCYJpzs3wfrTyP8C9klM_4K12KLZVS9TY0G7x1Yg6wvbT7cgpW3rukZlTOOwC9OL4sxwWAB4r9LNlW6YycQSZkxgu8J6XVBNv3KQRjBuNW34K-0S4YF4bfUec8TYmS-w1tgNac6uBDQ5_JNih3QfD0vGUMpZNXfpG4qck_Ozrmcpr6yFUIjDV3W7RHstG0jF6PbfpF_4jNmUHi-2E8heHaNmAkXtW1mWud4RW5UmjNUi3DS20voTsPCizqRJltEohTVxVN6d9V-HpncwvMLS4sXE1Y1c2HXAZImYjsFhUWO5o4NJUx2-oRhMLf97rc5-fWoNO5EzLZi9g6y28AH4X-K-3TGSxZkGPTNJ95suu4vYWE2PQPcuOy2y9RxpOrGzcbMKzNMB5n5H5a3V1AX-t_lSf9GhH5bnsJgDNyA3i2NU7Hwq1tmWNDLPGLhvWRP3ahQzqE-yanvX2EXoo9faOK_zP6375IvyRuO3Xpitp-hpbXrFzUc5nHIMXYfeEwJjL1Qme9q6H1A83Gqsxihs9VW1WXnnUsGK8t3wiEaDJ7CKcq8wFKjpcmwDh8jdpfxVOgO47BtugTqEGBSIEqfPh53KY3angwj1lszoDuPlwjSktqTKRkdYBGpAhlf-ARpY-H2Jm5oQ4J6s[39m
+[34m2019-08-30 13:31:07.508[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:31:07.520[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM5NDY3LCJleHAiOjE1NjcyMjU4NjcsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.EG24h2KoBD2J1wcY9gBeOaIeu-VkcpzTW993EdVpPqP54uu7pz9Rs5osLy_30pjsDeH2xFyfSMTvaNtu6_ye8vgXsOHyhmAA_wgvYHO_YbJTCFGwn7WCxKvm3cvyDifBZFjWR_9HgV_HU4HHm8KnXbQDoOQ_-42hHFGdUbQIjdaaTOkt9vdDSlXyJmMomlbR_L8e9XbWiqb1xJvfVKPZ2ffxmA4CddwyH1nDT-eaMlburDZiwE-wfXtU0vw6AUW1gX4lpTEaDQgcV96gN53ELlEgqqkExRh7Bvj9WUyeO3BKqC3x5D9zZunMYgEuzGRxO0hkpmobk26Sce_LNHTd5n0KoJhSTYrxBS3Q3Gg3sl8SsvXHuLJWSXgxYjTybVUpQ3ugMHHvVVUZpE6f-X5QVRAJcIKpjewWB3tfUKCc-or1W918S8V4BLGuJUHxJBKEUXihV588n0-ZSjfUCgW7zjJP77-87kiSZTwqunmoWiPbhVgl_G22jICCM6iAsYpFpep8Dl_pkzWIBxT2oeOorVjftxMLdN_ICZPUVGz5dpPRNaxvD5HsbT5S31PIG5CWhaa3OO4Sf-CtPjwzijS9fW_N5CRb20vF7zkmdFKw9FnTqkl-iqaIy0HUHuP6Sr5_qG0kZ8NVP4wsprVGxTaMXvzYrNzAyBIC2KUdxkWbvNo[39m
+[34m2019-08-30 13:32:06.648[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:32:06.655[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxMzk1MjYsImV4cCI6MTU2NzEzOTU4NiwiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.GwXrcHlhcgOsunYW5eXzzULpIv2HUUaJAb5erNxbWQzUgKBHci5OREMzJuAUxh8M8k-RApkM32Aw96npXslCF9-zvz8AYwzAqoiAvbAVk4kuH8BZA5gOX-Vc0X5zmpCQSkWCx_jM406f0KPnKFhqdmoZm-lICX56Rwe0AjTdIBZ-DOfyncAmwJySlrxfuZWlvoZlofJECMLzK2x8GkqZfTTAPmIgi4BQAWVXwlAxAemDaxRxce72oqwY36igZGNhYru5n01kQR1PeURqAEl0AKrrJaZyB2uZLx5hpBDhcDolJRcT-lblvrmsxdKaYVm_HP_rcmGxfeGnilmy8l3lMl0S4kv7yyMkdxCFTN1DeaqKl_JXp-3XHBxtUIUQoSGvqAO1rBWWNlb2OlyhCAzxDfvGyxe-3CkxMeAIV79cMcE5ACk5vuRoh2HISvQFejBzYCnR8wvhvEKflJ52bTvk6y890k4CwicPQ504veDJLw4exLJPnlJ1NfRc3qpGsn6Ayv9IH5YNxwlDhgmTQ8-hmerfKITtDRLWR_NoQDpsEoI1YtEWEMwoRmlINLcJ5G0MRh2KqanCnSVvYhDUzaALFvcimWQIyvaSiI2LcB6HvCkBJ3w6KfGjf_7AdKNDDjVubdzuodKbp7DEkuOHjkmcBY5Yb6mUWnsENuRybQtLajc[39m
+[34m2019-08-30 13:32:06.656[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:32:06.663[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxMzk1MjYsImV4cCI6MTU2NzEzOTU4NiwiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.dDXq48upAjGVkRcorW8kpuw5H7GPwTvc1lCFeHHw0Cn3sQ8gviuAJpEkur7bmodyhYB4VuPo_u3lcX7H0V4A9jkeoWuPZE96FqfrchECOnFT8ZvfH00mdkHWx-0YAIurhugac_4CowDg6US7z9TsK_J-cimKNMKIQ6UMGDPJoz3_FU5b8GnuF1peTaYcwuvWsqLM7cVbUaCq2dq8yuVglXCtXu1O_ABtjKvxqdu7RbhaNcwLeJUpYAZjjq0wE8FGucIzRt9zZmaNu6FPjaJG-uXOc3F5BqSWw1PDSsseDPxhV5RVKmpdfe3j-L3ZZO2XklhbVZamM4E6UCQfcu5ZcECjzJQUIt0R_hWODiS0woc_JTv0Z64r-i2d_l3IXRPgTHbKf-5u-xdTTR38m9_zqSB8p7yhhZ25URF4kroqySaTr9attxTEcd06aM0UsQaVJ2ULUW1vSFac3XheARJsYDNvi9dL982B25HQFFDq5vQwyiQmbDfzHZST1onWUc1Gb0DEm8ii2HZpHXY2rBPz1s9hgQxoxKtIwd4QNTcBePjEj-6Y_7Ot4X_o19Fa639h-g8UU2aqVfKtWGCMK7I4u2hWQWiboQ7Hzs0a0qZcixZzTkCWJZmkTehiuj-mf0CAfxnAboGrLB03Qyrtb7PB_BzFrlTUKPDde0SEq6SPruA[39m
+[34m2019-08-30 13:32:06.664[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:32:06.671[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM5NTI2LCJleHAiOjE1NjcyMjU5MjYsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.fwZhZfONiteBX2E31EfysP-lT0yFFdZN7lAfnLnmfLZxo-k4d44xiYJ1hEIyys7Jdo_UUdEl1Mk_A_GDFhXhNZ_cuhBm9Nvbs9-ZzSlVhy_7hsIaG8FICWf3lmte9CvrMcPI4leKOLmudcdVeQfhj2kZhxb4SBWzwsainjlwWgSgl5CeCHA3ihDDpZOrAuoDyd-TezZgQ3E7-7UUAUhaKAft_6TTgC3kcYM1ozhaXtDOVSen2NMGC24EVmDOqb2kBZ6G186Z4JyKVodMZgoUkg64iQVGruQssDwU276zd8IMyz2Hq6vupXwRV5y3-c6TZj2yfoMEiX6longwqFSf7IL4r_e1-Rag4VHex8s8qDNFJtiRLcyPUSg6-M6rqvwHfYY8ymdDiRuJXfnKVFbGg5e94a99KcQoHd98NbJv4m-7vrVqjZD4DStIyPdo-nChOGcKrif1_b40uYy-oXQZSwxua9Z7fm8lltfxh0-iUW4V_pTt78z85AMyi_bxK4GrRM88kqh5jHNYDL07kf1oBy1CZACgqpKXWpGPdvBzMYHLujzPUZ0vS0EqwKeWLj3kzz2dthwrbE9NvrBPFI0Hw7b2eJI73o0PcCEhPZYSqfLfsBELHshhLPpF8IDc_tSiI2ZC8P0zsnJbSqjz0P8kDBFyJHCzCGXHIqWqCsyNqzA[39m
+[34m2019-08-30 13:32:25.386[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: await is only valid in async function
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:11
+            await mysqlConnection.query(sql, args, (err, result) => {
+            ^^^^^
+
+SyntaxError: await is only valid in async function
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:33:27.224[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:33:27.231[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxMzk2MDcsImV4cCI6MTU2NzEzOTY2NywiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.mauPsSex8acPqGkXlMzPjmv7fActaL9M30JM6La2Uyz_CsgtJiJTZSkoKGzaqtBqesd31RsuVKQfGZStduKTdkIXRi1EmNRu6N9GiKfDV0NYZCrzFfU5h7xsu6teLDgJ9N-R9CbZN4-e0hp8EsTvuVUS27D97DovSooRD2HQgU7YfvWC1lv-d133E-dKpEE7pxY8trR_9bLmg3NK--bccNtQC_sfcEEEC1cKid-idQUNPtFc4TIJkQKEWfDxeEvWadNmPs7lF3FbHWyvK2hgkf1_-e1CvhsI2OEkuFxzAVaKfHdIqTRo1Nv79DXCgRKCd8EfL5hTInhbg5-SScog5vdv4PgEy-qNd_ZOS-8kxliNd6sb20iTldOzcezm_k1ZfKNwwFDMswkr4HvrMvpAtXeLZOWGf3KdBcIBsSpF1U5SV2S_mMvYfk-25zu9n2QePLXozRAueuAM8WMibu0ZW4fTU5rqM2AZ0b1YOMql0VCmj-8ZT4F50Ij2v0aR_aHZbNTl5ke828xFEQV-HBzGxSRYcfi3F3h20zVXcAkbUMZwf2U0fwR99cmDsbvs73tzWJRxmfXdohjFhwnXJq51LIkbI0QCMbhKLzgdxMZvM8Fg4qR4PDrvtlvCCDOMOJddefi-tN-FjfYUylCopo-AbBi_MLbgyoTFFkbsevIS1jM[39m
+[34m2019-08-30 13:33:27.232[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:33:27.239[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxMzk2MDcsImV4cCI6MTU2NzEzOTY2NywiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.zjg2b7lkhHd9FwdzLBEqO-FIshHMFty3JvWXYAwPs61EMzm9P7EHeEPbYUdz1wDZ7zRc72ELKD8RREQTWd_KL5q-bxn1cfBV3yX0hklghnJyXwv2m1Hr0Y5tKqsZu4V3vMlVrZhMLNfZH76OZnVF1Um7RWF40107dGYT1x5oKcXImnrxv0Fj_3bfUpig25iX1q3VSWHK9QIV_L0fNq2sT_py03LvGVhzrX0MlIYZL3hseMaJiaW_4gcSK7b8Mb8drHvgdnJ0MCdWD2Wt8VrHZ0DTO7eB0A_Ka-SDAWw-e04nVb-yv_kPa4SxUlE25_EV-FRv-m8lrOVs-gD7uSxp51weOUyHej1mkeC07HMRjJrBGLTpTRHoTpMbGiYBPaOogQYxuwT6ljEH1k2zbQ-cBefRxfFbm0MEuh5vwV_NG3ho9nCRY2OSIFBd2JwrolYsq_JA_Mwk1x53H34QYPqYA_Zhlt1ujgXU0pcwIYzPDBADFWHCFUkTzBTY1riO74921Fm4MXeF9YBrPbISdoeB3j1jC4yFJZ7zP5XB5KRAGT_SexVBmR43NCT-n2BNS7c3nHvagsYHf0zGvGjaYxUf6TdbciBOle3nBDZ1FPQyWpJNHb_5843mCag9f_3mPw_h4v0jcNdUVGjT-tFu-yL5oXsWpS9rUMxbr9jWbMU-s1o[39m
+[34m2019-08-30 13:33:27.240[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:33:27.248[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM5NjA3LCJleHAiOjE1NjcyMjYwMDcsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.stqC9pdoT7EVJMnpjnFx2uct_AO623PfhHuy_DbEG9eVO0qaCmUVQ5LgC29NYiGgDIEOzkxZPtVnvBWL--A_6tYqF-eRfgf_4E_AdvsIHw0hizE1q8gqwoaRTnOE-nd7jnVvd7YDofg5DUbojWSbQxC6OWLOKICac8AhWjjDciw_T-7YjrrwNyCWl07Ij9t0YU2-9Ay2s9w7IRDy8a4z5xs7Wld1CaPCt98nhEEQdXQCHw_pW3T8REaMXpqWiGF9BQ0s1kKBUmtX0LWab7J0KyfzlsMVcXWkv76ETx9eSUK5hhtHAg9n04FxCojEE1XABPDD1OAfQxP8j78e5Sq9gSYNaARCOeuSyDB3HerD12hvpU77ukv5nUHZ7V12qoCTDdPPPRnSGVIkg0K29XrepFcegGxhv4gKjL0olYJdHxj21GcMri_B82XLXQeCIB87gZ4iMhlDeV7FJA7ceumHeTaqox3358h24nP3FWe_rtX5JVjPAlCPOT8xH4ifN8cImNCP3Eki5Hc1V8tzDGwMg-Typ9iWgilV3JLujYXl_28TXJxBjU5FOKgm-Qi0plI-SggLX0BBa5AsJTKuRti-URl9e-1wZjvASaz2dE_u1Y_HU2UWBWOHYaXQx99H490Z8nI2ZkLvjBjt80qzDT2g1U56oRNvAmCO3SMU4SuPGdA[39m
+[34m2019-08-30 13:34:28.587[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m jwt.verify (C:\Workspace\MyEnv\NodeJs\link_jwt\jwtAuthentication.js:37:36)[39m - [31mJWT expired![39m
+[34m2019-08-30 13:34:39.307[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:34:39.314[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxMzk2NzksImV4cCI6MTU2NzEzOTczOSwiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.ur9NpF9g24DZ4v6AlItwg4OKBxt6o8FdyCE8gWPlGKCFYUGVDLdEw0lhrj6ToWj_F2DActzdo438AiUkKCvYqkyVFwx4ll03T99IhdEwt5orCfckSqmLIK84wf3JjpDQRfQBFtH4pcx174USYj15g2bu8e_1kdsCAX4Xf7X70LFHSUBYpNr3Q_1GWn-X7rxUN9ISBoujCcB5AgaYSBoPoM_go5O17k6-IjbUxgL0fDpUTWxI1I1oxaNpgVNQNIE8UoM5y5uSNpwdeZmZIa6fp_IQSkuLU-Yw0YQnTSuB2gAIqrAAmUrxjdh0v-fPjc29XnWiC4RytMlilgqUVAaNf_9hwKIk4WN70m-cjhCr6VIKsp-v4ySIZouoKZxr1uyd8lpwU-R8QKCaZS2qwIjxT8K-EFkKlw7Bx2vZPu3C5XrP8DSyNLqDfQJRjvoX-Hq6UfvTSI4A1xTJhfxQ5FKnu4umeoez16RjP8t75eDytMR1Do0HRKGK_pzSNhfC9UdFGh7_WQcF7ELPBJNaSg3Gz-b4j_XAnpfRJgAjmwEKUJabMLqzTzp4ExnAcwGBUgUXsxo_PmkJOamEiFvXVSL2EiFplL4t757YwsxQUUbPXjXKBqVZXaPHd2ymVR5OhSyEBtrLAUv1vKOd2Qeg-3vGpyWGyk6kNhHng0olZqijgS0[39m
+[34m2019-08-30 13:34:39.316[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:34:39.323[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxMzk2NzksImV4cCI6MTU2NzEzOTczOSwiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.yLxAOb2o-k39VH6VrPEynkBH3HfaGDFzyFLdkW7PMsHPXqygcNo2uP_ifL7_7Zs8fHnNndyW_K5P0P7xcqCViExM41WbkdPZ9gU7Pk0JLMK7R3weNdO_LfTL2SJobCOUbQL4Gri6ge-wLWR0LIexNO2nQIplUod1Ub4YaelgRK7Krz4T8H2W4U7I-wxoFAPpMFEaJI0mjtRYQy3TLv-BSESLtvD3KOs__JZsBOv619tWJyuI9B3URCWHZ04k4TShIfYYRA6ssHvEThQO1BDZpJNX_R8kmzH-m16kcdMCcSDBSS0pP3cUYqBtxVVQGnHc-oTsh342BzpDIGEPhT60eQd5YK9D5etrcxkHiu6fYf7ShahN13dwjNB-AKB2CTuoflmCUXHtLc3XSOXRLSjS32uVB-2Puj4imoa8PBknHcM1X-6a46mU2fJ1sBG6WutmBc5bglTDCiAsbqdhGUpgEUrlO1tqjGUKlHJUZj8WTwV026KsDYHNpdJ-Ml0FKuRQ_hr_QhSuovunXsiALu8gq_DGjyOK2CNJ17Y5BTopymQlUHyLRv-URR0-WoRKDBDxawk78MVf-DmZdLls9yyr6S0XQM4liVcMicYzvyPyie806W_o0nvoCcq0CWpVrOSPQ3DCZrxpzs_OakvDMnWWh3BerpKLhq_bO9uquVQnqsw[39m
+[34m2019-08-30 13:34:39.324[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:34:39.332[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM5Njc5LCJleHAiOjE1NjcyMjYwNzksImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.U2r1Pb4zN6NclNS8sCAVVCKfKCPrM5qL9hYvQsqxPY2WH6zR210VgUlovtDzvBdrt9qIxGxWx6mwtNwa_12CME8S6HjCYEHUd2I1sqsrHolhPtjW6W0HDPKcLhy034GNmZaiBw9Qk9yS9Y_YFLc-zvSUmu-_WYRoH-24su_FRmqOgI8OFSHHUqvRyjLKzot5MyKL28cDUivUQZ5AIPOXJAUWnIWkRgb7bl-0HP4v_uu9qynr6PIRlcSF4K3CdABJFMIB4vIXKfH3V8CYtBAty_9jPUWBZsemjgs_-FTQfsvYFVmwErpkhkmY_0Vq59KyuB0mN8aAF0kj3aKSb58se9t4tHScbUmVKmQjrQIR9TsabasdunmoSrPcP9CTDrMIJREBbR1gzn6FDtP0U6jno-L-pTWGbluPsdHhR5yrc6E7jW9FIrtnJrej-O7DHNghvBnzmRypWpR2VED--OyqHdwtE_EpXlsuR-yFC6AefZKd_2GZE_u7cIuH0IIcwl7UevcKwgk_k_L9ocvXkTPkPtM3PTqhuApLwjCmQ8Ckt-7YsibkHLaDSjOpoF5AnzLvtknVdyArNkztkhTvx8v24ft1ejGO2lCLKCwIRLUmNRqJeDabz-xNwQjjdZkZPjxmkKeBJkCEhciPahajVwf8oc38XA5GbMCJm-ztcjFeL-0[39m
+[34m2019-08-30 13:35:38.320[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:35:38.327[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxMzk3MzgsImV4cCI6MTU2NzEzOTc5OCwiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.Dy7sOWPsvI5jBSJvhl5cubeS39KC5PvEp5ylqky56f9tTgF_3rB18MybQ15zh7F2zZRiX1BFN0iHSndLNQM20vkJJcBwoEFyU7sUYvnEi9_h2Kw6cqG5l7CxG7kpvEeSz_BG6LVt1cdTmmM_LXnvhP0BUv1HJMVOYYFKJHqXZ__cWjt4M6h6DmiZP167-Am5bLAUljYBxWbO4HLQ8nz5hjQxcEJ4aXnxmntdxRhiv6NfAZgJIDJsOXYiMX_8zb2m89YM8SfG93iZgHvenOb0ZJ3Sscjm9Q5HjVYz2KYND7ZNK6e0gwjb4sUmF1wTzdzE3Fh-bEgiOFJcFVSeAWj4GPbSblwmLEpUAlEMR3_FLYJqopHfXxy1OnpZ8LINv5-FtiYiXuuBSzl4LjTsQ81rn07X9KODYP-K7sbT1D3l-7MYdKLhUnsEqbatd7Pqrpehkv40ZO8xGS8lIl4MFLP6NvvEGuHp9aIKpeWHTO2D0_OTFt95eGfxGFL0fmo_V5b2_aIau9NmMk6FGbj5prkC7GgzBeuxX4ussnyLwtbEBCTeq4KGyxr0PWoZy_ot10YlKJanCNOzgY3LxmwQplCKNoGMICU_DxHzNw_PK-69HuNSks7NTv7xyeJYNfaijHudmE4qeM4yCqxeLsf26j7HzCaLRp5uOK6dwh2ZcXOjIck[39m
+[34m2019-08-30 13:35:38.328[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:35:38.335[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxMzk3MzgsImV4cCI6MTU2NzEzOTc5OCwiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.pZklJboYx4mIN6O_qmZJgznWyJ8gesMz_9SS2DUmzqMch-xMfv4x5qohK4xDG9i7m1zD6M6mDHp_3RULCl8ESOplD6aA9-uDGHKIdXdE4xxV3bmJKkWAVWJ1T5ETLfuiXvkbnbxo7xlqerP2K9khvV64f0eNN6EFOLFQFHNHUWHuvxRQdF3m9qpI9lnn2dcuXSd4bMgPELr7jhREO74FFFQgvzuc1vzz3tWfn-ZKNWOYkML0PKjzruWDo5U2UMBzrJ9N4dYEhyjLuCozSIR49RFOhQ3ZRPYQPjNXV0au6fsaB7KsosgOUSsaR5FmETQSEssgHZe1DZbH34JJQix7t2QHVAIsXhnJifqsrlhj5GRA70BqDe60F19ssMqlg3FETwTl4jNpIxbUyxmtaAM8Io8-4gxCr89e6CmbZ5bpTFyGqroRKaVLFbeddbpNW33JuY8IcS1t-dAnTrGNR5cyEDskFX7CoIbUwQlKKDQ7UKMMScB1EVudYO09pO-IdHx6XrWPmhV2CD70NWMj-OY20Umbfp-0YF5jmuYJTtFQ-sKVmVAPye3zAGxzLm-0yhhf8p8fpWQqwcv7X4j064UYnkHFL2Xn4G_O-_QVTuoAKF3FZACPvYxlb_NNzoYuqlChGK8M-EKQ4gT1n62Ssu5nQ_JgnfsL2D1BtUxWPapZpBM[39m
+[34m2019-08-30 13:35:38.337[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:35:38.346[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM5NzM4LCJleHAiOjE1NjcyMjYxMzgsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.iy9bAAgey4ogI33naOzG16WbbTL8_ZZ5ACqmpuiAIFn8WI7kftIgeRMDBQXthHwGpkbNG9d2kZgUrPR-NVPCfLuVG__AQ4-YGAvB5ZuCBcubtdIc6bW9P31J_g6k5FK7Gu1xWbnn-prWkNGLchmICxmezdB_En5NfFYxj2m0ZEt80BFYhBTVL3BFpjU-qNaoxMcQL5_CwLDN85cHugjhCO0fj-56FHqfb4SPLGRlCWYECvAhFjts9PV2SRIsZGWIZilQy60Ew37R5IWJDxM3fU7XR6VJrz0V4rWO_4cXxQCN9a6Uzd_bbzx7FbIk84al33VD1z60oM_7y4-glWpeqPeiRLO6SoU6H9wlFJEg1l_HWf_CPzQBkCqpiYF4sIysh2RanD6KbYluunRG8EJvadVhChO8-3B8IbrnN0veak2Fo3ervPyQnIYLqUWKrNlF8ZBRBmosb0rClJ98u8T5gPxqZ5WmSFbl3z8Cdyc6hAipvZxs2uSnA7CMiEb_2AEyS_95Au5MShWFvkcO_9CCqhFNJca8kWUA-ttPB26rRk0qHipPkxi-9CBwTaN9nnScgiM7Cw99lFqBGs8FNb4fRb9k_Do-7KXOTUu8p0_5ojCcYKTRz3vUICyt9oAqjpU9KJPYaaCimydvOnnNPKzgrKhSDCavC7qKUSvgmkygDfE[39m
+[34m2019-08-30 13:35:49.096[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:35:49.103[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxMzk3NDksImV4cCI6MTU2NzEzOTgwOSwiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.XhfqMtSmH96bBxrRResgBhHV4OXIe3-YCOE1fv0AcNX1YXfKFXASIZLjxXxkjewCrhrzWpRteKHbjM7SrGOVh-GxH2t4gBDuGW4t06upoc5yIR2553NTUwpjPUdkM7z7BBA7sgd3Qk0pNqaB8sKchJdzyUPD3W4oVDPN22fyw1G900DIGlGN4_FghMwABKmFcsKmDEF4BlgXoaiQoPJ5aQglOtNfjPRT_BDz9_9GAc3U5HyeKnOzfYBGhSB8f4ltup59axc_rjbPq8Hvh_NOpoGJMzjpxr_PX942n7TBurl8jythC-LmGOX7KvDfll1--Ck2XpSnun5W-uVmaep21Yfz0NMbjGx_f6MYSr1dyNrDJkQn7vACzldzResgxWrjsDhODgCZqlnxy_pLcKcGZKQ07_H5uX99RM-j3S87JHANfxp8c0xJnl8TWN4EuabGClKQuTJDbCnW14W80fNyQeBJkLTkBpWUHkm38B-fl-CPBE5Q0YvEepHQ7E8Qjahn-td2HEOGsVbRLEAl8OyC2w49w-I0WP5T5L2INrqHWbxGTaUm2gIJCXiTHFQ-j5fzmB8cBoqWJq-jZIXYU2VIIKJ_qpBoGwwf9cxZRHd_o3rXnIRIdC9dtrZzG5tDB3SzaDYE0Nv6iqD8pFi6SUXcLjeCMcNSi4Xx12ehvqoRXbY[39m
+[34m2019-08-30 13:35:49.104[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:35:49.112[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxMzk3NDksImV4cCI6MTU2NzEzOTgwOSwiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.sM5InDeZukDT_fCPKeBzmLrX-f18padmuwImqht9Q_zgQlFIKrW1AUNGKNK6I616bZWf1Q-vYBoa3Lzfe0Vv2EBbhA7PtsGxY6yg9IDW8nBZK1NUNjTvypY9h9ch_PW8BlvseJJNyCfH6RdxPR-OqX4bOzJWmikRSj8iYaMzFNfakiyNMML76EuvmRUy954fsvl4hcTpfwCE1BUw412ZKR1wIlpAfTFftBopEDmZ42YTxBE8ThYE_9nhDm4_Q8GnBmmEqxjALFvlOh1mTbcrTH9eORgpqZ-bITmNTl7JfDLmCzClgzIwi96wlVJw-OaB0OrXtHDKa_Zn82-8Rvj5pyoSsI5pFI0-XugRrkepBs4AnALSobu8M77WSB5UuLIIjskO2vyBjQH6eJ6zxPojtFsPtSjRKLixViYdOPAO6HZj1ZbaNU5tnVcg_3677yNDSkz1BczmtTaPTCKRH52I9Dax3ZdSkwC4-m5peBn-cr9A1ZFa8OLWcVksNm3MIFnQMOYPhlcHIPb18pztBCUsCXQASSRdD3YeLZus3pbiAyk186uu232GKlwXdZQHZ8jnNvvWwK9fON7zaTs2-RQO0bRC2QI1NPrGnQZEr4J0-9Wi71a3bAkZbgsWGpB0l2NKiN6ZyY7z-4p5SoSU0fAMITR9farEk6eWcijEbQRaYBU[39m
+[34m2019-08-30 13:35:49.113[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:35:49.121[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM5NzQ5LCJleHAiOjE1NjcyMjYxNDksImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.gchvQrmK3Xonrla5avxlIghgOHdCyq66pgfEqEkWDfIoAq6fjH7bhFhVB1XjHj2Tuj9iPBT4mB2hSaGwKMY-7UDOvMwpxcnTcXYq2OujcIhh2V9ZZXcPEGxtTTQPk8Chtfu6XL2f33Y7hVBWaCq5MC39BEQjqyLK1ToIIVEBnKWAz5f8HmxNXr9kuq2gvQX8vcJU4hRd4emaysVXcIbG9z_i3wVNcx9j3u0A9bD9BxuuAlq-KKJa4y-8yjafb374M6P8bE9QbyLTVnvUu8wLQ4LD8EqYu6E0hdetQaRtrxxK1fMB8GREAQLQJm3tR0TcVg_N5Yu34a3gnKVgx4Rj1yQD8PuqSKF8ykQLAIzxbWXszoeM3WgqMBUUXW7iTViOsyAwTVX5cPBpf7EVkZFA2Wsy1FglcnfPHWU3IKX0TYetjS8p5kaBcBbSl4QwFyz0pXsCI27Y0quVzN3nNqZRH1T0aAgHz8cEHAeLYQl4AKx2YhJSS1v6mynba4ii5nkzOJsXoQ5dRlhWqvu4-YD3QWseXd9TI-7k_5Fr73Ucj9ugHi1N5R0x-GTWXtE9KBKJQfc1nD_gZ4lTa6hpATMPMoW7kJSVUgRoyWPaDZmwU_UZlTDtfZiBonuf_dw_Q4RRB5PfThXasCBCrNbgQBSQOgBmkuAlkcguZjUvT3x5gZE[39m
+[34m2019-08-30 13:37:01.844[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - [33m jwt.verify (C:\Workspace\MyEnv\NodeJs\link_jwt\jwtAuthentication.js:37:36)[39m - [31mJWT expired![39m
+[34m2019-08-30 13:37:04.122[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:37:04.129[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxMzk4MjQsImV4cCI6MTU2NzEzOTg4NCwiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.xvlYEOH56wATZ83Cuj7PIy8AQ5QHTtKjSrxRSrbl8pMwBAAgx2tE3DRWw7aYJGiJVeaYYDvrTLI2KljvnbxlqtXYtn3I9B35D7Nfb-V_OgVrzUUAW5hI0ilI7L5IQYE6jx5VxLlvO_l6wW1KWzI0252r5LzOTnqJdUQiXn9sQoLwZn53ciwYWajTP7zYyBA_TwmiREW_1meY5U5Qq7LUrsiAlqVx-oq_AdmYJNfUx9626L8toSkQGS3i0c53byms8GXOpyyFjkhj3B0wpxxFy7ovQeETrlfpxOyzqgQz4KrRT_q07cGh3jis6yJwkW9YgipwiUMxTUxW39aW1f58sckwYLzBRIW9z68jpfEnO8YE5hEU-3SwN9thuKFV9E--2xMi1FCp7Um4SdmGOdVP7qFFWFsw0_7EMZN_twUa0CDgxM0Q0ALEBQdVwTXhiZZsKIUepEcpBzoasYXGDAP5F6RJcYif1SEedFPwbvL7SVzhdGDpJMxV3temqTENBEIhJUIdyVc8N_Mxb1myG9n246QSYsIgOzN0m_X2RcinuXz-QrzrynetQGKxMWutxut_birwTdBH693sKErORtkga6GQ5aleRf5dv7Yyt65kLnbdd97a2kSLPeNd7dmcS0aS_ZcR7T5_NQhZKb7ElIOzJOA2_7pq_BrfBurvarbdL50[39m
+[34m2019-08-30 13:37:04.130[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:37:04.137[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxMzk4MjQsImV4cCI6MTU2NzEzOTg4NCwiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.DnLiS3QUzRpB3fNLJa2szOep6s9C7oNUJm6vGiX7NPUNlVyjo53qsFWjLgIP53C9caiCB0t4f2dE93gcarY7vXOjkzkPmY-R0CDXRJ76C8QFhLXuAuWIR1tG5dvuCwYPRA8aF5QxNt3hzVJSmtBrTrw2b8wF44I_1xrRCFrOQjb3zDyzp1gM8cFTE6pEjm2zcVCr4Fc5xo52oNPeuYfIybn-H_eeRqvGDPIu0MIij_gGG7EpwwFlaykkJz-uY9N6v6-W4ZhHMxfh2hgijG-XBzwkzma92YQYH84b8u2U1wzdjWhBo74a9pNFqBprcppvr47TPcC-pi7mq4UZXKJEPRgU8J_UdIoDvUrnt-beXqIWrDIsuVtv_Msrz7qvjP_qwxIUYcVBMDGSOJAvbQdP_EphkDOvv82F9aSx06zLsNEW1lJGpQkzC6yz9OEiFdK1IiNXgwCi0F-50yL2fCB1gQKPG8b28dKe-DpM9-P-6dh2KdYmEZ-uwDYu88SE6LdEtoeChZHbr7Eb4PpyzzBigfnzpox5oecDc6Fs4XKSDBxsJHMpNW2y30-PkUSkHyv8edHwVNFuhi1PmbRhe_Uy02TjnuNC03cNw91r51Mf6MdHffvhFDj9y7zLEy3yA3AYYIpuECyM0ub_YQpLy6vEd7JzHdy4eAie5QX7GM4Yeh8[39m
+[34m2019-08-30 13:37:04.138[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:37:04.147[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM5ODI0LCJleHAiOjE1NjcyMjYyMjQsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.mkSXr73ydI6NL33mfwwaYr4Rk5KwzItxszPQZxPeJy66XJk78XS-yKLS9TYiiSNrddZaOl4QJL2dCRRailL7yR9xH1lrw2OXWUqcQ2m_5scGss-urrgwaUVGnKZd8sSAtT6s2gLZ4hHMWi7j0XAZAdkRuL99sIBvJSllWDXNSiXb6LwT1CSIXKpjmJbUw47PoKq9DmJtuC_D5Mn5vhXjkXg_O83dNLUoKWgDQ9Smzld0i-7gYSxRc2QiUrOg3LtnfjjA0idhhAOfi-NElvd0HfSyDtTw9Ihpdk2x2U9vU60n1abznfD-MEV2brL7VXJqPIZ-zbeEyDoKCAb3u6E_ivDCmY_c54-C_tamP16CrhlS6W5uKNc_771-Gf47iIwH3Qx8FZ_SZj3II81PvoD4jdJ-mZdM2TNP5PNrjY8YYBp2eFNNeEWlGGvnWLWYk0AQkrXsQVpxCNFunUAk6Wjn5wBQbuV0gMptuebbeqkcnzVsXyro-C6_N3nXLEd_NVpZIKywXDeDFrTVmmmghuF-Ux9SPBOpHuMDaGCwANoJBrYD9rfvh82sZHqDvaT4Unohzieu3Ia4RTzjZFB3ZU3ok2S0ODIG7vSOdjgA4tPhZWY3wm1mJkbCgbDqXuLHSYrvLMnubBDEtIG5g0pV5pEEZpXZm_IgZJ8HO_miZY_E-T0[39m
+[34m2019-08-30 13:37:23.879[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:37:23.887[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxMzk4NDMsImV4cCI6MTU2NzEzOTkwMywiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.DERlUI1c1qM7urYBzTiEzayfk0TaSqX4InJ7P6o4dfiPczNVrI2VBRvkpLDZ23LY407ZxcFaP5BqGtNHoCZTi0xwnbOIbXRwKezL4KgIkdzFUXtFVd-C5vUb-TAHvj5gTIrymM9S-L_2NLmtVq_tQEF1GWt6JG5ys418Qe_r4raCfhAyQh24v3erkbRHMuWbsXLPnBUDCtr6I088MCAS8NWN6azSVsFbnne4xNYHqde6EgEBSbNjqkvYTUnYV3JkzwDDsy5ymKvHXtFrVKh4KFALBxaqnC0j3-ThPVN9CAKolZyU-juISXFLebHsqtJ404XZz4PSiGWmyna9CPQZSFoNmtbyutXuxRBC7TKFvV8lVc4Yor_ExGJrpat4Ey0TUZ3meh8ZAxcl9mmn_42wpj8P94qiaLwvj1Z31cxlt_xFEYzdet7JWa2vRZE7ZGHT4fcuF68NuKp1yvWAr3DaAEsi6MrU2h5b7Cy0QwpBtEIz0Q1bGYSwX4TmRr4uc8sCPnPNFSYrHPxKWzQori__Qk5Li7GnlYhm8yJOCfI5tAERSpjqHI7zTBYmIjsDlF1pr7BkG0ZDDtkZZSGOSyXPO7OjaBcUEv1zcXdMiGifnjSYkX6H8FEJEPyoNaku3qFnaAZ6-caeygK_V-Y8kXDgOJAplm-YU8YP9CzDIzUeURc[39m
+[34m2019-08-30 13:37:23.887[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:37:23.894[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxMzk4NDMsImV4cCI6MTU2NzEzOTkwMywiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.K1CE9t6lddDeB-fWb9Jp8H42eGs_32aVj5c1TJJAU_NF9klnImNgmCVX7bYImk9OWrg5ILCx7399zTkyhVsuctljc1R1mweXNEZX-n_aZZUFx165gN5wq_KngUxKnxUoOXZpcfctqvFx-CBFHsBIgn3WiRce9NPGX1yeK7I_XNOy3KQytkOwBFmiaQGq47GD543_wzqBDsq7zpzv11os1v2NWDTpxDVPZpiumQO3cySPTRGzpc1RUUhqhJ7WZcvIqOOnC6-VA-j6zI0rOgllch497lPLnIET7h0uJw8aS-wljMCeJ3rkFcPFfmfTbVUuWvj6g6pdUsIBN4O8gtyCAltePc2aLY0kIJA4LHd2TrxpOI1eaMA6AEu4KzfBIZjmhVlZdxR48rRpZKbH_P_zFGiktmawGWUn7zb-ofJiEiZz4DIO9OswTJQKn9eKZbYABiP3suHY9phs6r6hh5zpmN1uGx3rft39zIgHEpLv9UMiFIyw3et0ffDgida322oTjRg7GiEs_SdBE7qli6hW4NFoyfGaLdw3Q0yOxeKpU5fn3zR2Smgd55LjH27nDX831fSLYmRt_sSDSAZK5EfRp5oGvdbn8GSNra7woesKP0ktEAYjHtPR0jpB_5isY6neRYND5QOYZsn3yEiOglwJWHuTxvAKb8827wcf5r-lANw[39m
+[34m2019-08-30 13:37:23.896[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:37:23.904[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM5ODQzLCJleHAiOjE1NjcyMjYyNDMsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.PYLI_SJbXYdoGvhvWyvg_cSMdOdvh8RXy1tx5ua_2gGJE5VhbX5JJo6ve5ZnCnjIC4U2Ts6QeiKrbO4BpTipo5pKkcpe7FKTvrJ-tf3MaHs7uOmrMZUUuNTRUOIynThMKXT7hNXTDVxh_Jp7X96ugV6CzEj2gWZhkvAyZTb3ZawSRLlD_l-MA5M4TsTcSY0Jm6pzTd3muiIo0UYoaebukZOMcLbqZqgwTMKJTLl_GaZAVGVKBmscFZSdoDmeGRk2KOH53x_VrA_AFQ3XXUeRhWNe7hgXJK2HrmCdDTaWVmbMRvPdB0NyPR-6Etev7S1MTymmZcQMUzBaXaDecbgFNYAbWYHl3FJtqcdXI8vxGp9FoHFiE0wp_4QY-X4DEBYzsrILtQRA4Er1q5UyvMNci6SOUG58nwDLcXMovtn58eidALQ6NH4YxQOkRBvlrfzGxUc8X_EyGgDqy3F1uyZeHWN_Ol1kD-VQiYeQr9tRvJjn5JXKhmaE7zREWCTiuQMjxa9ocKkkkgfMorJVjQ0BCRuh4nL1y-ge694pjbYL7rjqF7ZnDtVydFFPeRWGvPW33c4bySYIb7V3AWjyBA7J3veEQ5Tl6TczOkinjIimTsQoqUz1heb3raYGS2ss-1gdWHuyQypcoSNiti24rlGgUTzHsX6FzvAcYigMWorxeCo[39m
+[34m2019-08-30 13:38:28.564[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:38:28.572[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxMzk5MDgsImV4cCI6MTU2NzEzOTk2OCwiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.0jwuKKy4-XqnLfM0RKsH0OGvhXv2zYtXRAJH97xWG9g577WDt7SFauSTjJW4np3MqT8e3XV8Ufd7RravERcCxs2FYKWEBYZEOHlbgkYyUCPbfjfLafiBXI-puy156zFRPorPelYKfZYIu2k8mM-lYrOIO-kGuWoZKGPcg6FHATnJNfAkBANcZjswwtjrMcXKG2NY-mwc6nqV8AUDEbdfSQDLv5V3HBp-0QxCTcDJTtAJozssNfW-ccrDXV-blqrqdZpTEYdtOiQnd3rWPi8-UZxqkUynb5u15Vaqo-oHjaR57EiT2YWpNmefRK2sNbzu63CjxHVvoli5KzkLq-fmZ8plVQC6D417Bbmlx3SARuqYqoo3-nK0lpXl3OYWSbFmtJZ7AvpU5DtQCLGDCNUzC846TyBt7YhlYmtF5g5hPbwthP3bd68xYhOhNBfqsrXe76vO-600BkUWoVOygBsOvQtERcFAyBs74L4efeGmZv7z9TQV_3aDWL5I1dHMzcI9GJRwmW5AwUf1A82haBZ9RoHgjXw81mtzJ6bjivSLfPYHw7ctuUrpT-6u-bhFAn6tpaNBvhbOPZFy0xyAw5HVJEQH9B67ZGKSckt-UdcgHjToim9hfDlNILt3dBDe1xRwFUEsSr90EFIiXHl3gwWzRyosEAJf4MHvpW9-jHdekhs[39m
+[34m2019-08-30 13:38:28.573[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:38:28.581[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxMzk5MDgsImV4cCI6MTU2NzEzOTk2OCwiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.vnfQe1Vhn2FhHdqZ2EoehvqhDrIpX9Ueit1ateue8yQpmrv0JMq4yhQf3VbZinyB3GL2PIuiNgL0yXru3958lVLbrqOstp30wXFRNjua4d5BLif8drYGupRiMO4JB5lTqFDKFHxiVgRSdADWsgFNFzpAjkDTbola3cgmPxcMG1_NJcEfovmmOKDYfjMndDyQvGjZoT1H_V56W005jIy56BE5uKS2J5hdDs2Rytz1bjbQBw5k1rIloRrNh_zVC49EWsOoQnNrVmqJu0sMyNw75MLnftd0_cUnaCdYB1oE_Rh7RQ5dGuks66zFw4X4q-eA8qx-IqF_rlm-4p78dJvMRocK0EyGQzckgapcbUtMtzIZUd1IdbWbEpa3TDor-Fa3vzvIu5TU1P5T9E7MF0e62g25MDFdHiJz38xVYM7oMXzBWcxRgAxPTsn2kotfk5wzFmXVFvIqm1eXPr7PAAt-owwMRy0tzptjeDdv6b1-bVm0Oqby0Ncs1rWlC2Z3plBP2c700uwVxB-1HRSS-h7ykILVji_xP2QJMEdDWv4H-6FT_-xObpg6Q2BL5NnKdgTJ4v-tVGmf98IlmfFJ7mqVBokWak2eHVLODtHy4BamwovwqK0PwEdm4E1Ue3JPUXLIrEooXk1wb-jlUJmaFPSOkTVEQkDEtECrkDHlMzC75dQ[39m
+[34m2019-08-30 13:38:28.582[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:38:28.589[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTM5OTA4LCJleHAiOjE1NjcyMjYzMDgsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.Oi0ZAwF_Tii_C1NuRaGQlRFYmcZyQnhJY3mTLCgSK0lAiUIS3Ocjb8a2cEJdKRr4R7CDTAyy4GV90s3oCPOTPbjyLQWYKKIYOPFBVXb2Sl4A1hvlimCVEDfyUUlTweQrwJ6htzDrEqs4GUez1VOuCfHeo3h1P2yyMUqk2uXBxmWGWIMPvV6g_3W1Y8SB88tgP6N8dWhEMQdD6RaabvZyqCdN9oSBRCyTNtR9WSqi0c1VrCmJJjJg-490etH-JUaMHbl3gwTZxGYGECHFKgpGKwCF3NTOQ2-DRAcf8_6R5GNQimYfF9rWGtZyjwxwPDwDmUdCqRVvFft1XLuvJcriCHA2MLllXTilBXn1Ez3vp4lRZ19FCuCLa7o83ZZZRhVDEiOu2tFngUeJe7UFTho1BeVUDPJHbdPDwskefY1FyBtIrHEtFnnmI_tRhKarHPwXtNhAn2IcxWBTOn4AfJ8l9vVCIErSz08Vwixwa-eIX2qeQLCbegvgqqGTt1vO0JX1v_ueWHx8D2AO5w52nGcWh6jmBP3701-qVbzLiQM679VurvzsLUyn13VXlmIyRYuvgiDKlFzLj5I4SiyPd7o97-yaUWYupO6kaIZlyAQzWLYCrHaDlHBN_NuGEi74pVEQ1V9Yv6rKE8s17s2XRMtqyvTVEOBYqVmvNyesZopzoV4[39m
+[34m2019-08-30 13:47:41.036[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected identifier
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:7
+        received query for 
+                 ^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:47:47.263[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected identifier
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:7
+        received query for 
+                 ^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:47:49.779[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected identifier
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:7
+        received query for :
+                 ^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:47:51.214[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected identifier
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:7
+        received query for 
+                 ^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:47:54.812[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected identifier
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:7
+        received query for
+                 ^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:47:57.353[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected identifier
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:7
+        received query for
+                 ^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:48:02.391[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected identifier
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:7
+        received query for
+                 ^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:48:06.899[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected identifier
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:7
+        received query for
+                 ^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:48:11.470[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected identifier
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:7
+        received query for
+                 ^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:48:17.614[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected identifier
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:7
+        received query for
+                 ^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:48:23.727[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:7
+        logger.info(received query for
+                    ^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:48:27.315[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:7
+        logger.info(received query for
+                    ^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:48:28.788[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:7
+        logger.info(received query for
+                    ^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:48:30.232[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:7
+        logger.info(received query for
+                    ^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:48:41.702[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:8
+            'configuration' : ${},
+                                ^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:48:44.706[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:8
+            'configuration' : ${},
+                                ^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:48:47.807[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:8
+            'configuration' : ${},
+                                ^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:48:51.427[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:8
+            'configuration' : ${},
+                                ^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:48:55.180[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:8
+            'configuration' : ${},
+                                ^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:48:58.561[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:8
+            'configuration' : ${},
+                                ^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:49:00.628[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:8
+            'configuration' : ${},
+                                ^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:49:05.724[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:8
+            'configuration' : ${},
+                                ^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:49:26.828[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:8
+            'configuration' : ${},
+                                ^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:49:28.396[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:8
+            'configuration' : ${},
+                                ^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:49:48.380[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:8
+            'configuration' : ${},
+                                ^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:49:49.530[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:8
+            'configuration' : ${},
+                                ^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:49:51.320[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:8
+            'configuration' : ${},
+                                ^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:51:38.228[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:11
+                'queryContent' : ${queryContent}@)
+                                               ^^^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:52:53.966[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:59
+            logger.debug(`documents found! : ${}`)
+                                               ^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:54:30.143[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:54:30.150[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxNDA4NzAsImV4cCI6MTU2NzE0MDkzMCwiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.NVgOj3V3qabEG-KPfSmKv15bRTB8D3q_068doq8oQ-lTcEk5tKsYCbzU8p4uPLikY3oOQw6YGVvbcn6Yi3bzc05iFFlF4HMyOVwR8iMPHRtGfmvgbaYR6fa-TGc1LvbNY-QHOv87ZaUSraPwnhhTWp_fV5-cMbzOBehcD8fJ8UxiuvlThQsOPgY9HHyNyNqrOzvWLgAriA1aCACek_vjRqVQ3QAl2xKnqecWc_BFD2DcbZhOT8qM-sR1tvRSKZmT9-PFr6h02aqgRu_2ipej3GqhmXG2yxxKVw10Ya4bGn6OW3O6QNnu8mviudDtFRyagj5ZYiJOqnWYOutyRYZSt82BNrkTZrHvJ3K1AYLqXDCOJcgG5eNwQ9KY5o8xyFrxxiCxp_ix-Wa18crMqcp-DxTvXBohJa90v-0yCLVvB4woXlMk4DsaEb01X4Qs-zkVh059NwiHUsWgzCTaM2qMbwQI-_eKYxGgilySuIeLsNAua67QVDmdb1kGL5izKpFzZIg5iN-Nw__x4lWScml2bLejeYOBNzKNlwxPbf73h7v1CiYL-su4FlRRFNgYYclGFETwinI-Z9VomrSrcBLTdxbHyFEUcwMEI68dbG6G93VS7xbZbCpfewXhIdBtgTE4SVMqJQF1V0W7EMMzgwVeAdzfMx1RPy3_IiJR-4vE5sM[39m
+[34m2019-08-30 13:54:30.151[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:54:30.158[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxNDA4NzAsImV4cCI6MTU2NzE0MDkzMCwiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.rvK-Sj4cmB2bvJmGX5L84Yzm0JqKG52aB-k0VScS5lsr3aO_KyDpRuOYRM4h6cFza62AEOj4-IlwCqgsv0chy6zdTVUTPK38qS0FICekckXHabuauQc1sSBOHE9tjk2lLzGvGW0EOnahem4uDk_nwoRXCxbaerdRgVoQIAQAWADJNmV-McianmxIwufm43vkhLEoRRe76VNp3PsP6M7DV_NDoEkPTZhfdhF72kDr_few1aTT1dtXeazZgwEPP0OWrAYP-ZQcNYAJ0fZYjGZiJE1QXUMhsKXesFJKg44KPy_jnNc41f5wIi16PxrvhrXOZWpsFFIB0aS8va0gDmKzkgvqXiTA9h6GMGQHa4pm3Rei3YjL2rYuj6vK91k2o36dNB7bscZaw7MAqMd7krABkBkbMzOMJSNqgKrIHN0tRrUBdUITkt5Roq1cz_mwuZpqc_Ppim6LjMDUFLCjKsvuFEQ3VoaKSq-2ELyy9A_IrVmj0BNSbhHV7GsuCxI3diUKqd_YQZtUSimMfm6YfzbbNd2D4jv_G2eeyoOsnHRMnnLCFyPXie1D6Tcl65ym_BZCnwRTRzuJVc5xKPN9lvaDk7SN9EgtdZcr71CNcvTNzriRroQcODz2dtLjRqQxzO5g1S0BgOIgJAAXgaO-k1XatdyrAA2XHRM3m9Jv4_0ijrM[39m
+[34m2019-08-30 13:54:30.159[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:54:30.166[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTQwODcwLCJleHAiOjE1NjcyMjcyNzAsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.DE34rbJBUgaRbwgLooD0BBlNlxFJWdK9q1cra1Y1JvhBjE4zfYNlo7Kh1xGB2kl_o9OT37flFK-XaGvcqcixdvO5UbjHectRcYR8QBmov68-FcVJ20aaW1BIKzye2D3t-PkehS6Og93fh9fNtBQYQ4KA5lHTB6MkRo3LwXpHW827cWyMacTwphC0iW5dHaxZ7zTF3VbdtcGQHT3c5YDISiHMW4trcY8mpOlh-uIe1QYDTfZzps3yyCHLGs7mpTzmCz9IezZ-XJuA0PPNSyXbYCBWm5XMO9HjaquBuuZfIYd87ZkzN5G7P817W1fl6BGKZ8ph3oYsxMa7REIIeMpEuBHg76l150h5dD3DHodRePCMWkG1cYlya_KIj8sDh7_HVCum5MgS7aXwzjMB3nbRx2SVnHHcnSyfO2qolxp2Deo468KpXmEqlqohWEOJw3yHgpWL2FlrhNYM2U1MXlzMYL2B-g2gE9NBp9SmVvrVaBaak7VLiGsRGpqug85uzb1mZoaEbLvz7m36uJjSwKZebR9VzKSyiZQzJ0rLlxo4X7ZLJcEczMXgjJXi3nUByzlYoa410cRUx9eg9DWYtdk-LFPRW4wb9HFc06kt-V6naqPpNHRonjr9AVIr-p491BZaqiW93vKwWb2aMJkF_RqLF_IZA7ur0E_8IIq0iwf1wjc[39m
+[34m2019-08-30 13:54:31.050[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m Object.module.exports.exec (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:6:16)[39m - [32mreceived Mysql query for
+            'configuration' : wamp,
+            'sql' : Select * from User WHERE uuid IN ('8794d091-ea48-4df5-a43a-b1f0cd99d4dd', '42476f37-4176-402a-a261-4e6da8c81380', '19be6845-9add-4ec3-adff-461bd5029df9', 'a7b84a2d-e0a8-48d1-88e2-d190d06da5c5', 'c79b2a6e-6489-4ac5-a37c-cbb4190e494f') AND firstname LIKE '%',
+            'arguments' : undefined[39m
+[34m2019-08-30 13:54:59.795[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unexpected token }
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:18
+                    logger.debug(`rows found! ${}`)
+                                                ^
+
+SyntaxError: Unexpected token }
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:55:05.749[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:55:05.756[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxNDA5MDUsImV4cCI6MTU2NzE0MDk2NSwiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.L68GQy5dNHQTRWH2BNAHe3u4qN_vUGJ8f4vHsSTEQwBYL_C43OBhmA_hL1pXtrMbYEkUFJo7SF7TOoTRG_rLqy8t_BUNv5xO5IV4xQp-bzTy4p10bXhonfCnKyePr7YaFOzWgAQXJINIEGojQZmgrsKHT8PqaKJ_jbLwFnwQoL9FSn-9S6q2BAPU9HQdZ4jSE8zGsqGYZg7mkuKLMwyJyTn5H_izOyB5zq0j1Nc8-LrCaBYEPGSGPH4nsT4COf7Bqp6pEy-6FjydyO7nOcUzAydg3mYqCgUA0Vyv59xpQJA6qM8pAJblFc-xl_yPflhKuBHFPljVrWvJEi5E22qhm4Mn59zdW00P1xpL_vmyuV4oDRZmMM39JXr_8l9Lipzk9Y6NjgmtZB-89KSSWETxewwFX-_KTvFHR-HroxGRYd7H_1vQwcVu9nQhEXGCEhtyfHfMCpO1OnaIC2DT9HftyiUbDgxt6fY-GO2IeKlQw4Sy3g5mQfb3axYSldWioKk28shlWMWdGHGEXDqF_VK1_Nddw6sSIRc1gVN83Bys6PwicvwSJ92A0783qiK6DOEHS4A8DyvGgWiipfis89RJjPnxWaieBLYErXe5Y-8LpNovV71_kfXuKXH784Kz5VIp35dAXj-_BthmSg_dg8t79nxVz9Ab04gxXRTFoZs2mx8[39m
+[34m2019-08-30 13:55:05.757[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:55:05.764[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxNDA5MDUsImV4cCI6MTU2NzE0MDk2NSwiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.Z5YWDp_p62aBPtmKb8S006VO0KL8mozNm4u1IPYX0iVUWfDG25gLuGg3Bzd3s1_9hWJk_TrIgIDYq0DUMvT-I9aiqIhQAgRAvFXpXnLq7odGuV6TuTzAamRGMwEIObTbEIT1H64ghF8tIK_u6aje4Gw2pSvKL_EQWXZZmeBVNZofupJaBNEnzkyTBo4RSOr9TW13N8l1zCOVveCLlCcFXM-0oJuEQu3yOw79er8UjAtjwZf0FL5Dry9HDNXNhevLRZIBxA0PBG1ys-6CUFbEGYbVFYVwn15ILIowApRXyLnZz-tdIGLMM_npvtM_g6DBaXG9HnoM8Yv9maZHW2-SIE_-K11c4b9Mnh75Ittq1E3Z_vO8Cu84nZ49y81nCh_fbeSDG8maBpbk-Uvig5ebuSg8_lOrGlXuB5krAD6diQnNAduXfetaT3DBz9RPcgR4SpYDfJHwsePIKgfmaPS6mWGbxj-x-fJse2FMXEOWKORZAe0cqrMUS9XgK1Lk4TsAm7NcZVBeazvE3g78iaQOo3ne21tCH-e9_9fW9FIrqkcUbVVm6k5gpu17B_VoTCX_Aj1D9C2YqcwB-zVvwpEHLtFqiTZpZKvvtDdBJ9IywDqC-qV5QMPM3qepiqxWfVdpSAwv4PWKTGo0uECKxJwmwJoQt_jmkK9-ewC5ZeXFdco[39m
+[34m2019-08-30 13:55:05.766[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:55:05.773[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTQwOTA1LCJleHAiOjE1NjcyMjczMDUsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.T0YnRCto0U5OhbSUK46sHBQ4fgYGzufph20WTTlJ9KpUiTy4Rpjvv9dpk167wQDOabIWn0hUkWuje7o1yP74TKARCZ9cweaMygYH4Vu_2CTaiX0xsLMIqm7sig5G2S_nSxHkNzhUbz3kozscuAHm3b09zUQtxhtDLYqAcGpK0N7OXi3g1pK5fn4SRiGZb9KIrqG3VS1MKZxkwX1dUR0kJJCYeBs7okYUznUfcRmjIpf7m_j7juLgmdBR0NACgxN6vm5uOqOOGWFhkwwo-7SwFt7ro8iUwUP-PuR3xkfMgz0gbIjscuJsK12w4nrEggAfsPdH93BnKAmIM4-TtEt0sE_hIZz-5CHFQ-137XaisZCHLDr2bBs-qAAP7c_Ur-Zm__6Wzojboc7rISsOP-lPquMIgpdaARkfvOuEUeuRD_qJRmUYKNt7iZ2xiOM_y-Xue9xKEwv8d5nXMttevFw3EqPcivMObIKAArGSfxR4KlOMeh2V8fRezWtxN0d0mJuxkkAhND1VrVx8G_ND5JlPm8n8GABf5k2SBTwPiGVRkyNzJfemTbemo9THZPDjS49siOmW_FwVCS0feCo-3wHLS5tq5Ws9cn3yukjZ0PBFoDIdNpGz87gVZ5kWwIo91WmVJ0IhM4IdThikrHrFmDyDIhQYwBg0zfsY4B2FmI2eIXY[39m
+[34m2019-08-30 13:55:06.389[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m Object.module.exports.exec (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:6:16)[39m - [32mreceived Mysql query for
+            'configuration' : wamp,
+            'sql' : Select * from User WHERE uuid IN ('8794d091-ea48-4df5-a43a-b1f0cd99d4dd', '42476f37-4176-402a-a261-4e6da8c81380', '19be6845-9add-4ec3-adff-461bd5029df9', 'a7b84a2d-e0a8-48d1-88e2-d190d06da5c5', 'c79b2a6e-6489-4ac5-a37c-cbb4190e494f') AND firstname LIKE '%',
+            'arguments' : undefined[39m
+[34m2019-08-30 13:55:43.746[39m - [31m[[39m[4m[1m[31mERROR[39m[22m[24m[31m][39m - uncaughtException: Unterminated template literal
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:18
+                    logger.debug(`rows found!')
+                                 ^^^^^^^^^^^^^^
+
+SyntaxError: Unterminated template literal
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[34m2019-08-30 13:55:52.434[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:55:52.442[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxNDA5NTIsImV4cCI6MTU2NzE0MTAxMiwiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.oKdV7qqYOtRoA6U1KY58Zcy1_R3SXAnyq3tbt70uiVNO_5FIgkq5aVvZi86Axf8fm3xMnXEMteUmEEIngkxiWgoe_gPCnKA4Mim7C8HDz5sBvXWvvd0QMl4x4nAOBtMolSc0TaiCB8d1_PPbyx6AZdgfOy_lYhjWy7j16NQadIglzpXCSKAnpOB2mTO1CNYTZSuOpJhPScvvLwNnDYvH4xoix6yR0uNCe6mUbqDYFu0XNqZY-psVs3UhXVE1zlD40hAtRVfGgo0omc1qqhG5Rws0IEEoPmIZYSmZ2g_mdvWgJwnoaql7MND1uR-Vyfx-bJMQOqdg5BUwagF6bZZv1gKFM22r_mJ2v6NiOalQOLhFneha-RuI3iX9ToCHu-dWd0IW5Tnl7PWAljLh57z0v624BoCLIiZOK6yrfvzDM-aZx2iaJoejh4gKwZ3X5a-wBQDYmKXISgNx7XzawDllkGdGwrVwk2HV9IWYnlOs5lF8xoAgbqh6pYGn09VUt87y94WmZriwmQSmepID4GvmyptpKfHRyxCYctEQH8mQAhgN5w3BsQAaut3W5gJRfPXF3p8FG2iyobNJ-02_DSw0UvzEh8Cojac9YzAFlQpCtqih75bkXxSmhBi5cyGEU9jd4N99ETMPCe0mHU7LXrcHpvaQyEOCyngCVhuXDy3qWtQ[39m
+[34m2019-08-30 13:55:52.442[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:55:52.451[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxNDA5NTIsImV4cCI6MTU2NzE0MTAxMiwiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.dP4qipysKGCj-8xD9780j5PsuMTxwEtju8uiI-posC2KgXwhASsQTjIcBvcLMr2OvR1_feC6ICLHvIppY6wyHAEoHR5BO8Ba3SwqLsCsbwQRt78yrqB1GFgHcwrNiCyaiIeymMr1vk0r-XtXOuabquWXWEqo7yx47WY8AkPC_twbi7VRQ5MNOm0n9BVCywKEvOHlpSCrFen4Qcf9HBmStlG3gjTjDsNDfUIOobK-KTU5jX5JgPjwRvVRRW8eq_TA5WMHp69r5nPPjmIiz3iP-Z7F1hz39EQdFXXn7VRNP-L9DdTpNJ1e6CVYgdkBRCur-b2xnvx98WQ7GN8THpXCJCGn7quk2mv_9-dqY5IROO8Axtxo6qhB0Ca4T-ZtCF183ubWVvXUh5IrPzMkjO9np_EgmsE08xMkDCRyiMe1Lmyl8ZvVrdaHp9VzZxd1oC3-56FCHL6tfKjEbxInppOodQRRkiLa8neW9HxEcITOkeg9w1RVzCsHG_ZiZScKC1l2OKDZsxZzkxlMf8_iQtpLs8tQVW2H3NBzkIutlMg_TeH-_T8VJRjBTSnaU3gACumWr6e_bGiaKJKtzG8tVYl3YjZh_YylTTNb4HNYZrsqJBcCE2KyNQ4fOxQ3GRzs25j9ku58ZGH-Cuq_joaG8g1EM2SlTxSTZoN3UmY79-Emfis[39m
+[34m2019-08-30 13:55:52.452[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:55:52.460[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTQwOTUyLCJleHAiOjE1NjcyMjczNTIsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.2Q6BHx6lVQhOOCSA_f5iA13VsO3Wm8onHqxgv1SkK1JWVcPnHZWuSPDA4AhE5TVee9SkPP6VpSRkB40rvxFfC2vzwux_iqIYxTEakO_WeDPpC4qLop0gDZ8dkepTlWY53a_jeVFinqcsn2kjpR8r1zcAaMBsvYcKNkJtvVTwSlgxrNUGNiRuIYL7yJkm74AwQtpuml53azVXuqzWOeWMfWjTs6juMkV-xsxVLhCcwZrlm53DLwTNr5ar4BP9wlf2BKc3NNJZdP6MVXn-7GgrQUdScHFdh3NB8Mb3dOQE_0T7opR8HBIKWBgZ0f4JevKlhT6ieTL-7GD3x9HaL-78SWM2w41AiALHKnwD1HwzvIafTt5zX8sDC_jy9dSQQzCnglj4kDwCyBZ5CAPelWFhPkcIRWG-yON_SymqmEpkYpybyrOZa5HmBu7pOzz26udNCYmvWJuxFV4Nw6Sd49F6StCRaSHyFg2ASZyaywT-1B1jbLBSrhBPu1m0mxXyZJXIDkkvm9WUq-ktF6r0WXXcsi-TPaPge9CeCFt7qtcRG7L1DmdAAFbqJXQN9R1xhNTCkPU3aOsiVg07Ganamxh7313WyYnBzXW1hRgX8jQHJFVgLGweqIWuTD1wDXgd1oePWGF7_pgOg9YGtZS9IEAg5HreI-kS3ylLLaqg0GGqi3A[39m
+[34m2019-08-30 13:55:53.170[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m Object.module.exports.exec (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MySqlUnitOfWork.js:6:16)[39m - [32mreceived Mysql query for
+            'configuration' : wamp,
+            'sql' : Select * from User WHERE uuid IN ('8794d091-ea48-4df5-a43a-b1f0cd99d4dd', '42476f37-4176-402a-a261-4e6da8c81380', '19be6845-9add-4ec3-adff-461bd5029df9', 'a7b84a2d-e0a8-48d1-88e2-d190d06da5c5', 'c79b2a6e-6489-4ac5-a37c-cbb4190e494f') AND firstname LIKE '%',
+            'arguments' : undefined[39m
+[34m2019-08-30 13:55:58.398[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m Object.exec (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:7:20)[39m - [32mreceived mongo query for
+                'configuration' : jwt,
+                'sql' : find,
+                'collection' : authentication,
+                'queryContent' : undefined[39m
+[34m2019-08-30 13:57:41.771[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:57:41.779[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MwcnciLCJpYXQiOjE1NjcxNDEwNjEsImV4cCI6MTU2NzE0MTEyMSwiYXVkIjoiQXVkaWVuY2U6IG15c3FsX2NydWQiLCJpc3MiOiJrZXZpbi5tYXJ0aW4uZW5nQG91dGxvb2suY29tIiwic3ViIjoiQXV0aG9yaXphdGlvbi9SZXNvdXJjZS9teXNxbGRiIn0.jLd3PwhrF2IfvW3lb1zEQpY0jLeJCc_ySCG3wjKIEZkuGeVs_Mj4k0KLRMJ11dCaXH7_H2TKefSvaV7DkE8eoVoOFPilslgbsOMwDU-3ELW9QDDD8rOVXZVBbXbg0OpBmyc0FIBaHbrXUXXQppMxVS9g-ils_gMrihRb-YxQr2wtiOEsQknLySsY0bnNHd-tzTZwECLaPYiORLTuLNgkZgBoK7NJHn-IdUx1-GXJkKST3l0PHy8zefdSWoyemmd3fMw0G2yAjim7cRoWXYJXG1NDzhpTio_1Bk-PhaeehkvECE7TDY1-o7KO2RoXc7ZHaAP9baOD5v_aQw1mlXXdDsyF_5vDr-Q1ZZyTHRu-g-k_myX1WW5nv2mGwOgP8mUAhz1D_Jz7Rs1V-A5K_TjuqKXvwO49g5jZRTkjaHcM2FBaOsNDP1a6EueNeB_STD071mrv-IFknWWSNMzYK2y7m8glizYC8cachNUD3fOx7ninfCA16HsenNvzo6EyFHoNI6NzdFHmbbqcqb5r2XcID5xYuViC2Xn9aVRxlEWqKADy4ECOGQZwahDxDIismJhkXHrD_PEUYK2sGM5gvKgEAVm3QFwcqS324X4z7JTumhMmuX3SDfLvplRCxiyDa2-nQs-z-bKDwf4RwBothMxoZVxB0EAB2VhfmA5RyQVJO2w[39m
+[34m2019-08-30 13:57:41.781[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:57:41.788[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWNjZXNzX2MycnciLCJpYXQiOjE1NjcxNDEwNjEsImV4cCI6MTU2NzE0MTEyMSwiYXVkIjoiQXVkaWVuY2U6IG1vbmdvX2p3dCIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.RqZx5vPtIrSjeq7G9Bf_EpIX2OhVq8dA3FghnMPqupVC1QdTe9aWlBbZV_S37o3FO5xTPvOtjdP4tuAzj7pgSiH3Opy9Q3QNf1HTeObsITEGsCbg_tVpG4jgFqOCoYUjwBtte9u1lz4w8PeVyJSX-QmDINokxVgWN7RjTuxYe2UQOx8QDxW3JaAd5V12bcJp3xwp50-KJ9AIlUfMD7UOkZY0BJjZ_qMMVkcIZxfOWbL6_ylKWMyvoGZfh9W2pa3v4ZXVo3mQsBd1jvwaBhmEggwmQSzPcdzyyyN1N7L7zoShv6lc1iiJLu4EV8zLTSVaUCoS3APqMepGFRysDnMg728PYisEHy3HhX4zlmJOajyCFrcViAv7WpjEFvn-rGid78_JPiac0StR6OBxC-lpc4t6eU28BYXEyEuUIRNm36waZ31irDAhV9dIbWI9VBebgymQVANCri7aBfs39oGacRX_AWWF7W7mCKOmrgM0GvpwRh0eIET2Mk_hyk8HwPcrFSWJmvqgx6AONeaIFY6-JQ7TktYvvcyNXFPsHyL5QnCDAfRXDRcbfPQuDRDuMivmqm4ajYfYNYDZyNXBliVhH7vAYg6plhRCaLB-owLnfC1CGiH-gt8vA9qTMH6GuPpgPTS5BIZyKiMnUASTSp9ToqmzcN1XNLSxETt8ItQFfhM[39m
+[34m2019-08-30 13:57:41.789[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\models\authModel.js:44:36[39m - [32mAuthentication success![39m
+[34m2019-08-30 13:57:41.797[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m C:\Workspace\MyEnv\NodeJs\jwtGenerator\controllers\JWTController.js:34:32[39m - [32mToken created ! eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ3JhcGhfYXBpIiwiaWF0IjoxNTY3MTQxMDYxLCJleHAiOjE1NjcyMjc0NjEsImF1ZCI6ImxpdmVfaW5mbyIsImlzcyI6ImtldmluLm1hcnRpbi5lbmdAb3V0bG9vay5jb20iLCJzdWIiOiJBdXRob3JpemF0aW9uL1Jlc291cmNlL215c3FsZGIifQ.wwRHNJbGZTVkMjZW-Uuc0rPkvVm7zrGd1WBv176qR3VNpyVPnxzJDornVGPFd0If9wm7MZkZ0MpI9kv_c4nxDfQcKWVbiV3OL-E2RDnoHU4W5yRPnJiuDU2mgOQA60RdxK5aXC9DHil9M1Ct0zkAl4-5g1ymXPKBCIPA8bfAUJfeNvDnGSI6R1HxJc6AA2lpmqTD20WjwtK_O5DsdOGyjgxbdBAuayqap0vJ5X9-30-jszgMBcxcu8GOw56lOKMXd2_MuENubWMUNrGYIxbX4fipYC1Nqp3etggQKzbM0O1mkJauInODYMfQnXfcqLv2xqPLx3ofD76sU2_ZMtxcuOGpYEgkBO_ie6ZMru8s3IDvNzyLMVVqWUeODy2FtiMWO4OI7ZJpW51L859QhAumabbcJb4A1XVq9DTlr5DjmLnZoJ3bkJGFvwOOqWlRbIBWeiN-zyChhu7K1D42Ku8unGqZWuSJMiNekvOVl4uk1hyFdxR6nJyfLTY4vSJg9IsIJru_rPbLip83PzibdEI-tiN5bzDTdBzZ_MfV9PT2nOT-VT1l7AF4qDbrStD6F_38Ifc4eS9o1CaQzFuszOnGIWysdipQvOrGq4PUSEr68uTF6rwFRRSRJswHiv__knpWqAGxwKk3BGJyl-Y3tdmvlDjbjdEFu8HeQC42qXw8mtw[39m
+[34m2019-08-30 13:57:42.286[39m - [32m[[39m[4m[1m[32mINFO[39m[22m[24m[32m][39m - [33m Object.exec (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:7:20)[39m - [32mreceived mongo query for
+                'configuration' : jwt,
+                'sql' : find,
+                'collection' : authentication,
+                'queryContent' : undefined[39m
