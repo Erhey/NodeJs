@@ -1,6 +1,6 @@
 
-const logger = require("link_logger")
-const mysqlDbUOW = require("../models/MySqlUnitOfWork")
+const logger = require('link_logger')
+const mysqlDbUOW = require('../models/MySqlUnitOfWork')
 
 module.exports.exec = (req, res) => {
     if (checkBodyMysql(req.body)) {
@@ -12,8 +12,8 @@ module.exports.exec = (req, res) => {
                         'configName'= ${req.body.configName}, 
                         'sql'= ${req.body.sql}`)
         res.status(400).send({
-            "status": 400,
-            "message": "Bad request!"
+            status: 400,
+            message: 'Bad request!'
         })
     }
 }

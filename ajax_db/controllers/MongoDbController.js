@@ -1,6 +1,6 @@
 
-const mongoDbUOW = require("../models/MongoDbUnitOfWork")
-const logger = require("link_logger")
+const mongoDbUOW = require('../models/MongoDbUnitOfWork')
+const logger = require('link_logger')
 
 
 module.exports.exec = (req, res) => {
@@ -14,8 +14,8 @@ module.exports.exec = (req, res) => {
                         'queryType'= ${req.body.queryType}, 
                         'collection'= ${req.body.collection}`)
         res.status(400).send({
-            "status" : 400,
-            "message" : "Bad request!"
+            status : 400,
+            message : 'Bad request!'
         })
     }
 }

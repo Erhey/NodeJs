@@ -73,7 +73,6 @@ exports.getGraphFormat = (req, res) => {
   })
 }
 exports.getLiveInfo = (req, res) => {
-  console.log("test")
   graphApi.getLiveInfo(result => {
     res.send(result)
   })
@@ -86,7 +85,6 @@ exports.updateExcel = (req, res) => {
   })
 }
 exports.getUserUUIDList = (req,res) => {
-  console.log(req.body)
   trackingApi.getUserUUIDList(req.body, uuid_list => {
     res.status(uuid_list.status || 500).send(uuid_list)
   })

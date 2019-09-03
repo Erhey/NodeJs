@@ -2,6 +2,11 @@ const logger = require('link_logger')
 
 const link_models = require('link_models')
 module.exports = {
+
+    /**
+     * Main function
+     * Execute Mongo request
+     */
     exec: async (configName, queryType, collection, queryContent, callback) => {
         try {
             logger.info(`received mongo query for
@@ -9,52 +14,66 @@ module.exports = {
                 'sql' : ${queryType},
                 'collection' : ${collection},
                 'queryContent' : ${queryContent}`)
+
+            // Dispatch query by type : find / findOne / insertOne / insertMany / replaceOne...
             switch (queryType) {
-                case "find":
+                case 'find':
                     await find(configName, collection, queryContent, result => {
                         callback(result)
                     })
                     break
-                case "findOne":
+                case 'findOne':
                     await findOne(configName, collection, queryContent, result => {
                         callback(result)
                     })
                     break
-                case "insertMany":
+                case 'insertOne':
                     callback(insertMany(configName, collection, queryContent))
                     break
-                case "updateMany":
+                case 'insertMany':
+                    callback(insertMany(configName, collection, queryContent))
+                    break
+                case 'replaceOne':
+                    callback(replaceOne(configName, collection, queryContent))
+                    break
+                case 'updateMany':
                     callback(updateMany(configName, collection, queryContent))
                     break
                 default:
                     logger.info(`Please define a valuable queryType! queryType : ${queryType}`)
                     callback({
-                        status: "400",
-                        message: "Bad request ! Please define a valuable queryType!"
+                        status: '400',
+                        message: 'Bad request ! Please define a valuable queryType!'
                     })
                     break
             }
         } catch (err) {
-            logger.error("Unexpected error occured !" + err)
+            logger.error('Unexpected error occured !' + err)
             callback({
-                status: "500",
-                message: "Unexpected error occured !"
+                status: '500',
+                message: 'Unexpected error occured !'
             })
         }
     }
 }
+
+/**
+ * Find
+ */
 find = async (configName, collection, queryContent, callback) => {
     let mongoConnection = link_models.getMongoConnection(configName)
+    // Use dynamic name for collection
     mongoConnection[`${collection}Schema`].find(queryContent, (err, documents) => {
         let result = {}
         if (err) {
+
             logger.error(`MongoDb error occured! Parameters : 
                                 'collection' : ${collection} 
                                 'configName' : ${configName} 
                                 'queryContent' : ${queryContent} 
                                 'Error' : ${err}`)
             result.status = 408
-            result.message = "MongoDb error occured!"
+            result.message = 'MongoDb error occured!'
         } else {
             logger.debug(`documents found! : ${documents}`)
             result.status = 201
@@ -63,6 +82,9 @@ find = async (configName, collection, queryContent, callback) => {
         callback(result)
     })
 }
+/**
+ * findOne
+ */
 findOne = async (configName, collection, queryContent, callback) => {
 
     let mongoConnection = link_models.getMongoConnection(configName)
@@ -75,7 +97,7 @@ findOne = async (configName, collection, queryContent, callback) => {
                                 'queryContent' : ${queryContent} 
                                 'Error' : ${err}`)
             result.status = 408
-            result.message = "MongoDb error occured!"
+            result.message = 'MongoDb error occured!'
         } else {
             logger.debug(`document found! : ${document}`)
             result.status = 201
@@ -84,14 +106,54 @@ findOne = async (configName, collection, queryContent, callback) => {
         callback(result)
     })
 }
+
+
+/**
+ * replaceOne
+ */
+replaceOne = async (configName, collection, queryContent) => {
+
+    // Default is upsert = true 
+    // If setted to false looks like update
+    let upsert = true
+    if(queryContent.upsert !== undefined){
+        upsert = queryContent.upsert   
+    }
+    let mongoConnection = link_models.getMongoConnection(configName)
+    mongoConnection[`${collection}Schema`].replaceOne(queryContent, { upsert : upsert }, (err, result) => {
+        if (err) {
+            logger.error(`MongoDb error occured! Parameters : 
+                                'collection' : ${collection} 
+                                'configName' : ${configName} 
+                                'queryContent' : ${queryContent} 
+                                'upsert' : ${upsert} 
+                                'Error' : ${err}`)
+            result.status = 408
+            result.message = 'MongoDb error occured!'
+        } else {
+            logger.debug(`Documents get successfully replaced!`)
+            result.status = 201
+            result.message = 'Documents get successfully replaced!'
+        }
+        return result
+    })
+}
+/**
+ * insertMany
+ */
+
 insertMany = async (configName, collection, queryContent) => {
 
     let mongoConnection = link_models.getMongoConnection(configName)
     mongoConnection[`${collection}Schema`].insertMany(queryContent, (err, result) => {
         if (err) {
-            logger.error("MongoDb error occured! Error : " + err)
+            logger.error(`MongoDb error occured! Parameters : 
+                                'collection' : ${collection} 
+                                'configName' : ${configName} 
+                                'queryContent' : ${queryContent} 
+                                'Error' : ${err}`)
             result.status = 408
-            result.message = "MongoDb error occured!"
+            result.message = 'MongoDb error occured!'
         } else {
             logger.debug(`Documents get successfully inserted!`)
             result.status = 201
@@ -100,14 +162,21 @@ insertMany = async (configName, collection, queryContent) => {
         return result
     })
 }
+/**
+ * updateMany
+ */
 updateMany = async (configName, collection, queryContent) => {
     if (queryContent.conditions !== undefined && queryContent.$set !== undefined) {
         let mongoConnection = link_models.getMongoConnection(configName)
         mongoConnection[`${collection}Schema`].updateMany(queryContent.conditions, { $set: queryContent.$set }, (err, result) => {
             if (err) {
-                logger.error("MongoDb error occured! Error : " + err)
+                logger.error(`MongoDb error occured! Parameters : 
+                                    'collection' : ${collection} 
+                                    'configName' : ${configName} 
+                                    'queryContent' : ${queryContent} 
+                                    'Error' : ${err}`)
                 result.status = 408
-                result.message = "MongoDb error occured!"
+                result.message = 'MongoDb error occured!'
             } else {
                 logger.debug(`Documents get successfully updated!`)
                 result.status = 201
@@ -116,9 +185,9 @@ updateMany = async (configName, collection, queryContent) => {
             return result
         })
     } else {
-        logger.error("Please define 'conditions' and '$set' object in queryContent to update")
+        logger.error('Please define \'conditions\' and \'$set\' object in queryContent to update')
         result.status = 400
-        result.message = "Bad request for update!"
+        result.message = 'Bad request for update!'
         return result
     }
 }

@@ -2,18 +2,15 @@ var createError = require('http-errors')
 var express = require('express')
 var path = require('path')
 var cookieParser = require('cookie-parser')
-var http = require("http")
+var http = require('http')
 var cors = require('cors')
 
 var indexRouter = require('./routes/index')
 
 var app = express()
-app.set('views', path.join(__dirname, 'views'))
-app.set('view engine', 'pug')
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
-app.use(express.static(path.join(__dirname, 'public')))
 
 
 app.options('*', cors())
@@ -42,9 +39,9 @@ var server = http.createServer(app)
 server.listen(port)
 server.on('listening', onListening) 
 
-// Event listener for HTTP server "listening" event.
+// Event listener for HTTP server 'listening' event.
 function onListening() {
-    console.log("Server is listening on port : " + port)
+    console.log('Server is listening on port : ' + port)
 }
 
 

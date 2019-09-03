@@ -1,0 +1,24 @@
+2019-09-03 15:44:54.760 - [ERROR] - uncaughtException: listen EADDRINUSE: address already in use :::3002
+Error: listen EADDRINUSE: address already in use :::3002
+    at Server.setupListenHandle [as _listen2] (net.js:1270:14)
+    at listenInCluster (net.js:1318:12)
+    at Server.listen (net.js:1405:7)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\ajax_db\server.js:39:8)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+2019-09-03 15:48:19.575 - [ERROR] - uncaughtException: listen EADDRINUSE: address already in use :::3002
+Error: listen EADDRINUSE: address already in use :::3002
+    at Server.setupListenHandle [as _listen2] (net.js:1270:14)
+    at listenInCluster (net.js:1318:12)
+    at Server.listen (net.js:1405:7)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\ajax_db\server.js:39:8)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)

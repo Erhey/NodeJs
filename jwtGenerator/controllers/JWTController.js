@@ -15,7 +15,6 @@ module.exports = {
     getAccessToken: async (login, password, callback) => {
         // Get access_account information using login/password 
         await authModel.authenticate(login, password, (result) => {
-            console.log(result)
             // status 201 => Authentication success!
             if(result.status === 201) {
                 // Creating token's informations

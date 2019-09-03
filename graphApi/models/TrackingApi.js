@@ -36,7 +36,7 @@ class TrackingApi {
         // Find condition object used when querying Request 
         let findCond
         if (from) {
-            findCond = { "timestamp": { $gte: from }, isDangerous: true }
+            findCond = { timestamp: { $gte: from }, isDangerous: true }
         } else {
             findCond = { isDangerous: true }
         }
@@ -69,13 +69,13 @@ class TrackingApi {
                 await requestSchema.find(condObj, 'user_uuid', async (err, result) =>  {
                     if(err) {
                         logger.error(`Error on getDangerousRequests function : ${error.message}`)
-                        return callback({ status: 500, "error": "Error while getting informations for getUserUUIDList" })
+                        return callback({ status: 500, error: 'Error while getting informations for getUserUUIDList' })
                     }
                     return callback({ status: 201, uuids_list: [...new Set(result.map(request => request.user_uuid))] })
             })
         } catch (e) {
             logger.error(`Error on getDangerousRequests function : ${error.message}`)
-            return callback({ status: 500, "error": "Error while getting informations for getUserUUIDList" })
+            return callback({ status: 500, error: 'Error while getting informations for getUserUUIDList' })
         }
     }
 }

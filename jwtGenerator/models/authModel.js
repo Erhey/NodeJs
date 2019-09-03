@@ -17,7 +17,7 @@ module.exports = {
     authenticate: async (login, password, callback) => {
         let result = {}
         try {
-            await authenticationSchema.findOne({ "login": login }, (err, authentication) => {
+            await authenticationSchema.findOne({ login: login }, (err, authentication) => {
                 if (err) {
                     // Error occured on mongoose => findOne
                     logger.error(`Authentication failed! Mongo error - Could not retrieve data: ${err.message}`)

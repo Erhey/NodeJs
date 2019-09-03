@@ -1,4 +1,4 @@
-const { options } = require("./config")
+const { options } = require('./config')
 const fs = require('fs')
 const jwt = require('jsonwebtoken')
 const logger = require('link_logger')
@@ -15,8 +15,8 @@ validateTokenGenerator = (...audiences) => {
         if (!authorization) {
             logger.error('No credential sent!')
             res.status(402).send({
-                "status": 402
-                ,"error": 'No credential sent!' 
+                status: 402
+                ,error: 'No credential sent!' 
             })
         } else {
             let token = authorization.split(' ')[1]
@@ -29,33 +29,33 @@ validateTokenGenerator = (...audiences) => {
                             logger.error('No right to access current server !')
                             logger.error(jwt.decode(token))
                             res.status(405).send({
-                                "status" : 405
-                                ,"error": "Current user don't have the right to access to this server."
-                                ,"detail" : err.message
+                                status : 405
+                                ,error: 'Current user don\'t have the right to access to this server.'
+                                ,detail : err.message
                             })
                         } else if (err.name === 'TokenExpiredError'){
                             logger.error('JWT expired!')
                             res.status(406).send( {
-                                "status" : 406
-                                ,"error": err.message
-                                ,"expiredAt" : moment(err.expiredAt).format('YYYY-MM-DD HH:mm:ss.SSS')
+                                status : 406
+                                ,error: err.message
+                                ,expiredAt : moment(err.expiredAt).format('YYYY-MM-DD HH:mm:ss.SSS')
                             })
                         } else {
                             logger.error(`Unexpected Error! ${err}`)
                             res.status(500).send({
-                                "status" : 500
-                                ,"error": "Server internal issue occured. Contact manager if error persists!"
+                                status : 500
+                                ,error: 'Server internal issue occured. Contact manager if error persists!'
                             }) 
                         }
                     } else {
                         if (decoded) {
-                            logger.error('Token got validated! Accessing to the ressource!')
+                            logger.info('Token got validated! Accessing to the ressource!')
                             return next()
                         } else {
                             logger.error('Unexpected Error! JWT could not be decoded!')
                             res.status(500).send({
-                                "status" : 500
-                                ,"error": "Server internal issue occured. JWT could not be decoded!"
+                                status : 500
+                                ,error: 'Server internal issue occured. JWT could not be decoded!'
                             }) 
                         }
                     }
