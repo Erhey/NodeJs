@@ -1,10 +1,14 @@
 
 const trackingApi = require('../models/TrackingApi')('CRUD-MYSQL')
 const graphApi = require('../models/GraphApi')('CRUD-MYSQL')
+const {
+  StatusError_400
+} = require('link_http_code')
+
 
 exports.multiconnectionsAt = (req, res) => {
   if(!req.body.timestamp) {
-    res.send('please define timestamp')
+    res.status(400).send(new StatusError_400('please define timestamp'))
   }
   else {
     trackingApi.getMultiConnectionAtTime(req.body.timestamp, result => {
@@ -16,10 +20,10 @@ exports.multiconnectionsAt = (req, res) => {
 }
 exports.multiconnectionsRange = (req, res) => {
   if(!req.body.from) {
-    res.send('please define from')
+    res.status(400).send(new StatusError_400('please define from'))
   }
   else if(!req.body.to) {
-    res.send('please define to')
+    res.status(400).send(new StatusError_400('please define to'))
   }
   else if(!req.body.precision) {
     trackingApi.getMultiConnectionRange(req.body.from, req.body.to, 10, result => {
@@ -50,10 +54,10 @@ exports.visitedPages = (req, res) => {
 
 exports.pagesInfo = (req, res) => {
   if(!req.body.from) {
-    res.send('please define from when should we search (parameter : from)')
+    res.status(400).send(new StatusError_400('please define from when should we search (parameter : from)'))
   }
   else if(!req.body.to) {
-    res.send('please define until when shoule we search (parameter : to)')
+    res.status(400).send(new StatusError_400('please define until when shoule we search (parameter : to)'))
   }
   let pagesInfo
   trackingApi.getPagesInfo(req.body.from, req.body.to, '', result => {

@@ -4,7 +4,6 @@ let express = require('express')
 let router = express.Router()
 
 let index_controller = require('../controllers/indexController')
-
 const validateToken = require('link_jwt')
 router.use(validateToken('live_info'))
 

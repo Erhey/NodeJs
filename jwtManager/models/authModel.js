@@ -1,6 +1,13 @@
 const link_models = require('link_models')
 const { authenticationSchema } = link_models.getMongoConnection('jwt')
 const logger = require('link_logger')
+
+const {
+    StatusError_201
+    ,StatusError_500
+} = require('link_http_code')
+
+
 module.exports = {
     /**
      * Create a new authentication_account
@@ -18,21 +25,16 @@ module.exports = {
                 if (err) {
                     // Unexpected mongo error
                     logger.error(`Unexpected mongo error occured! ${err.message}`)
-                    result.status = 500
-                    result.error = err
-                    result.message = `Unexpected mongo error occured! ${err.message}`
+                    result = new StatusError_500(`Unexpected mongo error occured! ${err.message}`)
                 } else if (!insertedAuthAccount) {
                     // Insertion Failed
                     logger.error('Error occured on inserting account!')
-                    result.status = 404
-                    result.error = err
-                    result.message = 'Error occured on inserting account!'
+                    result = new StatusError_500('Error occured on inserting account!')
                 } else {
                     // Insertion success 
-                    logger.debug('Insert successful!')
-                    result.status = 201
+                    logger.debug('Authentication account was successfully inserted!')
+                    result = new StatusError_201('Authentication account was successfully inserted!')
                     result.inserted_auth_account = insertedAuthAccount
-                    result.message = 'Insert successful!'
                 }
                 callback(result)
                 // Mongo connection close
@@ -40,10 +42,7 @@ module.exports = {
         } catch (err) {
             // Unexpected error
             logger.error(`Unexpected error occured! ${err.message}`)
-            result.status = 500
-            result.error = err
-            result.message = `Unexpected error occured! ${err.message}`
-            callback(result)
+            callback(new StatusError_500())
         }
     },
     /**
@@ -58,25 +57,20 @@ module.exports = {
         let result = {}
         try {
             // updated passed account in authentication db for id : _id
-            authenticationSchema.updateOne({ "_id": _id }, { $set: account }, (err, updatedAuthAccount) => {
+            authenticationSchema.updateOne({ _id: _id }, { $set: account }, (err, updatedAuthAccount) => {
                 if (err) {
                     // Unexpected mongo error
                     logger.error(`Unexpected mongo error occured! ${err.message}`)
-                    result.status = 500
-                    result.error = err
-                    result.message = `Unexpected mongo error occured! ${err.message}`
+                    result = new StatusError_500(`Unexpected mongo error occured! ${err.message}`)
                 } else if (!updatedAuthAccount) {
                     // Update Failed
                     logger.error('Error occured on updating authentication account!')
-                    result.status = 404
-                    result.error = err
-                    result.message = 'Error occured on updating authentication account!'
+                    result = new StatusError_500('Error occured on update account!')
                 } else {
                     // Update success 
                     logger.debug('Authentication account was successfully updated!')
-                    result.status = 201
+                    result = new StatusError_201('Authentication account was successfully updated!')
                     result.updated_auth_account = updatedAuthAccount
-                    result.message = 'Authentication account was successfully updated!'
                 }
                 callback(result)
                 // Mongo connection close
@@ -84,10 +78,7 @@ module.exports = {
         } catch (err) {
             // Unexpected error
             logger.error(`Unexpected error occured! ${err.message}`)
-            result.status = 500
-            result.error = err
-            result.message = `Unexpected error occured! ${err.message}`
-            callback(result)
+            callback(new StatusError_500())
         }
     },
     /**
@@ -101,25 +92,20 @@ module.exports = {
         let result = {}
         try {
             // Delete account in authentication db for id : _id
-            authenticationSchema.deleteOne({ "_id": _id }, (err, deletedAuthAccount) => {
+            authenticationSchema.deleteOne({ _id: _id }, (err, deletedAuthAccount) => {
                 if (err) {
                     // Unexpected mongo error
                     logger.error(`Unexpected mongo error occured! ${err.message}`)
-                    result.status = 500
-                    result.error = err
-                    result.message = `Unexpected mongo error occured! ${err.message}`
+                    result = new StatusError_500(`Unexpected mongo error occured! ${err.message}`)
                 } else if (!deletedAuthAccount) {
                     // Update Failed
                     logger.error(`Error occured on deleting authentication account!`)
-                    result.status = 404
-                    result.error = err
-                    result.message = `Error occured on deleting authentication account!`
+                    result = new StatusError_500('Error occured on delete account!')
                 } else {
                     // Delete success 
                     logger.debug('Authentication account was successfully deleted!')
-                    result.status = 201
+                    result = new StatusError_201('Authentication account was successfully deleted!')
                     result.deleted_auth_account = deletedAuthAccount
-                    result.message = 'Authentication account was successfully deleted!'
                 }
                 callback(result)
                 // Mongo connection close
@@ -127,10 +113,7 @@ module.exports = {
         } catch (err) {
             // Unexpected error
             logger.error(`Unexpected error occured! ${err.message}`)
-            result.status = 500
-            result.error = err
-            result.message = `Unexpected error occured! ${err.message}`
-            callback(result)
+            callback(new StatusError_500())
         }
     },
     /**
@@ -154,10 +137,7 @@ module.exports = {
         } catch (err) {
             // Unexpected error
             logger.error(`Unexpected error occured! ${err.message}`)
-            result.status = 500
-            result.error = err
-            result.message = `Unexpected error occured! ${err.message}`
-            callback(result)
+            callback(new StatusError_500())
         }
     }
 }

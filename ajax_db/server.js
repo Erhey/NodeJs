@@ -1,15 +1,15 @@
-var createError = require('http-errors')
-var express = require('express')
-var path = require('path')
-var cookieParser = require('cookie-parser')
-var http = require('http')
-var cors = require('cors')
+const createError = require('http-errors')
+const express = require('express')
 
-var indexRouter = require('./routes/index')
+const cookieParser = require('cookie-parser')
+const http = require('http')
+const cors = require('cors')
+const indexRouter = require('./routes/index')
+const app = express()
+const logger = require('link_logger')
 
-var app = express()
 app.use(express.json())
-app.use(express.urlencoded({ extended: false }))
+app.use(express.urlencoded({ extended: true }))
 app.use(cookieParser())
 
 
@@ -35,13 +35,13 @@ if(!isNaN(process.env.PORT)){
     port = 3002
 }
 app.set('port', port)
-var server = http.createServer(app)
+let  server = http.createServer(app)
 server.listen(port)
 server.on('listening', onListening) 
 
 // Event listener for HTTP server 'listening' event.
 function onListening() {
-    console.log('Server is listening on port : ' + port)
+    logger.info('Server is listening on port : ' + port)
 }
 
 

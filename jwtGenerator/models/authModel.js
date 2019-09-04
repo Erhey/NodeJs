@@ -2,7 +2,11 @@ const logger = require('link_logger')
 const bcrypt = require('bcrypt')
 const link_models = require('link_models')
 const { authenticationSchema } = link_models.getMongoConnection('jwt')
-
+const {
+    StatusError_500
+    ,StatusError_401
+    ,StatusError_200
+} = require('link_http_code')
 
 module.exports = {
     /**
@@ -21,9 +25,7 @@ module.exports = {
                 if (err) {
                     // Error occured on mongoose => findOne
                     logger.error(`Authentication failed! Mongo error - Could not retrieve data: ${err.message}`)
-                    result.status = 500
-                    result.message = 'Unexpected Error occured! Authentication fail!'
-                    callback(result)
+                    callback(new StatusError_500())
                 } else if (authentication) {
                     logger.debug(`found authentication : ${authentication}`)
                     // An authentication was found
@@ -33,37 +35,29 @@ module.exports = {
                                     'password'= ${password}, 
                                     'hash'= ${authentication.password}`)
                             logger.error(`Authentication failed! bcrypt error - Could not compare hash: ${err.message}`)
-                            result.status = 500
-                            result.message = 'Unexpected Error occured! Authentication fail!'
+                            callback(new StatusError_500())
                         } else if (!res) {
                             logger.error('Authentication failed! Error 401! Password does not correspond.')
-                            result.status = 401
-                            result.message = 'Authentication failed! Check your login and/or password.'
+                            callback(new StatusError_401('Authentication failed! Check your login and/or password.'))
                         } else {
                             // Founded authentication password corresponds
                             logger.info('Authentication success!')
-                            result.status = 201
-                            result.message = 'Authentication success!'
+                            result = new StatusError_200('Authentication success')
                             result.name = authentication.name
                             result.audience = authentication.audience
                             result.expiresIn = authentication.expiresIn
+                            callback(result)
                         }
-                        callback(result)
-                    });
+                    })
                 } else {
-                    logger.error(`Authentication failed! Error 401! Login does not exist
-                        'login' : ${login}`)
-                    result.status = 401
-                    result.message = 'Authentication failed! Check your login and/or password.'
-                    callback(result)
+                    logger.error(`Authentication failed! Error 401! Login does not exist. 'login' : ${login}`)
+                    callback(new StatusError_401('Authentication failed! Check your login and/or password.'))
                 }
             })
         } catch (err) {
             // Unexpected Error
             logger.error(`Authentication failed! Unexpected error occured: ${err.message}`)
-            result.status = 500
-            result.message = 'Unexpected Error occured! Authentication fail!'
-            callback(result)
+            callback(new StatusError_500())
         }
     }
 }

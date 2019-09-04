@@ -40,7 +40,7 @@ server.on('error', onError)
 server.on('listening', onListening)
 
 /**
- * Event listener for HTTP server "error" event.
+ * Event listener for HTTP server 'error' event.
  */
 function onError(error) {
     if (error.syscall !== 'listen') {
@@ -65,7 +65,7 @@ function onError(error) {
 }
 
 /**
- * Event listener for HTTP server "listening" event.
+ * Event listener for HTTP server 'listening' event.
  */
 function onListening() {
     let addr = server.address()

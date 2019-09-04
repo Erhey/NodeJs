@@ -4,6 +4,8 @@ const authController = require('../controllers/authController')
 const authModel = require('../models/authModel')
 const utils = require('../utils')
 
+const { StatusError_400 } = require('link_http_code')
+
 // Protect access using JWT
 const validateToken = require('link_jwt')
 router.use(validateToken('jwt_mng'))
@@ -22,7 +24,7 @@ router.post('/updateAuthAccount', function (req, res, next) {
             res.send(result)
         })
     } else {
-        res.send({ "status": 403, "message": 'Please post an id to update an account.' })
+        res.status(400).send(new StatusError_400('Please post an id to update an account.'))
     }
 })
 // Delete handler
@@ -34,7 +36,7 @@ router.post('/deleteAuthAccount', function (req, res, next) {
                     res.send(result)
                 })
             } else {
-                res.send({ "status": 403, "message": `User not found for login : ${req.body.login}` })
+                res.status(400).send(new StatusError_400(`User not found for login : ${req.body.login}`))
             }
         })
     } else if(req.body._id) {
@@ -42,7 +44,7 @@ router.post('/deleteAuthAccount', function (req, res, next) {
             res.send(result)
         })
     } else {
-        res.send({ "status": 403, "message": 'Please post a login or an id to delete.' })
+        res.status(400).send(new StatusError_400('Please post a login or an id to delete.'))
     }
 })
 

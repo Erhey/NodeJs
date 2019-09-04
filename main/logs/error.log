@@ -1,0 +1,917 @@
+2019-09-04 15:51:05.466 - [ERROR] - [AJAX_DB] - localhost:3002 -   Object.exec (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:50:20) - Unexpected error occured !RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+2019-09-04 15:51:05.537 - [ERROR] - uncaughtException: document is not defined
+ReferenceError: document is not defined
+    at mongoConnection.(anonymous function).find (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:74:31)
+    at C:\Workspace\MyEnv\NodeJs\link_models\node_modules\mongoose\lib\model.js:4567:16
+    at C:\Workspace\MyEnv\NodeJs\link_models\node_modules\mongoose\lib\query.js:4283:12
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\mongoose\lib\helpers\query\completeMany.js:35:39)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+2019-09-04 15:51:23.514 - [ERROR] - [AJAX_DB] - localhost:3002 -   Object.exec (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:50:20) - Unexpected error occured !RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+2019-09-04 15:51:28.525 - [ERROR] - [AJAX_DB] - localhost:3002 -   Object.exec (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:50:20) - Unexpected error occured !RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+2019-09-04 15:53:52.880 - [ERROR] - [LINK_JWT] - helper-module -   jwt.verify (C:\Workspace\MyEnv\NodeJs\link_jwt\jwtAuthentication.js:36:36) - JWT expired!
+2019-09-04 15:54:02.553 - [ERROR] - [AJAX_DB] - localhost:3002 -   Object.exec (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:50:20) - Unexpected error occured !RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+2019-09-04 15:54:07.563 - [ERROR] - [AJAX_DB] - localhost:3002 -   Object.exec (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:50:20) - Unexpected error occured !RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+2019-09-04 15:55:30.412 - [ERROR] - [AJAX_DB] - localhost:3002 -   Object.exec (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:50:20) - Unexpected error occured !RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+2019-09-04 15:55:35.426 - [ERROR] - [AJAX_DB] - localhost:3002 -   Object.exec (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:50:20) - Unexpected error occured !RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined
+2019-09-04 15:55:44.918 - [ERROR] - [LINK_JWT] - helper-module -   jwt.verify (C:\Workspace\MyEnv\NodeJs\link_jwt\jwtAuthentication.js:32:36) - No right to access current server !
+2019-09-04 15:55:44.918 - [ERROR] - [LINK_JWT] - helper-module -   jwt.verify (C:\Workspace\MyEnv\NodeJs\link_jwt\jwtAuthentication.js:33:36) - null
+2019-09-04 15:57:10.288 - [ERROR] - [AJAX_DB] - localhost:3002 -   Object.exec (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:50:20) - Unexpected error occured !TypeError: Cannot read property 'status' of undefined
+2019-09-04 15:57:40.455 - [ERROR] - [LINK_JWT] - helper-module -   jwt.verify (C:\Workspace\MyEnv\NodeJs\link_jwt\jwtAuthentication.js:32:36) - No right to access current server !
+2019-09-04 15:57:40.456 - [ERROR] - [LINK_JWT] - helper-module -   jwt.verify (C:\Workspace\MyEnv\NodeJs\link_jwt\jwtAuthentication.js:33:36) - null
+2019-09-04 15:58:23.019 - [ERROR] - [AJAX_DB] - localhost:3002 -   Object.exec (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:50:20) - Unexpected error occured !TypeError: Cannot read property 'status' of undefined
+2019-09-04 16:01:58.794 - [ERROR] - uncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:83
+            callback(new StatusError_502('MongoDb error occured!')
+                                                                 ^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 16:19:28.364 - [ERROR] - [AJAX_DB] - localhost:3002 -   mongoConnection.(anonymous function).insertMany (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:154:20) - MongoDb error occured! Parameters : 
+                                'collection' : authentication 
+                                'configName' : jwt 
+                                'queryContent' : undefined 
+                                'Error' : ValidationError: updatedAt: Path `updatedAt` is required., createdAt: Path `createdAt` is required., expiresIn: Path `expiresIn` is required., audience: Path `audience` is required., password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.
+2019-09-04 16:22:56.468 - [ERROR] - [AJAX_DB] - localhost:3002 -   mongoConnection.(anonymous function).insertMany (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:154:20) - MongoDb error occured! Parameters : 
+                                'collection' : authentication 
+                                'configName' : jwt 
+                                'queryContent' : undefined 
+                                'Error' : ValidationError: updatedAt: Path `updatedAt` is required., createdAt: Path `createdAt` is required., expiresIn: Path `expiresIn` is required., audience: Path `audience` is required., password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.
+2019-09-04 16:23:23.136 - [ERROR] - uncaughtException: Parameter "obj" to Document() must be an object, got testsetstse
+ObjectParameterError: Parameter "obj" to Document() must be an object, got testsetstse
+    at new ObjectParameterError (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\mongoose\lib\error\objectParameter.js:25:11)
+    at model.Document (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\mongoose\lib\document.js:74:11)
+    at model.Model (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\mongoose\lib\model.js:92:12)
+    at new model (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\mongoose\lib\model.js:4394:15)
+    at C:\Workspace\MyEnv\NodeJs\link_models\node_modules\mongoose\lib\model.js:3208:15
+    at C:\Workspace\MyEnv\NodeJs\link_models\node_modules\async\internal\parallel.js:31:39
+    at replenish (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\async\internal\eachOfLimit.js:66:17)
+    at C:\Workspace\MyEnv\NodeJs\link_models\node_modules\async\internal\eachOfLimit.js:71:9
+    at _parallel (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\async\internal\parallel.js:30:5)
+    at parallelLimit (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\async\parallelLimit.js:38:26)
+    at Function.Model.$__insertMany (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\mongoose\lib\model.js:3229:3)
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\kareem\index.js:369:33)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+2019-09-04 16:26:34.717 - [ERROR] - [AJAX_DB] - localhost:3002 -   mongoConnection.(anonymous function).insertMany (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:154:20) - MongoDb error occured! Parameters : 
+                                'collection' : authentication 
+                                'configName' : jwt 
+                                'queryContent' : undefined 
+                                'Error' : ValidationError: updatedAt: Path `updatedAt` is required., createdAt: Path `createdAt` is required., expiresIn: Path `expiresIn` is required., audience: Path `audience` is required., password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.
+2019-09-04 16:28:55.649 - [ERROR] - [LINK_JWT] - helper-module -   jwt.verify (C:\Workspace\MyEnv\NodeJs\link_jwt\jwtAuthentication.js:32:36) - No right to access current server !
+2019-09-04 16:28:55.650 - [ERROR] - [LINK_JWT] - helper-module -   jwt.verify (C:\Workspace\MyEnv\NodeJs\link_jwt\jwtAuthentication.js:33:36) - null
+2019-09-04 16:30:19.323 - [ERROR] - [AJAX_DB] - localhost:3002 -   mongoConnection.(anonymous function).insertMany (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:154:20) - MongoDb error occured! Parameters : 
+                                'collection' : authentication 
+                                'configName' : jwt 
+                                'queryContent' : undefined 
+                                'Error' : ValidationError: updatedAt: Path `updatedAt` is required., createdAt: Path `createdAt` is required., expiresIn: Path `expiresIn` is required., audience: Path `audience` is required., password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.
+2019-09-04 16:31:37.774 - [ERROR] - uncaughtException: Parameter "obj" to Document() must be an object, got {"login": "mock2","password": "2uWL845@#", "name": "access_c5rw", "action": "r/rw", "server": "localhost:3002"}
+ObjectParameterError: Parameter "obj" to Document() must be an object, got {"login": "mock2","password": "2uWL845@#", "name": "access_c5rw", "action": "r/rw", "server": "localhost:3002"}
+    at new ObjectParameterError (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\mongoose\lib\error\objectParameter.js:25:11)
+    at model.Document (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\mongoose\lib\document.js:74:11)
+    at model.Model (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\mongoose\lib\model.js:92:12)
+    at new model (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\mongoose\lib\model.js:4394:15)
+    at C:\Workspace\MyEnv\NodeJs\link_models\node_modules\mongoose\lib\model.js:3208:15
+    at C:\Workspace\MyEnv\NodeJs\link_models\node_modules\async\internal\parallel.js:31:39
+    at replenish (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\async\internal\eachOfLimit.js:66:17)
+    at C:\Workspace\MyEnv\NodeJs\link_models\node_modules\async\internal\eachOfLimit.js:71:9
+    at _parallel (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\async\internal\parallel.js:30:5)
+    at parallelLimit (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\async\parallelLimit.js:38:26)
+    at Function.Model.$__insertMany (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\mongoose\lib\model.js:3229:3)
+    at process.nextTick (C:\Workspace\MyEnv\NodeJs\link_models\node_modules\kareem\index.js:369:33)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+2019-09-04 16:35:30.213 - [ERROR] - [AJAX_DB] - localhost:3002 -   module.exports.exec (C:\Workspace\MyEnv\NodeJs\ajax_db\controllers\MongoDbController.js:15:16) - Bad request! Could not get all informations required to execute request! : 
+                        'configName'= undefined, 
+                        'queryType'= undefined, 
+                        'collection'= undefined
+2019-09-04 16:35:47.010 - [ERROR] - [AJAX_DB] - localhost:3002 -   mongoConnection.(anonymous function).insertMany (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:154:20) - MongoDb error occured! Parameters : 
+                                'collection' : authentication 
+                                'configName' : jwt 
+                                'queryContent' : undefined 
+                                'Error' : ValidationError: updatedAt: Path `updatedAt` is required., createdAt: Path `createdAt` is required., expiresIn: Path `expiresIn` is required., audience: Path `audience` is required., password: Path `password` is required., login: Path `login` is required., name: Path `name` is required.
+2019-09-04 16:37:09.875 - [ERROR] - uncaughtException: Unexpected token if
+C:\Workspace\MyEnv\NodeJs\ajax_db\controllers\MongoDbController.js:10
+    if(checkBodyMongo(req.body)) {
+    ^^
+
+SyntaxError: Unexpected token if
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 16:39:37.195 - [ERROR] - uncaughtException: Missing catch or finally after try
+C:\Workspace\MyEnv\NodeJs\ajax_db\controllers\MongoDbController.js:10
+    }
+    ^
+
+SyntaxError: Missing catch or finally after try
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 16:39:38.284 - [ERROR] - uncaughtException: Missing catch or finally after try
+C:\Workspace\MyEnv\NodeJs\ajax_db\controllers\MongoDbController.js:9
+    }
+    ^
+
+SyntaxError: Missing catch or finally after try
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 16:39:39.845 - [ERROR] - uncaughtException: Missing catch or finally after try
+C:\Workspace\MyEnv\NodeJs\ajax_db\controllers\MongoDbController.js:11
+    }
+    ^
+
+SyntaxError: Missing catch or finally after try
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 16:39:41.271 - [ERROR] - uncaughtException: Missing catch or finally after try
+C:\Workspace\MyEnv\NodeJs\ajax_db\controllers\MongoDbController.js:12
+    }
+    ^
+
+SyntaxError: Missing catch or finally after try
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 16:40:01.448 - [ERROR] - uncaughtException: Unexpected token (
+C:\Workspace\MyEnv\NodeJs\ajax_db\controllers\MongoDbController.js:10
+        let parsedBody = JSON.(req.body)
+                              ^
+
+SyntaxError: Unexpected token (
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 16:45:39.746 - [ERROR] - [LINK_JWT] - helper-module -   jwt.verify (C:\Workspace\MyEnv\NodeJs\link_jwt\jwtAuthentication.js:32:36) - No right to access current server !
+2019-09-04 16:45:39.748 - [ERROR] - [LINK_JWT] - helper-module -   jwt.verify (C:\Workspace\MyEnv\NodeJs\link_jwt\jwtAuthentication.js:33:36) - null
+2019-09-04 16:46:14.205 - [ERROR] - [AJAX_DB] - localhost:3002 -   mongoConnection.(anonymous function).insertMany (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:154:20) - MongoDb error occured! Parameters : 
+                                'collection' : authentication 
+                                'configName' : jwt 
+                                'queryContent' : [object Object] 
+                                'Error' : ValidationError: updatedAt: Path `updatedAt` is required., createdAt: Path `createdAt` is required., expiresIn: Path `expiresIn` is required., audience: Path `audience` is required.
+2019-09-04 16:46:38.818 - [ERROR] - [AJAX_DB] - localhost:3002 -   mongoConnection.(anonymous function).insertMany (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:154:20) - MongoDb error occured! Parameters : 
+                                'collection' : authentication 
+                                'configName' : jwt 
+                                'queryContent' : [object Object] 
+                                'Error' : ValidationError: updatedAt: Path `updatedAt` is required., createdAt: Path `createdAt` is required., expiresIn: Path `expiresIn` is required., audience: Path `audience` is required.
+2019-09-04 17:02:52.562 - [ERROR] - uncaughtException: Unexpected token .
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:130
+    mongoConnection[`${collection}Schema`].replaceOne(., { upsert : upsert }, (err, result) => {
+                                                      ^
+
+SyntaxError: Unexpected token .
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:02:55.339 - [ERROR] - uncaughtException: Unexpected token ,
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:130
+    mongoConnection[`${collection}Schema`].replaceOne(queryContent., { upsert : upsert }, (err, result) => {
+                                                                   ^
+
+SyntaxError: Unexpected token ,
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:03:06.054 - [ERROR] - uncaughtException: Unexpected token ,
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:130
+    mongoConnection[`${collection}Schema`].replaceOne(queryContent.filter, , { upsert : upsert }, (err, result) => {
+                                                                           ^
+
+SyntaxError: Unexpected token ,
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:03:12.128 - [ERROR] - uncaughtException: Unexpected token ,
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:130
+    mongoConnection[`${collection}Schema`].replaceOne(queryContent.filter, queryContent., { upsert : upsert }, (err, result) => {
+                                                                                        ^
+
+SyntaxError: Unexpected token ,
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:08:26.628 - [ERROR] - [AJAX_DB] - localhost:3002 -   mongoConnection.(anonymous function).replaceOne (C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:132:20) - MongoDb error occured! Parameters : 
+                                'collection' : authentication    
+                                'configName' : jwt 
+                                'queryContent' : [object Object] 
+                                'upsert' : true 
+                                'Error' : MongoError: E11000 duplicate key error collection: authentication.authentication index: login_1 dup key: { : "mock3" }
+2019-09-04 17:31:44.267 - [ERROR] - uncaughtException: Unexpected token ...
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:25
+            find / findOne / insertOne / insertMany / replaceOne...
+                                                                ^^^
+
+SyntaxError: Unexpected token ...
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:33:08.631 - [ERROR] - uncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:65
+            logger.error(`Unexpected error occured !' + err)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:33:10.262 - [ERROR] - uncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:65
+            logger.error(`Unexpected error occured ! + err)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:33:12.558 - [ERROR] - uncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:65
+            logger.error(`Unexpected error occured ! + $err)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:33:13.642 - [ERROR] - uncaughtException: Missing } in template expression
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:65
+            logger.error(`Unexpected error occured ! + ${err)
+                                                         ^^^
+
+SyntaxError: Missing } in template expression
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:33:38.410 - [ERROR] - uncaughtException: Unexpected token :
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:19
+                'queryContent' : ${queryContent}`)
+                               ^
+
+SyntaxError: Unexpected token :
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:35:34.847 - [ERROR] - uncaughtException: Unexpected token {
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:83
+        } else if(documents{
+                           ^
+
+SyntaxError: Unexpected token {
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:36:18.206 - [ERROR] - uncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:85
+            callback(new StatusError_204()
+                                         ^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:36:45.935 - [ERROR] - uncaughtException: Unexpected identifier
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:4
+    StatusError_200
+    ^^^^^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:36:47.309 - [ERROR] - uncaughtException: Unexpected identifier
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:4
+    StatusError_204
+    ^^^^^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:39:40.978 - [ERROR] - uncaughtException: Missing } in template expression
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:150
+            logger.debug(`${Documents get successfully replaced!`)
+                            ^^^^^^^^^^
+
+SyntaxError: Missing } in template expression
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:39:43.002 - [ERROR] - uncaughtException: Missing } in template expression
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:150
+            logger.debug(`${result.nDocuments get successfully replaced!`)
+                            ^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Missing } in template expression
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:40:01.534 - [ERROR] - uncaughtException: missing ) after argument list
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:151
+            callback(new StatusError_201(`${result.n} document(s) get successfully replaced!`)
+                                                                                             ^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:43:07.021 - [ERROR] - uncaughtException: Unexpected token )
+C:\Workspace\MyEnv\NodeJs\ajax_db\models\MongoDbUnitOfWork.js:209
+});
+ ^
+
+SyntaxError: Unexpected token )
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:48:49.588 - [ERROR] - uncaughtException: link_ is not defined
+ReferenceError: link_ is not defined
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\ajax_db\server.js:44:5)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:48:52.348 - [ERROR] - uncaughtException: logger is not defined
+ReferenceError: logger is not defined
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\ajax_db\server.js:44:5)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:48:56.527 - [ERROR] - uncaughtException: logger is not defined
+ReferenceError: logger is not defined
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\ajax_db\server.js:44:5)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:49:04.051 - [ERROR] - uncaughtException: logger is not defined
+ReferenceError: logger is not defined
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\ajax_db\server.js:44:5)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:49:13.420 - [ERROR] - uncaughtException: logger is not defined
+ReferenceError: logger is not defined
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\ajax_db\server.js:44:5)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:49:16.105 - [ERROR] - uncaughtException: express is not defined
+ReferenceError: express is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\ajax_db\server.js:10:1)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:49:19.119 - [ERROR] - uncaughtException: logger is not defined
+ReferenceError: logger is not defined
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\ajax_db\server.js:44:5)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:49:23.526 - [ERROR] - uncaughtException: logger is not defined
+ReferenceError: logger is not defined
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\ajax_db\server.js:44:5)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:49:32.079 - [ERROR] - uncaughtException: logger is not defined
+ReferenceError: logger is not defined
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\ajax_db\server.js:44:5)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:51:52.331 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:52:06.271 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:52:15.161 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:52:17.024 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:52:22.299 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:52:23.706 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:52:40.637 - [ERROR] - uncaughtException: cosnt is not defined
+ReferenceError: cosnt is not defined
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\graphApi\controllers\indexController.js:4:1)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\graphApi\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+2019-09-04 17:52:53.522 - [ERROR] - uncaughtException: Cannot find module 'link_'
+Error: Cannot find module 'link_'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\graphApi\controllers\indexController.js:6:5)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\graphApi\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+2019-09-04 17:52:57.704 - [ERROR] - uncaughtException: Cannot find module 'link_http_'
+Error: Cannot find module 'link_http_'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\graphApi\controllers\indexController.js:6:5)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Workspace\MyEnv\NodeJs\graphApi\routes\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+2019-09-04 17:53:00.674 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:53:03.194 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:53:04.279 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:53:06.519 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:53:11.999 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:53:13.910 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:53:18.266 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:53:25.056 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:53:36.056 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:53:38.431 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:53:50.604 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:53:55.442 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:54:02.524 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:54:06.533 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:54:09.853 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:54:26.833 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:54:47.868 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:56:25.286 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Listening on port 3003'
+TypeError: Cannot create property 'Symbol(level)' on string 'Listening on port 3003'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\jwtGenerator\server.js:80:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:56:55.050 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Listening on port 3003'
+TypeError: Cannot create property 'Symbol(level)' on string 'Listening on port 3003'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\jwtGenerator\server.js:80:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 17:57:06.499 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Listening on port 3003'
+TypeError: Cannot create property 'Symbol(level)' on string 'Listening on port 3003'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\jwtGenerator\server.js:80:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 18:16:23.315 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+TypeError: Cannot create property 'Symbol(level)' on string 'Server is listening on port : 3001'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\graphApi\server.js:59:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-09-04 18:16:23.369 - [ERROR] - uncaughtException: Cannot create property 'Symbol(level)' on string 'Listening on port 3003'
+TypeError: Cannot create property 'Symbol(level)' on string 'Listening on port 3003'
+    at DerivedLogger.log (C:\Workspace\MyEnv\NodeJs\link_logger\node_modules\winston\lib\winston\logger.js:208:20)
+    at Server.onListening (C:\Workspace\MyEnv\NodeJs\jwtGenerator\server.js:80:12)
+    at Server.emit (events.js:189:13)
+    at emitListeningNT (net.js:1304:10)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)

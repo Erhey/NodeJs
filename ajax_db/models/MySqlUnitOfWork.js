@@ -1,31 +1,39 @@
 const logger = require('link_logger')
 
+const {
+    StatusError_200
+    ,StatusError_500
+    ,StatusError_502
+} = require('link_http_code')
+
+
 const link_models = require('link_models')
+
+/**
+ * Execute Sql query and retrieved the data without modifications
+ * 
+ * Sql query could be executed as a simple request or a prepared request
+ */
 module.exports.exec = async (configName, sql, args, callback) => {
     try {
-        logger.info(`received Mysql query for
-            'configuration' : ${configName},
-            'sql' : ${sql},
-            'arguments' : ${args}`)
+        // Get Mysql connection with all configuration presetted
         const mysqlConnection = link_models.getMysqlConnection(configName)
         let result = {}
+            // Execute Request
             await mysqlConnection.query(sql, args, (err, rows) => {
                 if (err) {
                     logger.error('Mysql error occured!' + err)
-                    result.status = 409
-                    result.message = 'Mysql error occured!'
+                    result = new StatusError_502('Mysql error occured!')
                 } else {
-                    logger.debug('rows found!')
-                    logger.debug(rows)
-                    result.status = 201
+                    logger.debug(`rows found! rows : ${rows}`)
+                    result = new StatusError_200()
                     result.rows = rows
                 }
                 callback(result)
         })
     } catch (e) {
-        logger.error('Unexpected Mysql error occured! Error : ' + e)
-        result.status = 410
-        result.message = 'Unexpected Mysql error occured!'
+        logger.error('Unexpected Server error! Error : ' + e)
+        result = new StatusError_500()
         callback(result)
     }
 }

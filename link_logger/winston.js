@@ -63,7 +63,7 @@ const myFileFormat = printf(({ level, message }) => {
 
 getMainDirectory = () => {
     // return __dirname
-    return __dirname.trim().match(/^(.*\\)[^\\]+$/)[1] + "main"
+    return __dirname.trim().match(/^(.*\\)[^\\]+$/)[1] + 'main'
 }
 
 let logger = createLogger({
@@ -107,7 +107,7 @@ colorify = (message, level) => {
     return message
 }
 getErrorObject = () => {
-    try { throw Error('') } catch (err) { return err; }
+    try { throw Error('') } catch (err) { return err }
 }
 
 custoLoggerFunction = (fn, callback, color) => {
@@ -155,7 +155,7 @@ getServer = sourceProject => {
         return server
     }
     else {
-        return "server not found"
+        return 'server not found'
     }
 }
 /***************** Internal functions ****************/
