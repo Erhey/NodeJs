@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+    <script src="./getAccessToken"></script>
+    <script src="./htmlUtils.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        await $.ajax({
+                url: 'http://localhost:3002/galaxy_breaker',
+                headers: {
+                    'Authorization': 'Bearer ' + access_tokenMysqlCrud,
+                    'contentType': 'application/json'
+                },
+                data: JSON.stringify({
+                    "configName": "galaxy_breaker",
+                    "sql": `SELECT 
+                        p.pseudo varchar(30) NOT NULL,
+                        gr.score varchar(30) NOT NULL,
+                        gr.createdTime datetime NOT NULL,
+                    FROM game_result gr 
+                        JOIN player p 
+                        ON gr.player_uuid = p.uuid 
+                    WHERE gr.isDelete <> '0' 
+                    ORDER BY gr.score 
+                    LIMIT 10`
+                }),
+                datatype: "json",
+                method: 'POST',
+                success: (users) => {
+                    if(users.status >= 400){
+                        console.error(users)
+                        $('#error-message').text(users.error)
+                        return
+                    }
+                    let list_users = users.rows
+                    let tableHtml = jsonToTableHtml(list_users)
+                    $('#top-ten').html(tableHtml)
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log(jqXHR)
+                    console.log(textStatus)
+                    console.log(errorThrown)
+                }
+            })
+    </script>
+</body>
+<div id="filter-search">
+    <input type="text" name="filter-search" id="filter-search" value="" placeholder="Enter search keywords here">
+    <button type="submit" onclick="getUserInformations()"><i class="fa fa-search"></i></button>
+    <button type="button" onclick="showAllAccessToken()">Test Mongo</button>
+</div>
+<div style="color: red;" id="error-message"></div>
+<div id="mongo-test"></div>
+<div id="top-ten">
+</div>
+
+</html>
