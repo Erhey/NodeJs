@@ -8,6 +8,15 @@ module.exports = {
 		,user: 'root'
 		,password: ''
 	},
+	galaxy_breaker: {
+		name: 'galaxy_breaker'
+		,description: 'Storing data for galaxy breaker'
+		,type: 'mysql'
+		,host: 'localhost'
+		,database: 'galaxy_breaker'
+		,user: 'root'
+		,password: ''
+	},
 	tracking: {
 		name: 'tracking'
 		,description: 'Storing tracking data of CRUD-MYSQL on mongodb server'
@@ -21,6 +30,11 @@ module.exports = {
 		,type: 'mongodb'
 		,host: '127.0.0.1'
 		,database: 'authentication'
+	},
+	redis: {
+		redisUrl: 'redis://127.0.0.1:6379',
+		expTime: '60000'
+
 	},
 	mock :{}
 }

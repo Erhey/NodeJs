@@ -26,7 +26,7 @@ app.use(function (req, res, next) {
 // error handler
 app.use(function (err, req, res, next) {
     res.status(err.status || 500)
-    res.render(res.err.message)
+    res.send(err.message)
 })
 const port = 3003
 app.set('port', port)
@@ -77,5 +77,5 @@ function onListening() {
     let bind = typeof addr === 'string'
         ? 'pipe ' + addr
         : 'port ' + addr.port
-    logger.log('Listening on ' + bind)
+    logger.debug('Listening on ' + bind)
 }

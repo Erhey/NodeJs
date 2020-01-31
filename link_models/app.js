@@ -28,6 +28,5 @@ module.exports = {
         else {
             return require(`./mysqlModels/${configName}Model/${configName}Connection`)
         }
-        
     }
 }

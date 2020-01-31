@@ -2,7 +2,7 @@
 const mongoDbUOW = require('../models/MongoDbUnitOfWork')
 const logger = require('link_logger')
 const { StatusError_400 } = require('link_http_code')
-
+const uuidv4 = require('uuid/v4')
 /**
  * Main function
  * Check if body is well formed and delegate to models the request
@@ -10,7 +10,15 @@ const { StatusError_400 } = require('link_http_code')
 module.exports.exec = (req, res) => {
     if(checkBodyMongo(req.body)) {
         // Body is well formed!
-        mongoDbUOW.exec(req.body.configName, req.body.queryType, req.body.collection, req.body.queryContent, result => {
+        // let userHashKey
+        // if (req.cookies === undefined || req.cookies.cache_uuid === undefined) {
+        //     userHashKey = uuidv4()
+        //     res.cookie('cache_uuid', userHashKey)
+        // } else {
+        //     userHashKey = req.cookies.cache_uuid
+        // }
+        // mongoDbUOW.exec(req.body, userHashKey, result => {
+        mongoDbUOW.exec(req.body, result => {
             res.status(result.status).send(result)
         })
     } else {
@@ -32,3 +40,5 @@ checkBodyMongo = body => {
             && body.queryType !== undefined
             && body.collection !== undefined)
 }
+
+
