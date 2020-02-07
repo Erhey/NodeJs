@@ -96,7 +96,7 @@ module.exports.getPlayerUUID = async (pseudo, isDeleteFlg, callback) => {
             } else {
                 logger.debug(`Player UUID found! uuids : ${uuids}`)
                 result = new StatusError_200()
-                result.uuids = uuids
+                result.rows = uuids
             }
             callback(result)
         })
@@ -284,8 +284,6 @@ module.exports.addGameResult = async (pseudoOrUUID, score, isDeleteFlg, callback
             WHERE (
                 uuid = '${pseudoOrUUID}'
                 OR pseudo = '${pseudoOrUUID}'
-                    ${isDeleteFlg === 'true' ? "" :"AND isDelete <> '1'" }
-                )
             )
             ${isDeleteFlg === 'true' ? "" :"AND isDelete <> '1'" }
         `

@@ -125,8 +125,8 @@ module.exports = {
     }
     ,addGameResult: async (req, res, next) => {
         logger.debug("Adding Game Result...")
-        if(req.body.uuid !== undefined && req.body.score !== undefined) {
-            indexModel.addGameResult(req.body.uuid, req.body.score, req.body.isDeleteFlg, result => {
+        if(req.body.player_uuid !== undefined && req.body.score !== undefined) {
+            indexModel.addGameResult(req.body.player_uuid, req.body.score, req.body.isDeleteFlg, result => {
                 res.send(result)
             })
         } else if(req.body.pseudo !== undefined) {
@@ -134,8 +134,8 @@ module.exports = {
                 res.send(result)
             })
         } else {
-            logger.error(`Player's 'uuid or pseudo' and score should be set to add a Game Result!`)
-            res.send(new StatusError_500(`Player's 'uuid or pseudo' and score should be set to add a Game Result!`))
+            logger.error(`Player's 'player_uuid or pseudo' and score should be set to add a Game Result!`)
+            res.send(new StatusError_500(`Player's 'player_uuid or pseudo' and score should be set to add a Game Result!`))
         }
     }
     ,deleteGameResult: async (req, res, next) => {

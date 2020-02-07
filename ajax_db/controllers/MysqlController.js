@@ -7,6 +7,7 @@ const { StatusError_400 } = require('link_http_code')
  * Check if body is well formed and delegate to models the request
  */
 module.exports.exec = (req, res) => {
+    logger.info(req.body)
     if (checkBodyMysql(req.body)) {
         // Body is well formed!
         mysqlDbUOW.exec(req.body.configName, req.body.sql, req.body.args, result => {
