@@ -8,6 +8,6 @@ const validateToken = require('link_jwt')
 router.post('/wamp', validateToken('mysql_crud'), mysql_controller.exec)
 router.post('/tracking', validateToken('mongo_crud'), mongoDb_controller.exec)
 router.post('/jwt', validateToken('mongo_jwt'), mongoDb_controller.exec)
-router.post('/galaxy_breaker', validateToken('galaxy_breaker'), mysql_controller.exec)
+router.post('/galaxy_breaker', validateToken('galaxy_breaker'), mongoDb_controller.exec)
 
 module.exports = router

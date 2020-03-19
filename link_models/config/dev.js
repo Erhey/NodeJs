@@ -11,11 +11,9 @@ module.exports = {
 	galaxy_breaker: {
 		name: 'galaxy_breaker'
 		,description: 'Storing data for galaxy breaker'
-		,type: 'mysql'
-		,host: 'localhost'
+		,type: 'mongodb'
+		,host: '127.0.0.1'
 		,database: 'galaxy_breaker'
-		,user: 'root'
-		,password: ''
 	},
 	tracking: {
 		name: 'tracking'
