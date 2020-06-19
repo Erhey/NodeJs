@@ -1,4 +1,4 @@
-const mongoose = require('../redisPatch/cached_mongoose')
+const mongoose = require('mongoose')
 const config = require('../../config/keys')
 let { authenticationSchema } = require('./jwtSchema')
 const jwtConfig = config.jwt
@@ -10,6 +10,6 @@ mongoose.jwtConnection = mongoose.createConnection('mongodb://' + jwtConfig.host
 
 mongoose.jwtConnection.authenticationSchema = mongoose.jwtConnection.model('authenticationSchema', authenticationSchema)
 
-mongoose.jwtConnection.clearHashkey = mongoose.clearHashkey
+//mongoose.jwtConnection.clearHashkey = mongoose.clearHashkey
 module.exports = mongoose.jwtConnection
 

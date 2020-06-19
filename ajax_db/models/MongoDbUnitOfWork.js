@@ -74,7 +74,7 @@ find = async (configName, collection, queryContent, uuidKey, callback) => {
         let mongoConnection = link_models.getMongoConnection(configName)
         // Use dynamic name for collection
         let result = {}
-        let documents = await mongoConnection[`${collection}Schema`].find(queryContent).cache(uuidKey)
+        let documents = await mongoConnection[`${collection}Schema`].find(queryContent)//.cache(uuidKey)
         if (!documents) {
             logger.warn(`No document found! : ${documents}`)
             callback(new StatusError_204())
@@ -104,7 +104,7 @@ findOne = async (configName, collection, queryContent, uuidKey, callback) => {
         let mongoConnection = link_models.getMongoConnection(configName)
         // Use dynamic name for collection
         let result = {}
-        let document = await mongoConnection[`${collection}Schema`].findOne(queryContent).cache(uuidKey)
+        let document = await mongoConnection[`${collection}Schema`].findOne(queryContent)//.cache(uuidKey)
         if (!document) {
             // No error but no document for the current setup
             logger.warn(`No document found! : ${document}`)
@@ -142,7 +142,7 @@ replaceOne = async (configName, collection, queryContent, uuidKey, callback) => 
             // Get mongoConnection with all configuration presetted
             let mongoConnection = link_models.getMongoConnection(configName)
             // Use dynamic name for collection
-            let result = await mongoConnection[`${collection}Schema`].replaceOne(queryContent.filter, queryContent.record, { upsert: true }).clearHashkey(uuidKey)
+            let result = await mongoConnection[`${collection}Schema`].replaceOne(queryContent.filter, queryContent.record, { upsert: true })//.clearHashkey(uuidKey)
             // No error occured
             logger.debug(`${result.n} document(s) get successfully replaced!`)
             callback(new StatusError_201(`${result.n} document(s) get successfully replaced!`))
@@ -175,7 +175,7 @@ insertMany = async (configName, collection, queryContent, uuidKey, callback) => 
         // /!\ InsertMany is not a function from Query. It returns a promise!
         // It's not possible to call directly the clear cache function 
         let result = await mongoConnection[`${collection}Schema`].insertMany(queryContent)
-        mongoConnection.clearHashkey(uuidKey)
+        //mongoConnection.clearHashkey(uuidKey)
         // No error occured
         logger.debug(`${result.length} document(s) get successfully inserted!`)
         callback(new StatusError_201(`${result.n} document(s) get successfully inserted!`))
@@ -199,7 +199,7 @@ updateMany = async (configName, collection, queryContent, uuidKey, callback) => 
             // Get mongoConnection with all configuration presetted
             let mongoConnection = link_models.getMongoConnection(configName)
             // Use dynamic name for collection
-            let result = await mongoConnection[`${collection}Schema`].updateMany(queryContent.filter, { $set: queryContent.$set }).clearHashkey(uuidKey)
+            let result = await mongoConnection[`${collection}Schema`].updateMany(queryContent.filter, { $set: queryContent.$set })//.clearHashkey(uuidKey)
             // No error occured
             logger.debug(`${result.n} document(s) get successfully updated!`)
             callback(new StatusError_201(`${result.n} document(s) get successfully updated!`))

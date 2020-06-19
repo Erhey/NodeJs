@@ -2,7 +2,7 @@
 
 
 // Get cache layer patched mongoose instance
-const mongoose = require('../redisPatch/cached_mongoose')
+const mongoose = require('mongoose')
 const config = require('../../config/keys')
 let { requestSchema, responseSchema } = require('./trackingSchema')
 const trackingConfig = config.tracking
@@ -17,7 +17,7 @@ mongoose.trackingConnection.responseSchema = mongoose.trackingConnection.model('
 
 try {
 
-    mongoose.trackingConnection.clearHashkey = mongoose.clearHashkey
+//    mongoose.trackingConnection.clearHashkey = mongoose.clearHashkey
 } catch (e){
     console.log(e)
 }
