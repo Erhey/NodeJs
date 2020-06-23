@@ -62,8 +62,7 @@ const myFileFormat = printf(({ level, message }) => {
 
 
 getMainDirectory = () => {
-    // return __dirname
-    return __dirname.trim().match(/^(.*\\)[^\\]+$/)[1] + 'main'
+    return __dirname.trim() + 'main'
 }
 
 let logger = createLogger({
@@ -130,7 +129,7 @@ getSourceProjectName = clean => {
         cleaner = match[1]
     }
     let cuttedPath = cleaner.replace(path.dirname(__dirname), '')
-    let sourceProjectName = cuttedPath.trim().match(/^\\([^\\]+)/)[1]
+    let sourceProjectName = cuttedPath.trim()
     return `[${sourceProjectName.toUpperCase()}]`
 }
 

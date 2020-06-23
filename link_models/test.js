@@ -8,7 +8,7 @@ testPerfoWithoutCache = async() => {
 
 
 testPerfoWithCache = async() => {
-    await mongoose.requestSchema.find({}).clearHashkey("ABDXE")
+    await mongoose.requestSchema.find({})//.clearHashkey("ABDXE")
     // console.log(await mongoose.requestSchema.find({}).cache("ABDXE"))
 }
 

@@ -1,4 +1,4 @@
-const mongoose = require('../redisPatch/cached_mongoose')
+const mongoose = require('mongoose')
 const config = require('../../config/keys')
 let { playerSchema, purchaseSchema, promotionSchema, itemSchema, levelSchema } = require('./galaxy_breakerSchema')
 const galaxyBreakerConfig = config.galaxy_breaker
@@ -13,6 +13,6 @@ mongoose.galaxyBreakerConnection.purchaseSchema = mongoose.galaxyBreakerConnecti
 mongoose.galaxyBreakerConnection.promotionSchema = mongoose.galaxyBreakerConnection.model('promotionSchema', promotionSchema);
 mongoose.galaxyBreakerConnection.itemSchema = mongoose.galaxyBreakerConnection.model('itemSchema', itemSchema);
 mongoose.galaxyBreakerConnection.levelSchema = mongoose.galaxyBreakerConnection.model('levelSchema', levelSchema);
-mongoose.galaxyBreakerConnection.clearHashkey = mongoose.clearHashkey
+//mongoose.galaxyBreakerConnection.clearHashkey = mongoose.clearHashkey
 module.exports = mongoose.galaxyBreakerConnection
 
